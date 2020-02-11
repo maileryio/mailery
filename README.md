@@ -1,14 +1,14 @@
-# _____
+# Basic Mailery project template
 
-**_____**
+**Basic Mailery project template**
 
-[![Latest Stable Version](https://poser.pugx.org/maileryio/_____/v/stable)](https://packagist.org/packages/maileryio/_____)
-[![Total Downloads](https://poser.pugx.org/maileryio/_____/downloads)](https://packagist.org/packages/maileryio/_____)
-[![Build Status](https://travis-ci.com/maileryio/_____.svg?branch=master)](https://travis-ci.com/maileryio/_____)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/maileryio/_____.svg)](https://scrutinizer-ci.com/g/maileryio/_____/)
-[![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/maileryio/_____.svg)](https://scrutinizer-ci.com/g/maileryio/_____/)
+[![Latest Stable Version](https://poser.pugx.org/maileryio/mailery/v/stable)](https://packagist.org/packages/maileryio/mailery)
+[![Total Downloads](https://poser.pugx.org/maileryio/mailery/downloads)](https://packagist.org/packages/maileryio/mailery)
+[![Build Status](https://travis-ci.com/maileryio/mailery.svg?branch=master)](https://travis-ci.com/maileryio/mailery)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/maileryio/mailery.svg)](https://scrutinizer-ci.com/g/maileryio/mailery/)
+[![Scrutinizer Code Coverage](https://img.shields.io/scrutinizer/coverage/g/maileryio/mailery.svg)](https://scrutinizer-ci.com/g/maileryio/mailery/)
 
-_____
+Basic Mailery project template
 
 ## Installation
 
@@ -17,13 +17,13 @@ The preferred way to install this library is through [composer](http://getcompos
 Either run
 
 ```sh
-php composer.phar require "maileryio/_____"
+php composer.phar require "maileryio/mailery"
 ```
 
 or add
 
 ```json
-"maileryio/_____": "*"
+"maileryio/mailery": "*"
 ```
 
 to the require section of your composer.json.
