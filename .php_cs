@@ -83,7 +83,6 @@ return PhpCsFixer\Config::create()
             ],
         ],
         'phpdoc_indent' => true,
-        'phpdoc_to_comment' => true,
         'phpdoc_trim' => true,
         'phpdoc_add_missing_param_annotation' => [
             'only_untyped' => false,
@@ -100,7 +99,7 @@ return PhpCsFixer\Config::create()
         'single_quote' => [
             'strings_containing_single_quote_chars' => true,
         ],
-        'single_line_comment_style' => true,
+        'single_line_comment_style' => false,
         'ternary_to_null_coalescing' => true,
         'trailing_comma_in_multiline_array' => true,
         'trim_array_spaces' => true,
