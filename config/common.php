@@ -12,7 +12,11 @@ declare(strict_types=1);
 
 use Mailery\Factory\LoggerFactory;
 use Psr\Container\ContainerInterface;
+use Psr\EventDispatcher\EventDispatcherInterface;
+use Psr\EventDispatcher\ListenerProviderInterface;
 use Psr\Log\LoggerInterface;
+use Yiisoft\EventDispatcher\Dispatcher;
+use Yiisoft\EventDispatcher\Provider\Provider;
 use Yiisoft\Log\Target\File\FileRotator;
 use Yiisoft\Log\Target\File\FileRotatorInterface;
 
@@ -27,4 +31,8 @@ return [
             10,
         ],
     ],
+
+    // event dispatcher
+    ListenerProviderInterface::class => Provider::class,
+    EventDispatcherInterface::class => Dispatcher::class,
 ];

@@ -10,4 +10,13 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-return [];
+return [
+    'aliases' => [
+        '@root' => dirname(__DIR__),
+        '@vendor' => '@root/vendor',
+        '@public' => '@root/web',
+        '@runtime' => '@root/runtime',
+        '@npm' => '@root/node_modules',
+        '@web' => '/assets',
+    ],
+];
