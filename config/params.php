@@ -19,4 +19,11 @@ return [
         '@npm' => '@root/node_modules',
         '@web' => '/assets',
     ],
+
+    'assetManager' => [
+        'publisher' => [
+            'forceCopy' => YII_ENV === 'dev',
+            'appendTimestamp' => true,
+        ],
+    ],
 ];
