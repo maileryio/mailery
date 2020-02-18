@@ -1,6 +1,6 @@
 {
     "license": "BSD-3-Clause",
     "dependencies": {
-        "@maileryio/mailery-backend-assets": "^1.0.0"
+        "@composer-asset/maileryio--mailery-backend": "file:./vendor/foxy/composer-asset/maileryio/mailery-backend"
     }
 }
