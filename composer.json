@@ -19,8 +19,8 @@
     "require": {
         "php": "^7.4",
         "foxy/foxy": "^1.0",
-        "maileryio/mailery-backend": "^1.0",
-        "maileryio/mailery-dashboard": "^1.0@dev",
+        "maileryio/mailery-backend": "dev-master",
+        "maileryio/mailery-dashboard": "dev-master",
         "nyholm/psr7": "^1.2",
         "psr/log": "^1.1",
         "yiisoft/event-dispatcher": "^3.0@dev",
