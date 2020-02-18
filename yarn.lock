@@ -9,7 +9,7 @@
 
 "@maileryio/mailery-backend-assets@git+ssh://git@github.com:maileryio/mailery-backend-assets.git#master":
   version "1.0.2"
-  resolved "git+ssh://git@github.com:maileryio/mailery-backend-assets.git#260f274c28c4d42113e6252f570b35775f90eaa8"
+  resolved "git+ssh://git@github.com:maileryio/mailery-backend-assets.git#3cc653bf54c89efd3214594f5b200c9bea701eb9"
   dependencies:
     bootstrap-vue "^2.4.2"
     vue "^2.6.11"

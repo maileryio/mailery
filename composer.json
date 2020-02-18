@@ -18,14 +18,17 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.4",
+        "cycle/proxy-factory": "^1.2",
         "foxy/foxy": "^1.0",
         "maileryio/mailery-backend": "dev-master",
         "maileryio/mailery-dashboard": "dev-master",
+        "maileryio/mailery-user": "dev-master",
         "nyholm/psr7": "^1.2",
         "psr/log": "^1.1",
         "yiisoft/event-dispatcher": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
         "yiisoft/log-target-file": "^3.0@dev",
+        "yiisoft/yii-cycle": "^3.0@dev",
         "yiisoft/yii-web": "^3.0@dev"
     },
     "require-dev": {
