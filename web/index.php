@@ -20,7 +20,7 @@ use Yiisoft\Yii\Web\Application;
 
     require_once $dirName . '/vendor/autoload.php';
 
-    $container = new Container(require Builder::path('backend'));
+    $container = new Container(require Builder::path('web'));
 
     require $dirName . '/src/globals.php';
 

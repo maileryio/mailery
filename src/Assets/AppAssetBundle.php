@@ -2,7 +2,6 @@
 
 namespace Mailery\Assets;
 
-use Mailery\Icon\Material\MaterialDesignAssetBundle;
 use Yiisoft\Assets\AssetBundle;
 
 class AppAssetBundle extends AssetBundle
@@ -45,7 +44,6 @@ class AppAssetBundle extends AssetBundle
         VueAssetBundle::class,
         VuexAssetBundle::class,
         BootstrapVueAssetBundle::class,
-        MaterialDesignAssetBundle::class,
     ];
 
 }
