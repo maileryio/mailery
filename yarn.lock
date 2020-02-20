@@ -2,19 +2,14 @@
 # yarn lockfile v1
 
 
-"@composer-asset/maileryio--mailery-backend@file:./vendor/foxy/composer-asset/maileryio/mailery-backend":
-  version "1.0.0"
-  dependencies:
-    "@maileryio/mailery-backend-assets" "git+ssh://git@github.com:maileryio/mailery-backend-assets.git#master"
-
 "@composer-asset/maileryio--yii-widget-link@file:./vendor/foxy/composer-asset/maileryio/yii-widget-link":
   version "1.0.0"
   dependencies:
     "@maileryio/vue-widget-link" "1.0.*"
 
-"@maileryio/mailery-backend-assets@git+ssh://git@github.com:maileryio/mailery-backend-assets.git#master":
+"@maileryio/mailery-assets@git+ssh://git@github.com:maileryio/mailery-assets.git#master":
   version "1.0.2"
-  resolved "git+ssh://git@github.com:maileryio/mailery-backend-assets.git#3cc653bf54c89efd3214594f5b200c9bea701eb9"
+  resolved "git+ssh://git@github.com:maileryio/mailery-assets.git#f16af80e7242684708a73f5caee1b950212d3435"
   dependencies:
     bootstrap-vue "^2.4.2"
     vue "^2.6.11"

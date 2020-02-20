@@ -20,7 +20,9 @@
         "php": "^7.4",
         "cycle/proxy-factory": "^1.2",
         "foxy/foxy": "^1.0",
-        "maileryio/mailery-backend": "dev-master",
+        "maileryio/mailery-icon-material": "dev-master",
+        "maileryio/mailery-menu-sidebar": "dev-master",
+        "maileryio/mailery-web": "dev-master",
         "maileryio/mailery-dashboard": "dev-master",
         "maileryio/mailery-user": "dev-master",
         "nyholm/psr7": "^1.2",
@@ -74,10 +76,6 @@
             "web": [
                 "$common",
                 "config/web.php"
-            ],
-            "backend": [
-                "$web",
-                "config/backend.php"
             ]
         }
     },

@@ -20,6 +20,7 @@ return [
         '@root' => dirname(__DIR__),
         '@vendor' => '@root/vendor',
         '@public' => '@root/web',
+        '@views' => '@root/views',
         '@runtime' => '@root/runtime',
         '@npm' => '@root/node_modules',
         '@web' => '/assets',
