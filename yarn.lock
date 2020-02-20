@@ -7,6 +7,11 @@
   dependencies:
     "@maileryio/mailery-backend-assets" "git+ssh://git@github.com:maileryio/mailery-backend-assets.git#master"
 
+"@composer-asset/maileryio--yii-widget-link@file:./vendor/foxy/composer-asset/maileryio/yii-widget-link":
+  version "1.0.0"
+  dependencies:
+    "@maileryio/vue-widget-link" "1.0.*"
+
 "@maileryio/mailery-backend-assets@git+ssh://git@github.com:maileryio/mailery-backend-assets.git#master":
   version "1.0.2"
   resolved "git+ssh://git@github.com:maileryio/mailery-backend-assets.git#3cc653bf54c89efd3214594f5b200c9bea701eb9"
@@ -14,6 +19,11 @@
     bootstrap-vue "^2.4.2"
     vue "^2.6.11"
     vuex "^3.1.2"
+
+"@maileryio/vue-widget-link@1.0.*":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@maileryio/vue-widget-link/-/vue-widget-link-1.0.6.tgz#a91aea86f82185df930ecf4dc9de93609ab798b3"
+  integrity sha512-chKjJao4vtlk4h4AQReVDfIv3U2YiJONUwBF14sCZ0ATv8Kfe9WgpsqNIKXw7LcTKBIe//MGKONhrQPdEsEF3Q==
 
 "@nuxt/opencollective@^0.3.0":
   version "0.3.0"
@@ -32,9 +42,9 @@ ansi-styles@^3.2.1:
     color-convert "^1.9.0"
 
 bootstrap-vue@^2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.4.2.tgz#f34506fd987cd330ef3d51da8c2cee238480ce86"
-  integrity sha512-gtf0QwbtVyNrnXhL3eyrSrcW0/CVilEkOFddYaVAsJCIFMhUjurmzryw+Dh+fOzJmmKRqRxhkLUIGqlkwAcsbg==
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.5.0.tgz#a8e48f9c0d15ebeb0f0b35cdc1ab26fd7a015307"
+  integrity sha512-LixZePxJqIkwsha2WAjAu7ZDH+oJ+JLxPGsl1SIbWebcEYZ+QtGx4JM2nR287t/0uWYGO+/oJ0KlaSO662VtLA==
   dependencies:
     "@nuxt/opencollective" "^0.3.0"
     bootstrap ">=4.4.1 <5.0.0"

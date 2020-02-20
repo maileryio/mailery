@@ -32,6 +32,10 @@ return [
         ],
     ],
 
+    'i18n' => [
+        'defaultLocale' => 'en-US',
+    ],
+
     // cycle DBAL config
     'cycle.dbal' => [
         'default' => 'default',
