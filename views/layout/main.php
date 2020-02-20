@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Mailery\Assets\AppAssetBundle;
+use Mailery\Web\Assets\AppAssetBundle;
 use Yiisoft\Html\Html;
 
 /** @var \Yiisoft\View\WebView $this */
@@ -32,19 +32,22 @@ $this->beginPage();
 <body>
     <?php $this->beginBody(); ?>
 
-    <?= $this->render('_header');?>
+    <div id="app">
+        <?= $this->render('_header');?>
 
-    <div class="container-fluid">
-        <div class="row">
-            <?= $this->render('_sidebar');?>
+        <div class="container-fluid">
+            <div class="row">
+                <?= $this->render('_sidebar');?>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-                <?= $content; ?>
-            </main>
+                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                    <?= $content; ?>
+                </main>
 
-            <?= $this->render('_footer'); ?>
+                <?= $this->render('_footer'); ?>
+            </div>
         </div>
     </div>
+
     <?php $this->endBody(); ?>
 </body>
 </html>
