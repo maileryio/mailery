@@ -1,4 +1,6 @@
 {
     "license": "BSD-3-Clause",
-    "dependencies": {}
+    "dependencies": {
+        "@composer-asset/maileryio--widget-link": "file:./vendor/foxy/composer-asset/maileryio/widget-link"
+    }
 }
