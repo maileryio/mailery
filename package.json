@@ -1,8 +1,4 @@
 {
     "license": "BSD-3-Clause",
-    "dependencies": {
-        "@composer-asset/maileryio--mailery-user": "file:./vendor/foxy/composer-asset/maileryio/mailery-user",
-        "@composer-asset/maileryio--widget-link": "file:./vendor/foxy/composer-asset/maileryio/widget-link",
-        "@maileryio/mailery-assets": "git+ssh://git@github.com:maileryio/mailery-assets.git#master"
-    }
+    "dependencies": {}
 }
