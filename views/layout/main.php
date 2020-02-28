@@ -7,11 +7,18 @@ use Yiisoft\Html\Html;
 
 /** @var \Yiisoft\View\WebView $this */
 /** @var \Yiisoft\Assets\AssetManager $assetManager */
+/** @var \Mailery\Brand\Service\BrandLocator $brandLocator */
 /** @var $content string */
 
 $headerContent = $this->render('_header');
-$sidebarContent = $this->render('_sidebar');
 $footerContent = $this->render('_footer');
+
+if ($brandLocator->hasBrand()) {
+    $sidebarContent = $this->render('_sidebar');
+    $content = $this->render('container/_brand', compact('content', 'headerContent', 'footerContent', 'sidebarContent'));
+} else {
+    $content = $this->render('container/_main', compact('content', 'headerContent', 'footerContent'));
+}
 
 $assetManager->register([
     AppAssetBundle::class,
@@ -37,19 +44,7 @@ $this->beginPage();
     <?php $this->beginBody(); ?>
 
     <div id="app">
-        <?= $headerContent ?>
-
-        <div class="container-fluid">
-            <div class="row">
-                <?= $sidebarContent ?>
-
-                <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-                    <?= $content; ?>
-                </main>
-
-                <?= $footerContent ?>
-            </div>
-        </div>
+        <?= $content ?>
     </div>
 
     <?php $this->endBody(); ?>

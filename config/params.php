@@ -10,10 +10,12 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
+use Mailery\Controller\DefaultController;
 use Cycle\Schema\Generator;
 use Spiral\Database\Driver\Postgres\PostgresDriver;
 use Yiisoft\Yii\Cycle\Logger\StdoutQueryLogger;
 use Cycle\ORM\Promise\ProxyFactory;
+use Yiisoft\Router\Route;
 
 return [
     'aliases' => [
@@ -73,5 +75,12 @@ return [
         'namespace' => 'App\\Migration',
         'table' => 'migration',
         'safe' => false,
+    ],
+
+    'router' => [
+        'routes' => [
+            Route::get('/', [DefaultController::class, 'index'])
+                ->name('/'),
+        ],
     ],
 ];
