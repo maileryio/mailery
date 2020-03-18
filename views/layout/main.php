@@ -43,9 +43,9 @@ $this->beginPage();
 <body>
     <?php $this->beginBody(); ?>
 
-    <div id="app">
+    <ui-app id="app">
         <?= $content ?>
-    </div>
+    </ui-app>
 
     <?php $this->endBody(); ?>
 </body>

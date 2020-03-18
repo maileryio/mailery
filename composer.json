@@ -25,6 +25,7 @@
         "maileryio/mailery-icon-material": "dev-master",
         "maileryio/mailery-menu-navbar": "dev-master",
         "maileryio/mailery-menu-sidebar": "dev-master",
+        "maileryio/mailery-rbac": "dev-master",
         "maileryio/mailery-user": "dev-master",
         "maileryio/mailery-web": "dev-master",
         "nyholm/psr7": "^1.2",

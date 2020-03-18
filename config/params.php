@@ -79,7 +79,7 @@ return [
 
     'router' => [
         'routes' => [
-            Route::get('/', [DefaultController::class, 'index'])
+            '/' => Route::get('/', [DefaultController::class, 'index'])
                 ->name('/'),
         ],
     ],

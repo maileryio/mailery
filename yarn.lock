@@ -4,6 +4,8 @@
 
 "@composer-asset/maileryio--mailery-brand@file:./vendor/foxy/composer-asset/maileryio/mailery-brand":
   version "1.0.0"
+  dependencies:
+    "@maileryio/mailery-brand-assets" "git+ssh://git@github.com:maileryio/mailery-brand-assets.git#master"
 
 "@composer-asset/maileryio--mailery-user@file:./vendor/foxy/composer-asset/maileryio/mailery-user":
   version "1.0.0"
@@ -25,6 +27,10 @@
     bootstrap-vue "^2.4.2"
     vue "^2.6.11"
     vuex "^3.1.2"
+
+"@maileryio/mailery-brand-assets@git+ssh://git@github.com:maileryio/mailery-brand-assets.git#master":
+  version "1.0.0"
+  resolved "git+ssh://git@github.com:maileryio/mailery-brand-assets.git#6af1b920de133adb32c652468f3dbf0139337a46"
 
 "@maileryio/widget-link-assets@git+ssh://git@github.com:maileryio/widget-link-assets.git#master":
   version "1.0.6"
