@@ -30,10 +30,12 @@ return [
 
     'assetManager' => [
         'publisher' => [
-            'forceCopy' => YII_ENV === 'dev',
+            'forceCopy' => getenv('ENV') === 'dev',
             'appendTimestamp' => true,
         ],
     ],
+
+    'debugger.enabled' => true,
 
     'i18n' => [
         'defaultLocale' => 'en-US',
@@ -59,7 +61,7 @@ return [
     // cycle common config
     'cycle.common' => [
         'entityPaths' => [],
-        'cacheEnabled' => YII_ENV === 'prod',
+        'cacheEnabled' => getenv('ENV') === 'prod',
         'cacheKey' => 'Cycle-ORM-Schema',
         'generators' => [
             // sync table changes to database

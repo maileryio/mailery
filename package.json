@@ -2,6 +2,8 @@
     "license": "BSD-3-Clause",
     "dependencies": {
         "@composer-asset/maileryio--mailery-brand": "file:./vendor/foxy/composer-asset/maileryio/mailery-brand",
+        "@composer-asset/maileryio--mailery-rbac": "file:./vendor/foxy/composer-asset/maileryio/mailery-rbac",
+        "@composer-asset/maileryio--mailery-subscriber": "file:./vendor/foxy/composer-asset/maileryio/mailery-subscriber",
         "@composer-asset/maileryio--mailery-user": "file:./vendor/foxy/composer-asset/maileryio/mailery-user",
         "@composer-asset/maileryio--mailery-web": "file:./vendor/foxy/composer-asset/maileryio/mailery-web",
         "@composer-asset/maileryio--widget-link": "file:./vendor/foxy/composer-asset/maileryio/widget-link"

@@ -26,11 +26,11 @@ return [
     LoggerInterface::class => new LoggerFactory(),
     FileRotatorInterface::class => FileRotator::class,
 
-    // event dispatcher
+    // Event dispatcher:
     ListenerProviderInterface::class => Provider::class,
     EventDispatcherInterface::class => Dispatcher::class,
 
-    // i18n
+    // I18n:
     MessageFormatterInterface::class => IntlMessageFormatter::class,
     MessageReaderInterface::class => function (ContainerInterface $container) {
         $filePath = $container->get(Aliases::class)->get('@root/messages/ru-RU/messages.po');

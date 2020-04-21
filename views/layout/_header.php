@@ -13,7 +13,7 @@ $fnMenuItemChildsRenderer = function (MenuItem $menuItem) {
         $lines[] = '<li role="presentation" class="dropdown-submenu text-nowrap">';
         $lines[] = '<a role="menuitem" href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="dropdown-item dropdown-toggle dropdown-toggle-no-caret" data-toggle="dropdown">'
                 . $menuItem->getLabel() . ' '
-                . Icon::widget()->options(['class' => 'menu-caret'])->name('chevron-down')
+                . Icon::widget()->options(['class' => 'menu-caret'])->name('chevron-right')
                 . '</a>';
         $lines[] = '<ul class="dropdown-menu">';
 

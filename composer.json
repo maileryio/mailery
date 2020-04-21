@@ -26,6 +26,7 @@
         "maileryio/mailery-menu-navbar": "dev-master",
         "maileryio/mailery-menu-sidebar": "dev-master",
         "maileryio/mailery-rbac": "dev-master",
+        "maileryio/mailery-subscriber": "^1.0@dev",
         "maileryio/mailery-user": "dev-master",
         "maileryio/mailery-web": "dev-master",
         "nyholm/psr7": "^1.2",
@@ -38,18 +39,23 @@
         "yiisoft/log": "^3.0@dev",
         "yiisoft/log-target-file": "^3.0@dev",
         "yiisoft/yii-cycle": "^3.0@dev",
-        "yiisoft/yii-web": "dev-master#24c94f676b77cb8ac358fbb26465353ecb473b25"
+        "yiisoft/yii-debug": "^3.0@dev",
+        "yiisoft/yii-web": "^3.0@dev"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
         "phan/phan": "^2.4",
         "phpunit/phpunit": "^9.0",
-        "vlucas/phpdotenv": "^3.6"
+        "vlucas/phpdotenv": "^3.6",
+        "yiisoft/composer-config-plugin": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "Mailery\\": "src"
-        }
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -59,18 +65,22 @@
     "scripts": {
         "lint": "php-cs-fixer fix --diff --dry-run",
         "fix": "php-cs-fixer fix",
-        "phan": "phan --progress-bar -o analysis.txt"
+        "phan": "phan --progress-bar -o analysis.txt",
+        "post-update-cmd": [
+            "Mailery\\Installer::postUpdate"
+        ]
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         },
         "config-plugin": {
-            "defines": "config/defines.php",
-            "params": [
-                "config/params.php"
-            ],
             "common": "config/common.php",
+            "providers": "config/providers.php",
+            "params": [
+                "config/params.php",
+                "?config/params-local.php"
+            ],
             "console": [
                 "$common",
                 "config/console.php"

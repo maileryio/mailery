@@ -10,20 +10,36 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use hiqdev\composer\config\Builder;
+use Yiisoft\Composer\Config\Builder;
+use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Yiisoft\Di\Container;
+use Yiisoft\Http\Method;
 use Yiisoft\Yii\Web\Application;
+use Yiisoft\Yii\Web\SapiEmitter;
 
-(function () {
-    $dirName = dirname(__DIR__);
+require_once dirname(__DIR__) . '/vendor/autoload.php';
 
-    require_once $dirName . '/vendor/autoload.php';
+$container = (function (): ContainerInterface {
+    $container = new Container(
+        require Builder::path('web', dirname(__DIR__)),
+        require Builder::path('providers', dirname(__DIR__))
+    );
 
-    $container = new Container(require Builder::path('web'));
-
-    require $dirName . '/src/globals.php';
-
-    $request = $container->get(ServerRequestInterface::class);
-    $container->get(Application::class)->handle($request);
+    return $container->get(ContainerInterface::class);
 })();
+
+(function (ContainerInterface $container) {
+    $application = $container->get(Application::class);
+    $request = $container->get(ServerRequestInterface::class);
+
+    try {
+        $application->start();
+        $response = $application->handle($request);
+        $emitter = new SapiEmitter();
+        $emitter->emit($response, $request->getMethod() === Method::HEAD);
+    } finally {
+        $application->afterEmit($response);
+        $application->shutdown();
+    }
+})($container);
