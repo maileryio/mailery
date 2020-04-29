@@ -97,7 +97,25 @@
 "@composer-asset/maileryio--mailery-brand@file:./vendor/foxy/composer-asset/maileryio/mailery-brand":
   version "1.0.0"
   dependencies:
-    "@maileryio/mailery-brand-assets" "git+ssh://git@github.com:maileryio/mailery-brand-assets.git#master"
+    "@maileryio/mailery-brand-assets" "git+ssh://git@github.com/maileryio/mailery-brand-assets.git#master"
+
+"@composer-asset/maileryio--mailery-dashboard@file:./vendor/foxy/composer-asset/maileryio/mailery-dashboard":
+  version "1.0.0"
+
+"@composer-asset/maileryio--mailery-icon-material@file:./vendor/foxy/composer-asset/maileryio/mailery-icon-material":
+  version "1.0.0"
+
+"@composer-asset/maileryio--mailery-icon@file:./vendor/foxy/composer-asset/maileryio/mailery-icon":
+  version "1.0.0"
+
+"@composer-asset/maileryio--mailery-menu-navbar@file:./vendor/foxy/composer-asset/maileryio/mailery-menu-navbar":
+  version "1.0.0"
+
+"@composer-asset/maileryio--mailery-menu-sidebar@file:./vendor/foxy/composer-asset/maileryio/mailery-menu-sidebar":
+  version "1.0.0"
+
+"@composer-asset/maileryio--mailery-menu@file:./vendor/foxy/composer-asset/maileryio/mailery-menu":
+  version "1.0.0"
 
 "@composer-asset/maileryio--mailery-rbac@file:./vendor/foxy/composer-asset/maileryio/mailery-rbac":
   version "1.0.0"
@@ -113,24 +131,37 @@
 "@composer-asset/maileryio--mailery-web@file:./vendor/foxy/composer-asset/maileryio/mailery-web":
   version "1.0.0"
   dependencies:
-    "@maileryio/mailery-assets" "git+ssh://git@github.com:maileryio/mailery-assets.git#master"
+    "@maileryio/mailery-assets" "git+ssh://git@github.com/maileryio/mailery-assets.git#master"
+
+"@composer-asset/maileryio--widget-dataview@file:./vendor/foxy/composer-asset/maileryio/widget-dataview":
+  version "1.0.0"
+
+"@composer-asset/maileryio--widget-form@file:./vendor/foxy/composer-asset/maileryio/widget-form":
+  version "1.0.0"
 
 "@composer-asset/maileryio--widget-link@file:./vendor/foxy/composer-asset/maileryio/widget-link":
   version "1.0.0"
   dependencies:
-    "@maileryio/widget-link-assets" "git+ssh://git@github.com:maileryio/widget-link-assets.git#master"
+    "@maileryio/widget-link-assets" "git+ssh://git@github.com/maileryio/widget-link-assets.git#master"
 
-"@maileryio/mailery-assets@git+ssh://git@github.com:maileryio/mailery-assets.git#master":
+"@composer-asset/yiisoft--yii-bootstrap4@file:./vendor/foxy/composer-asset/yiisoft/yii-bootstrap4":
+  version "3.0.0"
+  dependencies:
+    bootstrap "^4.1.3"
+    jquery "^3.3.1"
+    popper.js "^1.14.5"
+
+"@maileryio/mailery-assets@git+ssh://git@github.com/maileryio/mailery-assets.git#master":
   version "1.0.2"
-  resolved "git+ssh://git@github.com:maileryio/mailery-assets.git#3fdbe0a8a97de308230228cfa08f77712957c70a"
+  resolved "git+ssh://git@github.com/maileryio/mailery-assets.git#8f6bce498db497446c905ba62f2af7b9438e0d32"
   dependencies:
     bootstrap-vue "^2.4.2"
     vue "^2.6.11"
     vuex "^3.1.2"
 
-"@maileryio/mailery-brand-assets@git+ssh://git@github.com:maileryio/mailery-brand-assets.git#master":
+"@maileryio/mailery-brand-assets@git+ssh://git@github.com/maileryio/mailery-brand-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:maileryio/mailery-brand-assets.git#6af1b920de133adb32c652468f3dbf0139337a46"
+  resolved "git+ssh://git@github.com/maileryio/mailery-brand-assets.git#6af1b920de133adb32c652468f3dbf0139337a46"
 
 "@maileryio/mailery-rbac-assets@git+ssh://git@github.com:maileryio/mailery-rbac-assets.git#master":
   version "1.0.0"
@@ -142,9 +173,9 @@
     liquor-tree "^0.2.70"
     vue-typeahead "^2.3.2"
 
-"@maileryio/widget-link-assets@git+ssh://git@github.com:maileryio/widget-link-assets.git#master":
+"@maileryio/widget-link-assets@git+ssh://git@github.com/maileryio/widget-link-assets.git#master":
   version "1.0.6"
-  resolved "git+ssh://git@github.com:maileryio/widget-link-assets.git#48a69d81ed4578f131049c1344e4a61dd3cd5881"
+  resolved "git+ssh://git@github.com/maileryio/widget-link-assets.git#48a69d81ed4578f131049c1344e4a61dd3cd5881"
   dependencies:
     vue "^2.6.11"
 
@@ -185,9 +216,9 @@ babel-runtime@^6.0.0:
     regenerator-runtime "^0.11.0"
 
 bootstrap-vue@^2.4.2:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.12.0.tgz#4298c9652f17ac403db226ff811fa146d7d185ca"
-  integrity sha512-cnW89Ig0OBbKTA6Hv8daijSWziNSDErAme9jTOmjBDtzqYAd9D4NCp0wDjfNRaZBojTRx/UR1SCatxP3bE+SMw==
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.13.0.tgz#a496e5b365400ce2640e0a89f3163c5f374d9c42"
+  integrity sha512-V/q2tgIY+tDxeBGOwqdPC4jk8CWmpwpSVY/1OVGxg4Jg1Jxcs6gQn7chhpI9KuBrO8diG/Nd6JRtnYwyE3b7Qw==
   dependencies:
     "@nuxt/opencollective" "^0.3.0"
     bootstrap ">=4.4.1 <5.0.0"
@@ -195,7 +226,7 @@ bootstrap-vue@^2.4.2:
     portal-vue "^2.1.7"
     vue-functional-data-merge "^3.1.0"
 
-"bootstrap@>=4.4.1 <5.0.0":
+"bootstrap@>=4.4.1 <5.0.0", bootstrap@^4.1.3:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.4.1.tgz#8582960eea0c5cd2bede84d8b0baf3789c3e8b01"
   integrity sha512-tbx5cHubwE6e2ZG7nqM3g/FZ5PQEDMWmMGNrCUBVRPHXTJaH7CBDdsLeu3eCh3B1tzAxTnAbtmrzvWEvT2NNEA==
@@ -268,6 +299,11 @@ has-flag@^3.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
   integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
 
+jquery@^3.3.1:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.0.tgz#9980b97d9e4194611c36530e7dc46a58d7340fc9"
+  integrity sha512-Xb7SVYMvygPxbFMpTFQiHh1J7HClEaThguL15N/Gg37Lri/qKyhRGZYzHRyLH8Stq3Aow0LsHO2O2ci86fCrNQ==
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -303,7 +339,7 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
-popper.js@^1.16.1:
+popper.js@^1.14.5, popper.js@^1.16.1:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
   integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
@@ -319,9 +355,9 @@ regenerator-runtime@^0.11.0:
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
 
 resolve@^1.12.0:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.16.1.tgz#49fac5d8bacf1fd53f200fa51247ae736175832c"
-  integrity sha512-rmAglCSqWWMrrBv/XM6sW0NuRFiKViw/W4d9EbC4pt+49H8JwHy+mcGmALTEg504AUDcLTvb1T2q3E9AnmY+ig==
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.17.0.tgz#b25941b54968231cc2d1bb76a79cb7f2c0bf8444"
+  integrity sha512-ic+7JYiV8Vi2yzQGFWOkiZD5Z9z7O2Zhm9XMaTxdJExKasieFCr+yXZ/WmXsckHiKl12ar0y6XiXDx3m4RHn1w==
   dependencies:
     path-parse "^1.0.6"
 
@@ -360,6 +396,6 @@ vue@^2.6.11:
   integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
 
 vuex@^3.1.2:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.2.0.tgz#86da7f26c3e131ff374870580109145a640ee5a8"
-  integrity sha512-qBZGJJ1gUNWZbfZlH7ylIPwENg3R0Ckpq+qPexF065kOMOt1Ixt8WDJmtssVv7OhepWD0+Qie7pOS8f0oQy1JA==
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.3.0.tgz#665b4630ea1347317139fcc5cb495aab3ec5e513"
+  integrity sha512-1MfcBt+YFd20DPwKe0ThhYm1UEXZya4gVKUvCy7AtS11YAOUR+9a6u4fsv1Rr6ePZCDNxW/M1zuIaswp6nNv8Q==

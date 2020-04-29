@@ -1,6 +1,6 @@
 {
     "name": "maileryio/mailery",
-    "type": "library",
+    "type": "project",
     "description": "Basic Mailery project template",
     "keywords": [
         "mail",
@@ -28,7 +28,8 @@
         "maileryio/mailery-rbac": "dev-master",
         "maileryio/mailery-subscriber": "^1.0@dev",
         "maileryio/mailery-user": "dev-master",
-        "maileryio/mailery-web": "dev-master",
+        "maileryio/mailery-web": "^1.0@dev",
+        "maileryio/widget-link": "^1.0",
         "nyholm/psr7": "^1.2",
         "psr/log": "^1.1",
         "yiisoft/event-dispatcher": "^3.0@dev",
