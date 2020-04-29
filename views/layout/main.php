@@ -7,7 +7,7 @@ use Yiisoft\Html\Html;
 
 /** @var \Yiisoft\View\WebView $this */
 /** @var \Yiisoft\Assets\AssetManager $assetManager */
-/** @var \Mailery\Brand\Contract\BrandLocatorInterface $brandLocator */
+/** @var \Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
 /** @var $content string */
 
 $headerContent = $this->render('_header');
