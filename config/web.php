@@ -2,22 +2,30 @@
 
 declare(strict_types=1);
 
+/**
+ * Basic Mailery project template
+ * @link      https://github.com/maileryio/mailery
+ * @package   Mailery
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
+ */
+
 use Mailery\Factory\LoggerFactory;
 use Psr\Container\ContainerInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\EventDispatcher\ListenerProviderInterface;
 use Psr\Log\LoggerInterface;
+use Yiisoft\Aliases\Aliases;
 use Yiisoft\EventDispatcher\Dispatcher\Dispatcher;
 use Yiisoft\EventDispatcher\Provider\Provider;
+use Yiisoft\I18n\Formatter\IntlMessageFormatter;
+use Yiisoft\I18n\GettextPoFile;
+use Yiisoft\I18n\MessageFormatterInterface;
+use Yiisoft\I18n\MessageReaderInterface;
+use Yiisoft\I18n\Translator\Translator;
+use Yiisoft\I18n\TranslatorInterface;
 use Yiisoft\Log\Target\File\FileRotator;
 use Yiisoft\Log\Target\File\FileRotatorInterface;
-use Yiisoft\I18n\MessageFormatterInterface;
-use Yiisoft\I18n\Formatter\IntlMessageFormatter;
-use Yiisoft\I18n\MessageReaderInterface;
-use Yiisoft\I18n\GettextPoFile;
-use Yiisoft\I18n\TranslatorInterface;
-use Yiisoft\I18n\Translator\Translator;
-use Yiisoft\Aliases\Aliases;
 
 return [
     ContainerInterface::class => function (ContainerInterface $container) {
@@ -34,6 +42,7 @@ return [
     MessageFormatterInterface::class => IntlMessageFormatter::class,
     MessageReaderInterface::class => function (ContainerInterface $container) {
         $filePath = $container->get(Aliases::class)->get('@root/messages/ru-RU/messages.po');
+
         return new GettextPoFile($filePath);
     },
     TranslatorInterface::class => [

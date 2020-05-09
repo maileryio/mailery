@@ -9,7 +9,6 @@ use Yiisoft\Html\Html;
 /** @var \Yiisoft\Assets\AssetManager $assetManager */
 /** @var \Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
 /** @var $content string */
-
 $headerContent = $this->render('_header');
 $footerContent = $this->render('_footer');
 
@@ -44,7 +43,7 @@ $this->beginPage();
     <?php $this->beginBody(); ?>
 
     <ui-app id="app">
-        <?= $content ?>
+        <?= $content; ?>
     </ui-app>
 
     <?php $this->endBody(); ?>

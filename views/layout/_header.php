@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-use Mailery\Menu\MenuItem;
 use Mailery\Icon\Icon;
+use Mailery\Menu\MenuItem;
 
 $fnMenuItemChildsRenderer = function (MenuItem $menuItem) {
     $lines = [];
@@ -28,7 +28,7 @@ $fnMenuItemChildsRenderer = function (MenuItem $menuItem) {
     return implode("\n", $lines);
 };
 
-$fnMenuItemRenderer = function (MenuItem $menuItem) use($fnMenuItemChildsRenderer): string {
+$fnMenuItemRenderer = function (MenuItem $menuItem) use ($fnMenuItemChildsRenderer): string {
     $lines = [];
     $childItems = $menuItem->getChildItems();
 

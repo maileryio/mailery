@@ -1,11 +1,21 @@
 <?php
 
+declare(strict_types=1);
+
+/**
+ * Basic Mailery project template
+ * @link      https://github.com/maileryio/mailery
+ * @package   Mailery
+ * @license   BSD-3-Clause
+ * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
+ */
+
 namespace Mailery;
 
 use Composer\Script\Event;
-use RecursiveIteratorIterator as RIterator;
 use FilesystemIterator as FSIterator;
 use RecursiveDirectoryIterator as DirIterator;
+use RecursiveIteratorIterator as RIterator;
 
 final class Installer
 {

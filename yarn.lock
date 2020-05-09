@@ -144,6 +144,11 @@
   dependencies:
     "@maileryio/widget-link-assets" "git+ssh://git@github.com/maileryio/widget-link-assets.git#master"
 
+"@composer-asset/maileryio--widget-search@file:./vendor/foxy/composer-asset/maileryio/widget-search":
+  version "1.0.0"
+  dependencies:
+    "@maileryio/widget-search-assets" "git+ssh://git@github.com/maileryio/widget-search-assets.git#master"
+
 "@composer-asset/yiisoft--yii-bootstrap4@file:./vendor/foxy/composer-asset/yiisoft/yii-bootstrap4":
   version "3.0.0"
   dependencies:
@@ -178,6 +183,10 @@
   resolved "git+ssh://git@github.com/maileryio/widget-link-assets.git#48a69d81ed4578f131049c1344e4a61dd3cd5881"
   dependencies:
     vue "^2.6.11"
+
+"@maileryio/widget-search-assets@git+ssh://git@github.com/maileryio/widget-search-assets.git#master":
+  version "1.0.0"
+  resolved "git+ssh://git@github.com/maileryio/widget-search-assets.git#1d7057e817a8097ec021a07fcb9ab4d3aac0c9c2"
 
 "@nuxt/opencollective@^0.3.0":
   version "0.3.0"
