@@ -10,9 +10,4 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Predis\Client as RedisClient;
-use Mailery\Factory\RedisFactory;
-
-return [
-    RedisClient::class => new RedisFactory($params['redis.parameters'], $params['redis.options']),
-];
+return [];

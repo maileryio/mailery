@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+use Mailery\Provider\CacheProvider;
+use Mailery\Provider\EventDispatcherProvider;
+use Mailery\Provider\LoggerProvider;
+
 /**
  * Basic Mailery project template
  * @link      https://github.com/maileryio/mailery
@@ -10,4 +14,8 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-return [];
+return [
+    CacheProvider::class => CacheProvider::class,
+    EventDispatcherProvider::class => EventDispatcherProvider::class,
+    LoggerProvider::class => LoggerProvider::class,
+];

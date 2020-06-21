@@ -74,9 +74,25 @@ return [
     // cycle migration config
     'cycle.migrations' => [
         'directory' => '@root/migrations',
-        'namespace' => 'App\\Migration',
+        'namespace' => 'Mailery\\Migration',
         'table' => 'migration',
         'safe' => false,
+    ],
+
+    // redis parameters config
+    'redis.parameters' => [
+        'scheme' => 'tcp',
+        'host' => getenv('REDIS_HOST'),
+        'port' => getenv('REDIS_PORT'),
+    ],
+
+    // redis options config
+    'redis.options' => [
+        'replication' => true,
+        'parameters' => [
+            'password' => getenv('REDIS_PASSWORD'),
+            'database' => getenv('REDIS_DATABASE'),
+        ],
     ],
 
     'router' => [
@@ -84,5 +100,9 @@ return [
             '/' => Route::get('/', [DefaultController::class, 'index'])
                 ->name('/'),
         ],
+    ],
+
+    'yiisoft/yii-debug' => [
+        'enabled' => false,
     ],
 ];

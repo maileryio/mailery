@@ -4,7 +4,6 @@
         "@composer-asset/maileryio--cycle-mapper": "file:./vendor/foxy/composer-asset/maileryio/cycle-mapper",
         "@composer-asset/maileryio--mailery-activity-log": "file:./vendor/foxy/composer-asset/maileryio/mailery-activity-log",
         "@composer-asset/maileryio--mailery-brand": "file:./vendor/foxy/composer-asset/maileryio/mailery-brand",
-        "@composer-asset/maileryio--mailery-common": "file:./vendor/foxy/composer-asset/maileryio/mailery-common",
         "@composer-asset/maileryio--mailery-dashboard": "file:./vendor/foxy/composer-asset/maileryio/mailery-dashboard",
         "@composer-asset/maileryio--mailery-icon": "file:./vendor/foxy/composer-asset/maileryio/mailery-icon",
         "@composer-asset/maileryio--mailery-icon-material": "file:./vendor/foxy/composer-asset/maileryio/mailery-icon-material",

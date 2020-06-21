@@ -10,33 +10,19 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Mailery\Factory\LoggerFactory;
 use Psr\Container\ContainerInterface;
-use Psr\EventDispatcher\EventDispatcherInterface;
-use Psr\EventDispatcher\ListenerProviderInterface;
-use Psr\Log\LoggerInterface;
 use Yiisoft\Aliases\Aliases;
-use Yiisoft\EventDispatcher\Dispatcher\Dispatcher;
-use Yiisoft\EventDispatcher\Provider\Provider;
 use Yiisoft\I18n\Formatter\IntlMessageFormatter;
 use Yiisoft\I18n\GettextPoFile;
 use Yiisoft\I18n\MessageFormatterInterface;
 use Yiisoft\I18n\MessageReaderInterface;
 use Yiisoft\I18n\Translator\Translator;
 use Yiisoft\I18n\TranslatorInterface;
-use Yiisoft\Log\Target\File\FileRotator;
-use Yiisoft\Log\Target\File\FileRotatorInterface;
 
 return [
     ContainerInterface::class => function (ContainerInterface $container) {
         return $container;
     },
-    LoggerInterface::class => new LoggerFactory(),
-    FileRotatorInterface::class => FileRotator::class,
-
-    // Event dispatcher:
-    ListenerProviderInterface::class => Provider::class,
-    EventDispatcherInterface::class => Dispatcher::class,
 
     // I18n:
     MessageFormatterInterface::class => IntlMessageFormatter::class,

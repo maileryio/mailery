@@ -16,6 +16,7 @@ use Yiisoft\Composer\Config\Builder;
 use Yiisoft\Di\Container;
 use Yiisoft\Http\Method;
 use Yiisoft\Yii\Web\Application;
+use Yiisoft\Yii\Web\Config\EventConfigurator;
 use Yiisoft\Yii\Web\SapiEmitter;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
@@ -23,7 +24,7 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
 $container = (function (): ContainerInterface {
     $container = new Container(
         require Builder::path('web', dirname(__DIR__)),
-        require Builder::path('providers', dirname(__DIR__))
+        require Builder::path('providers-web', dirname(__DIR__))
     );
 
     return $container->get(ContainerInterface::class);
@@ -32,6 +33,9 @@ $container = (function (): ContainerInterface {
 (function (ContainerInterface $container) {
     $application = $container->get(Application::class);
     $request = $container->get(ServerRequestInterface::class);
+
+    $eventConfigurator = $container->get(EventConfigurator::class);
+    $eventConfigurator->registerListeners(require Builder::path('events-web', dirname(__DIR__)));
 
     try {
         $application->start();

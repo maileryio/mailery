@@ -23,6 +23,7 @@ Thumbs.db
 .npm
 /node_modules
 /package-lock.json
+/yarn.lock
 
 # composer internals
 /composer.lock
