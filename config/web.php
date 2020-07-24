@@ -20,10 +20,6 @@ use Yiisoft\I18n\Translator\Translator;
 use Yiisoft\I18n\TranslatorInterface;
 
 return [
-    ContainerInterface::class => function (ContainerInterface $container) {
-        return $container;
-    },
-
     // I18n:
     MessageFormatterInterface::class => IntlMessageFormatter::class,
     MessageReaderInterface::class => function (ContainerInterface $container) {

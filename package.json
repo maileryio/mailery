@@ -10,6 +10,7 @@
         "@composer-asset/maileryio--mailery-menu": "file:./vendor/foxy/composer-asset/maileryio/mailery-menu",
         "@composer-asset/maileryio--mailery-menu-navbar": "file:./vendor/foxy/composer-asset/maileryio/mailery-menu-navbar",
         "@composer-asset/maileryio--mailery-menu-sidebar": "file:./vendor/foxy/composer-asset/maileryio/mailery-menu-sidebar",
+        "@composer-asset/maileryio--mailery-queue": "file:./vendor/foxy/composer-asset/maileryio/mailery-queue",
         "@composer-asset/maileryio--mailery-rbac": "file:./vendor/foxy/composer-asset/maileryio/mailery-rbac",
         "@composer-asset/maileryio--mailery-storage": "file:./vendor/foxy/composer-asset/maileryio/mailery-storage",
         "@composer-asset/maileryio--mailery-subscriber": "file:./vendor/foxy/composer-asset/maileryio/mailery-subscriber",
@@ -19,6 +20,7 @@
         "@composer-asset/maileryio--widget-form": "file:./vendor/foxy/composer-asset/maileryio/widget-form",
         "@composer-asset/maileryio--widget-link": "file:./vendor/foxy/composer-asset/maileryio/widget-link",
         "@composer-asset/maileryio--widget-search": "file:./vendor/foxy/composer-asset/maileryio/widget-search",
+        "@composer-asset/yiisoft--assets": "file:./vendor/foxy/composer-asset/yiisoft/assets",
         "@composer-asset/yiisoft--yii-bootstrap4": "file:./vendor/foxy/composer-asset/yiisoft/yii-bootstrap4"
     }
 }
