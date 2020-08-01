@@ -16,6 +16,12 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/filsh/i18n-message-gettext.git"
+        }
+    ],
     "require": {
         "php": "^7.4",
         "cycle/proxy-factory": "^1.2",
@@ -37,15 +43,15 @@
         "nyholm/psr7": "^1.2",
         "predis/predis": "^1.1",
         "psr/log": "^1.1",
-        "yiisoft/event-dispatcher": "^3.0@dev",
         "yiisoft/i18n": "^3.0@dev",
         "yiisoft/i18n-formatter-intl": "^3.0@dev",
-        "yiisoft/i18n-message-gettext": "^3.0@dev",
+        "yiisoft/i18n-message-gettext": "dev-patch-1",
         "yiisoft/i18n-translator": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
         "yiisoft/log-target-file": "^3.0@dev",
         "yiisoft/yii-cycle": "^3.0@dev",
         "yiisoft/yii-debug": "^3.0@dev",
+        "yiisoft/yii-event": "^3.0@dev",
         "yiisoft/yii-web": "^3.0@dev"
     },
     "require-dev": {
@@ -53,7 +59,7 @@
         "phan/phan": "^2.4",
         "phpunit/phpunit": "^9.0",
         "vlucas/phpdotenv": "^3.6",
-        "yiisoft/composer-config-plugin": "dev-master"
+        "yiisoft/composer-config-plugin": "^1.0@dev"
     },
     "autoload": {
         "psr-4": {

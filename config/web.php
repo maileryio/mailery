@@ -13,7 +13,7 @@ declare(strict_types=1);
 use Psr\Container\ContainerInterface;
 use Yiisoft\Aliases\Aliases;
 use Yiisoft\I18n\Formatter\IntlMessageFormatter;
-use Yiisoft\I18n\GettextPoFile;
+use Yiisoft\I18n\Message\GettextPoFile;
 use Yiisoft\I18n\MessageFormatterInterface;
 use Yiisoft\I18n\MessageReaderInterface;
 use Yiisoft\I18n\Translator\Translator;

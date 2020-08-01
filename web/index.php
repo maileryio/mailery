@@ -11,20 +11,20 @@ declare(strict_types=1);
  */
 
 use Psr\Container\ContainerInterface;
-use Psr\Http\Message\ServerRequestInterface;
 use Yiisoft\Composer\Config\Builder;
 use Yiisoft\Di\Container;
 use Yiisoft\Http\Method;
 use Yiisoft\Yii\Web\Application;
-use Yiisoft\Yii\Web\Config\EventConfigurator;
+use Yiisoft\Yii\Event\EventConfigurator;
 use Yiisoft\Yii\Web\SapiEmitter;
+use Yiisoft\Yii\Web\ServerRequestFactory;
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 $container = (function (): ContainerInterface {
     $container = new Container(
-        require Builder::path('web', dirname(__DIR__)),
-        require Builder::path('providers-web', dirname(__DIR__))
+        require Builder::path('web'),
+        require Builder::path('providers-web')
     );
 
     return $container->get(ContainerInterface::class);
@@ -32,10 +32,10 @@ $container = (function (): ContainerInterface {
 
 (function (ContainerInterface $container) {
     $application = $container->get(Application::class);
-    $request = $container->get(ServerRequestInterface::class);
+    $request = $container->get(ServerRequestFactory::class)->createFromGlobals();
 
     $eventConfigurator = $container->get(EventConfigurator::class);
-    $eventConfigurator->registerListeners(require Builder::path('events-web', dirname(__DIR__)));
+    $eventConfigurator->registerListeners(require Builder::path('events-web'));
 
     try {
         $application->start();
@@ -43,7 +43,7 @@ $container = (function (): ContainerInterface {
         $emitter = new SapiEmitter();
         $emitter->emit($response, $request->getMethod() === Method::HEAD);
     } finally {
-        $application->afterEmit($response);
+        $application->afterEmit($response ?? null);
         $application->shutdown();
     }
 })($container);

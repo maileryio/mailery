@@ -12,15 +12,10 @@ declare(strict_types=1);
 
 use Predis\Client as RedisClient;
 use Mailery\Factory\RedisFactory;
-use Yiisoft\Aliases\Aliases;
 use Psr\Container\ContainerInterface;
 
 return [
-    Aliases::class => [
-        '__class' => Aliases::class,
-        '__construct()' => [$params['aliases']],
-    ],
-    ContainerInterface::class => function (ContainerInterface $container) {
+    ContainerInterface::class => static function (ContainerInterface $container) {
         return $container;
     },
     RedisClient::class => new RedisFactory($params['redis.parameters'], $params['redis.options']),

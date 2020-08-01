@@ -13,6 +13,10 @@ use Yiisoft\EventDispatcher\Provider\Provider;
 final class EventDispatcherProvider extends ServiceProvider
 {
 
+    /**
+     * @param Container $container
+     * @return void
+     */
     public function register(Container $container): void
     {
         $container->set(ListenerProviderInterface::class, Provider::class);
