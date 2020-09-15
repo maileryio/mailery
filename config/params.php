@@ -103,11 +103,4 @@ return [
             'database' => getenv('REDIS_DATABASE'),
         ],
     ],
-
-    'router' => [
-        'routes' => [
-            '/' => Route::get('/', [DefaultController::class, 'index'])
-                ->name('/'),
-        ],
-    ],
 ];

@@ -11,13 +11,11 @@ declare(strict_types=1);
  */
 
 use Mailery\Provider\CacheProvider;
-use Mailery\Provider\EventDispatcherProvider;
 use Mailery\Provider\LoggerProvider;
 use Yiisoft\Arrays\Modifier\ReverseBlockMerge;
 
 return [
     CacheProvider::class => CacheProvider::class,
-    EventDispatcherProvider::class => EventDispatcherProvider::class,
     LoggerProvider::class => LoggerProvider::class,
     ReverseBlockMerge::class => new ReverseBlockMerge(),
 ];

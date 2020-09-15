@@ -14,7 +14,6 @@ namespace Mailery\Controller;
 
 use Mailery\Web\Controller;
 use Psr\Http\Message\ResponseInterface as Response;
-use Yiisoft\Http\Status;
 use Yiisoft\Router\UrlGeneratorInterface as UrlGenerator;
 
 class DefaultController extends Controller
@@ -26,7 +25,7 @@ class DefaultController extends Controller
     public function index(UrlGenerator $urlGenerator): Response
     {
         return $this->getResponseFactory()
-            ->createResponse(Status::FOUND)
+            ->createResponse(302)
             ->withAddedHeader('Location', $urlGenerator->generate('/brand/default/index'));
     }
 }

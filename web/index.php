@@ -15,7 +15,6 @@ use Yiisoft\Composer\Config\Builder;
 use Yiisoft\Di\Container;
 use Yiisoft\Http\Method;
 use Yiisoft\Yii\Web\Application;
-use Yiisoft\Yii\Event\EventConfigurator;
 use Yiisoft\Yii\Web\SapiEmitter;
 use Yiisoft\Yii\Web\ServerRequestFactory;
 
@@ -33,9 +32,6 @@ $container = (function (): ContainerInterface {
 (function (ContainerInterface $container) {
     $application = $container->get(Application::class);
     $request = $container->get(ServerRequestFactory::class)->createFromGlobals();
-
-    $eventConfigurator = $container->get(EventConfigurator::class);
-    $eventConfigurator->registerListeners(require Builder::path('events-web'));
 
     try {
         $application->start();

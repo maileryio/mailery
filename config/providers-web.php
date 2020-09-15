@@ -11,8 +11,16 @@ declare(strict_types=1);
  */
 
 use Yiisoft\Arrays\Modifier\ReverseBlockMerge;
+use Yiisoft\Composer\Config\Builder;
+use Yiisoft\Yii\Event\EventDispatcherProvider;
+use Mailery\Provider\RouteCollectorServiceProvider;
 
 return [
     ReverseBlockMerge::class => new ReverseBlockMerge(),
-];
+    'yiisoft/event-dispatcher/eventdispatcher' => [
+        '__class' => EventDispatcherProvider::class,
+        '__construct()' => [Builder::require('events-web')],
+    ],
 
+    RouteCollectorServiceProvider::class => RouteCollectorServiceProvider::class,
+];
