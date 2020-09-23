@@ -9,7 +9,7 @@ use Yiisoft\I18n\MessageReaderInterface;
 use Yiisoft\I18n\TranslatorInterface;
 use Yiisoft\I18n\MessageFormatterInterface;
 use Psr\EventDispatcher\EventDispatcherInterface;
-use Yiisoft\I18n\Translator\Event\MissingTranslationEvent;
+use Mailery\I18n\Event\MissingTranslationEvent;
 
 class Translator implements TranslatorInterface
 {

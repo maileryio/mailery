@@ -9,11 +9,11 @@ use Yiisoft\Html\Html;
 /** @var \Yiisoft\Assets\AssetManager $assetManager */
 /** @var \Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
 /** @var $content string */
-$headerContent = $this->render('_header');
+$headerContent = $this->render('_header', compact('brandLabel'));
 $footerContent = $this->render('_footer');
 
 if ($brandLocator->hasBrand()) {
-    $sidebarContent = $this->render('_sidebar');
+    $sidebarContent = $this->render('_sidebar', compact('currentUrl'));
     $content = $this->render('container/_brand', compact('content', 'headerContent', 'footerContent', 'sidebarContent'));
 } else {
     $content = $this->render('container/_main', compact('content', 'headerContent', 'footerContent'));
@@ -29,9 +29,9 @@ $this->setJsFiles($assetManager->getJsFiles());
 $this->beginPage();
 
 ?><!DOCTYPE html>
-<html lang="<?= $this->getLanguage(); ?>">
+<html lang="<?= $language ?>">
 <head>
-    <meta charset="<?= $this->getEncoding(); ?>">
+    <meta charset="<?= $encoding ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />

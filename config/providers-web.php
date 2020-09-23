@@ -14,6 +14,7 @@ use Yiisoft\Arrays\Modifier\ReverseBlockMerge;
 use Yiisoft\Composer\Config\Builder;
 use Yiisoft\Yii\Event\EventDispatcherProvider;
 use Mailery\Provider\RouteCollectorServiceProvider;
+use Mailery\Provider\WebViewProvider;
 
 return [
     ReverseBlockMerge::class => new ReverseBlockMerge(),
@@ -23,4 +24,5 @@ return [
     ],
 
     RouteCollectorServiceProvider::class => RouteCollectorServiceProvider::class,
+    WebViewProvider::class => WebViewProvider::class,
 ];

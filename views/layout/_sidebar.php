@@ -15,7 +15,7 @@ use Mailery\Menu\Widget\Menu;
                 ])->linkTemplate(
                     '<a class="nav-link" href="{url}">{label}</a>'
                 )->currentPath(
-                    $request->getUri()->getPath()
+                    $currentUrl
                 )->activateParents(
                     true
                 )->items($sidebarMenu->getItems());

@@ -12,16 +12,22 @@ declare(strict_types=1);
 
 use Cycle\ORM\Promise\ProxyFactory;
 use Cycle\Schema\Generator;
-use Mailery\Controller\DefaultController;
 use Spiral\Database\Driver\Postgres\PostgresDriver;
-use Yiisoft\Router\Route;
 use Yiisoft\Yii\Cycle\Logger\StdoutQueryLogger;
 use Yiisoft\Yii\Cycle\Schema\Provider\SimpleCacheSchemaProvider;
 use Yiisoft\Yii\Cycle\Schema\Provider\FromConveyorSchemaProvider;
+use Yiisoft\Factory\Definitions\Reference;
+use Mailery\ApplicationViewInjection;
 
 return [
     'yiisoft/yii-debug' => [
         'enabled' => false,
+    ],
+
+    'yiisoft/yii-view' => [
+        'injections' => [
+            Reference::to(ApplicationViewInjection::class),
+        ],
     ],
 
     'aliases' => [
