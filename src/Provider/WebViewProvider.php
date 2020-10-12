@@ -16,6 +16,7 @@ use Yiisoft\View\WebView;
 use Mailery\Menu\Navbar\NavbarMenuInterface;
 use Mailery\Menu\Sidebar\SidebarMenuInterface;
 use Mailery\Brand\Service\BrandLocatorInterface;
+use Yiisoft\I18n\TranslatorInterface;
 
 final class WebViewProvider extends ServiceProvider
 {
@@ -44,6 +45,7 @@ final class WebViewProvider extends ServiceProvider
                     'navbarMenu' => $container->get(NavbarMenuInterface::class),
                     'sidebarMenu' => $container->get(SidebarMenuInterface::class),
                     'brandLocator' => $container->get(BrandLocatorInterface::class),
+                    'translator' => $container->get(TranslatorInterface::class),
                 ]
             );
 
