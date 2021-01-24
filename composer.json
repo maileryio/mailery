@@ -20,6 +20,7 @@
         "php": "^7.4",
         "cycle/proxy-factory": "^1.2",
         "foxy/foxy": "^1.0",
+        "httpsoft/http-message": "^1.0.5",
         "maileryio/mailery-activity-log": "dev-master",
         "maileryio/mailery-brand": "dev-master",
         "maileryio/mailery-campaign": "dev-master",
@@ -37,15 +38,18 @@
         "maileryio/mailery-web": "dev-master",
         "maileryio/widget-link": "dev-master",
         "maileryio/widget-search": "dev-master",
-        "nyholm/psr7": "^1.2",
         "predis/predis": "^1.1",
         "psr/log": "^1.1",
         "yiisoft/cache-file": "^3.0@dev",
-        "yiisoft/i18n": "^3.0@dev",
+        "yiisoft/error-handler": "^3.0@dev",
+        "yiisoft/form": "1.0.x-dev",
+        "yiisoft/i18n": "^1.0",
         "yiisoft/i18n-formatter-intl": "^3.0@dev",
         "yiisoft/i18n-message-gettext": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
         "yiisoft/log-target-file": "^3.0@dev",
+        "yiisoft/translator-formatter-intl": "3.0.x-dev",
+        "yiisoft/translator-message-php": "3.0.x-dev",
         "yiisoft/yii-cycle": "^3.0@dev",
         "yiisoft/yii-event": "^3.0@dev"
     },
@@ -82,18 +86,27 @@
             "dev-master": "1.0.x-dev"
         },
         "config-plugin": {
-            "common": "config/common.php",
+            "common": "config/common/*.php",
             "params": [
                 "config/params.php",
                 "?config/params-local.php"
             ],
             "web": [
                 "$common",
-                "config/web.php"
+                "config/web/*.php"
             ],
             "console": [
                 "$common",
-                "config/console.php"
+                "config/console/*.php"
+            ],
+            "events": "config/events.php",
+            "events-web": [
+                "$events",
+                "config/events-web.php"
+            ],
+            "events-console": [
+                "$events",
+                "config/events-console.php"
             ],
             "providers": "config/providers.php",
             "providers-web": [
@@ -104,15 +117,7 @@
                 "$providers",
                 "config/providers-console.php"
             ],
-            "events": "config/events.php",
-            "events-web": [
-                "$events",
-                "config/events-web.php"
-            ],
-            "events-console": [
-                "$events",
-                "config/events-console.php"
-            ]
+            "routes": "config/routes.php"
         },
         "config-plugin-output-dir": "runtime/build/config"
     },

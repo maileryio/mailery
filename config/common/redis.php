@@ -12,11 +12,7 @@ declare(strict_types=1);
 
 use Predis\Client as RedisClient;
 use Mailery\Factory\RedisFactory;
-use Psr\Container\ContainerInterface;
 
 return [
-    ContainerInterface::class => static function (ContainerInterface $container) {
-        return $container;
-    },
     RedisClient::class => new RedisFactory($params['redis.parameters'], $params['redis.options']),
 ];

@@ -10,9 +10,14 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
+use Mailery\Timer;
 use Yiisoft\Arrays\Modifier\ReverseBlockMerge;
+use Yiisoft\Yii\Web\Event\ApplicationStartup;
 
 return [
+    ApplicationStartup::class => [
+        static fn (Timer $timer) => $timer->start('overall'),
+    ],
     ReverseBlockMerge::class => new ReverseBlockMerge(),
 ];
 

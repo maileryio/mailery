@@ -10,12 +10,10 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Mailery\Provider\CacheProvider;
 use Mailery\Provider\LoggerProvider;
 use Yiisoft\Arrays\Modifier\ReverseBlockMerge;
 
 return [
-    CacheProvider::class => CacheProvider::class,
     LoggerProvider::class => LoggerProvider::class,
     ReverseBlockMerge::class => new ReverseBlockMerge(),
 ];
