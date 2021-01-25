@@ -48,8 +48,9 @@
         "yiisoft/i18n-message-gettext": "^3.0@dev",
         "yiisoft/log": "^3.0@dev",
         "yiisoft/log-target-file": "^3.0@dev",
-        "yiisoft/translator-formatter-intl": "3.0.x-dev",
-        "yiisoft/translator-message-php": "3.0.x-dev",
+        "yiisoft/translator-formatter-intl": "^3.0@dev",
+        "yiisoft/translator-message-php": "^3.0@dev",
+        "yiisoft/yii-bootstrap4": "^3.0@dev",
         "yiisoft/yii-cycle": "^3.0@dev",
         "yiisoft/yii-event": "^3.0@dev"
     },
@@ -127,5 +128,11 @@
             "manager": "yarn"
         },
         "sort-packages": true
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
