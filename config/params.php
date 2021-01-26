@@ -38,7 +38,7 @@ return [
 
     'yiisoft/aliases' => [
         'aliases' => [
-            '@root' => getenv('ROOT_PATH'),
+            '@root' => getenv('ROOT_PATH') ?? dirname(__DIR__),
             '@vendor' => '@root/vendor',
             '@public' => '@root/web',
             '@views' => '@root/views',

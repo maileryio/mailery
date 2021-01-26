@@ -22,11 +22,8 @@ Thumbs.db
 .config
 .npm
 /node_modules
-/package-lock.json
-/yarn.lock
 
 # composer internals
-/composer.lock
 /vendor
 composer.phar
 
