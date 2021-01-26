@@ -13,7 +13,6 @@ declare(strict_types=1);
 //use Mailery\I18n\Translator;
 use Psr\Container\ContainerInterface;
 use Yiisoft\Aliases\Aliases;
-use Yiisoft\Translator\Category;
 use Yiisoft\Translator\MessageFormatterInterface;
 use Yiisoft\Translator\MessageReaderInterface;
 use Yiisoft\Translator\Translator;
@@ -30,11 +29,6 @@ return [
     },
     TranslatorInterface::class => function (ContainerInterface $container) use($params) {
         return new Translator(
-            new Category(
-                'default',
-                $container->get(MessageReaderInterface::class),
-                $container->get(MessageFormatterInterface::class)
-            ),
             $params['i18n']['locale']
         );
     },
