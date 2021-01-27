@@ -22,7 +22,9 @@ class NotFoundHandler implements RequestHandlerInterface
      */
     public function __construct(ViewRenderer $viewRenderer)
     {
-        $this->viewRenderer = $viewRenderer->withControllerName('site');
+        $this->viewRenderer = $viewRenderer
+            ->withControllerName('default')
+            ->withLayout('@views/layout/guest');
     }
 
     /**
@@ -31,6 +33,8 @@ class NotFoundHandler implements RequestHandlerInterface
      */
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        return $this->viewRenderer->render('404')->withStatus(Status::NOT_FOUND);
+        return $this->viewRenderer
+            ->render('404')
+            ->withStatus(Status::NOT_FOUND);
     }
 }

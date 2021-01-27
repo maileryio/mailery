@@ -12,7 +12,6 @@ declare(strict_types=1);
 
 namespace Mailery\Controller;
 
-use Mailery\Web\Controller;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ResponseFactoryInterface as ResponseFactory;
 use Yiisoft\Router\UrlGeneratorInterface as UrlGenerator;
@@ -31,7 +30,7 @@ class DefaultController
     {
         $this->responseFactory = $responseFactory;
     }
-    
+
     /**
      * @param UrlGenerator $urlGenerator
      * @return Response
