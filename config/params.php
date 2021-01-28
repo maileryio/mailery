@@ -19,6 +19,7 @@ use Mailery\ViewInjection\MetaTagsViewInjection;
 use Mailery\Menu\Navbar\NavbarMenuInterface;
 use Mailery\Menu\Sidebar\SidebarMenuInterface;
 use Mailery\Brand\Service\BrandLocatorInterface;
+use Mailery\Command\Router\ListCommand;
 use Spiral\Database\Driver\Postgres\PostgresDriver;
 use Yiisoft\Arrays\Modifier\ReverseBlockMerge;
 use Yiisoft\Assets\AssetManager;
@@ -71,6 +72,12 @@ return [
             'sidebarMenu' => Reference::to(SidebarMenuInterface::class),
             'brandLocator' => Reference::to(BrandLocatorInterface::class),
             'translator' => Reference::to(TranslatorInterface::class),
+        ],
+    ],
+
+    'yiisoft/yii-console' => [
+        'commands' => [
+            'router/list' => ListCommand::class,
         ],
     ],
 

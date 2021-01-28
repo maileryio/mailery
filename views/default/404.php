@@ -24,7 +24,7 @@ use Yiisoft\Html\Html;
         <p>
             <?php echo Html::a(
                 'Go Back Home',
-                $urlGenerator->generate('/'),
+                $urlGenerator->generate('/default/index'),
                 ['class' => 'btn btn-outline-primary mt-5']
             );
             ?>

@@ -41,6 +41,7 @@
         "predis/predis": "^1.1",
         "psr/log": "^1.1",
         "yiisoft/cache-file": "^3.0@dev",
+        "yiisoft/composer-config-plugin": "^1.0@dev",
         "yiisoft/error-handler": "^3.0@dev",
         "yiisoft/form": "1.0.x-dev",
         "yiisoft/i18n": "^1.0",
@@ -51,6 +52,7 @@
         "yiisoft/translator-formatter-intl": "^3.0@dev",
         "yiisoft/translator-message-php": "^3.0@dev",
         "yiisoft/yii-bootstrap4": "^3.0@dev",
+        "yiisoft/yii-console": "3.0.x-dev",
         "yiisoft/yii-cycle": "^3.0@dev",
         "yiisoft/yii-event": "^3.0@dev"
     },
@@ -58,8 +60,7 @@
         "friendsofphp/php-cs-fixer": "^2.16",
         "phan/phan": "^2.4",
         "phpunit/phpunit": "^9.0",
-        "vlucas/phpdotenv": "^3.6",
-        "yiisoft/composer-config-plugin": "^1.0@dev"
+        "vlucas/phpdotenv": "^3.6"
     },
     "autoload": {
         "psr-4": {

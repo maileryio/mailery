@@ -20,7 +20,7 @@ final class RouteCollectorServiceProvider extends ServiceProvider
             null,
             [
                 Route::get('/', [DefaultController::class, 'index'])
-                    ->name('/'),
+                    ->name('default/index'),
             ]
         ));
     }
