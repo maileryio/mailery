@@ -9,7 +9,10 @@ use Yiisoft\Middleware\Dispatcher\MiddlewareDispatcher;
 use Yiisoft\Router\Middleware\Router;
 use Yiisoft\Session\SessionMiddleware;
 use Yiisoft\Yii\Web\Application;
+use Yiisoft\Auth\Middleware\Authentication;
+use Yiisoft\Router\UrlGeneratorInterface;
 use Mailery\Handler\NotFoundHandler;
+use Mailery\User\Middleware\CurrentUserMiddleware;
 
 return [
     Application::class => [
@@ -19,6 +22,13 @@ return [
                     [
                         Router::class,
                         CsrfMiddleware::class,
+                        CurrentUserMiddleware::class,
+                        static function (UrlGeneratorInterface $urlGenerator, Injector $injector) {
+                            return $injector->make(Authentication::class)
+                                ->withOptionalPatterns([
+                                    $urlGenerator->generate('/user/auth/login'),
+                                ]);
+                        },
                         SessionMiddleware::class,
                         ErrorCatcher::class,
                     ],

@@ -27,7 +27,6 @@ use Yiisoft\Factory\Definitions\Reference;
 use Yiisoft\Router\UrlGeneratorInterface;
 use Yiisoft\Router\UrlMatcherInterface;
 use Yiisoft\Translator\TranslatorInterface;
-use Yiisoft\Yii\Cycle\Logger\StdoutQueryLogger;
 use Yiisoft\Yii\Cycle\Schema\Provider\SimpleCacheSchemaProvider;
 use Yiisoft\Yii\Cycle\Schema\Provider\FromConveyorSchemaProvider;
 use Yiisoft\Yii\View\CsrfViewInjection;
@@ -110,7 +109,7 @@ return [
                     'password' => getenv('DB_PASSWORD'),
                 ],
             ],
-            'query-logger' => StdoutQueryLogger::class,
+//            'query-logger' => StdoutQueryLogger::class,
         ],
         'orm-promise-factory' => ProxyFactory::class,
         'migrations' => [
