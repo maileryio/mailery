@@ -5,10 +5,16 @@ use Mailery\Menu\MenuItem;
 
 $fnMenuItemChildsRenderer = function (MenuItem $menuItem) {
     $lines = [];
-    $childItems = $menuItem->getChildItems();
+    $childItems = $menuItem->getItems();
 
     if (empty($childItems)) {
-        $lines[] = '<b-dropdown-item href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="text-nowrap">' . $menuItem->getLabel() . '</b-dropdown-item>';
+        if (($method = $menuItem->getMethod()) !== null) {
+            $lines[] = '<li role="presentation" class="text-nowrap">';
+            $lines[] = '<ui-widget-link method="' . $method . '" href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="dropdown-item">' . $menuItem->getLabel() . '</ui-widget-link>';
+            $lines[] = '</li>';
+        } else {
+            $lines[] = '<b-dropdown-item href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="text-nowrap">' . $menuItem->getLabel() . '</b-dropdown-item>';
+        }
     } else {
         $lines[] = '<li role="presentation" class="dropdown-submenu text-nowrap">';
         $lines[] = '<a role="menuitem" href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="dropdown-item dropdown-toggle dropdown-toggle-no-caret" data-toggle="dropdown">'
@@ -30,7 +36,7 @@ $fnMenuItemChildsRenderer = function (MenuItem $menuItem) {
 
 $fnMenuItemRenderer = function (MenuItem $menuItem) use ($fnMenuItemChildsRenderer): string {
     $lines = [];
-    $childItems = $menuItem->getChildItems();
+    $childItems = $menuItem->getItems();
 
     if (empty($childItems)) {
         $lines[] = '<b-nav-item href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="text-nowrap">' . $menuItem->getLabel() . '</b-nav-item>';

@@ -1,6 +1,7 @@
 <?php declare(strict_types=1);
 
 use Mailery\Menu\Widget\Menu;
+use Mailery\Menu\Sidebar\SidebarMenuDecorator;
 
 /** @var \Yiisoft\View\WebView $this */
 /** @var \Psr\Http\Message\ServerRequestInterface $request */
@@ -18,7 +19,14 @@ use Mailery\Menu\Widget\Menu;
                     $currentUrl
                 )->activateParents(
                     true
-                )->items($sidebarMenu->getItems());
+                )->items(
+                    (new SidebarMenuDecorator(
+                        array_map(
+                            fn ($item) => $item->toArray(),
+                            $sidebarMenu->getItems()
+                        )
+                    ))->getItems()
+                );
             ?>
         </div>
     </nav>
