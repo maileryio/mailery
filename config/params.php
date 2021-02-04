@@ -21,7 +21,7 @@ use Mailery\Menu\Sidebar\SidebarMenuInterface;
 use Mailery\Brand\Service\BrandLocatorInterface;
 use Mailery\Command\Router\ListCommand;
 use Spiral\Database\Driver\Postgres\PostgresDriver;
-use Yiisoft\Arrays\Modifier\ReverseBlockMerge;
+use Yiisoft\Composer\Config\Merger\Modifier\ReverseBlockMerge;
 use Yiisoft\Assets\AssetManager;
 use Yiisoft\Factory\Definitions\Reference;
 use Yiisoft\Router\UrlGeneratorInterface;
