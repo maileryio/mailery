@@ -1,11 +1,10 @@
 <?php declare(strict_types=1);
 
 use Mailery\Menu\Widget\Menu;
-use Mailery\Menu\Sidebar\SidebarMenuDecorator;
 
 /** @var \Yiisoft\View\WebView $this */
 /** @var \Psr\Http\Message\ServerRequestInterface $request */
-/** @var \Mailery\Menu\Sidebar\SidebarMenuInterface $sidebarMenu */
+/** @var \Mailery\Menu\Sidebar\SidebarMenu $sidebarMenu */
 ?><ui-sidebar>
     <nav class="col-md-2 d-none d-md-block bg-light sidebar">
         <div class="sidebar-sticky">
@@ -16,16 +15,11 @@ use Mailery\Menu\Sidebar\SidebarMenuDecorator;
                 ])->linkTemplate(
                     '<a class="nav-link" href="{url}">{label}</a>'
                 )->currentPath(
-                    $currentUrl
+                    $urlMatcher->getCurrentUri()->getPath()
                 )->activateParents(
                     true
                 )->items(
-                    (new SidebarMenuDecorator(
-                        array_map(
-                            fn ($item) => $item->toArray(),
-                            $sidebarMenu->getItems()
-                        )
-                    ))->getItems()
+                    $sidebarMenu->getItems()
                 );
             ?>
         </div>

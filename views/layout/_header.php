@@ -1,5 +1,8 @@
 <?php declare(strict_types=1);
 
+/** @var \Yiisoft\View\WebView $this */
+/** @var \Mailery\Menu\Navbar\NavbarMenu $navbarMenu */
+
 use Mailery\Icon\Icon;
 use Mailery\Menu\MenuItem;
 
@@ -54,8 +57,6 @@ $fnMenuItemRenderer = function (MenuItem $menuItem) use ($fnMenuItemChildsRender
     return implode("\n", $lines);
 };
 
-/** @var \Yiisoft\View\WebView $this */
-/** @var \Mailery\Menu\Navbar\NavbarMenuInterface $navbarMenu */
 ?><b-navbar class="navbar navbar-dark navbar-expand-lg sticky-top bg-dark flex-md-nowrap p-0">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/"><?= $brandLabel ?></a>
 

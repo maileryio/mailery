@@ -13,7 +13,7 @@ $headerContent = $this->render('_header', compact('brandLabel'));
 $footerContent = $this->render('_footer');
 
 if ($brandLocator->hasBrand()) {
-    $sidebarContent = $this->render('_sidebar', compact('currentUrl'));
+    $sidebarContent = $this->render('_sidebar');
     $content = $this->render('container/_brand', compact('content', 'headerContent', 'footerContent', 'sidebarContent'));
 } else {
     $content = $this->render('container/_main', compact('content', 'headerContent', 'footerContent'));

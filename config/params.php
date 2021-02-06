@@ -16,9 +16,9 @@ use Mailery\ViewInjection\ContentViewInjection;
 use Mailery\ViewInjection\LayoutViewInjection;
 use Mailery\ViewInjection\LinkTagsViewInjection;
 use Mailery\ViewInjection\MetaTagsViewInjection;
-use Mailery\Menu\Navbar\NavbarMenuInterface;
-use Mailery\Menu\Sidebar\SidebarMenuInterface;
-use Mailery\Brand\Service\BrandLocatorInterface;
+use Mailery\Menu\Navbar\NavbarMenu;
+use Mailery\Menu\Sidebar\SidebarMenu;
+use Mailery\Brand\BrandLocatorInterface;
 use Mailery\Command\Router\ListCommand;
 use Spiral\Database\Driver\Postgres\PostgresDriver;
 use Yiisoft\Composer\Config\Merger\Modifier\ReverseBlockMerge;
@@ -67,8 +67,8 @@ return [
             'assetManager' => Reference::to(AssetManager::class),
             'urlGenerator' => Reference::to(UrlGeneratorInterface::class),
             'urlMatcher' => Reference::to(UrlMatcherInterface::class),
-            'navbarMenu' => Reference::to(NavbarMenuInterface::class),
-            'sidebarMenu' => Reference::to(SidebarMenuInterface::class),
+            'navbarMenu' => Reference::to(NavbarMenu::class),
+            'sidebarMenu' => Reference::to(SidebarMenu::class),
             'brandLocator' => Reference::to(BrandLocatorInterface::class),
             'translator' => Reference::to(TranslatorInterface::class),
         ],
@@ -149,6 +149,80 @@ return [
         'parameters' => [
             'password' => getenv('REDIS_PASSWORD'),
             'database' => getenv('REDIS_DATABASE'),
+        ],
+    ],
+
+    'maileryio/mailery-menu-sidebar' => [
+        'items' => [
+            'dashboard' => [
+                'order' => 1,
+            ],
+            'campaigns' => [
+                'order' => 2,
+            ],
+            'subscribers' => [
+                'order' => 3,
+            ],
+            'templates' => [
+                'order' => 4,
+            ],
+            'settings' => [
+                'order' => 5,
+            ],
+        ],
+    ],
+
+    'maileryio/mailery-menu-navbar' => [
+        'items' => [
+            'system' => [
+                'order' => 1,
+            ],
+            'brands' => [
+                'order' => 2,
+            ],
+            'profile' => [
+                'order' => 3,
+            ],
+        ],
+    ],
+
+    'maileryio/mailery-brand' => [
+        'settings-menu' => [
+            'items' => [
+                'general' => [
+                    'order' => 1,
+                ],
+                'aws-settings' => [
+                    'order' => 2,
+                ],
+//                'smtp-settings' => [
+//                    'label' => static function () {
+//                        return 'SMTP Settings';
+//                    },
+//                    'url' => static function (UrlGeneratorInterface $urlGenerator) {
+//                        return $urlGenerator->generate('/brand/default/index');
+//                    },
+//                    'order' => 3,
+//                ],
+//                'bounce-handling' => [
+//                    'label' => static function () {
+//                        return 'Bounce Handling';
+//                    },
+//                    'url' => static function (UrlGeneratorInterface $urlGenerator) {
+//                        return $urlGenerator->generate('/brand/default/index');
+//                    },
+//                    'order' => 4,
+//                ],
+//                'api-settings' => [
+//                    'label' => static function () {
+//                        return 'API Settings';
+//                    },
+//                    'url' => static function (UrlGeneratorInterface $urlGenerator) {
+//                        return $urlGenerator->generate('/brand/settings/basic');
+//                    },
+//                    'order' => 5,
+//                ],
+            ],
         ],
     ],
 ];
