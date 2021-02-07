@@ -166,8 +166,11 @@ return [
             'templates' => [
                 'order' => 4,
             ],
-            'settings' => [
+            'senders' => [
                 'order' => 5,
+            ],
+            'settings' => [
+                'order' => 6,
             ],
         ],
     ],
@@ -192,7 +195,7 @@ return [
                 'general' => [
                     'order' => 1,
                 ],
-                'aws-settings' => [
+                'amazon-ses-settings' => [
                     'order' => 2,
                 ],
 //                'smtp-settings' => [

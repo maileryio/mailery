@@ -33,6 +33,11 @@ class ContentViewInjection implements ContentParametersInjectionInterface
                 'class' => 'invalid-feedback',
             ]);
 
+        $this->field
+            ->hintOptions([
+                'class' => 'form-text text-muted',
+            ]);
+
         $field = $this->field
             ->errorCssClass('is-invalid');
 
