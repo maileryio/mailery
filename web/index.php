@@ -1,14 +1,11 @@
 <?php
 
 use Psr\Container\ContainerInterface;
-use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Yiisoft\Composer\Config\Builder;
 use Yiisoft\Di\Container;
 use Yiisoft\ErrorHandler\ErrorHandler;
-use Yiisoft\ErrorHandler\HtmlRenderer;
-use Yiisoft\ErrorHandler\ThrowableRendererInterface;
-use Yiisoft\Files\FileHelper;
+use Yiisoft\ErrorHandler\Renderer\HtmlRenderer;
 use Yiisoft\Http\Method;
 use Yiisoft\Yii\Web\Application;
 use Yiisoft\Yii\Web\SapiEmitter;
@@ -28,9 +25,7 @@ if (PHP_SAPI === 'cli-server') {
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 
 // Don't do it in production, assembling takes it's time
-$configTime = FileHelper::lastModifiedTime(dirname(__DIR__) . '/config/');
-$buildTime = FileHelper::lastModifiedTime(dirname(__DIR__) . '/runtime/build/config/');
-if ($buildTime < $configTime) {
+if (shouldRebuildConfigs(dirname(__DIR__))) {
     Builder::rebuild();
 }
 
@@ -40,10 +35,8 @@ $startTime = microtime(true);
  * Register temporary error handler to catch error while container is building.
  */
 $errorHandler = new ErrorHandler(new NullLogger(), new HtmlRenderer());
-/**
- * Production mode
- * $errorHandler = $errorHandler->withoutExposedDetails();
- */
+// Development mode:
+//$errorHandler->debug();
 $errorHandler->register();
 
 $container = new Container(
@@ -52,10 +45,13 @@ $container = new Container(
 );
 
 /**
- * Configure error handler with real container-configured dependencies
+ * Configure error handler with real container-configured dependencies.
  */
-$errorHandler->setLogger($container->get(LoggerInterface::class));
-$errorHandler->setRenderer($container->get(ThrowableRendererInterface::class));
+$errorHandler->unregister();
+$errorHandler = $container->get(ErrorHandler::class);
+// Development mode:
+//$errorHandler->debug();
+$errorHandler->register();
 
 $container = $container->get(ContainerInterface::class);
 $application = $container->get(Application::class);
