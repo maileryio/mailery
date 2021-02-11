@@ -195,8 +195,11 @@ return [
                 'general' => [
                     'order' => 1,
                 ],
-                'amazon-ses-settings' => [
+                'domain' => [
                     'order' => 2,
+                ],
+                'aws' => [
+                    'order' => 3,
                 ],
 //                'smtp-settings' => [
 //                    'label' => static function () {
