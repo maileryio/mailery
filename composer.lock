@@ -7697,12 +7697,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/form.git",
-                "reference": "7a47c31a42250b287be16bf825d9ea7633aee84e"
+                "reference": "ac79e99f199e7cb4f0fc95907c5828b07b1a163d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/form/zipball/7a47c31a42250b287be16bf825d9ea7633aee84e",
-                "reference": "7a47c31a42250b287be16bf825d9ea7633aee84e",
+                "url": "https://api.github.com/repos/yiisoft/form/zipball/ac79e99f199e7cb4f0fc95907c5828b07b1a163d",
+                "reference": "ac79e99f199e7cb4f0fc95907c5828b07b1a163d",
                 "shasum": ""
             },
             "require": {
@@ -7741,7 +7741,7 @@
                 "form",
                 "yii"
             ],
-            "time": "2021-02-10T21:35:46+00:00"
+            "time": "2021-02-22T12:07:09+00:00"
         },
         {
             "name": "yiisoft/friendly-exception",
@@ -8957,12 +8957,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/validator.git",
-                "reference": "d3f54de8e6701758df5cd6dbf1923c52d07b2fe5"
+                "reference": "e9bec517cd10725e20d303fd43cf39d6a61a9afa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/validator/zipball/d3f54de8e6701758df5cd6dbf1923c52d07b2fe5",
-                "reference": "d3f54de8e6701758df5cd6dbf1923c52d07b2fe5",
+                "url": "https://api.github.com/repos/yiisoft/validator/zipball/e9bec517cd10725e20d303fd43cf39d6a61a9afa",
+                "reference": "e9bec517cd10725e20d303fd43cf39d6a61a9afa",
                 "shasum": ""
             },
             "require": {
@@ -9012,7 +9012,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2021-02-10T21:37:54+00:00"
+            "time": "2021-02-19T08:05:49+00:00"
         },
         {
             "name": "yiisoft/var-dumper",
