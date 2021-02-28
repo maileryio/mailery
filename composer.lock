@@ -50,16 +50,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.173.6",
+            "version": "3.173.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "439a161e46895cd1f7b93b4c0295f95d6a17385e"
+                "reference": "0ac9f1d2778034a2ef0a2bb8e098818d7b1a76e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/439a161e46895cd1f7b93b4c0295f95d6a17385e",
-                "reference": "439a161e46895cd1f7b93b4c0295f95d6a17385e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0ac9f1d2778034a2ef0a2bb8e098818d7b1a76e8",
+                "reference": "0ac9f1d2778034a2ef0a2bb8e098818d7b1a76e8",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2021-02-09T19:14:22+00:00"
+            "time": "2021-02-26T19:12:35+00:00"
         },
         {
             "name": "brick/math",
@@ -691,16 +691,16 @@
         },
         {
             "name": "cycle/orm",
-            "version": "v1.3.2",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cycle/orm.git",
-                "reference": "2a26603e75960a9205fe0fcb47d8d106ddef56da"
+                "reference": "8bba07fd16bceb69ae38db25e7cb27301c1b12fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cycle/orm/zipball/2a26603e75960a9205fe0fcb47d8d106ddef56da",
-                "reference": "2a26603e75960a9205fe0fcb47d8d106ddef56da",
+                "url": "https://api.github.com/repos/cycle/orm/zipball/8bba07fd16bceb69ae38db25e7cb27301c1b12fd",
+                "reference": "8bba07fd16bceb69ae38db25e7cb27301c1b12fd",
                 "shasum": ""
             },
             "require": {
@@ -731,7 +731,7 @@
                 "MIT"
             ],
             "description": "PHP DataMapper ORM and Data Modelling Engine",
-            "time": "2021-02-04T09:21:22+00:00"
+            "time": "2021-02-12T13:07:46+00:00"
         },
         {
             "name": "cycle/proxy-factory",
@@ -893,16 +893,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.11.1",
+            "version": "1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad"
+                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
-                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b17c5014ef81d212ac539f07a1001832df1b6d3b",
+                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b",
                 "shasum": ""
             },
             "require": {
@@ -917,11 +917,6 @@
                 "phpunit/phpunit": "^7.5 || ^9.1.5"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.11.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Common\\Annotations\\": "lib/Doctrine/Common/Annotations"
@@ -960,7 +955,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2020-10-26T10:28:16+00:00"
+            "time": "2021-02-21T21:00:45+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -1586,16 +1581,16 @@
         },
         {
             "name": "httpsoft/http-message",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/httpsoft/http-message.git",
-                "reference": "f6ef5530daeaaa189b9550e122074e7a643dc933"
+                "reference": "7f5e38148ec08521b79240bd020fc92dcab9799e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/httpsoft/http-message/zipball/f6ef5530daeaaa189b9550e122074e7a643dc933",
-                "reference": "f6ef5530daeaaa189b9550e122074e7a643dc933",
+                "url": "https://api.github.com/repos/httpsoft/http-message/zipball/7f5e38148ec08521b79240bd020fc92dcab9799e",
+                "reference": "7f5e38148ec08521b79240bd020fc92dcab9799e",
                 "shasum": ""
             },
             "require": {
@@ -1608,10 +1603,11 @@
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "infection/infection": "^0.20.2",
+                "infection/infection": "^0.21",
+                "php-http/psr7-integration-tests": "1.1.1",
                 "phpunit/phpunit": "^9.5",
                 "squizlabs/php_codesniffer": "^3.5",
-                "vimeo/psalm": "^4.3"
+                "vimeo/psalm": "^4.6"
             },
             "type": "library",
             "autoload": {
@@ -1640,7 +1636,7 @@
                 "psr-17",
                 "psr-7"
             ],
-            "time": "2020-12-16T18:51:22+00:00"
+            "time": "2021-02-20T10:36:25+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1815,24 +1811,26 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
+                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
-                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6cccbddfcfc742eb02158d6137ca5687d92cee32",
+                "reference": "6cccbddfcfc742eb02158d6137ca5687d92cee32",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0 || ^8.0"
+                "php": "^7.3 || ^8.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
-                "squizlabs/php_codesniffer": "^3.5"
+                "psalm/plugin-phpunit": "^0.15.1",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.6"
             },
             "type": "library",
             "extra": {
@@ -1859,20 +1857,20 @@
                 "laminas",
                 "zf"
             ],
-            "time": "2020-09-14T14:23:00+00:00"
+            "time": "2021-02-25T21:54:58+00:00"
         },
         {
             "name": "league/flysystem",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "e2755df0ae790769729ff877197862fbac020c7d"
+                "reference": "7cbbb7222e8d8a34e71273d243dfcf383ed6779f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/e2755df0ae790769729ff877197862fbac020c7d",
-                "reference": "e2755df0ae790769729ff877197862fbac020c7d",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7cbbb7222e8d8a34e71273d243dfcf383ed6779f",
+                "reference": "7cbbb7222e8d8a34e71273d243dfcf383ed6779f",
                 "shasum": ""
             },
             "require": {
@@ -1925,7 +1923,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2021-02-09T21:10:56+00:00"
+            "time": "2021-02-12T19:37:50+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -2087,12 +2085,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-brand.git",
-                "reference": "5ac9f7797cea304b26401ff183db4819251a3251"
+                "reference": "8419a8e7d868416d9daad9df32abfdc3109691f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-brand/zipball/5ac9f7797cea304b26401ff183db4819251a3251",
-                "reference": "5ac9f7797cea304b26401ff183db4819251a3251",
+                "url": "https://api.github.com/repos/maileryio/mailery-brand/zipball/8419a8e7d868416d9daad9df32abfdc3109691f5",
+                "reference": "8419a8e7d868416d9daad9df32abfdc3109691f5",
                 "shasum": ""
             },
             "require": {
@@ -2151,7 +2149,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2021-02-21T07:15:21+00:00"
+            "time": "2021-02-23T16:08:30+00:00"
         },
         {
             "name": "maileryio/mailery-campaign",
@@ -2317,12 +2315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-channel-email.git",
-                "reference": "bd4db9276f97f84bb3e2f83d2fb26ff7c88bd34d"
+                "reference": "b294c270b7b69f6002078fa03c03dbc17ec9ee42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-channel-email/zipball/bd4db9276f97f84bb3e2f83d2fb26ff7c88bd34d",
-                "reference": "bd4db9276f97f84bb3e2f83d2fb26ff7c88bd34d",
+                "url": "https://api.github.com/repos/maileryio/mailery-channel-email/zipball/b294c270b7b69f6002078fa03c03dbc17ec9ee42",
+                "reference": "b294c270b7b69f6002078fa03c03dbc17ec9ee42",
                 "shasum": ""
             },
             "require": {
@@ -2364,7 +2362,7 @@
                 "mailer",
                 "mailinig"
             ],
-            "time": "2021-02-22T06:28:21+00:00"
+            "time": "2021-02-23T16:10:10+00:00"
         },
         {
             "name": "maileryio/mailery-channel-email-amazon-ses",
@@ -3337,12 +3335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-web.git",
-                "reference": "086b0e544d8d61d0a67eac5c4074da78a634375b"
+                "reference": "307606bcf721748e8d04983bc9447e13979c6fc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-web/zipball/086b0e544d8d61d0a67eac5c4074da78a634375b",
-                "reference": "086b0e544d8d61d0a67eac5c4074da78a634375b",
+                "url": "https://api.github.com/repos/maileryio/mailery-web/zipball/307606bcf721748e8d04983bc9447e13979c6fc4",
+                "reference": "307606bcf721748e8d04983bc9447e13979c6fc4",
                 "shasum": ""
             },
             "require": {
@@ -3355,7 +3353,7 @@
                 "psr/http-factory": "^1.0",
                 "yiisoft/aliases": "^1.0",
                 "yiisoft/assets": "^1.0@dev",
-                "yiisoft/csrf": "^3.0@dev",
+                "yiisoft/csrf": "^1.0",
                 "yiisoft/data-response": "^3.0@dev",
                 "yiisoft/di": "^3.0@dev",
                 "yiisoft/factory": "^3.0@dev",
@@ -3400,7 +3398,7 @@
                 "mailer",
                 "web"
             ],
-            "time": "2021-02-06T08:08:55+00:00"
+            "time": "2021-02-26T11:24:00+00:00"
         },
         {
             "name": "maileryio/widget-dataview",
@@ -3896,16 +3894,16 @@
         },
         {
             "name": "nyholm/psr7",
-            "version": "1.3.2",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Nyholm/psr7.git",
-                "reference": "a272953743c454ac4af9626634daaf5ab3ce1173"
+                "reference": "23ae1f00fbc6a886cbe3062ca682391b9cc7c37b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/a272953743c454ac4af9626634daaf5ab3ce1173",
-                "reference": "a272953743c454ac4af9626634daaf5ab3ce1173",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/23ae1f00fbc6a886cbe3062ca682391b9cc7c37b",
+                "reference": "23ae1f00fbc6a886cbe3062ca682391b9cc7c37b",
                 "shasum": ""
             },
             "require": {
@@ -3927,7 +3925,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -3955,7 +3953,7 @@
                 "psr-17",
                 "psr-7"
             ],
-            "time": "2020-11-14T17:35:34+00:00"
+            "time": "2021-02-18T15:41:32+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -4967,16 +4965,16 @@
         },
         {
             "name": "spiral/core",
-            "version": "dev-master",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/core.git",
-                "reference": "1857ece8e7f12353f1d2a92d817dcea5348d2695"
+                "reference": "7221ca695246a048c153b519f19543ac4cf00e2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/core/zipball/1857ece8e7f12353f1d2a92d817dcea5348d2695",
-                "reference": "1857ece8e7f12353f1d2a92d817dcea5348d2695",
+                "url": "https://api.github.com/repos/spiral/core/zipball/7221ca695246a048c153b519f19543ac4cf00e2e",
+                "reference": "7221ca695246a048c153b519f19543ac4cf00e2e",
                 "shasum": ""
             },
             "require": {
@@ -4990,7 +4988,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev"
+                    "dev-master": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -5010,7 +5008,7 @@
             ],
             "description": "IoC container, IoC scopes, factory, memory, configuration interfaces",
             "homepage": "https://spiral.dev",
-            "time": "2020-12-23T19:07:39+00:00"
+            "time": "2021-02-19T13:35:02+00:00"
         },
         {
             "name": "spiral/database",
@@ -5061,16 +5059,16 @@
         },
         {
             "name": "spiral/files",
-            "version": "v2.7.4",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/files.git",
-                "reference": "5a48fd566407d9031b141ab2425c766db8259daf"
+                "reference": "05cb1a69f3520d6141fca8fe991e6a7a7a113540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/files/zipball/5a48fd566407d9031b141ab2425c766db8259daf",
-                "reference": "5a48fd566407d9031b141ab2425c766db8259daf",
+                "url": "https://api.github.com/repos/spiral/files/zipball/05cb1a69f3520d6141fca8fe991e6a7a7a113540",
+                "reference": "05cb1a69f3520d6141fca8fe991e6a7a7a113540",
                 "shasum": ""
             },
             "require": {
@@ -5083,7 +5081,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev"
+                    "dev-master": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -5103,26 +5101,26 @@
             ],
             "description": "File Toolkit: atomic file manager",
             "homepage": "https://spiral.dev",
-            "time": "2020-12-23T19:07:39+00:00"
+            "time": "2021-02-19T13:35:02+00:00"
         },
         {
             "name": "spiral/logger",
-            "version": "dev-master",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/logger.git",
-                "reference": "7a05ee022fa33e736c3898f4fbd76f1f44eaff03"
+                "reference": "564d904ae15637c1407c60d597b12a3c8719cf54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/logger/zipball/7a05ee022fa33e736c3898f4fbd76f1f44eaff03",
-                "reference": "7a05ee022fa33e736c3898f4fbd76f1f44eaff03",
+                "url": "https://api.github.com/repos/spiral/logger/zipball/564d904ae15637c1407c60d597b12a3c8719cf54",
+                "reference": "564d904ae15637c1407c60d597b12a3c8719cf54",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2",
                 "psr/log": "^1.0",
-                "spiral/core": "^2.8"
+                "spiral/core": "^2.7"
             },
             "require-dev": {
                 "mockery/mockery": "^1.3",
@@ -5131,7 +5129,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev"
+                    "dev-master": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -5151,7 +5149,7 @@
             ],
             "description": "LogFactory and global log listeners",
             "homepage": "https://spiral.dev",
-            "time": "2020-12-24T10:52:04+00:00"
+            "time": "2021-02-19T13:35:02+00:00"
         },
         {
             "name": "spiral/migrations",
@@ -5201,16 +5199,16 @@
         },
         {
             "name": "spiral/pagination",
-            "version": "v2.7.4",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/pagination.git",
-                "reference": "db813575b12a35e59edd36a954660a11187fdab1"
+                "reference": "7b4d4ae52111757ee704992bf902e8508ff02a18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/pagination/zipball/db813575b12a35e59edd36a954660a11187fdab1",
-                "reference": "db813575b12a35e59edd36a954660a11187fdab1",
+                "url": "https://api.github.com/repos/spiral/pagination/zipball/7b4d4ae52111757ee704992bf902e8508ff02a18",
+                "reference": "7b4d4ae52111757ee704992bf902e8508ff02a18",
                 "shasum": ""
             },
             "require": {
@@ -5223,7 +5221,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev"
+                    "dev-master": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -5243,20 +5241,20 @@
             ],
             "description": "Common pagination interfaces",
             "homepage": "https://spiral.dev",
-            "time": "2020-12-23T19:07:39+00:00"
+            "time": "2021-02-19T13:35:02+00:00"
         },
         {
             "name": "spiral/reactor",
-            "version": "v2.7.4",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/reactor.git",
-                "reference": "639593626fdfa3c02bf281417cd01892d5627bd0"
+                "reference": "454234187a20410669e27b8889fa01ff0282c907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/reactor/zipball/639593626fdfa3c02bf281417cd01892d5627bd0",
-                "reference": "639593626fdfa3c02bf281417cd01892d5627bd0",
+                "url": "https://api.github.com/repos/spiral/reactor/zipball/454234187a20410669e27b8889fa01ff0282c907",
+                "reference": "454234187a20410669e27b8889fa01ff0282c907",
                 "shasum": ""
             },
             "require": {
@@ -5271,7 +5269,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev"
+                    "dev-master": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -5291,26 +5289,26 @@
             ],
             "description": "Reactor: Code Scaffolding",
             "homepage": "https://spiral.dev",
-            "time": "2020-12-23T19:07:39+00:00"
+            "time": "2021-02-19T13:35:02+00:00"
         },
         {
             "name": "spiral/tokenizer",
-            "version": "v2.7.4",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/tokenizer.git",
-                "reference": "15121a76bc9452e795ee171de47890c4e1a59a2f"
+                "reference": "4c0774c2dd40f567f3dfaf35be7301b2ef60bfc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/tokenizer/zipball/15121a76bc9452e795ee171de47890c4e1a59a2f",
-                "reference": "15121a76bc9452e795ee171de47890c4e1a59a2f",
+                "url": "https://api.github.com/repos/spiral/tokenizer/zipball/4c0774c2dd40f567f3dfaf35be7301b2ef60bfc7",
+                "reference": "4c0774c2dd40f567f3dfaf35be7301b2ef60bfc7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2",
-                "spiral/core": "^2.8",
-                "spiral/logger": "^2.8",
+                "spiral/core": "^2.7",
+                "spiral/logger": "^2.7",
                 "symfony/finder": "^5.1"
             },
             "require-dev": {
@@ -5319,7 +5317,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev"
+                    "dev-master": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -5339,7 +5337,7 @@
             ],
             "description": "Static Analysis: Class and Invocation locators",
             "homepage": "https://spiral.dev",
-            "time": "2020-12-24T10:52:04+00:00"
+            "time": "2021-02-19T13:35:02+00:00"
         },
         {
             "name": "symfony/console",
@@ -5745,7 +5743,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -5807,16 +5805,16 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "267a9adeb8ecb8071040a740930e077cdfb987af"
+                "reference": "5601e09b69f26c1828b13b6bb87cb07cddba3170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/267a9adeb8ecb8071040a740930e077cdfb987af",
-                "reference": "267a9adeb8ecb8071040a740930e077cdfb987af",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/5601e09b69f26c1828b13b6bb87cb07cddba3170",
+                "reference": "5601e09b69f26c1828b13b6bb87cb07cddba3170",
                 "shasum": ""
             },
             "require": {
@@ -5867,20 +5865,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
-                "reference": "0eb8293dbbcd6ef6bf81404c9ce7d95bcdf34f44"
+                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/0eb8293dbbcd6ef6bf81404c9ce7d95bcdf34f44",
-                "reference": "0eb8293dbbcd6ef6bf81404c9ce7d95bcdf34f44",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/2d63434d922daf7da8dd863e7907e67ee3031483",
+                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483",
                 "shasum": ""
             },
             "require": {
@@ -5937,20 +5935,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
-                "reference": "6e971c891537eb617a00bb07a43d182a6915faba"
+                "reference": "43a0283138253ed1d48d352ab6d0bdb3f809f248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/6e971c891537eb617a00bb07a43d182a6915faba",
-                "reference": "6e971c891537eb617a00bb07a43d182a6915faba",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/43a0283138253ed1d48d352ab6d0bdb3f809f248",
+                "reference": "43a0283138253ed1d48d352ab6d0bdb3f809f248",
                 "shasum": ""
             },
             "require": {
@@ -6004,20 +6002,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T17:09:11+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f377a3dd1fde44d37b9831d68dc8dea3ffd28e13"
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
-                "reference": "f377a3dd1fde44d37b9831d68dc8dea3ffd28e13",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/5232de97ee3b75b0360528dae24e73db49566ab1",
+                "reference": "5232de97ee3b75b0360528dae24e73db49566ab1",
                 "shasum": ""
             },
             "require": {
@@ -6067,11 +6065,11 @@
                 "portable",
                 "shim"
             ],
-            "time": "2021-01-07T16:49:33+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -6130,7 +6128,7 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
@@ -6192,7 +6190,7 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
@@ -7262,16 +7260,16 @@
         },
         {
             "name": "yiisoft/csrf",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/csrf.git",
-                "reference": "658dd1045150b9782d9500ddbb59fc4a64d82174"
+                "reference": "36232f39bc6f8f77fe04f0338bb24aea6f1f08c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/csrf/zipball/658dd1045150b9782d9500ddbb59fc4a64d82174",
-                "reference": "658dd1045150b9782d9500ddbb59fc4a64d82174",
+                "url": "https://api.github.com/repos/yiisoft/csrf/zipball/36232f39bc6f8f77fe04f0338bb24aea6f1f08c5",
+                "reference": "36232f39bc6f8f77fe04f0338bb24aea6f1f08c5",
                 "shasum": ""
             },
             "require": {
@@ -7288,15 +7286,12 @@
             "require-dev": {
                 "nyholm/psr7": "^1.3",
                 "phpunit/phpunit": "^9.5",
-                "roave/infection-static-analysis-plugin": "^1.6",
+                "roave/infection-static-analysis-plugin": "^1.7",
                 "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.3"
+                "vimeo/psalm": "^4.6"
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                },
                 "config-plugin": {
                     "params": "config/params.php",
                     "web": "config/web.php"
@@ -7311,14 +7306,18 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "CSRF Protection Library",
+            "description": "Yii CSRF Protection Library",
             "homepage": "https://www.yiiframework.com/",
             "keywords": [
+                "breach",
                 "csrf",
+                "hmac",
                 "middleware",
-                "psr-15"
+                "psr-15",
+                "stateless",
+                "synchronizer"
             ],
-            "time": "2021-02-08T22:30:26+00:00"
+            "time": "2021-02-23T23:09:51+00:00"
         },
         {
             "name": "yiisoft/data",
@@ -7326,12 +7325,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/data.git",
-                "reference": "bd6ebf26c2bc61a21b4e5f5432e32abc3392165c"
+                "reference": "99194de9ba57c62ee57e8cbf493eb342416e1dd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/data/zipball/bd6ebf26c2bc61a21b4e5f5432e32abc3392165c",
-                "reference": "bd6ebf26c2bc61a21b4e5f5432e32abc3392165c",
+                "url": "https://api.github.com/repos/yiisoft/data/zipball/99194de9ba57c62ee57e8cbf493eb342416e1dd1",
+                "reference": "99194de9ba57c62ee57e8cbf493eb342416e1dd1",
                 "shasum": ""
             },
             "require": {
@@ -7364,7 +7363,7 @@
             "keywords": [
                 "data provider"
             ],
-            "time": "2021-02-08T20:39:04+00:00"
+            "time": "2021-02-24T14:46:03+00:00"
         },
         {
             "name": "yiisoft/data-response",
@@ -7428,12 +7427,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/di.git",
-                "reference": "66a14bd0470257b448cad095c436d9f2bd8024fc"
+                "reference": "d7d7893779e0d7431ce1b29dbd3b36a57389b7db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/di/zipball/66a14bd0470257b448cad095c436d9f2bd8024fc",
-                "reference": "66a14bd0470257b448cad095c436d9f2bd8024fc",
+                "url": "https://api.github.com/repos/yiisoft/di/zipball/d7d7893779e0d7431ce1b29dbd3b36a57389b7db",
+                "reference": "d7d7893779e0d7431ce1b29dbd3b36a57389b7db",
                 "shasum": ""
             },
             "require": {
@@ -7484,7 +7483,7 @@
                 "injection",
                 "injector"
             ],
-            "time": "2021-01-29T19:50:30+00:00"
+            "time": "2021-02-23T22:10:32+00:00"
         },
         {
             "name": "yiisoft/error-handler",
@@ -7492,12 +7491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/error-handler.git",
-                "reference": "8b7547ceec2daa53bf79642cbd427dd5d542d005"
+                "reference": "af9a9085c7a8d42dd3de8e347dfcdb01e837e7e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/error-handler/zipball/8b7547ceec2daa53bf79642cbd427dd5d542d005",
-                "reference": "8b7547ceec2daa53bf79642cbd427dd5d542d005",
+                "url": "https://api.github.com/repos/yiisoft/error-handler/zipball/af9a9085c7a8d42dd3de8e347dfcdb01e837e7e4",
+                "reference": "af9a9085c7a8d42dd3de8e347dfcdb01e837e7e4",
                 "shasum": ""
             },
             "require": {
@@ -7508,17 +7507,19 @@
                 "psr/container": "1.0.0",
                 "psr/http-message": "^1.0",
                 "psr/http-server-middleware": "^1.0",
+                "psr/log": "^1.1",
                 "yiisoft/friendly-exception": "^1.0",
                 "yiisoft/http": "^1.0",
                 "yiisoft/injector": "^1.0"
             },
             "require-dev": {
-                "httpsoft/http-message": "^1.0.7",
-                "phpunit/phpunit": "^9.4",
+                "httpsoft/http-message": "^1.0.8",
+                "phpunit/phpunit": "^9.5",
+                "psr/http-server-handler": "^1.0",
                 "roave/infection-static-analysis-plugin": "^1.6",
                 "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.4",
-                "yiisoft/di": "^3.0@dev"
+                "vimeo/psalm": "^4.6",
+                "yiisoft/test-support": "^1.2"
             },
             "type": "library",
             "extra": {
@@ -7541,23 +7542,27 @@
             "description": "Yii Error Handling Library",
             "homepage": "https://www.yiiframework.com/",
             "keywords": [
+                "PSR-11",
                 "error-handler",
+                "psr-15",
+                "psr-3",
+                "psr-7",
                 "yiisoft"
             ],
-            "time": "2021-02-10T19:16:12+00:00"
+            "time": "2021-02-26T18:39:46+00:00"
         },
         {
             "name": "yiisoft/event-dispatcher",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/event-dispatcher.git",
-                "reference": "f19cbf1469e0d10d2eafe45d8851fbb4aeaf8e65"
+                "reference": "7762827b93b0e5096b43555f426ad6323de359de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/event-dispatcher/zipball/f19cbf1469e0d10d2eafe45d8851fbb4aeaf8e65",
-                "reference": "f19cbf1469e0d10d2eafe45d8851fbb4aeaf8e65",
+                "url": "https://api.github.com/repos/yiisoft/event-dispatcher/zipball/7762827b93b0e5096b43555f426ad6323de359de",
+                "reference": "7762827b93b0e5096b43555f426ad6323de359de",
                 "shasum": ""
             },
             "require": {
@@ -7574,11 +7579,6 @@
                 "vimeo/psalm": "^4.2"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Yiisoft\\EventDispatcher\\": "src"
@@ -7595,7 +7595,7 @@
                 "event dispatcher",
                 "psr-14"
             ],
-            "time": "2020-12-18T09:51:51+00:00"
+            "time": "2021-02-16T23:00:16+00:00"
         },
         {
             "name": "yiisoft/factory",
@@ -7786,12 +7786,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/html.git",
-                "reference": "cf3759d96c41ed842bfe015fda555c79263cdcd4"
+                "reference": "88a2f112582892e70ef018e606899f19d8bdcf7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/html/zipball/cf3759d96c41ed842bfe015fda555c79263cdcd4",
-                "reference": "cf3759d96c41ed842bfe015fda555c79263cdcd4",
+                "url": "https://api.github.com/repos/yiisoft/html/zipball/88a2f112582892e70ef018e606899f19d8bdcf7f",
+                "reference": "88a2f112582892e70ef018e606899f19d8bdcf7f",
                 "shasum": ""
             },
             "require": {
@@ -7803,7 +7803,7 @@
                 "phpunit/phpunit": "^9.5",
                 "roave/infection-static-analysis-plugin": "^1.7",
                 "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.4"
+                "vimeo/psalm": "^4.6"
             },
             "type": "library",
             "extra": {
@@ -7825,7 +7825,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2021-02-10T20:14:16+00:00"
+            "time": "2021-02-23T16:49:52+00:00"
         },
         {
             "name": "yiisoft/http",
@@ -7971,12 +7971,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/translator-message-gettext.git",
-                "reference": "992ea41bf67a3efc4f27865a8f2b60d2b2f927f1"
+                "reference": "883135f2f6b1296401016b40692f89b695d3a925"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/translator-message-gettext/zipball/992ea41bf67a3efc4f27865a8f2b60d2b2f927f1",
-                "reference": "992ea41bf67a3efc4f27865a8f2b60d2b2f927f1",
+                "url": "https://api.github.com/repos/yiisoft/translator-message-gettext/zipball/883135f2f6b1296401016b40692f89b695d3a925",
+                "reference": "883135f2f6b1296401016b40692f89b695d3a925",
                 "shasum": ""
             },
             "require": {
@@ -8015,7 +8015,7 @@
                 "message storage",
                 "translation"
             ],
-            "time": "2021-01-18T08:13:46+00:00"
+            "time": "2021-02-25T20:44:54+00:00"
         },
         {
             "name": "yiisoft/injector",
@@ -8167,16 +8167,16 @@
         },
         {
             "name": "yiisoft/log-target-file",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/log-target-file.git",
-                "reference": "2f7230ab3de32b0f7789c07679fe3220f5fea446"
+                "reference": "897033570ba5f8b35b3d004c72d94562330c2e34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/log-target-file/zipball/2f7230ab3de32b0f7789c07679fe3220f5fea446",
-                "reference": "2f7230ab3de32b0f7789c07679fe3220f5fea446",
+                "url": "https://api.github.com/repos/yiisoft/log-target-file/zipball/897033570ba5f8b35b3d004c72d94562330c2e34",
+                "reference": "897033570ba5f8b35b3d004c72d94562330c2e34",
                 "shasum": ""
             },
             "require": {
@@ -8217,7 +8217,7 @@
                 "logger",
                 "yii"
             ],
-            "time": "2021-02-11T14:40:41+00:00"
+            "time": "2021-02-22T13:17:37+00:00"
         },
         {
             "name": "yiisoft/middleware-dispatcher",
@@ -8225,12 +8225,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/middleware-dispatcher.git",
-                "reference": "1f40d155d772630d7923864d34342de606e1eb30"
+                "reference": "402cf9f76cc830e94b2125d82823ec034b035664"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/middleware-dispatcher/zipball/1f40d155d772630d7923864d34342de606e1eb30",
-                "reference": "1f40d155d772630d7923864d34342de606e1eb30",
+                "url": "https://api.github.com/repos/yiisoft/middleware-dispatcher/zipball/402cf9f76cc830e94b2125d82823ec034b035664",
+                "reference": "402cf9f76cc830e94b2125d82823ec034b035664",
                 "shasum": ""
             },
             "require": {
@@ -8246,7 +8246,8 @@
                 "phpunit/phpunit": "^9.5",
                 "roave/infection-static-analysis-plugin": "^1.6",
                 "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.3"
+                "vimeo/psalm": "^4.3",
+                "yiisoft/test-support": "^1.1"
             },
             "type": "library",
             "extra": {
@@ -8266,13 +8267,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "Middleware dispatcher",
+            "description": "PSR-15 middleware dispatcher",
             "homepage": "https://www.yiiframework.com/",
             "keywords": [
                 "dispatcher",
                 "middleware"
             ],
-            "time": "2021-01-26T13:44:01+00:00"
+            "time": "2021-02-22T22:10:03+00:00"
         },
         {
             "name": "yiisoft/network-utilities",
@@ -8280,12 +8281,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/network-utilities.git",
-                "reference": "b580357230b9b871a78f6a1eca2a946c65eac2c7"
+                "reference": "779acce3d2ea7b5a94cf249db072a2dda9452894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/network-utilities/zipball/b580357230b9b871a78f6a1eca2a946c65eac2c7",
-                "reference": "b580357230b9b871a78f6a1eca2a946c65eac2c7",
+                "url": "https://api.github.com/repos/yiisoft/network-utilities/zipball/779acce3d2ea7b5a94cf249db072a2dda9452894",
+                "reference": "779acce3d2ea7b5a94cf249db072a2dda9452894",
                 "shasum": ""
             },
             "require": {
@@ -8319,7 +8320,7 @@
                 "mask",
                 "network"
             ],
-            "time": "2020-12-19T14:40:30+00:00"
+            "time": "2021-02-19T21:19:00+00:00"
         },
         {
             "name": "yiisoft/rbac",
@@ -8433,12 +8434,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/router.git",
-                "reference": "ac73bc8b887e324d1b9e990da1e21bc044f3a155"
+                "reference": "5b0c2ccbcc6b4f4e53b619e88730c81e8fcd3c82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/router/zipball/ac73bc8b887e324d1b9e990da1e21bc044f3a155",
-                "reference": "ac73bc8b887e324d1b9e990da1e21bc044f3a155",
+                "url": "https://api.github.com/repos/yiisoft/router/zipball/5b0c2ccbcc6b4f4e53b619e88730c81e8fcd3c82",
+                "reference": "5b0c2ccbcc6b4f4e53b619e88730c81e8fcd3c82",
                 "shasum": ""
             },
             "require": {
@@ -8489,7 +8490,7 @@
                 "router",
                 "web"
             ],
-            "time": "2021-02-05T10:56:18+00:00"
+            "time": "2021-02-22T22:12:22+00:00"
         },
         {
             "name": "yiisoft/router-fastroute",
@@ -8899,12 +8900,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/user.git",
-                "reference": "3f5145ae1632d4416c9097f18e60616dc334cba5"
+                "reference": "f079dea06527d0dbeea22a1834631ff6b75f8f9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/user/zipball/3f5145ae1632d4416c9097f18e60616dc334cba5",
-                "reference": "3f5145ae1632d4416c9097f18e60616dc334cba5",
+                "url": "https://api.github.com/repos/yiisoft/user/zipball/f079dea06527d0dbeea22a1834631ff6b75f8f9c",
+                "reference": "f079dea06527d0dbeea22a1834631ff6b75f8f9c",
                 "shasum": ""
             },
             "require": {
@@ -8923,7 +8924,8 @@
                 "phpunit/phpunit": "^9.5",
                 "roave/infection-static-analysis-plugin": "^1.7",
                 "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.4"
+                "vimeo/psalm": "^4.5",
+                "yiisoft/test-support": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -8949,7 +8951,7 @@
                 "user",
                 "yiisoft"
             ],
-            "time": "2021-01-23T14:30:17+00:00"
+            "time": "2021-02-25T13:16:32+00:00"
         },
         {
             "name": "yiisoft/validator",
@@ -9016,16 +9018,16 @@
         },
         {
             "name": "yiisoft/var-dumper",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/var-dumper.git",
-                "reference": "8f34d1917dd5947b74d302f51adfd8321c97784a"
+                "reference": "0c58301e7671f301d0b405dd9743c53a93630137"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/var-dumper/zipball/8f34d1917dd5947b74d302f51adfd8321c97784a",
-                "reference": "8f34d1917dd5947b74d302f51adfd8321c97784a",
+                "url": "https://api.github.com/repos/yiisoft/var-dumper/zipball/0c58301e7671f301d0b405dd9743c53a93630137",
+                "reference": "0c58301e7671f301d0b405dd9743c53a93630137",
                 "shasum": ""
             },
             "require": {
@@ -9060,7 +9062,7 @@
                 "var-dumper",
                 "yii"
             ],
-            "time": "2021-02-11T14:11:33+00:00"
+            "time": "2021-02-16T15:25:15+00:00"
         },
         {
             "name": "yiisoft/view",
@@ -9068,12 +9070,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/view.git",
-                "reference": "93c384b841c373d4003afaf97fbf426cff47357f"
+                "reference": "3eeffa8a0fe5e8d183ffcd625d9db6b06f227d49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/view/zipball/93c384b841c373d4003afaf97fbf426cff47357f",
-                "reference": "93c384b841c373d4003afaf97fbf426cff47357f",
+                "url": "https://api.github.com/repos/yiisoft/view/zipball/3eeffa8a0fe5e8d183ffcd625d9db6b06f227d49",
+                "reference": "3eeffa8a0fe5e8d183ffcd625d9db6b06f227d49",
                 "shasum": ""
             },
             "require": {
@@ -9094,7 +9096,7 @@
                 "vimeo/psalm": "^4.3",
                 "yiisoft/aliases": "^1.1",
                 "yiisoft/di": "^3.0@dev",
-                "yiisoft/event-dispatcher": "^3.0@dev"
+                "yiisoft/event-dispatcher": "^1.0"
             },
             "type": "library",
             "extra": {
@@ -9103,6 +9105,7 @@
                 },
                 "config-plugin": {
                     "params": "config/params.php",
+                    "common": "config/common.php",
                     "console": "config/console.php",
                     "web": "config/web.php"
                 }
@@ -9122,7 +9125,7 @@
                 "view",
                 "yii"
             ],
-            "time": "2021-02-10T22:08:16+00:00"
+            "time": "2021-02-24T21:47:25+00:00"
         },
         {
             "name": "yiisoft/widget",
@@ -9130,12 +9133,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/widget.git",
-                "reference": "3092e12153508153ad39032ed8a760e04f7be77b"
+                "reference": "668505cab96c72d9de9c59419185743212edfe4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/widget/zipball/3092e12153508153ad39032ed8a760e04f7be77b",
-                "reference": "3092e12153508153ad39032ed8a760e04f7be77b",
+                "url": "https://api.github.com/repos/yiisoft/widget/zipball/668505cab96c72d9de9c59419185743212edfe4c",
+                "reference": "668505cab96c72d9de9c59419185743212edfe4c",
                 "shasum": ""
             },
             "require": {
@@ -9174,7 +9177,7 @@
                 "widgets",
                 "yii"
             ],
-            "time": "2020-12-18T09:52:11+00:00"
+            "time": "2021-02-16T23:15:23+00:00"
         },
         {
             "name": "yiisoft/yii-api",
@@ -9312,12 +9315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-console.git",
-                "reference": "6fd1ce89fc43a7546a1d2cc90f24de6eb22a20a4"
+                "reference": "52ae4a7d8d5b291aac8b4da7514fd743783396e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-console/zipball/6fd1ce89fc43a7546a1d2cc90f24de6eb22a20a4",
-                "reference": "6fd1ce89fc43a7546a1d2cc90f24de6eb22a20a4",
+                "url": "https://api.github.com/repos/yiisoft/yii-console/zipball/52ae4a7d8d5b291aac8b4da7514fd743783396e2",
+                "reference": "52ae4a7d8d5b291aac8b4da7514fd743783396e2",
                 "shasum": ""
             },
             "require": {
@@ -9373,7 +9376,7 @@
                 "console",
                 "yii"
             ],
-            "time": "2021-01-24T19:33:17+00:00"
+            "time": "2021-02-21T09:26:54+00:00"
         },
         {
             "name": "yiisoft/yii-cycle",
@@ -9447,18 +9450,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-event.git",
-                "reference": "1e3cb00f77d4922fe85aa60999dfc3c778fe181b"
+                "reference": "e89aaedd7583bbbcb50d67e5c757fab55cb6d41e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-event/zipball/1e3cb00f77d4922fe85aa60999dfc3c778fe181b",
-                "reference": "1e3cb00f77d4922fe85aa60999dfc3c778fe181b",
+                "url": "https://api.github.com/repos/yiisoft/yii-event/zipball/e89aaedd7583bbbcb50d67e5c757fab55cb6d41e",
+                "reference": "e89aaedd7583bbbcb50d67e5c757fab55cb6d41e",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
                 "psr/container": "^1.0",
-                "yiisoft/event-dispatcher": "^3.0@dev",
+                "yiisoft/event-dispatcher": "^1.0",
                 "yiisoft/friendly-exception": "^1.0",
                 "yiisoft/injector": "^1.0"
             },
@@ -9504,7 +9507,7 @@
                 "event",
                 "yii3"
             ],
-            "time": "2020-12-24T13:47:07+00:00"
+            "time": "2021-02-26T19:20:52+00:00"
         },
         {
             "name": "yiisoft/yii-filesystem",
@@ -9566,12 +9569,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-queue.git",
-                "reference": "3e6b24a8876d1fac46cd046ea00009e6cb588cda"
+                "reference": "8904847fc38f43b45bdba97950b671be233fd44c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-queue/zipball/3e6b24a8876d1fac46cd046ea00009e6cb588cda",
-                "reference": "3e6b24a8876d1fac46cd046ea00009e6cb588cda",
+                "url": "https://api.github.com/repos/yiisoft/yii-queue/zipball/8904847fc38f43b45bdba97950b671be233fd44c",
+                "reference": "8904847fc38f43b45bdba97950b671be233fd44c",
                 "shasum": ""
             },
             "require": {
@@ -9579,8 +9582,7 @@
                 "psr/event-dispatcher": "^1.0",
                 "psr/log": "^1.1",
                 "yiisoft/friendly-exception": "^1.0",
-                "yiisoft/injector": "^1.0",
-                "yiisoft/serializer": "^3.0@dev"
+                "yiisoft/injector": "^1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.4",
@@ -9627,7 +9629,7 @@
                 "sqs",
                 "yii"
             ],
-            "time": "2020-12-24T13:47:26+00:00"
+            "time": "2021-02-24T08:27:36+00:00"
         },
         {
             "name": "yiisoft/yii-view",
@@ -9635,12 +9637,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-view.git",
-                "reference": "1c83a3a30a0c9dbccdea206024d850f07ccc155e"
+                "reference": "2bda888fbcf2fa51ab84f1fbf029b7c159a1ca92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-view/zipball/1c83a3a30a0c9dbccdea206024d850f07ccc155e",
-                "reference": "1c83a3a30a0c9dbccdea206024d850f07ccc155e",
+                "url": "https://api.github.com/repos/yiisoft/yii-view/zipball/2bda888fbcf2fa51ab84f1fbf029b7c159a1ca92",
+                "reference": "2bda888fbcf2fa51ab84f1fbf029b7c159a1ca92",
                 "shasum": ""
             },
             "require": {
@@ -9648,7 +9650,7 @@
                 "psr/container-implementation": "1.0.0",
                 "yiisoft/aliases": "^1.1",
                 "yiisoft/arrays": "^1.0",
-                "yiisoft/csrf": "^3.0@dev",
+                "yiisoft/csrf": "^1.0",
                 "yiisoft/data-response": "^3.0@dev",
                 "yiisoft/strings": "^2.0",
                 "yiisoft/view": "^3.0@dev"
@@ -9660,7 +9662,7 @@
                 "spatie/phpunit-watcher": "^1.23",
                 "vimeo/psalm": "^4.3",
                 "yiisoft/di": "3.0.x-dev",
-                "yiisoft/event-dispatcher": "3.0.x-dev",
+                "yiisoft/event-dispatcher": "^1.0",
                 "yiisoft/test-support": "^1.0"
             },
             "type": "library",
@@ -9688,7 +9690,7 @@
                 "view",
                 "yii"
             ],
-            "time": "2021-02-10T21:40:09+00:00"
+            "time": "2021-02-23T23:20:03+00:00"
         },
         {
             "name": "yiisoft/yii-web",
@@ -9696,12 +9698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-web.git",
-                "reference": "42961753377767b837907763af7d4ee637d6dcb8"
+                "reference": "ffe39b2a1268f6a6f82ff2085964466a39d0e1eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-web/zipball/42961753377767b837907763af7d4ee637d6dcb8",
-                "reference": "42961753377767b837907763af7d4ee637d6dcb8",
+                "url": "https://api.github.com/repos/yiisoft/yii-web/zipball/ffe39b2a1268f6a6f82ff2085964466a39d0e1eb",
+                "reference": "ffe39b2a1268f6a6f82ff2085964466a39d0e1eb",
                 "shasum": ""
             },
             "require": {
@@ -9732,7 +9734,7 @@
                 "phpunit/phpunit": "^9.4",
                 "roave/infection-static-analysis-plugin": "^1.6",
                 "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.2",
+                "vimeo/psalm": "^4.6",
                 "yiisoft/composer-config-plugin": "^1.0@dev",
                 "yiisoft/di": "^3.0@dev",
                 "yiisoft/router-fastroute": "^3.0@dev"
@@ -9763,7 +9765,7 @@
                 "framework",
                 "yii"
             ],
-            "time": "2021-02-01T21:58:37+00:00"
+            "time": "2021-02-26T19:54:20+00:00"
         },
         {
             "name": "yiisoft/yii-widgets",
@@ -9771,12 +9773,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-widgets.git",
-                "reference": "15be7304da5f7941919b5030fd80ef2107fc1105"
+                "reference": "a925c9a39a4d596de50f2eb66b84a679f0cb081a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-widgets/zipball/15be7304da5f7941919b5030fd80ef2107fc1105",
-                "reference": "15be7304da5f7941919b5030fd80ef2107fc1105",
+                "url": "https://api.github.com/repos/yiisoft/yii-widgets/zipball/a925c9a39a4d596de50f2eb66b84a679f0cb081a",
+                "reference": "a925c9a39a4d596de50f2eb66b84a679f0cb081a",
                 "shasum": ""
             },
             "require": {
@@ -9792,7 +9794,7 @@
                 "spatie/phpunit-watcher": "^1.23",
                 "vimeo/psalm": "^4.2",
                 "yiisoft/di": "^3.0@dev",
-                "yiisoft/event-dispatcher": "^3.0@dev",
+                "yiisoft/event-dispatcher": "^1.0",
                 "yiisoft/log": "^1.0"
             },
             "type": "library",
@@ -9819,7 +9821,7 @@
                 "widgets",
                 "yii"
             ],
-            "time": "2021-02-11T14:49:29+00:00"
+            "time": "2021-02-16T23:14:43+00:00"
         }
     ],
     "packages-dev": [
@@ -10224,16 +10226,16 @@
         },
         {
             "name": "phar-io/version",
-            "version": "3.0.4",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/version.git",
-                "reference": "e4782611070e50613683d2b9a57730e9a3ba5451"
+                "reference": "bae7c545bef187884426f042434e561ab1ddb182"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/version/zipball/e4782611070e50613683d2b9a57730e9a3ba5451",
-                "reference": "e4782611070e50613683d2b9a57730e9a3ba5451",
+                "url": "https://api.github.com/repos/phar-io/version/zipball/bae7c545bef187884426f042434e561ab1ddb182",
+                "reference": "bae7c545bef187884426f042434e561ab1ddb182",
                 "shasum": ""
             },
             "require": {
@@ -10267,7 +10269,7 @@
                 }
             ],
             "description": "Library for handling version information and constraints",
-            "time": "2020-12-13T23:18:30+00:00"
+            "time": "2021-02-23T14:00:09+00:00"
         },
         {
             "name": "php-cs-fixer/diff",
