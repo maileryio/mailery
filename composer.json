@@ -35,6 +35,7 @@
         "maileryio/mailery-queue": "dev-master",
         "maileryio/mailery-rbac": "dev-master",
         "maileryio/mailery-sender": "dev-master",
+        "maileryio/mailery-sender-domain": "dev-master",
         "maileryio/mailery-storage": "dev-master",
         "maileryio/mailery-subscriber": "dev-master",
         "maileryio/mailery-template-email": "dev-master",

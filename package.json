@@ -18,6 +18,7 @@
         "@composer-asset/maileryio--mailery-queue": "file:./vendor/foxy/composer-asset/maileryio/mailery-queue",
         "@composer-asset/maileryio--mailery-rbac": "file:./vendor/foxy/composer-asset/maileryio/mailery-rbac",
         "@composer-asset/maileryio--mailery-sender": "file:./vendor/foxy/composer-asset/maileryio/mailery-sender",
+        "@composer-asset/maileryio--mailery-sender-domain": "file:./vendor/foxy/composer-asset/maileryio/mailery-sender-domain",
         "@composer-asset/maileryio--mailery-storage": "file:./vendor/foxy/composer-asset/maileryio/mailery-storage",
         "@composer-asset/maileryio--mailery-subscriber": "file:./vendor/foxy/composer-asset/maileryio/mailery-subscriber",
         "@composer-asset/maileryio--mailery-template": "file:./vendor/foxy/composer-asset/maileryio/mailery-template",

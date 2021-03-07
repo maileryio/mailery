@@ -6,7 +6,7 @@ use Mailery\Menu\Widget\Menu;
 /** @var \Psr\Http\Message\ServerRequestInterface $request */
 /** @var \Mailery\Menu\Sidebar\SidebarMenu $sidebarMenu */
 ?><ui-sidebar>
-    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <nav class="col-lg-2 col-md-3 d-none d-md-block bg-light sidebar">
         <div class="sidebar-sticky">
             <?= Menu::widget()->options([
                     'class' => 'nav flex-column',
