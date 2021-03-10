@@ -42,6 +42,7 @@ return [
             '@vendor' => '@root/vendor',
             '@public' => '@root/web',
             '@views' => '@root/views',
+            '@resources' => '@root/resources',
             '@runtime' => '@root/runtime',
             '@npm' => '@root/node_modules',
             '@web' => '/assets',

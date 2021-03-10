@@ -36,6 +36,7 @@
         "maileryio/mailery-rbac": "dev-master",
         "maileryio/mailery-sender": "dev-master",
         "maileryio/mailery-sender-domain": "dev-master",
+        "maileryio/mailery-sender-email": "dev-master",
         "maileryio/mailery-storage": "dev-master",
         "maileryio/mailery-subscriber": "dev-master",
         "maileryio/mailery-template-email": "dev-master",
@@ -84,6 +85,8 @@
         "lint": "php-cs-fixer fix --diff --dry-run",
         "fix": "php-cs-fixer fix",
         "phan": "phan --progress-bar -o analysis.txt",
+        "test": "phpunit --testdox --no-interaction",
+        "test-watch": "phpunit-watcher watch",
         "post-update-cmd": [
             "Mailery\\Installer::postUpdate"
         ]
