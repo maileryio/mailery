@@ -10,4 +10,21 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-return [];
+use Yiisoft\Form\Widget\Field;
+
+return [
+    Field::class => static function () {
+        $field = new Field();
+
+        $field->errorOptions([
+            'class' => 'invalid-feedback',
+        ]);
+
+        $field->hintOptions([
+            'class' => 'form-text text-muted',
+        ]);
+
+        return $this->field
+            ->errorCssClass('is-invalid');
+    },
+];

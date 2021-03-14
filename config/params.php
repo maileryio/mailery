@@ -180,6 +180,20 @@ return [
         'items' => [
             'system' => [
                 'order' => 1,
+                'items' => [
+                    'users' => [
+                        'order' => 1,
+                    ],
+                    'activity-log' => [
+                        'order' => 2,
+                    ],
+                    'rbac' => [
+                        'order' => 3,
+                    ],
+                    'settings' => [
+                        'order' => 4,
+                    ],
+                ],
             ],
             'brands' => [
                 'order' => 2,

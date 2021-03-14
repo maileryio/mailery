@@ -154,6 +154,9 @@
 "@composer-asset/maileryio--mailery-sender@file:./vendor/foxy/composer-asset/maileryio/mailery-sender":
   version "1.0.0"
 
+"@composer-asset/maileryio--mailery-setting@file:./vendor/foxy/composer-asset/maileryio/mailery-setting":
+  version "1.0.0"
+
 "@composer-asset/maileryio--mailery-storage@file:./vendor/foxy/composer-asset/maileryio/mailery-storage":
   version "1.0.0"
 

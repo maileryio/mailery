@@ -20,6 +20,7 @@
         "@composer-asset/maileryio--mailery-sender": "file:./vendor/foxy/composer-asset/maileryio/mailery-sender",
         "@composer-asset/maileryio--mailery-sender-domain": "file:./vendor/foxy/composer-asset/maileryio/mailery-sender-domain",
         "@composer-asset/maileryio--mailery-sender-email": "file:./vendor/foxy/composer-asset/maileryio/mailery-sender-email",
+        "@composer-asset/maileryio--mailery-setting": "file:./vendor/foxy/composer-asset/maileryio/mailery-setting",
         "@composer-asset/maileryio--mailery-storage": "file:./vendor/foxy/composer-asset/maileryio/mailery-storage",
         "@composer-asset/maileryio--mailery-subscriber": "file:./vendor/foxy/composer-asset/maileryio/mailery-subscriber",
         "@composer-asset/maileryio--mailery-template": "file:./vendor/foxy/composer-asset/maileryio/mailery-template",

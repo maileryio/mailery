@@ -37,6 +37,7 @@
         "maileryio/mailery-sender": "dev-master",
         "maileryio/mailery-sender-domain": "dev-master",
         "maileryio/mailery-sender-email": "dev-master",
+        "maileryio/mailery-setting": "^1.0@dev",
         "maileryio/mailery-storage": "dev-master",
         "maileryio/mailery-subscriber": "dev-master",
         "maileryio/mailery-template-email": "dev-master",

@@ -28,21 +28,8 @@ class ContentViewInjection implements ContentParametersInjectionInterface
      */
     public function getContentParameters(): array
     {
-        $this->field
-            ->errorOptions([
-                'class' => 'invalid-feedback',
-            ]);
-
-        $this->field
-            ->hintOptions([
-                'class' => 'form-text text-muted',
-            ]);
-
-        $field = $this->field
-            ->errorCssClass('is-invalid');
-
         return [
-            'field' => $field,
+            'field' => $this->field,
         ];
     }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f792f385d3b6578d0a7d3434f8a7fd4",
+    "content-hash": "fe195756ced14e17862a53827a97d4c3",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -1212,64 +1212,6 @@
                 "php"
             ],
             "time": "2020-05-25T17:44:05+00:00"
-        },
-        {
-            "name": "egulias/email-validator",
-            "version": "2.1.25",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0dbf5d78455d4d6a41d186da50adc1122ec066f4",
-                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/lexer": "^1.0.1",
-                "php": ">=5.5",
-                "symfony/polyfill-intl-idn": "^1.10"
-            },
-            "require-dev": {
-                "dominicsayers/isemail": "^3.0.7",
-                "phpunit/phpunit": "^4.8.36|^7.5.15",
-                "satooshi/php-coveralls": "^1.0.1"
-            },
-            "suggest": {
-                "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Egulias\\EmailValidator\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eduardo Gulias Davis"
-                }
-            ],
-            "description": "A library for validating emails against several RFCs",
-            "homepage": "https://github.com/egulias/EmailValidator",
-            "keywords": [
-                "email",
-                "emailvalidation",
-                "emailvalidator",
-                "validation",
-                "validator"
-            ],
-            "time": "2020-12-29T14:50:06+00:00"
         },
         {
             "name": "form-manager/form-manager",
@@ -3131,6 +3073,60 @@
                 "mailinig"
             ],
             "time": "2021-03-07T20:11:35+00:00"
+        },
+        {
+            "name": "maileryio/mailery-setting",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maileryio/mailery-setting.git",
+                "reference": "cf3ef11ca818d4fd14515187504d69bc1dbf0fd5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maileryio/mailery-setting/zipball/cf3ef11ca818d4fd14515187504d69bc1dbf0fd5",
+                "reference": "cf3ef11ca818d4fd14515187504d69bc1dbf0fd5",
+                "shasum": ""
+            },
+            "require": {
+                "foxy/foxy": "^1.0",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phan/phan": "^2.4",
+                "phpunit/phpunit": "^9.0",
+                "yiisoft/composer-config-plugin": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                },
+                "config-plugin": {
+                    "params": "config/params.php",
+                    "common": "config/common.php",
+                    "web": "config/web.php",
+                    "providers-web": "config/providers-web.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mailery\\Setting\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "System setting module for Mailery Platform",
+            "homepage": "https://github.com/maileryio/mailery-setting",
+            "keywords": [
+                "mail",
+                "mailer",
+                "setting"
+            ],
+            "time": "2021-03-10T18:51:55+00:00"
         },
         {
             "name": "maileryio/mailery-storage",
@@ -5581,67 +5577,6 @@
             "time": "2021-02-19T13:35:02+00:00"
         },
         {
-            "name": "swiftmailer/swiftmailer",
-            "version": "v6.2.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "d2791ff0b73247cdc2096b14f5580aba40c12bff"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/d2791ff0b73247cdc2096b14f5580aba40c12bff",
-                "reference": "d2791ff0b73247cdc2096b14f5580aba40c12bff",
-                "shasum": ""
-            },
-            "require": {
-                "egulias/email-validator": "^2.0",
-                "php": ">=7.0.0",
-                "symfony/polyfill-iconv": "^1.0",
-                "symfony/polyfill-intl-idn": "^1.10",
-                "symfony/polyfill-mbstring": "^1.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "symfony/phpunit-bridge": "^4.4|^5.0"
-            },
-            "suggest": {
-                "ext-intl": "Needed to support internationalized email addresses"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "6.2-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "lib/swift_required.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Corbyn"
-                },
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                }
-            ],
-            "description": "Swiftmailer, free feature-rich PHP mailer",
-            "homepage": "https://swiftmailer.symfony.com",
-            "keywords": [
-                "email",
-                "mail",
-                "mailer"
-            ],
-            "time": "2021-03-05T12:08:49+00:00"
-        },
-        {
             "name": "symfony/console",
             "version": "v5.2.4",
             "source": {
@@ -6104,69 +6039,6 @@
                 "portable"
             ],
             "time": "2021-01-07T16:49:33+00:00"
-        },
-        {
-            "name": "symfony/polyfill-iconv",
-            "version": "v1.22.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-iconv.git",
-                "reference": "06fb361659649bcfd6a208a0f1fcaf4e827ad342"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/06fb361659649bcfd6a208a0f1fcaf4e827ad342",
-                "reference": "06fb361659649bcfd6a208a0f1fcaf4e827ad342",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "suggest": {
-                "ext-iconv": "For best performance"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.22-dev"
-                },
-                "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Iconv\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill for the Iconv extension",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "iconv",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
@@ -8585,117 +8457,6 @@
             "time": "2021-02-22T13:17:37+00:00"
         },
         {
-            "name": "yiisoft/mailer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/mailer.git",
-                "reference": "93d4672cc2b7103e2069c230572e4ea4f3534b7a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/mailer/zipball/93d4672cc2b7103e2069c230572e4ea4f3534b7a",
-                "reference": "93d4672cc2b7103e2069c230572e4ea4f3534b7a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0",
-                "psr/event-dispatcher": "^1.0",
-                "yiisoft/view": "^3.0@dev"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.4",
-                "roave/infection-static-analysis-plugin": "^1.5",
-                "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.4",
-                "yiisoft/di": "^3.0@dev",
-                "yiisoft/event-dispatcher": "^1.0"
-            },
-            "suggest": {
-                "yiisoft/event-dispatcher": "Yii Event Dispatcher",
-                "yiisoft/mailer-swiftmailer": "Yii Mailer Library - Swift Mailer Extension"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yiisoft\\Mailer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Yii Mailer Library",
-            "homepage": "http://www.yiiframework.com/",
-            "keywords": [
-                "mailer",
-                "yii"
-            ],
-            "time": "2021-02-20T11:36:57+00:00"
-        },
-        {
-            "name": "yiisoft/mailer-swiftmailer",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/mailer-swiftmailer.git",
-                "reference": "c84de24343805a5a964b6122da0300daca1c9bb8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/mailer-swiftmailer/zipball/c84de24343805a5a964b6122da0300daca1c9bb8",
-                "reference": "c84de24343805a5a964b6122da0300daca1c9bb8",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0",
-                "swiftmailer/swiftmailer": "^6.2",
-                "yiisoft/mailer": "^3.0@dev"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.4",
-                "roave/infection-static-analysis-plugin": "^1.5",
-                "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.4",
-                "yiisoft/di": "^3.0@dev",
-                "yiisoft/event-dispatcher": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                },
-                "config-plugin": {
-                    "params": "config/params.php",
-                    "common": "config/common.php"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yiisoft\\Mailer\\SwiftMailer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Yii Mailer Library - Swift Mailer Extension",
-            "keywords": [
-                "email",
-                "mail",
-                "mailer",
-                "swift",
-                "swiftmailer",
-                "yii"
-            ],
-            "time": "2021-02-22T11:51:17+00:00"
-        },
-        {
             "name": "yiisoft/middleware-dispatcher",
             "version": "dev-master",
             "source": {
@@ -10296,6 +10057,64 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "egulias/email-validator",
+            "version": "2.1.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/egulias/EmailValidator.git",
+                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0dbf5d78455d4d6a41d186da50adc1122ec066f4",
+                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/lexer": "^1.0.1",
+                "php": ">=5.5",
+                "symfony/polyfill-intl-idn": "^1.10"
+            },
+            "require-dev": {
+                "dominicsayers/isemail": "^3.0.7",
+                "phpunit/phpunit": "^4.8.36|^7.5.15",
+                "satooshi/php-coveralls": "^1.0.1"
+            },
+            "suggest": {
+                "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Egulias\\EmailValidator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eduardo Gulias Davis"
+                }
+            ],
+            "description": "A library for validating emails against several RFCs",
+            "homepage": "https://github.com/egulias/EmailValidator",
+            "keywords": [
+                "email",
+                "emailvalidation",
+                "emailvalidator",
+                "validation",
+                "validator"
+            ],
+            "time": "2020-12-29T14:50:06+00:00"
+        },
         {
             "name": "felixfbecker/advanced-json-rpc",
             "version": "v3.2.0",
@@ -12280,6 +12099,67 @@
             "time": "2020-09-28T06:39:44+00:00"
         },
         {
+            "name": "swiftmailer/swiftmailer",
+            "version": "v6.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "d2791ff0b73247cdc2096b14f5580aba40c12bff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/d2791ff0b73247cdc2096b14f5580aba40c12bff",
+                "reference": "d2791ff0b73247cdc2096b14f5580aba40c12bff",
+                "shasum": ""
+            },
+            "require": {
+                "egulias/email-validator": "^2.0",
+                "php": ">=7.0.0",
+                "symfony/polyfill-iconv": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "symfony/phpunit-bridge": "^4.4|^5.0"
+            },
+            "suggest": {
+                "ext-intl": "Needed to support internationalized email addresses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "lib/swift_required.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Corbyn"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Swiftmailer, free feature-rich PHP mailer",
+            "homepage": "https://swiftmailer.symfony.com",
+            "keywords": [
+                "email",
+                "mail",
+                "mailer"
+            ],
+            "time": "2021-03-05T12:08:49+00:00"
+        },
+        {
             "name": "symfony/event-dispatcher",
             "version": "v5.2.4",
             "source": {
@@ -12398,6 +12278,69 @@
                 "options"
             ],
             "time": "2021-01-27T12:56:27+00:00"
+        },
+        {
+            "name": "symfony/polyfill-iconv",
+            "version": "v1.22.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-iconv.git",
+                "reference": "06fb361659649bcfd6a208a0f1fcaf4e827ad342"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/06fb361659649bcfd6a208a0f1fcaf4e827ad342",
+                "reference": "06fb361659649bcfd6a208a0f1fcaf4e827ad342",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "suggest": {
+                "ext-iconv": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.22-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Iconv\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Iconv extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "iconv",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
@@ -12646,6 +12589,117 @@
                 "validate"
             ],
             "time": "2020-07-08T17:02:28+00:00"
+        },
+        {
+            "name": "yiisoft/mailer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/mailer.git",
+                "reference": "93d4672cc2b7103e2069c230572e4ea4f3534b7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/mailer/zipball/93d4672cc2b7103e2069c230572e4ea4f3534b7a",
+                "reference": "93d4672cc2b7103e2069c230572e4ea4f3534b7a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "psr/event-dispatcher": "^1.0",
+                "yiisoft/view": "^3.0@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.4",
+                "roave/infection-static-analysis-plugin": "^1.5",
+                "spatie/phpunit-watcher": "^1.23",
+                "vimeo/psalm": "^4.4",
+                "yiisoft/di": "^3.0@dev",
+                "yiisoft/event-dispatcher": "^1.0"
+            },
+            "suggest": {
+                "yiisoft/event-dispatcher": "Yii Event Dispatcher",
+                "yiisoft/mailer-swiftmailer": "Yii Mailer Library - Swift Mailer Extension"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yiisoft\\Mailer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Yii Mailer Library",
+            "homepage": "http://www.yiiframework.com/",
+            "keywords": [
+                "mailer",
+                "yii"
+            ],
+            "time": "2021-02-20T11:36:57+00:00"
+        },
+        {
+            "name": "yiisoft/mailer-swiftmailer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/mailer-swiftmailer.git",
+                "reference": "c84de24343805a5a964b6122da0300daca1c9bb8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/mailer-swiftmailer/zipball/c84de24343805a5a964b6122da0300daca1c9bb8",
+                "reference": "c84de24343805a5a964b6122da0300daca1c9bb8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "swiftmailer/swiftmailer": "^6.2",
+                "yiisoft/mailer": "^3.0@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.4",
+                "roave/infection-static-analysis-plugin": "^1.5",
+                "spatie/phpunit-watcher": "^1.23",
+                "vimeo/psalm": "^4.4",
+                "yiisoft/di": "^3.0@dev",
+                "yiisoft/event-dispatcher": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                },
+                "config-plugin": {
+                    "params": "config/params.php",
+                    "common": "config/common.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yiisoft\\Mailer\\SwiftMailer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Yii Mailer Library - Swift Mailer Extension",
+            "keywords": [
+                "email",
+                "mail",
+                "mailer",
+                "swift",
+                "swiftmailer",
+                "yii"
+            ],
+            "time": "2021-02-22T11:51:17+00:00"
         }
     ],
     "aliases": [],
@@ -12667,6 +12721,7 @@
         "maileryio/mailery-sender": 20,
         "maileryio/mailery-sender-domain": 20,
         "maileryio/mailery-sender-email": 20,
+        "maileryio/mailery-setting": 20,
         "maileryio/mailery-storage": 20,
         "maileryio/mailery-subscriber": 20,
         "maileryio/mailery-template-email": 20,
@@ -12679,8 +12734,6 @@
         "yiisoft/form": 20,
         "yiisoft/i18n-formatter-intl": 20,
         "yiisoft/i18n-message-gettext": 20,
-        "yiisoft/mailer": 20,
-        "yiisoft/mailer-swiftmailer": 20,
         "yiisoft/translator-formatter-intl": 20,
         "yiisoft/translator-message-php": 20,
         "yiisoft/yii-bootstrap4": 20,
