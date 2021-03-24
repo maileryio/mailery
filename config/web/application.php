@@ -13,6 +13,7 @@ use Yiisoft\Auth\Middleware\Authentication;
 use Yiisoft\Router\UrlGeneratorInterface;
 use Mailery\Handler\NotFoundHandler;
 use Mailery\User\Middleware\CurrentUserMiddleware;
+use Yiisoft\Form\Widget\Field;
 
 return [
     Application::class => [
@@ -41,4 +42,22 @@ return [
             'fallbackHandler' => Reference::to(NotFoundHandler::class),
         ],
     ],
+
+    Field::class => static function () {
+        $field = new Field();
+
+        $field->inputOptions([
+            'class' => 'form-control',
+        ]);
+
+        $field->errorOptions([
+            'class' => 'invalid-feedback',
+        ]);
+
+        $field->hintOptions([
+            'class' => 'form-text text-muted',
+        ]);
+
+        return $field->errorCssClass('is-invalid');
+    },
 ];
