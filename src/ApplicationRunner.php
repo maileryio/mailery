@@ -50,8 +50,14 @@ final class ApplicationRunner
 
         $container = new Container(
             $config->get('web'),
-            $config->get('providers-web')
+            [
+                Provider\LoggerProvider::class => Provider\LoggerProvider::class,
+                Provider\RouteCollectorServiceProvider::class => Provider\RouteCollectorServiceProvider::class,
+            ]
         );
+
+
+        var_dump($container->get(\Yiisoft\Aliases\Aliases::class)->get('@root'));exit;
 
         // Register error handler with real container-configured dependencies.
         $this->registerErrorHandler($container->get(ErrorHandler::class), $errorHandler);

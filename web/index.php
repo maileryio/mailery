@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Mailery\ApplicationRunner;
+use Dotenv\Dotenv;
 
 // PHP built-in server routing.
 if (PHP_SAPI === 'cli-server') {
@@ -16,6 +17,9 @@ if (PHP_SAPI === 'cli-server') {
 }
 
 require_once dirname(__DIR__) . '/vendor/autoload.php';
+
+$dotenv = Dotenv::createUnsafeImmutable(dirname(__DIR__));
+$dotenv->load();
 
 $runner = new ApplicationRunner();
 // Development mode:

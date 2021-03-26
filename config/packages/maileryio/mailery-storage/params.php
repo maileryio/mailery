@@ -14,6 +14,7 @@ use League\Flysystem\Local\LocalFilesystemAdapter;
 use League\Flysystem\UnixVisibility\PortableVisibilityConverter;
 use Mailery\Storage\Filesystem\FileStorageInterface;
 use Mailery\Storage\Filesystem\RuntimeStorageInterface;
+use Yiisoft\Aliases\Aliases;
 
 return [
     'yiisoft/aliases' => [
@@ -37,7 +38,9 @@ return [
             'adapter' => [
                 '__class' => LocalFilesystemAdapter::class,
                 '__construct()' => [
-                    '@storage',
+                    static function (Aliases $aliases) {
+                        return $aliases->get('@storage');
+                    },
                     PortableVisibilityConverter::fromArray([
                         'file' => [
                             'public' => 0644,
@@ -57,7 +60,9 @@ return [
             'adapter' => [
                 '__class' => LocalFilesystemAdapter::class,
                 '__construct()' => [
-                    '@runtime',
+                    static function (Aliases $aliases) {
+                        return $aliases->get('@runtime');
+                    },
                     PortableVisibilityConverter::fromArray([
                         'file' => [
                             'public' => 0644,

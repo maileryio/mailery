@@ -47,6 +47,7 @@
         "maileryio/widget-search": "dev-master",
         "predis/predis": "^1.1",
         "psr/log": "^1.1",
+        "vlucas/phpdotenv": "^5.3",
         "yiisoft/cache-file": "^1.0",
         "yiisoft/config": "1.0.x-dev",
         "yiisoft/error-handler": "^3.0@dev",
@@ -59,13 +60,16 @@
         "yiisoft/yii-bootstrap5": "^3.0@dev",
         "yiisoft/yii-console": "3.0.x-dev",
         "yiisoft/yii-cycle": "^3.0@dev",
-        "yiisoft/yii-event": "^3.0@dev"
+        "yiisoft/yii-debug": "^3.0@dev",
+        "yiisoft/yii-debug-api": "^3.0@dev",
+        "yiisoft/yii-event": "^3.0@dev",
+        "yiisoft/yii-view": "^3.0@dev",
+        "yiisoft/yii-web": "^3.0@dev"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
         "phan/phan": "^2.4",
-        "phpunit/phpunit": "^9.0",
-        "vlucas/phpdotenv": "^3.6"
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
@@ -126,7 +130,8 @@
             "routes": "config/routes.php"
         },
         "config-plugin-options": {
-            "output-directory": "config/packages"
+            "output-directory": "config/packages",
+            "silent-override": true
         }
     },
     "config": {

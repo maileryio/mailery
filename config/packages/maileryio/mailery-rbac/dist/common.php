@@ -16,12 +16,15 @@ use Yiisoft\Access\AccessCheckerInterface;
 use Yiisoft\Rbac\Manager;
 use Yiisoft\Rbac\StorageInterface;
 use Yiisoft\Rbac\Php\Storage;
+use Yiisoft\Aliases\Aliases;
 
 return [
     StorageInterface::class => [
         '__class' => Storage::class,
         '__construct()' => [
-            'directory' => $params['yiisoft/aliases']['aliases']['@root'] . DIRECTORY_SEPARATOR . 'rbac',
+            'directory' => static function (Aliases $aliases) {
+                return $aliases->get('@rbac');
+            },
         ],
     ],
     RuleFactoryInterface::class => ClassNameRuleFactory::class,

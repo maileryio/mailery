@@ -68,6 +68,12 @@ return [
         'maileryio/mailery-template' => [
             'common.php',
         ],
+        'yiisoft/yii-debug' => [
+            'common.php',
+        ],
+        'yiisoft/profiler' => [
+            'common.php',
+        ],
         'maileryio/mailery-user' => [
             'common.php',
         ],
@@ -110,6 +116,9 @@ return [
             '$common',
             'config/console/*.php',
         ],
+        'yiisoft/yii-debug' => [
+            'console.php',
+        ],
         'yiisoft/yii-cycle' => [
             'console.php',
         ],
@@ -133,6 +142,9 @@ return [
             '$events',
             'config/events-console.php',
         ],
+        'yiisoft/yii-debug' => [
+            'events-console.php',
+        ],
         'yiisoft/yii-cycle' => [
             'events-console.php',
         ],
@@ -145,6 +157,12 @@ return [
         '/' => [
             '$events',
             'config/events-web.php',
+        ],
+        'yiisoft/yii-debug' => [
+            'events-web.php',
+        ],
+        'yiisoft/profiler' => [
+            'events-web.php',
         ],
         'yiisoft/log' => [
             'events-web.php',
@@ -198,6 +216,9 @@ return [
         'yiisoft/log-target-file' => [
             'params.php',
         ],
+        'yiisoft/yii-debug-api' => [
+            'params.php',
+        ],
         'maileryio/mailery-channel' => [
             'params.php',
         ],
@@ -222,6 +243,12 @@ return [
         ],
         'maileryio/mailery-template-email-ckeditor' => [
             'config/params.php',
+        ],
+        'yiisoft/yii-debug' => [
+            'params.php',
+        ],
+        'yiisoft/profiler' => [
+            'params.php',
         ],
         'maileryio/mailery-user' => [
             'params.php',
@@ -291,6 +318,9 @@ return [
         'yiisoft/yii-filesystem' => [
             'providers.php',
         ],
+        'yiisoft/yii-debug' => [
+            'providers.php',
+        ],
         'yiisoft/widget' => [
             'providers.php',
         ],
@@ -340,6 +370,9 @@ return [
             'providers-web.php',
         ],
         'maileryio/mailery-template-email' => [
+            'providers-web.php',
+        ],
+        'yiisoft/yii-debug-api' => [
             'providers-web.php',
         ],
         'maileryio/mailery-channel' => [
@@ -404,8 +437,14 @@ return [
         '/' => [
             'config/routes.php',
         ],
+        'yiisoft/yii-debug-api' => [
+            'routes.php',
+        ],
     ],
     'tests' => [
+        'yiisoft/yii-debug' => [
+            'tests.php',
+        ],
         'yiisoft/yii-widgets' => [
             'tests.php',
         ],
@@ -442,10 +481,16 @@ return [
         'yiisoft/error-handler' => [
             'web.php',
         ],
+        'yiisoft/yii-debug-api' => [
+            'web.php',
+        ],
         'maileryio/mailery-channel' => [
             'web.php',
         ],
         'maileryio/mailery-channel-email' => [
+            'web.php',
+        ],
+        'yiisoft/yii-debug' => [
             'web.php',
         ],
         'maileryio/mailery-user' => [
