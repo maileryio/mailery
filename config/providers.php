@@ -11,9 +11,7 @@ declare(strict_types=1);
  */
 
 use Mailery\Provider\LoggerProvider;
-use Yiisoft\Composer\Config\Merger\Modifier\ReverseBlockMerge;
 
 return [
     LoggerProvider::class => LoggerProvider::class,
-    ReverseBlockMerge::class => new ReverseBlockMerge(),
 ];

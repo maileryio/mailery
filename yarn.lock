@@ -93,9 +93,6 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@composer-asset/maileryio--cycle-mapper@file:./vendor/foxy/composer-asset/maileryio/cycle-mapper":
-  version "1.0.0"
-
 "@composer-asset/maileryio--mailery-activity-log@file:./vendor/foxy/composer-asset/maileryio/mailery-activity-log":
   version "1.0.0"
 

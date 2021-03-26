@@ -10,9 +10,4 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Yiisoft\Composer\Config\Merger\Modifier\ReverseBlockMerge;
-
-return [
-    ReverseBlockMerge::class => new ReverseBlockMerge(),
-];
-
+return [];

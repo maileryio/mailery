@@ -48,12 +48,10 @@
         "predis/predis": "^1.1",
         "psr/log": "^1.1",
         "yiisoft/cache-file": "^1.0",
-        "yiisoft/composer-config-plugin": "^1.0@dev",
+        "yiisoft/config": "1.0.x-dev",
         "yiisoft/error-handler": "^3.0@dev",
         "yiisoft/form": "1.0.x-dev",
         "yiisoft/i18n": "^1.0",
-        "yiisoft/i18n-formatter-intl": "^3.0@dev",
-        "yiisoft/i18n-message-gettext": "^3.0@dev",
         "yiisoft/log": "^1.0",
         "yiisoft/log-target-file": "^1.0",
         "yiisoft/translator-formatter-intl": "^3.0@dev",
@@ -72,10 +70,7 @@
     "autoload": {
         "psr-4": {
             "Mailery\\": "src"
-        },
-        "files": [
-            "src/functions.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
@@ -130,7 +125,9 @@
             ],
             "routes": "config/routes.php"
         },
-        "config-plugin-output-dir": "runtime/build/config"
+        "config-plugin-options": {
+            "output-directory": "config/packages"
+        }
     },
     "config": {
         "foxy": {

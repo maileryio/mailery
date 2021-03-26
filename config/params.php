@@ -21,7 +21,6 @@ use Mailery\Menu\Sidebar\SidebarMenu;
 use Mailery\Brand\BrandLocatorInterface;
 use Mailery\Command\Router\ListCommand;
 use Spiral\Database\Driver\Postgres\PostgresDriver;
-use Yiisoft\Composer\Config\Merger\Modifier\ReverseBlockMerge;
 use Yiisoft\Assets\AssetManager;
 use Yiisoft\Factory\Definitions\Reference;
 use Yiisoft\Router\UrlGeneratorInterface;
@@ -128,7 +127,6 @@ return [
                     Generator\SyncTables::class, // sync table changes to database
                 ]
             ],
-            ReverseBlockMerge::class => new ReverseBlockMerge(),
         ]),
         'annotated-entity-paths' => [],
     ],

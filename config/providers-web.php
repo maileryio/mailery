@@ -10,10 +10,8 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Yiisoft\Composer\Config\Merger\Modifier\ReverseBlockMerge;
 use Mailery\Provider\RouteCollectorServiceProvider;
 
 return [
     RouteCollectorServiceProvider::class => RouteCollectorServiceProvider::class,
-    ReverseBlockMerge::class => new ReverseBlockMerge(),
 ];
