@@ -20,12 +20,13 @@ final class RouteCollectorServiceProvider extends ServiceProvider
         /** @var RouteCollectorInterface $collector */
         $collector = $container->get(RouteCollectorInterface::class);
 
-        $collector->addGroup(Group::create(
-            null,
-            [
-                Route::get('/', [DefaultController::class, 'index'])
-                    ->name('/default/index'),
-            ]
-        ));
+        $collector->addGroup(
+            Group::create(null)
+                ->routes(
+                    Route::get('/')
+                        ->name('/default/index')
+                        ->action([DefaultController::class, 'index'])
+                )
+        );
     }
 }

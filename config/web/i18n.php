@@ -27,7 +27,7 @@ return [
 
         return new MessageSource($filePath);
     },
-    TranslatorInterface::class => function (ContainerInterface $container) use($params) {
+    TranslatorInterface::class => function () use($params) {
         return new Translator(
             $params['i18n']['locale']
         );

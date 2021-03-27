@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "135859bbc8606ed82daa34ff77cc7d80",
+    "content-hash": "4904069126a4520212e222a9907eea39",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -50,16 +50,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.176.1",
+            "version": "3.176.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "86bce9d17ade07f9ec6f0cbe36a7917dfecb0f7e"
+                "reference": "cfd62d9d159df12e8e1fc3c486e0a010a4c39f80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/86bce9d17ade07f9ec6f0cbe36a7917dfecb0f7e",
-                "reference": "86bce9d17ade07f9ec6f0cbe36a7917dfecb0f7e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cfd62d9d159df12e8e1fc3c486e0a010a4c39f80",
+                "reference": "cfd62d9d159df12e8e1fc3c486e0a010a4c39f80",
                 "shasum": ""
             },
             "require": {
@@ -131,7 +131,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2021-03-26T03:59:54+00:00"
+            "time": "2021-03-26T18:16:22+00:00"
         },
         {
             "name": "brick/math",
@@ -178,6 +178,143 @@
                 "math"
             ],
             "time": "2021-01-20T22:51:39+00:00"
+        },
+        {
+            "name": "composer/ca-bundle",
+            "version": "1.2.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/ca-bundle.git",
+                "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
+                "reference": "78a0e288fdcebf92aa2318a8d3656168da6ac1a5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "ext-pcre": "*",
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.55",
+                "psr/log": "^1.0",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\CaBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+            "keywords": [
+                "cabundle",
+                "cacert",
+                "certificate",
+                "ssl",
+                "tls"
+            ],
+            "time": "2021-01-12T12:10:35+00:00"
+        },
+        {
+            "name": "composer/composer",
+            "version": "1.10.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/composer.git",
+                "reference": "e55d297525f0ecc805c813a0f63a40114fd670f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/composer/zipball/e55d297525f0ecc805c813a0f63a40114fd670f6",
+                "reference": "e55d297525f0ecc805c813a0f63a40114fd670f6",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.0",
+                "composer/semver": "^1.0",
+                "composer/spdx-licenses": "^1.2",
+                "composer/xdebug-handler": "^1.1",
+                "justinrainbow/json-schema": "^5.2.10",
+                "php": "^5.3.2 || ^7.0 || ^8.0",
+                "psr/log": "^1.0",
+                "seld/jsonlint": "^1.4",
+                "seld/phar-utils": "^1.0",
+                "symfony/console": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+                "symfony/filesystem": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+                "symfony/finder": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+                "symfony/process": "^2.7 || ^3.0 || ^4.0 || ^5.0"
+            },
+            "conflict": {
+                "symfony/console": "2.8.38"
+            },
+            "require-dev": {
+                "phpspec/prophecy": "^1.10",
+                "symfony/phpunit-bridge": "^4.2"
+            },
+            "suggest": {
+                "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
+                "ext-zip": "Enabling the zip extension allows you to unzip archives",
+                "ext-zlib": "Allow gzip compression of HTTP requests"
+            },
+            "bin": [
+                "bin/composer"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\": "src/Composer"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Composer helps you declare, manage and install dependencies of PHP projects. It ensures you have the right stack everywhere.",
+            "homepage": "https://getcomposer.org/",
+            "keywords": [
+                "autoload",
+                "dependency",
+                "package"
+            ],
+            "time": "2021-01-27T14:41:06+00:00"
         },
         {
             "name": "composer/installers",
@@ -308,6 +445,172 @@
                 "zikula"
             ],
             "time": "2021-01-14T11:07:16+00:00"
+        },
+        {
+            "name": "composer/semver",
+            "version": "1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "647490bbcaf7fc4891c58f47b825eb99d19c377a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/647490bbcaf7fc4891c58f47b825eb99d19c377a",
+                "reference": "647490bbcaf7fc4891c58f47b825eb99d19c377a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5 || ^5.0.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "time": "2020-12-03T15:47:16+00:00"
+        },
+        {
+            "name": "composer/spdx-licenses",
+            "version": "1.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/spdx-licenses.git",
+                "reference": "de30328a7af8680efdc03e396aad24befd513200"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/de30328a7af8680efdc03e396aad24befd513200",
+                "reference": "de30328a7af8680efdc03e396aad24befd513200",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Spdx\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "SPDX licenses list and validation library.",
+            "keywords": [
+                "license",
+                "spdx",
+                "validator"
+            ],
+            "time": "2020-12-03T16:04:16+00:00"
+        },
+        {
+            "name": "composer/xdebug-handler",
+            "version": "1.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/xdebug-handler.git",
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f27e06cd9675801df441b3656569b328e04aa37c",
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.55",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Composer\\XdebugHandler\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Stevenson",
+                    "email": "john-stevenson@blueyonder.co.uk"
+                }
+            ],
+            "description": "Restarts a process without Xdebug.",
+            "keywords": [
+                "Xdebug",
+                "performance"
+            ],
+            "time": "2021-03-25T17:01:18+00:00"
         },
         {
             "name": "cycle/annotated",
@@ -1134,58 +1437,6 @@
             "time": "2018-01-11T10:40:03+00:00"
         },
         {
-            "name": "graham-campbell/result-type",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/GrahamCampbell/Result-Type.git",
-                "reference": "7e279d2cd5d7fbb156ce46daada972355cea27bb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/7e279d2cd5d7fbb156ce46daada972355cea27bb",
-                "reference": "7e279d2cd5d7fbb156ce46daada972355cea27bb",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0|^8.0",
-                "phpoption/phpoption": "^1.7.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.5|^7.5|^8.5|^9.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GrahamCampbell\\ResultType\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Graham Campbell",
-                    "email": "graham@alt-three.com"
-                }
-            ],
-            "description": "An Implementation Of The Result Type",
-            "keywords": [
-                "Graham Campbell",
-                "GrahamCampbell",
-                "Result Type",
-                "Result-Type",
-                "result"
-            ],
-            "time": "2020-04-13T13:17:36+00:00"
-        },
-        {
             "name": "guzzlehttp/guzzle",
             "version": "7.3.0",
             "source": {
@@ -1446,6 +1697,72 @@
                 "psr-7"
             ],
             "time": "2021-02-20T10:36:25+00:00"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "5.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b",
+                "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
+                "json-schema/json-schema-test-suite": "1.2.0",
+                "phpunit/phpunit": "^4.8.35"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JsonSchema\\": "src/JsonSchema/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Prieto Reis",
+                    "email": "bruno.p.reis@gmail.com"
+                },
+                {
+                    "name": "Justin Rainbow",
+                    "email": "justin.rainbow@gmail.com"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Robert Schönthal",
+                    "email": "seroscho@googlemail.com"
+                }
+            ],
+            "description": "A library to validate a json schema.",
+            "homepage": "https://github.com/justinrainbow/json-schema",
+            "keywords": [
+                "json",
+                "schema"
+            ],
+            "time": "2020-05-27T16:41:55+00:00"
         },
         {
             "name": "laminas/laminas-hydrator",
@@ -1764,12 +2081,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-activity-log.git",
-                "reference": "983df398d6298ab0f6f5694a72aca08e104e3c1c"
+                "reference": "68cbf1871ca5706e0d8c96d7ff300f0e4c23e8e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-activity-log/zipball/983df398d6298ab0f6f5694a72aca08e104e3c1c",
-                "reference": "983df398d6298ab0f6f5694a72aca08e104e3c1c",
+                "url": "https://api.github.com/repos/maileryio/mailery-activity-log/zipball/68cbf1871ca5706e0d8c96d7ff300f0e4c23e8e0",
+                "reference": "68cbf1871ca5706e0d8c96d7ff300f0e4c23e8e0",
                 "shasum": ""
             },
             "require": {
@@ -1822,7 +2139,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2021-03-24T16:01:01+00:00"
+            "time": "2021-03-27T07:55:56+00:00"
         },
         {
             "name": "maileryio/mailery-brand",
@@ -1830,12 +2147,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-brand.git",
-                "reference": "ad2a8cfeef08570db89fb751012bf829ac464907"
+                "reference": "586038075633b2aadc262f03dbb428926d386c38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-brand/zipball/ad2a8cfeef08570db89fb751012bf829ac464907",
-                "reference": "ad2a8cfeef08570db89fb751012bf829ac464907",
+                "url": "https://api.github.com/repos/maileryio/mailery-brand/zipball/586038075633b2aadc262f03dbb428926d386c38",
+                "reference": "586038075633b2aadc262f03dbb428926d386c38",
                 "shasum": ""
             },
             "require": {
@@ -1897,7 +2214,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2021-03-24T16:01:10+00:00"
+            "time": "2021-03-27T07:56:04+00:00"
         },
         {
             "name": "maileryio/mailery-campaign",
@@ -1905,12 +2222,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-campaign.git",
-                "reference": "3011758b0ccdbaede80514e92372efb6e384fcbe"
+                "reference": "878155bd65706bd5f35a3326872346a1c2559e1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-campaign/zipball/3011758b0ccdbaede80514e92372efb6e384fcbe",
-                "reference": "3011758b0ccdbaede80514e92372efb6e384fcbe",
+                "url": "https://api.github.com/repos/maileryio/mailery-campaign/zipball/878155bd65706bd5f35a3326872346a1c2559e1b",
+                "reference": "878155bd65706bd5f35a3326872346a1c2559e1b",
                 "shasum": ""
             },
             "require": {
@@ -1952,7 +2269,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2021-03-24T16:01:18+00:00"
+            "time": "2021-03-27T07:56:13+00:00"
         },
         {
             "name": "maileryio/mailery-campaign-standard",
@@ -1960,12 +2277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-campaign-standard.git",
-                "reference": "ddf37de811aeaaf29724eaff06dddd15f51113f0"
+                "reference": "3af13ebfa51719d55b1370faf170f862621a3321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-campaign-standard/zipball/ddf37de811aeaaf29724eaff06dddd15f51113f0",
-                "reference": "ddf37de811aeaaf29724eaff06dddd15f51113f0",
+                "url": "https://api.github.com/repos/maileryio/mailery-campaign-standard/zipball/3af13ebfa51719d55b1370faf170f862621a3321",
+                "reference": "3af13ebfa51719d55b1370faf170f862621a3321",
                 "shasum": ""
             },
             "require": {
@@ -2008,7 +2325,7 @@
                 "mailer",
                 "standard"
             ],
-            "time": "2021-03-24T16:01:24+00:00"
+            "time": "2021-03-27T07:56:19+00:00"
         },
         {
             "name": "maileryio/mailery-channel",
@@ -2129,12 +2446,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-channel-email-amazon-ses.git",
-                "reference": "5753282910ade08ca625c288825ed97d2e86b0a1"
+                "reference": "8c7e271daa8386df8fd63fbe96dce5c226048f3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-channel-email-amazon-ses/zipball/5753282910ade08ca625c288825ed97d2e86b0a1",
-                "reference": "5753282910ade08ca625c288825ed97d2e86b0a1",
+                "url": "https://api.github.com/repos/maileryio/mailery-channel-email-amazon-ses/zipball/8c7e271daa8386df8fd63fbe96dce5c226048f3e",
+                "reference": "8c7e271daa8386df8fd63fbe96dce5c226048f3e",
                 "shasum": ""
             },
             "require": {
@@ -2182,7 +2499,7 @@
                 "mailinig",
                 "ses"
             ],
-            "time": "2021-03-24T16:01:59+00:00"
+            "time": "2021-03-27T07:56:48+00:00"
         },
         {
             "name": "maileryio/mailery-common",
@@ -2244,12 +2561,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-dashboard.git",
-                "reference": "d3122c931fa5dc3507220826618dfd3512878c1a"
+                "reference": "1221a61fb3b8676e774592d65f18e246b09d920a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-dashboard/zipball/d3122c931fa5dc3507220826618dfd3512878c1a",
-                "reference": "d3122c931fa5dc3507220826618dfd3512878c1a",
+                "url": "https://api.github.com/repos/maileryio/mailery-dashboard/zipball/1221a61fb3b8676e774592d65f18e246b09d920a",
+                "reference": "1221a61fb3b8676e774592d65f18e246b09d920a",
                 "shasum": ""
             },
             "require": {
@@ -2293,7 +2610,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2021-03-24T16:02:28+00:00"
+            "time": "2021-03-27T07:57:07+00:00"
         },
         {
             "name": "maileryio/mailery-icon",
@@ -2636,12 +2953,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-rbac.git",
-                "reference": "5aa6db465cfe5cb476c9a76322100245001964ce"
+                "reference": "a5a41660bed54db9e1f79a4d61461771ecbea0f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-rbac/zipball/5aa6db465cfe5cb476c9a76322100245001964ce",
-                "reference": "5aa6db465cfe5cb476c9a76322100245001964ce",
+                "url": "https://api.github.com/repos/maileryio/mailery-rbac/zipball/a5a41660bed54db9e1f79a4d61461771ecbea0f5",
+                "reference": "a5a41660bed54db9e1f79a4d61461771ecbea0f5",
                 "shasum": ""
             },
             "require": {
@@ -2697,7 +3014,7 @@
                 "mailer",
                 "rbac"
             ],
-            "time": "2021-03-26T10:45:11+00:00"
+            "time": "2021-03-27T07:57:54+00:00"
         },
         {
             "name": "maileryio/mailery-sender",
@@ -2705,12 +3022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-sender.git",
-                "reference": "3a1746eb88ff3dfe87f31655ec13b72f7eabb558"
+                "reference": "3159f0b3b93777dd6828b0a81b7fe526357f88d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-sender/zipball/3a1746eb88ff3dfe87f31655ec13b72f7eabb558",
-                "reference": "3a1746eb88ff3dfe87f31655ec13b72f7eabb558",
+                "url": "https://api.github.com/repos/maileryio/mailery-sender/zipball/3159f0b3b93777dd6828b0a81b7fe526357f88d5",
+                "reference": "3159f0b3b93777dd6828b0a81b7fe526357f88d5",
                 "shasum": ""
             },
             "require": {
@@ -2753,7 +3070,7 @@
                 "mailer",
                 "mailinig"
             ],
-            "time": "2021-03-24T16:04:43+00:00"
+            "time": "2021-03-27T07:58:05+00:00"
         },
         {
             "name": "maileryio/mailery-sender-domain",
@@ -2761,12 +3078,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-sender-domain.git",
-                "reference": "9fe37404dfd74e9f8c3a58faea7808f0c7171b52"
+                "reference": "89db9ca7feed3d2fa78231f05a714bd03564285f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-sender-domain/zipball/9fe37404dfd74e9f8c3a58faea7808f0c7171b52",
-                "reference": "9fe37404dfd74e9f8c3a58faea7808f0c7171b52",
+                "url": "https://api.github.com/repos/maileryio/mailery-sender-domain/zipball/89db9ca7feed3d2fa78231f05a714bd03564285f",
+                "reference": "89db9ca7feed3d2fa78231f05a714bd03564285f",
                 "shasum": ""
             },
             "require": {
@@ -2811,7 +3128,7 @@
                 "mailer",
                 "mailinig"
             ],
-            "time": "2021-03-24T16:04:59+00:00"
+            "time": "2021-03-27T07:58:14+00:00"
         },
         {
             "name": "maileryio/mailery-sender-email",
@@ -2819,12 +3136,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-sender-email.git",
-                "reference": "698ba99723a7792c0572669f4d35bbe7f81a1f06"
+                "reference": "8a59ef7ab81838e79a971ac74b8ff46f0b7851ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-sender-email/zipball/698ba99723a7792c0572669f4d35bbe7f81a1f06",
-                "reference": "698ba99723a7792c0572669f4d35bbe7f81a1f06",
+                "url": "https://api.github.com/repos/maileryio/mailery-sender-email/zipball/8a59ef7ab81838e79a971ac74b8ff46f0b7851ac",
+                "reference": "8a59ef7ab81838e79a971ac74b8ff46f0b7851ac",
                 "shasum": ""
             },
             "require": {
@@ -2869,7 +3186,7 @@
                 "mailer",
                 "mailinig"
             ],
-            "time": "2021-03-24T16:05:06+00:00"
+            "time": "2021-03-27T07:58:23+00:00"
         },
         {
             "name": "maileryio/mailery-setting",
@@ -2877,12 +3194,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-setting.git",
-                "reference": "7c3c107e8d8203191adabeadc62389bded94597d"
+                "reference": "cd6b7a8becb9f6528eac855a3e2318db98f505b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-setting/zipball/7c3c107e8d8203191adabeadc62389bded94597d",
-                "reference": "7c3c107e8d8203191adabeadc62389bded94597d",
+                "url": "https://api.github.com/repos/maileryio/mailery-setting/zipball/cd6b7a8becb9f6528eac855a3e2318db98f505b0",
+                "reference": "cd6b7a8becb9f6528eac855a3e2318db98f505b0",
                 "shasum": ""
             },
             "require": {
@@ -2892,8 +3209,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.16",
                 "phan/phan": "^2.4",
-                "phpunit/phpunit": "^9.0",
-                "yiisoft/composer-config-plugin": "dev-master"
+                "phpunit/phpunit": "^9.0"
             },
             "type": "library",
             "extra": {
@@ -2901,10 +3217,13 @@
                     "dev-master": "1.0.x-dev"
                 },
                 "config-plugin": {
-                    "params": "config/params.php",
-                    "common": "config/common.php",
-                    "web": "config/web.php",
-                    "providers-web": "config/providers-web.php"
+                    "params": "params.php",
+                    "common": "common.php",
+                    "web": "web.php",
+                    "providers-web": "providers-web.php"
+                },
+                "config-plugin-options": {
+                    "source-directory": "config"
                 }
             },
             "autoload": {
@@ -2923,7 +3242,7 @@
                 "mailer",
                 "setting"
             ],
-            "time": "2021-03-14T19:48:41+00:00"
+            "time": "2021-03-27T07:58:48+00:00"
         },
         {
             "name": "maileryio/mailery-storage",
@@ -2931,12 +3250,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-storage.git",
-                "reference": "60114b8a62afbab381897493f6795b7eb68f5cd5"
+                "reference": "d859b24416a8477a3c1bec34abbcef8a0e985b94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-storage/zipball/60114b8a62afbab381897493f6795b7eb68f5cd5",
-                "reference": "60114b8a62afbab381897493f6795b7eb68f5cd5",
+                "url": "https://api.github.com/repos/maileryio/mailery-storage/zipball/d859b24416a8477a3c1bec34abbcef8a0e985b94",
+                "reference": "d859b24416a8477a3c1bec34abbcef8a0e985b94",
                 "shasum": ""
             },
             "require": {
@@ -2985,7 +3304,7 @@
                 "mailer",
                 "storage"
             ],
-            "time": "2021-03-26T10:55:50+00:00"
+            "time": "2021-03-27T07:59:14+00:00"
         },
         {
             "name": "maileryio/mailery-subscriber",
@@ -2993,12 +3312,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-subscriber.git",
-                "reference": "fae7a49684aba7ae70d5eed371bf051539a11d58"
+                "reference": "7c3cc7d29449c456059f81e6ad0c2611a7d3cc16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-subscriber/zipball/fae7a49684aba7ae70d5eed371bf051539a11d58",
-                "reference": "fae7a49684aba7ae70d5eed371bf051539a11d58",
+                "url": "https://api.github.com/repos/maileryio/mailery-subscriber/zipball/7c3cc7d29449c456059f81e6ad0c2611a7d3cc16",
+                "reference": "7c3cc7d29449c456059f81e6ad0c2611a7d3cc16",
                 "shasum": ""
             },
             "require": {
@@ -3062,7 +3381,7 @@
                 "mailer",
                 "subscriber"
             ],
-            "time": "2021-03-24T16:05:31+00:00"
+            "time": "2021-03-27T07:59:24+00:00"
         },
         {
             "name": "maileryio/mailery-template",
@@ -3070,12 +3389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-template.git",
-                "reference": "fe8a10d90a60a7e2c409dcc47a5ddaec6b4368d5"
+                "reference": "9e9f6084487192342fb402822c6aa36adb5c06b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-template/zipball/fe8a10d90a60a7e2c409dcc47a5ddaec6b4368d5",
-                "reference": "fe8a10d90a60a7e2c409dcc47a5ddaec6b4368d5",
+                "url": "https://api.github.com/repos/maileryio/mailery-template/zipball/9e9f6084487192342fb402822c6aa36adb5c06b4",
+                "reference": "9e9f6084487192342fb402822c6aa36adb5c06b4",
                 "shasum": ""
             },
             "require": {
@@ -3117,7 +3436,7 @@
                 "mailer",
                 "template"
             ],
-            "time": "2021-03-24T16:05:39+00:00"
+            "time": "2021-03-27T07:59:35+00:00"
         },
         {
             "name": "maileryio/mailery-template-email",
@@ -3125,12 +3444,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-template-email.git",
-                "reference": "b7bbb4487f591deecceaab7ca52f74550a7c7aab"
+                "reference": "4cdc8e807f3694cfba00be8b9def2190da885c79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-template-email/zipball/b7bbb4487f591deecceaab7ca52f74550a7c7aab",
-                "reference": "b7bbb4487f591deecceaab7ca52f74550a7c7aab",
+                "url": "https://api.github.com/repos/maileryio/mailery-template-email/zipball/4cdc8e807f3694cfba00be8b9def2190da885c79",
+                "reference": "4cdc8e807f3694cfba00be8b9def2190da885c79",
                 "shasum": ""
             },
             "require": {
@@ -3175,7 +3494,7 @@
                 "mailer",
                 "template"
             ],
-            "time": "2021-03-24T16:05:45+00:00"
+            "time": "2021-03-27T07:59:41+00:00"
         },
         {
             "name": "maileryio/mailery-template-email-ckeditor",
@@ -3235,12 +3554,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-user.git",
-                "reference": "badfe8a691de78375bdec59370fd5f6cf1f685e4"
+                "reference": "bca007df31cdb18cc8cb58c12cbbdc07ad7cc6f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-user/zipball/badfe8a691de78375bdec59370fd5f6cf1f685e4",
-                "reference": "badfe8a691de78375bdec59370fd5f6cf1f685e4",
+                "url": "https://api.github.com/repos/maileryio/mailery-user/zipball/bca007df31cdb18cc8cb58c12cbbdc07ad7cc6f3",
+                "reference": "bca007df31cdb18cc8cb58c12cbbdc07ad7cc6f3",
                 "shasum": ""
             },
             "require": {
@@ -3300,7 +3619,7 @@
                 "mailer",
                 "user"
             ],
-            "time": "2021-03-24T16:06:00+00:00"
+            "time": "2021-03-27T07:59:57+00:00"
         },
         {
             "name": "maileryio/mailery-web",
@@ -3931,61 +4250,6 @@
             "time": "2020-07-31T21:01:56+00:00"
         },
         {
-            "name": "neomerx/cors-psr7",
-            "version": "v1.0.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/neomerx/cors-psr7.git",
-                "reference": "2556e2013f16a55532c95928455257d5b6bbc6e2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/neomerx/cors-psr7/zipball/2556e2013f16a55532c95928455257d5b6bbc6e2",
-                "reference": "2556e2013f16a55532c95928455257d5b6bbc6e2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6.0",
-                "psr/http-message": "^1.0",
-                "psr/log": "^1.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^5.7",
-                "scrutinizer/ocular": "^1.1",
-                "squizlabs/php_codesniffer": "^3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Neomerx\\Cors\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "neomerx",
-                    "email": "info@neomerx.com"
-                }
-            ],
-            "description": "Framework agnostic (PSR-7) CORS implementation (www.w3.org/TR/cors/)",
-            "homepage": "https://github.com/neomerx/cors-psr7",
-            "keywords": [
-                "Cross Origin Resource Sharing",
-                "Cross-Origin Resource Sharing",
-                "cors",
-                "neomerx",
-                "psr-7",
-                "psr7",
-                "w3.org",
-                "www.w3.org"
-            ],
-            "time": "2018-05-23T16:10:11+00:00"
-        },
-        {
             "name": "nikic/fast-route",
             "version": "v1.3.0",
             "source": {
@@ -4096,69 +4360,6 @@
             ]
         },
         {
-            "name": "nyholm/psr7",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Nyholm/psr7.git",
-                "reference": "23ae1f00fbc6a886cbe3062ca682391b9cc7c37b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/23ae1f00fbc6a886cbe3062ca682391b9cc7c37b",
-                "reference": "23ae1f00fbc6a886cbe3062ca682391b9cc7c37b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1",
-                "php-http/message-factory": "^1.0",
-                "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.0"
-            },
-            "provide": {
-                "psr/http-factory-implementation": "1.0",
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "http-interop/http-factory-tests": "^0.8",
-                "php-http/psr7-integration-tests": "^1.0",
-                "phpunit/phpunit": "^7.5 || 8.5 || 9.4",
-                "symfony/error-handler": "^4.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Nyholm\\Psr7\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Nyholm",
-                    "email": "tobias.nyholm@gmail.com"
-                },
-                {
-                    "name": "Martijn van der Ven",
-                    "email": "martijn@vanderven.se"
-                }
-            ],
-            "description": "A fast PHP7 implementation of PSR-7",
-            "homepage": "https://tnyholm.se",
-            "keywords": [
-                "psr-17",
-                "psr-7"
-            ],
-            "time": "2021-02-18T15:41:32+00:00"
-        },
-        {
             "name": "oomphinc/composer-installers-extender",
             "version": "2.0.0",
             "source": {
@@ -4213,16 +4414,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.6.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5"
+                "reference": "06b4961aabf900c72a20b7000bfa10fd7ae3035e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5",
-                "reference": "943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5",
+                "url": "https://api.github.com/repos/opis/closure/zipball/06b4961aabf900c72a20b7000bfa10fd7ae3035e",
+                "reference": "06b4961aabf900c72a20b7000bfa10fd7ae3035e",
                 "shasum": ""
             },
             "require": {
@@ -4270,112 +4471,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2020-11-07T02:01:34+00:00"
-        },
-        {
-            "name": "php-http/message-factory",
-            "version": "v1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-http/message-factory.git",
-                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-http/message-factory/zipball/a478cb11f66a6ac48d8954216cfed9aa06a501a1",
-                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4",
-                "psr/http-message": "^1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com"
-                }
-            ],
-            "description": "Factory interfaces for PSR-7 HTTP Message",
-            "homepage": "http://php-http.org",
-            "keywords": [
-                "factory",
-                "http",
-                "message",
-                "stream",
-                "uri"
-            ],
-            "time": "2015-12-19T14:08:53+00:00"
-        },
-        {
-            "name": "phpoption/phpoption",
-            "version": "1.7.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
-                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9 || ^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4.1",
-                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.7-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PhpOption\\": "src/PhpOption/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                },
-                {
-                    "name": "Graham Campbell",
-                    "email": "graham@alt-three.com"
-                }
-            ],
-            "description": "Option Type for PHP",
-            "keywords": [
-                "language",
-                "option",
-                "php",
-                "type"
-            ],
-            "time": "2020-07-20T17:29:33+00:00"
+            "time": "2020-12-05T19:20:15+00:00"
         },
         {
             "name": "predis/predis",
@@ -5078,6 +5174,150 @@
             "time": "2020-08-18T17:17:46+00:00"
         },
         {
+            "name": "riimu/kit-phpencoder",
+            "version": "v2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Riimu/Kit-PHPEncoder.git",
+                "reference": "ca6f004e1290aec7ef4bebf6c0807b30fcf981d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Riimu/Kit-PHPEncoder/zipball/ca6f004e1290aec7ef4bebf6c0807b30fcf981d7",
+                "reference": "ca6f004e1290aec7ef4bebf6c0807b30fcf981d7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.4 || ^6.5 || ^5.7"
+            },
+            "suggest": {
+                "ext-gmp": "To convert GMP numbers into PHP code"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Riimu\\Kit\\PHPEncoder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Riikka Kalliomäki",
+                    "email": "riikka.kalliomaki@gmail.com",
+                    "homepage": "http://riimu.net"
+                }
+            ],
+            "description": "Highly customizable alternative to var_export for PHP code generation",
+            "homepage": "http://kit.riimu.net",
+            "keywords": [
+                "code",
+                "encoder",
+                "export",
+                "generator",
+                "variable"
+            ],
+            "time": "2020-11-29T16:53:17+00:00"
+        },
+        {
+            "name": "seld/jsonlint",
+            "version": "1.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/jsonlint.git",
+                "reference": "9ad6ce79c342fbd44df10ea95511a1b24dee5b57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9ad6ce79c342fbd44df10ea95511a1b24dee5b57",
+                "reference": "9ad6ce79c342fbd44df10ea95511a1b24dee5b57",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
+            },
+            "bin": [
+                "bin/jsonlint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Seld\\JsonLint\\": "src/Seld/JsonLint/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "JSON Linter",
+            "keywords": [
+                "json",
+                "linter",
+                "parser",
+                "validator"
+            ],
+            "time": "2020-11-11T09:19:24+00:00"
+        },
+        {
+            "name": "seld/phar-utils",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/phar-utils.git",
+                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
+                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Seld\\PharUtils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "PHAR file format utilities, for when PHP phars you up",
+            "keywords": [
+                "phar"
+            ],
+            "time": "2020-07-07T18:42:57+00:00"
+        },
+        {
             "name": "spiral/core",
             "version": "v2.7.7",
             "source": {
@@ -5705,6 +5945,51 @@
                 "standards"
             ],
             "time": "2020-09-07T11:33:47+00:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v5.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "710d364200997a5afde34d9fe57bd52f3cc1e108"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/710d364200997a5afde34d9fe57bd52f3cc1e108",
+                "reference": "710d364200997a5afde34d9fe57bd52f3cc1e108",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "time": "2021-02-12T10:38:38+00:00"
         },
         {
             "name": "symfony/finder",
@@ -6449,6 +6734,51 @@
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
+            "name": "symfony/process",
+            "version": "v5.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
+                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Executes commands in sub-processes",
+            "homepage": "https://symfony.com",
+            "time": "2021-01-27T10:15:41+00:00"
+        },
+        {
             "name": "symfony/property-access",
             "version": "v5.2.4",
             "source": {
@@ -6948,239 +7278,6 @@
             "time": "2021-03-03T22:57:07+00:00"
         },
         {
-            "name": "tuupola/callable-handler",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tuupola/callable-handler.git",
-                "reference": "0bc7b88630ca753de9aba8f411046856f5ca6f8c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tuupola/callable-handler/zipball/0bc7b88630ca753de9aba8f411046856f5ca6f8c",
-                "reference": "0bc7b88630ca753de9aba8f411046856f5ca6f8c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1|^8.0",
-                "psr/http-server-middleware": "^1.0"
-            },
-            "require-dev": {
-                "overtrue/phplint": "^1.0",
-                "phpunit/phpunit": "^7.0|^8.0|^9.0",
-                "squizlabs/php_codesniffer": "^3.2",
-                "tuupola/http-factory": "^0.4.0|^1.0",
-                "zendframework/zend-diactoros": "^1.6.0|^2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tuupola\\Middleware\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mika Tuupola",
-                    "email": "tuupola@appelsiini.net",
-                    "homepage": "https://appelsiini.net/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Compatibility layer for PSR-7 double pass and PSR-15 middlewares.",
-            "homepage": "https://github.com/tuupola/callable-handler",
-            "keywords": [
-                "middleware",
-                "psr-15",
-                "psr-7"
-            ],
-            "time": "2020-09-09T08:31:54+00:00"
-        },
-        {
-            "name": "tuupola/cors-middleware",
-            "version": "1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tuupola/cors-middleware.git",
-                "reference": "4f085d11f349e83d18f1eb5802551353b2b093a3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tuupola/cors-middleware/zipball/4f085d11f349e83d18f1eb5802551353b2b093a3",
-                "reference": "4f085d11f349e83d18f1eb5802551353b2b093a3",
-                "shasum": ""
-            },
-            "require": {
-                "neomerx/cors-psr7": "^1.0.4",
-                "php": "^7.1|^8.0",
-                "psr/http-message": "^1.0.1",
-                "psr/http-server-middleware": "^1.0",
-                "tuupola/callable-handler": "^1.0",
-                "tuupola/http-factory": "^1.0.2"
-            },
-            "require-dev": {
-                "equip/dispatch": "^2.0",
-                "overtrue/phplint": "^1.0",
-                "phpstan/phpstan": "^0.12.42",
-                "phpunit/phpunit": "^7.0|^8.0|^9.0",
-                "squizlabs/php_codesniffer": "^3.5",
-                "zendframework/zend-diactoros": "^1.0|^2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tuupola\\Middleware\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mika Tuupola",
-                    "email": "tuupola@appelsiini.net",
-                    "homepage": "https://appelsiini.net/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PSR-7 and PSR-15 CORS middleware",
-            "homepage": "https://github.com/tuupola/cors-middleware",
-            "keywords": [
-                "cors",
-                "middleware",
-                "psr-15",
-                "psr-7"
-            ],
-            "time": "2020-10-29T11:01:06+00:00"
-        },
-        {
-            "name": "tuupola/http-factory",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tuupola/http-factory.git",
-                "reference": "aa48841a9f572b9cebe9d3ac5d5d3362a83f57ac"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tuupola/http-factory/zipball/aa48841a9f572b9cebe9d3ac5d5d3362a83f57ac",
-                "reference": "aa48841a9f572b9cebe9d3ac5d5d3362a83f57ac",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1|^8.0",
-                "psr/http-factory": "^1.0"
-            },
-            "conflict": {
-                "nyholm/psr7": "<1.0"
-            },
-            "provide": {
-                "psr/http-factory-implementation": "^1.0"
-            },
-            "require-dev": {
-                "http-interop/http-factory-tests": "^0.7.0",
-                "overtrue/phplint": "^1.0",
-                "phpunit/phpunit": "^7.0|^8.0|^9.0",
-                "squizlabs/php_codesniffer": "^3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Tuupola\\Http\\Factory\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mika Tuupola",
-                    "email": "tuupola@appelsiini.net",
-                    "homepage": "https://appelsiini.net/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Lightweight autodiscovering PSR-17 HTTP factories",
-            "homepage": "https://github.com/tuupola/http-factory",
-            "keywords": [
-                "http",
-                "psr-17",
-                "psr-7"
-            ],
-            "time": "2020-10-01T07:46:32+00:00"
-        },
-        {
-            "name": "vlucas/phpdotenv",
-            "version": "v5.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "b3eac5c7ac896e52deab4a99068e3f4ab12d9e56"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/b3eac5c7ac896e52deab4a99068e3f4ab12d9e56",
-                "reference": "b3eac5c7ac896e52deab4a99068e3f4ab12d9e56",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "graham-campbell/result-type": "^1.0.1",
-                "php": "^7.1.3 || ^8.0",
-                "phpoption/phpoption": "^1.7.4",
-                "symfony/polyfill-ctype": "^1.17",
-                "symfony/polyfill-mbstring": "^1.17",
-                "symfony/polyfill-php80": "^1.17"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4.1",
-                "ext-filter": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.14 || ^9.5.1"
-            },
-            "suggest": {
-                "ext-filter": "Required to use the boolean validator."
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dotenv\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Graham Campbell",
-                    "email": "graham@alt-three.com",
-                    "homepage": "https://gjcampbell.co.uk/"
-                },
-                {
-                    "name": "Vance Lucas",
-                    "email": "vance@vancelucas.com",
-                    "homepage": "https://vancelucas.com/"
-                }
-            ],
-            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
-            "keywords": [
-                "dotenv",
-                "env",
-                "environment"
-            ],
-            "time": "2021-01-20T15:23:13+00:00"
-        },
-        {
             "name": "yiisoft/access",
             "version": "1.0.0",
             "source": {
@@ -7543,96 +7640,63 @@
             "time": "2021-03-23T23:11:26+00:00"
         },
         {
-            "name": "yiisoft/config",
+            "name": "yiisoft/composer-config-plugin",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/yiisoft/config.git",
-                "reference": "862e1fffd434bd96d1677ad666b7eb7eba3b577c"
+                "url": "https://github.com/yiisoft/composer-config-plugin.git",
+                "reference": "12dc82d75bf013d89b1bc82a175f3e148be67aba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/config/zipball/862e1fffd434bd96d1677ad666b7eb7eba3b577c",
-                "reference": "862e1fffd434bd96d1677ad666b7eb7eba3b577c",
+                "url": "https://api.github.com/repos/yiisoft/composer-config-plugin/zipball/12dc82d75bf013d89b1bc82a175f3e148be67aba",
+                "reference": "12dc82d75bf013d89b1bc82a175f3e148be67aba",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0|^2.0",
+                "composer/composer": "^1.0|^2.0",
                 "ext-json": "*",
+                "opis/closure": "3.6.x-dev@dev",
                 "php": "^7.4|^8.0",
-                "yiisoft/var-dumper": "^1.0"
+                "riimu/kit-phpencoder": "^2.4",
+                "yiisoft/files": "^1.0"
             },
             "require-dev": {
-                "composer/composer": "^1.0|^2.0",
                 "phpunit/phpunit": "^9.4",
                 "roave/infection-static-analysis-plugin": "^1.6",
                 "spatie/phpunit-watcher": "^1.23",
                 "vimeo/psalm": "^4.3"
             },
+            "suggest": {
+                "symfony/yaml": "^2.0 || ^3.0 || ^4.0 for YAML files support",
+                "vlucas/phpdotenv": "^2.0 for `.env` files support"
+            },
             "type": "composer-plugin",
             "extra": {
-                "class": "Yiisoft\\Config\\ComposerEventHandler",
+                "class": "Yiisoft\\Composer\\Config\\ComposerEventHandler",
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Yiisoft\\Config\\": "src"
+                    "Yiisoft\\Composer\\Config\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "Composer plugin and a library for config assembling",
-            "homepage": "https://github.com/yiisoft/config",
+            "description": "Composer plugin for config assembling",
+            "homepage": "https://github.com/yiisoft/composer-config-plugin",
             "keywords": [
+                "assembling",
                 "composer",
                 "config",
                 "plugin"
             ],
-            "time": "2021-03-25T17:05:33+00:00"
-        },
-        {
-            "name": "yiisoft/container-proxy",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/container-proxy.git",
-                "reference": "c14c9cb747826801d889df291ad747fb3f2b3527"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/container-proxy/zipball/c14c9cb747826801d889df291ad747fb3f2b3527",
-                "reference": "c14c9cb747826801d889df291ad747fb3f2b3527",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0",
-                "psr/container": "^1.0|^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yiisoft\\Container\\Proxy\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "An interface for container proxy",
-            "homepage": "https://www.yiiframework.com/",
-            "keywords": [
-                "container proxy"
-            ],
-            "time": "2021-03-07T16:36:03+00:00"
+            "time": "2021-03-24T17:33:12+00:00"
         },
         {
             "name": "yiisoft/cookies",
@@ -7860,12 +7924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/di.git",
-                "reference": "bde3a6a2a244eb91ddc77c20692d149ce7674d4b"
+                "reference": "0c1d4044364dc0d29eaa586e8b45524cf654a6da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/di/zipball/bde3a6a2a244eb91ddc77c20692d149ce7674d4b",
-                "reference": "bde3a6a2a244eb91ddc77c20692d149ce7674d4b",
+                "url": "https://api.github.com/repos/yiisoft/di/zipball/0c1d4044364dc0d29eaa586e8b45524cf654a6da",
+                "reference": "0c1d4044364dc0d29eaa586e8b45524cf654a6da",
                 "shasum": ""
             },
             "require": {
@@ -7916,7 +7980,7 @@
                 "injection",
                 "injector"
             ],
-            "time": "2021-03-13T21:26:20+00:00"
+            "time": "2021-03-26T15:28:54+00:00"
         },
         {
             "name": "yiisoft/error-handler",
@@ -8039,12 +8103,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/factory.git",
-                "reference": "d1af07ecf0f46164a12ab08e3092ca25188e2c30"
+                "reference": "6b728fcc099e167e84d7fb4885a867e8e4180168"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/factory/zipball/d1af07ecf0f46164a12ab08e3092ca25188e2c30",
-                "reference": "d1af07ecf0f46164a12ab08e3092ca25188e2c30",
+                "url": "https://api.github.com/repos/yiisoft/factory/zipball/6b728fcc099e167e84d7fb4885a867e8e4180168",
+                "reference": "6b728fcc099e167e84d7fb4885a867e8e4180168",
                 "shasum": ""
             },
             "require": {
@@ -8058,7 +8122,8 @@
                 "roave/infection-static-analysis-plugin": "^1.7",
                 "spatie/phpunit-watcher": "^1.23",
                 "vimeo/psalm": "^4.6",
-                "yiisoft/di": "^3.0@dev"
+                "yiisoft/di": "^3.0@dev",
+                "yiisoft/test-support": "^1.3"
             },
             "type": "library",
             "extra": {
@@ -8080,7 +8145,7 @@
             "keywords": [
                 "factory"
             ],
-            "time": "2021-03-21T11:45:21+00:00"
+            "time": "2021-03-26T15:29:45+00:00"
         },
         {
             "name": "yiisoft/files",
@@ -8774,108 +8839,6 @@
             "time": "2021-03-04T14:47:16+00:00"
         },
         {
-            "name": "yiisoft/profiler",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/profiler.git",
-                "reference": "810fb9a5446f9a2371a307be3d94e599caa62c7c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/profiler/zipball/810fb9a5446f9a2371a307be3d94e599caa62c7c",
-                "reference": "810fb9a5446f9a2371a307be3d94e599caa62c7c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0",
-                "psr/log": "^1.1",
-                "yiisoft/files": "^1.0",
-                "yiisoft/strings": "^2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.4",
-                "roave/infection-static-analysis-plugin": "^1.6",
-                "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                },
-                "config-plugin-options": {
-                    "source-directory": "config"
-                },
-                "config-plugin": {
-                    "common": "common.php",
-                    "events-web": "events-web.php",
-                    "params": "params.php"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yiisoft\\Profiler\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Profiler",
-            "homepage": "http://www.yiiframework.com/",
-            "keywords": [
-                "performance",
-                "profiler"
-            ],
-            "time": "2021-03-23T22:51:45+00:00"
-        },
-        {
-            "name": "yiisoft/proxy",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/proxy.git",
-                "reference": "77609e6f3ae0efad8694c58611f851ca025a7f9b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/proxy/zipball/77609e6f3ae0efad8694c58611f851ca025a7f9b",
-                "reference": "77609e6f3ae0efad8694c58611f851ca025a7f9b",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.4",
-                "roave/infection-static-analysis-plugin": "^1.5",
-                "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yiisoft\\Proxy\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "proxy",
-            "homepage": "https://www.yiiframework.com/",
-            "keywords": [
-                "proxy"
-            ],
-            "time": "2020-12-03T08:40:01+00:00"
-        },
-        {
             "name": "yiisoft/rbac",
             "version": "dev-master",
             "source": {
@@ -8987,12 +8950,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/router.git",
-                "reference": "cf43bffdfad24c9683eaf271ad731ddb84b67278"
+                "reference": "37bd1b09527009ea5957f2b93a3ce9c069381ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/router/zipball/cf43bffdfad24c9683eaf271ad731ddb84b67278",
-                "reference": "cf43bffdfad24c9683eaf271ad731ddb84b67278",
+                "url": "https://api.github.com/repos/yiisoft/router/zipball/37bd1b09527009ea5957f2b93a3ce9c069381ab0",
+                "reference": "37bd1b09527009ea5957f2b93a3ce9c069381ab0",
                 "shasum": ""
             },
             "require": {
@@ -9046,7 +9009,7 @@
                 "router",
                 "web"
             ],
-            "time": "2021-03-23T22:51:54+00:00"
+            "time": "2021-03-26T14:13:26+00:00"
         },
         {
             "name": "yiisoft/router-fastroute",
@@ -9314,12 +9277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/translator.git",
-                "reference": "35a44935c6d6776292764272b690473e156247b4"
+                "reference": "e89eb5f565212b75baac34fb8a2aeab07a23bcd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/translator/zipball/35a44935c6d6776292764272b690473e156247b4",
-                "reference": "35a44935c6d6776292764272b690473e156247b4",
+                "url": "https://api.github.com/repos/yiisoft/translator/zipball/e89eb5f565212b75baac34fb8a2aeab07a23bcd9",
+                "reference": "e89eb5f565212b75baac34fb8a2aeab07a23bcd9",
                 "shasum": ""
             },
             "require": {
@@ -9356,7 +9319,7 @@
                 "internationalization",
                 "translation"
             ],
-            "time": "2021-03-24T22:54:21+00:00"
+            "time": "2021-03-26T19:47:09+00:00"
         },
         {
             "name": "yiisoft/translator-formatter-intl",
@@ -9949,155 +9912,6 @@
             "time": "2021-03-23T22:51:53+00:00"
         },
         {
-            "name": "yiisoft/yii-debug",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii-debug.git",
-                "reference": "d2e8d18767fe41a47ad89a50291c701da7d8c754"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-debug/zipball/d2e8d18767fe41a47ad89a50291c701da7d8c754",
-                "reference": "d2e8d18767fe41a47ad89a50291c701da7d8c754",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": "^7.4|^8.0",
-                "psr/log": "^1.1",
-                "yiisoft/aliases": "^1.1",
-                "yiisoft/arrays": "^1.0",
-                "yiisoft/assets": "dev-master",
-                "yiisoft/container-proxy": "dev-master",
-                "yiisoft/di": "^3.0@dev",
-                "yiisoft/json": "^1.0",
-                "yiisoft/profiler": "dev-master",
-                "yiisoft/proxy": "dev-master",
-                "yiisoft/strings": "^2.0",
-                "yiisoft/var-dumper": "^1.0",
-                "yiisoft/view": "^3.0@dev",
-                "yiisoft/yii-console": "^3.0@dev",
-                "yiisoft/yii-filesystem": "dev-master",
-                "yiisoft/yii-web": "^3.0@dev"
-            },
-            "require-dev": {
-                "nyholm/psr7": "^1.3",
-                "phpunit/phpunit": "^9.4",
-                "roave/infection-static-analysis-plugin": "^1.5",
-                "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.2",
-                "yiisoft/cache": "^1.0",
-                "yiisoft/composer-config-plugin": "^1.0@dev",
-                "yiisoft/event-dispatcher": "^1.0",
-                "yiisoft/log": "^1.0",
-                "yiisoft/router-fastroute": "^3.0@dev"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                },
-                "config-plugin-options": {
-                    "source-directory": "config"
-                },
-                "config-plugin": {
-                    "tests": "tests.php",
-                    "params": "params.php",
-                    "common": "common.php",
-                    "console": "console.php",
-                    "web": "web.php",
-                    "providers": "providers.php",
-                    "events-web": "events-web.php",
-                    "events-console": "events-console.php"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yiisoft\\Yii\\Debug\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Yii Framework Debug Panel Extension",
-            "keywords": [
-                "debug",
-                "debugger",
-                "yii"
-            ],
-            "time": "2021-03-23T22:52:14+00:00"
-        },
-        {
-            "name": "yiisoft/yii-debug-api",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii-debug-api.git",
-                "reference": "0508c0df946b372ceeb66c714bbd495d9d469ef2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-debug-api/zipball/0508c0df946b372ceeb66c714bbd495d9d469ef2",
-                "reference": "0508c0df946b372ceeb66c714bbd495d9d469ef2",
-                "shasum": ""
-            },
-            "require": {
-                "nyholm/psr7": "^1.0",
-                "php": "^7.4|^8.0",
-                "psr/container": "1.0",
-                "tuupola/cors-middleware": "^1.2.1",
-                "yiisoft/data-response": "^3.0@dev",
-                "yiisoft/di": "^3.0@dev",
-                "yiisoft/http": "^1.0",
-                "yiisoft/router": "^3.0@dev",
-                "yiisoft/router-fastroute": "^3.0@dev",
-                "yiisoft/yii-debug": "^3.0@dev"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.4",
-                "roave/infection-static-analysis-plugin": "^1.5",
-                "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.2",
-                "yiisoft/composer-config-plugin": "^1.0@dev"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0.x-dev"
-                },
-                "config-plugin-options": {
-                    "source-directory": "config"
-                },
-                "config-plugin": {
-                    "params": "params.php",
-                    "web": "web.php",
-                    "routes": "routes.php",
-                    "providers-web": "providers-web.php"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Yiisoft\\Yii\\Debug\\Api\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Yii debug API",
-            "homepage": "https://www.yiiframework.com/",
-            "keywords": [
-                "api",
-                "debug",
-                "yii",
-                "yii-debug-api",
-                "yiisoft"
-            ],
-            "time": "2021-03-23T22:52:15+00:00"
-        },
-        {
             "name": "yiisoft/yii-event",
             "version": "dev-master",
             "source": {
@@ -10496,113 +10310,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "composer/semver",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/semver.git",
-                "reference": "0ec124f57c7e23925c006cbad0de853e3aec3ba2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/0ec124f57c7e23925c006cbad0de853e3aec3ba2",
-                "reference": "0ec124f57c7e23925c006cbad0de853e3aec3ba2",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.2 || ^7.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^0.12.19",
-                "phpunit/phpunit": "^4.5 || ^5.0.5 || ^7"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Composer\\Semver\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nils Adermann",
-                    "email": "naderman@naderman.de",
-                    "homepage": "http://www.naderman.de"
-                },
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                },
-                {
-                    "name": "Rob Bast",
-                    "email": "rob.bast@gmail.com",
-                    "homepage": "http://robbast.nl"
-                }
-            ],
-            "description": "Semver library that offers utilities, version constraint parsing and validation.",
-            "keywords": [
-                "semantic",
-                "semver",
-                "validation",
-                "versioning"
-            ],
-            "time": "2020-04-21T13:19:12+00:00"
-        },
-        {
-            "name": "composer/xdebug-handler",
-            "version": "1.4.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "f27e06cd9675801df441b3656569b328e04aa37c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f27e06cd9675801df441b3656569b328e04aa37c",
-                "reference": "f27e06cd9675801df441b3656569b328e04aa37c",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.3.2 || ^7.0 || ^8.0",
-                "psr/log": "^1.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^0.12.55",
-                "symfony/phpunit-bridge": "^4.2 || ^5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Composer\\XdebugHandler\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "John Stevenson",
-                    "email": "john-stevenson@blueyonder.co.uk"
-                }
-            ],
-            "description": "Restarts a process without Xdebug.",
-            "keywords": [
-                "Xdebug",
-                "performance"
-            ],
-            "time": "2021-03-25T17:01:18+00:00"
-        },
         {
             "name": "felixfbecker/advanced-json-rpc",
             "version": "v3.2.0",
@@ -11246,6 +10953,61 @@
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "time": "2020-09-17T18:55:26+00:00"
+        },
+        {
+            "name": "phpoption/phpoption",
+            "version": "1.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpOption\\": "src/PhpOption/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "Option Type for PHP",
+            "keywords": [
+                "language",
+                "option",
+                "php",
+                "type"
+            ],
+            "time": "2020-07-20T17:29:33+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -12601,51 +12363,6 @@
             "time": "2021-02-18T17:12:37+00:00"
         },
         {
-            "name": "symfony/filesystem",
-            "version": "v5.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/filesystem.git",
-                "reference": "710d364200997a5afde34d9fe57bd52f3cc1e108"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/710d364200997a5afde34d9fe57bd52f3cc1e108",
-                "reference": "710d364200997a5afde34d9fe57bd52f3cc1e108",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-ctype": "~1.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Filesystem\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides basic utilities for the filesystem",
-            "homepage": "https://symfony.com",
-            "time": "2021-02-12T10:38:38+00:00"
-        },
-        {
             "name": "symfony/options-resolver",
             "version": "v5.2.4",
             "source": {
@@ -12749,51 +12466,6 @@
             "time": "2020-10-23T14:02:19+00:00"
         },
         {
-            "name": "symfony/process",
-            "version": "v5.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
-                "reference": "313a38f09c77fbcdc1d223e57d368cea76a2fd2f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/polyfill-php80": "^1.15"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Executes commands in sub-processes",
-            "homepage": "https://symfony.com",
-            "time": "2021-01-27T10:15:41+00:00"
-        },
-        {
             "name": "symfony/stopwatch",
             "version": "v5.2.4",
             "source": {
@@ -12879,6 +12551,69 @@
             "time": "2020-07-12T23:59:07+00:00"
         },
         {
+            "name": "vlucas/phpdotenv",
+            "version": "v3.6.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "5e679f7616db829358341e2d5cccbd18773bdab8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5e679f7616db829358341e2d5cccbd18773bdab8",
+                "reference": "5e679f7616db829358341e2d5cccbd18773bdab8",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0 || ^8.0",
+                "phpoption/phpoption": "^1.5.2",
+                "symfony/polyfill-ctype": "^1.17"
+            },
+            "require-dev": {
+                "ext-filter": "*",
+                "ext-pcre": "*",
+                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20"
+            },
+            "suggest": {
+                "ext-filter": "Required to use the boolean validator.",
+                "ext-pcre": "Required to use most of the library."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "https://vancelucas.com/"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2021-01-20T14:39:46+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.10.0",
             "source": {
@@ -12960,7 +12695,7 @@
         "maileryio/mailery-web": 20,
         "maileryio/widget-link": 20,
         "maileryio/widget-search": 20,
-        "yiisoft/config": 20,
+        "yiisoft/composer-config-plugin": 20,
         "yiisoft/error-handler": 20,
         "yiisoft/form": 20,
         "yiisoft/translator-formatter-intl": 20,
@@ -12968,8 +12703,6 @@
         "yiisoft/yii-bootstrap5": 20,
         "yiisoft/yii-console": 20,
         "yiisoft/yii-cycle": 20,
-        "yiisoft/yii-debug": 20,
-        "yiisoft/yii-debug-api": 20,
         "yiisoft/yii-event": 20,
         "yiisoft/yii-view": 20,
         "yiisoft/yii-web": 20

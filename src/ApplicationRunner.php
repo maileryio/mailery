@@ -22,6 +22,7 @@ use Yiisoft\Yii\Event\ListenerConfigurationChecker;
 use Yiisoft\Yii\Web\Application;
 use Yiisoft\Yii\Web\SapiEmitter;
 use Yiisoft\Yii\Web\ServerRequestFactory;
+use Yiisoft\Composer\Config\Builder;
 
 use function dirname;
 use function microtime;
@@ -43,14 +44,9 @@ final class ApplicationRunner
         $errorHandler = new ErrorHandler($tmpLogger, new HtmlRenderer());
         $this->registerErrorHandler($errorHandler);
 
-        $config = new Config(
-            dirname(__DIR__),
-            '/config/packages', // Configs path.
-        );
-
         $container = new Container(
-            $config->get('web'),
-            $config->get('providers-web')
+            require Builder::path('web'),
+            require Builder::path('providers-web')
         );
 
         // Register error handler with real container-configured dependencies.
@@ -59,7 +55,7 @@ final class ApplicationRunner
         $container = $container->get(ContainerInterface::class);
 
         if ($this->debug) {
-            $container->get(ListenerConfigurationChecker::class)->check($config->get('events-web'));
+            $container->get(ListenerConfigurationChecker::class)->check(require Builder::path('events-web'));
         }
 
         $application = $container->get(Application::class);
