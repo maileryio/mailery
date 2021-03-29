@@ -90,7 +90,7 @@ return [
         ],
     ],
 
-    'yiisoft/router' => [
+    'yiisoft/router-fastroute' => [
         'enableCache' => getenv('ENV') !== 'dev',
     ],
 
