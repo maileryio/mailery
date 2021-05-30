@@ -19,6 +19,7 @@ use Mailery\ViewInjection\MetaTagsViewInjection;
 use Mailery\Menu\Navbar\NavbarMenu;
 use Mailery\Menu\Sidebar\SidebarMenu;
 use Mailery\Brand\BrandLocatorInterface;
+use Mailery\Command\Git;
 use Mailery\Command\Router\ListCommand;
 use Spiral\Database\Driver\Postgres\PostgresDriver;
 use Yiisoft\Assets\AssetManager;
@@ -77,6 +78,7 @@ return [
     'yiisoft/yii-console' => [
         'commands' => [
             'router/list' => ListCommand::class,
+            'git/commit' => Git\CommitCommand::class,
         ],
     ],
 
@@ -161,12 +163,31 @@ return [
             ],
             'subscribers' => [
                 'order' => 3,
+                'items' => [
+                    'subscribers' => [
+                        'order' => 1,
+                    ],
+                    'groups' => [
+                        'order' => 2,
+                    ],
+                    'imports' => [
+                        'order' => 3,
+                    ],
+                ],
             ],
             'templates' => [
                 'order' => 4,
             ],
             'senders' => [
                 'order' => 5,
+                'items' => [
+                    'senders' => [
+                        'order' => 1,
+                    ],
+                    'email-addresses' => [
+                        'order' => 2,
+                    ],
+                ],
             ],
             'settings' => [
                 'order' => 6,
@@ -182,14 +203,17 @@ return [
                     'users' => [
                         'order' => 1,
                     ],
-                    'activity-log' => [
+                    'channels' => [
                         'order' => 2,
                     ],
-                    'rbac' => [
+                    'activity-log' => [
                         'order' => 3,
                     ],
-                    'settings' => [
+                    'rbac' => [
                         'order' => 4,
+                    ],
+                    'settings' => [
+                        'order' => 5,
                     ],
                 ],
             ],
