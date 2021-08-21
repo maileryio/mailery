@@ -6,7 +6,7 @@ namespace Mailery\ViewInjection;
 
 use Yiisoft\Yii\View\LayoutParametersInjectionInterface;
 use Yiisoft\User\CurrentUser;
-use Yiisoft\Router\UrlMatcherInterface;
+use Yiisoft\Router\CurrentRoute;
 
 class LayoutViewInjection implements LayoutParametersInjectionInterface
 {
@@ -16,20 +16,20 @@ class LayoutViewInjection implements LayoutParametersInjectionInterface
     private CurrentUser $currentUser;
 
     /**
-     * @var UrlMatcherInterface
+     * @var CurrentRoute
      */
-    private UrlMatcherInterface $urlMatcher;
+    private CurrentRoute $currentRoute;
 
     /**
      * @param CurrentUser $currentUser
-     * @param UrlMatcherInterface $urlMatcher
+     * @param CurrentRoute $currentRoute
      */
     public function __construct(
         CurrentUser $currentUser,
-        UrlMatcherInterface $urlMatcher
+        CurrentRoute $currentRoute
     ) {
         $this->currentUser = $currentUser;
-        $this->urlMatcher = $urlMatcher;
+        $this->currentRoute = $currentRoute;
     }
 
     /**
@@ -42,7 +42,7 @@ class LayoutViewInjection implements LayoutParametersInjectionInterface
             'encoding' => 'utf-8',
             'brandLabel' => 'Mailery Platform',
             'user' => $this->currentUser->getIdentity(),
-            'currentUrl' => (string) $this->urlMatcher->getCurrentUri()->getPath(),
+            'currentUrl' => $this->currentRoute->getUri()->getPath(),
         ];
     }
 }

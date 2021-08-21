@@ -41,6 +41,10 @@ class CommitCommand extends Command
 
         foreach ($directories as $directory) {
             $repo = (new Git())->open($directory);
+
+            $repoName = trim(substr($repo->getRepositoryPath(), strlen($path)), '/');
+            $output->writeln("<info>Process repo <fg=yellow>{$repoName}</></info>");
+
             $repo->checkout('master');
 
             if ($repo->hasChanges()) {
@@ -50,7 +54,6 @@ class CommitCommand extends Command
 
             $repo->push('origin', ['master', '-u']);
 
-            $repoName = substr($repo->getRepositoryPath(), strlen($path) + 1);
             $output->writeln("<info>Pushed repo <fg=yellow>{$repoName}</> to branch <fg=yellow>{$repo->getCurrentBranchName()}</></info>");
         }
 

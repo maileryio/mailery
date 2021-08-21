@@ -48,27 +48,27 @@
         "maileryio/widget-search": "dev-master",
         "predis/predis": "^1.1",
         "psr/log": "^1.1",
+        "vlucas/phpdotenv": "^5.3",
         "yiisoft/cache-file": "^1.0",
-        "yiisoft/composer-config-plugin": "^1.0@dev",
-        "yiisoft/error-handler": "^3.0@dev",
+        "yiisoft/config": "1.0.x-dev",
+        "yiisoft/error-handler": "^1.0",
         "yiisoft/form": "1.0.x-dev",
         "yiisoft/i18n": "^1.0",
         "yiisoft/log": "^1.0",
         "yiisoft/log-target-file": "^1.0",
-        "yiisoft/translator-formatter-intl": "^3.0@dev",
-        "yiisoft/translator-message-php": "^3.0@dev",
+        "yiisoft/translator-formatter-intl": "^1.0",
+        "yiisoft/translator-message-php": "^1.0",
         "yiisoft/yii-bootstrap5": "^3.0@dev",
         "yiisoft/yii-console": "3.0.x-dev",
         "yiisoft/yii-cycle": "^3.0@dev",
-        "yiisoft/yii-event": "^3.0@dev",
-        "yiisoft/yii-view": "^3.0@dev",
+        "yiisoft/yii-event": "^1.0",
+        "yiisoft/yii-view": "^1.0",
         "yiisoft/yii-web": "^3.0@dev"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
         "phan/phan": "^2.4",
-        "phpunit/phpunit": "^9.0",
-        "vlucas/phpdotenv": "^3.6"
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
@@ -94,41 +94,53 @@
         "branch-alias": {
             "dev-master": "1.0.x-dev"
         },
+        "config-plugin-options": {
+            "source-directory": "config",
+            "output-directory": "config/packages"
+        },
         "config-plugin": {
-            "common": "config/common/*.php",
+            "common": "common/*.php",
             "params": [
-                "config/params.php",
-                "?config/params-local.php"
+                "params.php",
+                "?params-local.php"
             ],
             "web": [
                 "$common",
-                "config/web/*.php"
+                "web/*.php"
             ],
             "console": [
                 "$common",
-                "config/console/*.php"
+                "console/*.php"
             ],
-            "events": "config/events.php",
+            "events": "events.php",
             "events-web": [
                 "$events",
-                "config/events-web.php"
+                "events-web.php"
             ],
             "events-console": [
                 "$events",
-                "config/events-console.php"
+                "events-console.php"
             ],
-            "providers": "config/providers.php",
+            "providers": "providers.php",
             "providers-web": [
                 "$providers",
-                "config/providers-web.php"
+                "providers-web.php"
             ],
             "providers-console": [
                 "$providers",
-                "config/providers-console.php"
+                "providers-console.php"
             ],
-            "routes": "config/routes.php"
-        },
-        "config-plugin-output-dir": "runtime/build/config"
+            "routes": "routes.php",
+            "bootstrap": "bootstrap.php",
+            "bootstrap-web": [
+                "$bootstrap",
+                "bootstrap-web.php"
+            ],
+            "bootstrap-console": [
+                "$bootstrap",
+                "bootstrap-console.php"
+            ]
+        }
     },
     "config": {
         "foxy": {

@@ -22,7 +22,6 @@ use Yiisoft\Yii\Event\ListenerConfigurationChecker;
 use Yiisoft\Yii\Web\Application;
 use Yiisoft\Yii\Web\SapiEmitter;
 use Yiisoft\Yii\Web\ServerRequestFactory;
-use Yiisoft\Composer\Config\Builder;
 
 use function dirname;
 use function microtime;
@@ -44,9 +43,16 @@ final class ApplicationRunner
         $errorHandler = new ErrorHandler($tmpLogger, new HtmlRenderer());
         $this->registerErrorHandler($errorHandler);
 
+        $config = new Config(
+            dirname(__DIR__),
+            '/config/packages', // Configs path.
+        );
+
         $container = new Container(
-            require Builder::path('web'),
-            require Builder::path('providers-web')
+            $config->get('web'),
+            $config->get('providers-web'),
+            [],
+            $this->debug
         );
 
         // Register error handler with real container-configured dependencies.
@@ -54,8 +60,18 @@ final class ApplicationRunner
 
         $container = $container->get(ContainerInterface::class);
 
+        $bootstrapList = $config->get('bootstrap-web');
+        foreach ($bootstrapList as $callback) {
+            if (!(is_callable($callback))) {
+                $type = is_object($callback) ? get_class($callback) : gettype($callback);
+
+                throw new \RuntimeException("Bootstrap callback must be callable, $type given.");
+            }
+            $callback($container);
+        }
+
         if ($this->debug) {
-            $container->get(ListenerConfigurationChecker::class)->check(require Builder::path('events-web'));
+            $container->get(ListenerConfigurationChecker::class)->check($config->get('events-web'));
         }
 
         $application = $container->get(Application::class);

@@ -1,0 +1,309 @@
+{
+    "maileryio/mailery-activity-log": {
+        "version": "dev-master 317a8cb",
+        "params.php": "c202d98debf9d86924588c820e374819",
+        "common.php": "a3623d2b2d3a38f9eb0fed8022314e23",
+        "web.php": "4753983e8ac5733eb90bdd16b50cdb2b",
+        "providers-web.php": "e8fb40631bbe502d59eddacc87323bb2"
+    },
+    "maileryio/mailery-brand": {
+        "version": "dev-master 733558f",
+        "params.php": "4959e8e6ac9f7374b94061398152d88a",
+        "common.php": "2bbd9bb5a49dce38fd446b3573aaffe4",
+        "web.php": "a9cd8da651888f248d5df0ba73a3dd59",
+        "providers-web.php": "02d6628678fcb77b642671fcbcd02b71",
+        "rbac/assignments.php": "ee0ab0862f04420474146575888b9188",
+        "rbac/items.php": "d14e027a8e0d351d892555b3d5d01661",
+        "rbac/rules.php": "ee0ab0862f04420474146575888b9188"
+    },
+    "maileryio/mailery-campaign": {
+        "version": "dev-master ad27c0e",
+        "params.php": "c33581e6128e5160c02e1b5cfccb4fb5",
+        "common.php": "6fb5804534310a35f1a2c83b8452e73f",
+        "providers-web.php": "68c6e76b9335c415bc1d1013bd8e5e30"
+    },
+    "maileryio/mailery-campaign-standard": {
+        "version": "dev-master c549e8b",
+        "params.php": "c310236bec72b97779a57ae6a1c8387e",
+        "common.php": "ee0ab0862f04420474146575888b9188",
+        "providers-web.php": "56c9cac18977efe0832c229980aee20e"
+    },
+    "maileryio/mailery-channel": {
+        "version": "dev-master 8a3f6e2",
+        "params.php": "74a6a64723ffe1f9a1b6bdf2893d4ac6",
+        "common.php": "23b9fd316833dd862eb8e11e2c75150e",
+        "web.php": "ee0ab0862f04420474146575888b9188",
+        "providers-web.php": "3c14b100bd40c600b05a475f2bd3790e"
+    },
+    "maileryio/mailery-channel-email": {
+        "version": "dev-master 01ec31d",
+        "params.php": "c8c54837628bdd52192c2084ebf151bf",
+        "common.php": "ee0ab0862f04420474146575888b9188",
+        "web.php": "ee0ab0862f04420474146575888b9188",
+        "providers-web.php": "e479c70af2ad8e0b1f574db973bba468"
+    },
+    "maileryio/mailery-channel-email-amazon-ses": {
+        "version": "dev-master e4ccedc",
+        "params.php": "964cafc6e9c19be86c762f2a190eaf70",
+        "common.php": "864c36d7c8d0cd8f603539e02a9e7813",
+        "web.php": "ee0ab0862f04420474146575888b9188",
+        "providers-web.php": "67f58b774ecefd019f757f8f36019553"
+    },
+    "maileryio/mailery-common": {
+        "version": "dev-master 28475de",
+        "params.php": "a508d8b731a285716e173b89481b3db9",
+        "common.php": "f1029d09872884b192a82b0d0fa5fb95"
+    },
+    "maileryio/mailery-dashboard": {
+        "version": "dev-master ad7d2dd",
+        "params.php": "e97a54e9687e216e95f38cc2e1c4b97e",
+        "web.php": "a3f9c5fdec2357f4624175c085f2308c",
+        "providers-web.php": "2c9a94c665de8d3aa611aa3b35ee0b35"
+    },
+    "maileryio/mailery-icon-material": {
+        "version": "dev-master 1ec3a5d",
+        "web.php": "9a5e8e5090b57080ecab0a8be8b0519d"
+    },
+    "maileryio/mailery-menu": {
+        "version": "dev-master 115358d",
+        "web.php": "216db780bee3c060f63523d34e9b8bc2"
+    },
+    "maileryio/mailery-menu-navbar": {
+        "version": "dev-master 8e0370d",
+        "params.php": "cdbda54eb8d3ee755ce40933be8493a2",
+        "web.php": "240277456268e8441dbaed2d14460d60"
+    },
+    "maileryio/mailery-menu-sidebar": {
+        "version": "dev-master 2e21e67",
+        "params.php": "5b3d391629dcb16e9a2803014656030a",
+        "web.php": "dcafe3eb9a81daa411aefb037960105e"
+    },
+    "maileryio/mailery-queue": {
+        "version": "dev-master 4d423b9",
+        "params.php": "b140cb50c88c8560f2d370c27a9ea541",
+        "common.php": "c029037c17d706460c172e70c3d8cc35"
+    },
+    "maileryio/mailery-rbac": {
+        "version": "dev-master e03fe5e",
+        "common.php": "ed71232daff39b65a69c0a50e7168dbf",
+        "params.php": "4b22ba37b29e1e3b5e22155e01d3a4cf",
+        "providers-web.php": "5cbcf5a4624b98d9abbd64aeeca045df",
+        "rbac/assignments.php": "ee0ab0862f04420474146575888b9188",
+        "rbac/items.php": "ee0ab0862f04420474146575888b9188",
+        "rbac/rules.php": "ee0ab0862f04420474146575888b9188"
+    },
+    "maileryio/mailery-sender": {
+        "version": "dev-master 77ee3c6",
+        "params.php": "773c138e85673d58c6fc1f548a40c75a",
+        "common.php": "9896b825637abdb1d3757ff656e4d956",
+        "web.php": "ee0ab0862f04420474146575888b9188",
+        "providers-web.php": "c940a995738635f904f927dc59bddce9"
+    },
+    "maileryio/mailery-sender-domain": {
+        "version": "dev-master 24269fa",
+        "params.php": "281b15d717140d04fa1f89c92bfa59e0",
+        "common.php": "e65e905beb13c2a404e473e2b3d4170a",
+        "web.php": "ee0ab0862f04420474146575888b9188",
+        "providers-web.php": "7d37cd083f04f49275079bb46aea5798"
+    },
+    "maileryio/mailery-sender-email": {
+        "version": "dev-master 414a2c2",
+        "params.php": "ba3030ad9676dcf869a63bca3a8e437a",
+        "common.php": "4af234f3aa0b1026bf5c265a4cd2618b",
+        "web.php": "ee0ab0862f04420474146575888b9188",
+        "providers-web.php": "98c46e7ae3092dbdc733bfec01d5ce88"
+    },
+    "maileryio/mailery-setting": {
+        "version": "dev-master 285692f",
+        "params.php": "e8ae5694eb8407a9a19f8940941b48de",
+        "common.php": "725d7177ae37dae2ce340582bf5e9963",
+        "web.php": "ee0ab0862f04420474146575888b9188",
+        "providers-web.php": "31b32c5755928a0273bb560ddcba73d9"
+    },
+    "maileryio/mailery-storage": {
+        "version": "dev-master 85b950c",
+        "common.php": "ff248bf04f6109856682e5589bdeddcd",
+        "params.php": "0a2fbb074846eeedf60242e9e8f30216",
+        "providers.php": "2feb4bd2e56cc16253ffbdecede34309",
+        "providers-web.php": "cd9a25caabfb6e391120ae66f2ec8d2c"
+    },
+    "maileryio/mailery-subscriber": {
+        "version": "dev-master d882e24",
+        "params.php": "a90e192fcb1e38cc52d8988324b99c0d",
+        "common.php": "19e7586638cd50869a52e3194552a3e8",
+        "providers-web.php": "dd06091c0961207d6b4e4f1a3bc4106f"
+    },
+    "maileryio/mailery-template": {
+        "version": "dev-master 74617ce",
+        "params.php": "502195dab8c853156e111c13dbb8e869",
+        "common.php": "d6ebcc0d9cc976777ff584aa9e80e0be",
+        "providers-web.php": "e3f03a47de2f4f58fd22de562753c9af"
+    },
+    "maileryio/mailery-template-email": {
+        "version": "dev-master 7e6c424",
+        "params.php": "879f2cfcaa0a0fc377dddfb447053022",
+        "common.php": "c79028cdeb93f796326564b722aee1fe",
+        "providers-web.php": "42ab98001a718969627ce7694d27f4ad"
+    },
+    "maileryio/mailery-template-email-ckeditor": {
+        "version": "dev-master 53a384d",
+        "params.php": "79ba51c1fb34311f4ec1a14c7c434af4"
+    },
+    "maileryio/mailery-user": {
+        "version": "dev-master 2604163",
+        "params.php": "55df365d5fd22742258d83004b3dffbf",
+        "common.php": "a3e33d17cc8986a9a24c180a62ecc40b",
+        "web.php": "ff95cfe40426a99040c52178fffbf15c",
+        "providers-web.php": "ca3e6d4474a7b548ee0f4f104de010b0",
+        "rbac/assignments.php": "ee0ab0862f04420474146575888b9188",
+        "rbac/items.php": "f05beec384a0de965fcd5868880af8c6",
+        "rbac/rules.php": "ee0ab0862f04420474146575888b9188"
+    },
+    "maileryio/mailery-web": {
+        "version": "dev-master 1adfdb1",
+        "params.php": "2f36aa655bee82111285249aa1dd469c",
+        "web.php": "ea948fdc6966da1e04b26b59017992d1"
+    },
+    "yiisoft/aliases": {
+        "version": "2.0.0",
+        "params.php": "438593225862690b00d87fbccaa99bf8",
+        "common.php": "1c3045e19fad0f6a45dbeb59136c4144"
+    },
+    "yiisoft/assets": {
+        "version": "1.0.0",
+        "params.php": "b2a8c65beb1d47653683536471665231",
+        "web.php": "e77af09d154e27f85f2f72fb4f2da448"
+    },
+    "yiisoft/cache": {
+        "version": "1.0.1",
+        "common.php": "46175aab966be00c21b0d8424fab2f30"
+    },
+    "yiisoft/cache-file": {
+        "version": "1.0.1",
+        "common.php": "cab74307fa6d3af175dae285be910a47",
+        "params.php": "c60b7d1813b3dde2a43e433f8d6fed5a"
+    },
+    "yiisoft/csrf": {
+        "version": "1.0.2",
+        "params.php": "25b272f2729f9d5e85c930d1bf64f1ed",
+        "web.php": "2b6cc33099a25d6414d8c1198f07e0e1"
+    },
+    "yiisoft/data-response": {
+        "version": "1.0.0",
+        "web.php": "37abfd4390e1a4db8622b3fe476a4705"
+    },
+    "yiisoft/error-handler": {
+        "version": "1.0.0",
+        "web.php": "e6f389ca4fc59c9acaf87a05794d39e3"
+    },
+    "yiisoft/log": {
+        "version": "1.0.2",
+        "events-console.php": "dba155a1e9ddff313d6899eebe684799",
+        "events-web.php": "550b5ab87519380102e93143cee95913"
+    },
+    "yiisoft/log-target-file": {
+        "version": "1.0.3",
+        "common.php": "a0a485940ce6f720b44264901a71d0c6",
+        "params.php": "16e4ea41a7d8964fff91d711bc5bb173"
+    },
+    "yiisoft/mailer-swiftmailer": {
+        "version": "1.0.0",
+        "params.php": "ad25e7c8fd1c1934646e04d266a776d2",
+        "common.php": "69b8a8e588214e13ea1c12556fcc03b3"
+    },
+    "yiisoft/middleware-dispatcher": {
+        "version": "dev-master ffb9446",
+        "web.php": "06eae76af898d597371ca530ef90d00d"
+    },
+    "yiisoft/router": {
+        "version": "dev-master a26af50",
+        "common.php": "b5993bb93506956666a69813040d7a67"
+    },
+    "yiisoft/router-fastroute": {
+        "version": "dev-master e86a366",
+        "params.php": "07d80a035e80e1df4fc59332f0bbf17a",
+        "common.php": "dec33ba20e36c348e3edeb7d0468e4c1",
+        "web.php": "beb2272d9b3e8a51c6eab67286c86b74"
+    },
+    "yiisoft/session": {
+        "version": "1.0.2",
+        "web.php": "cf8f19353f10ce798ba694941c44a301",
+        "params.php": "7581377094a3f76d9f1712e3f8dd18b7"
+    },
+    "yiisoft/translator": {
+        "version": "1.0.0",
+        "params.php": "acd116f49e6948f1608c5e2d9ebe51b0",
+        "common.php": "aa0cde4c82401c196614309daa49b835"
+    },
+    "yiisoft/translator-formatter-intl": {
+        "version": "1.0.0",
+        "common.php": "2e986795508978fa4dcbf922e56b5ea1"
+    },
+    "yiisoft/translator-message-php": {
+        "version": "1.0.1",
+        "common.php": "1b59c8569d5fad195a8e3e3c2aebed45"
+    },
+    "yiisoft/user": {
+        "version": "dev-master 5d267ea",
+        "params.php": "27eea805ad7297566be80d505b7e10e0",
+        "web.php": "b67dcfcf9a690d301dedfa7ee19935a0"
+    },
+    "yiisoft/validator": {
+        "version": "dev-master a20a6f4",
+        "common.php": "49c02d9de47834a2d5141ae9df93d0f3"
+    },
+    "yiisoft/view": {
+        "version": "1.0.1",
+        "params.php": "6354581fa1448a07bee0120ed1ac82ae",
+        "common.php": "2c019d27145a3db34582585935cda2ae",
+        "web.php": "e0aa4613e5ffa9f4255d8dd8ddcc2902"
+    },
+    "yiisoft/widget": {
+        "version": "dev-master c5c6e6d",
+        "bootstrap.php": "726fd077e95280953eb5a1997b966176"
+    },
+    "yiisoft/yii-bootstrap5": {
+        "version": "dev-master 6db7352",
+        "params.php": "646952dcbee186196fa986478dc8549f",
+        "web/field.php": "c443ef2f9d461456542eeb9a5ac18992"
+    },
+    "yiisoft/yii-console": {
+        "version": "dev-master 4f6ff4b",
+        "params.php": "3f530a78778873a4e841a8b15fd79097",
+        "console.php": "b633ce29f1e3a1cb3618e5e213e54987",
+        "events-console.php": "dbc14d9b634c9319468a203d2ae77c35",
+        "providers-console.php": "b140cb50c88c8560f2d370c27a9ea541"
+    },
+    "yiisoft/yii-cycle": {
+        "version": "dev-master 629433d",
+        "params.php": "0a6447a7d1674b3db7d25a468b1675e8",
+        "common.php": "f221c2b80d32cb999fdd1b0ab65759ea",
+        "console.php": "23195136c7f46b4b610ce4489f847bc0",
+        "events-console.php": "19b16102837aa5b788383dd33cbeafa1",
+        "providers-web.php": "7209cc28a3d80321515e57371d5b10b1"
+    },
+    "yiisoft/yii-event": {
+        "version": "1.0.0",
+        "common.php": "c0e82623530c3eefe6896598717052bc",
+        "console.php": "95dec8db5406503efb918c1896625e97",
+        "events.php": "b140cb50c88c8560f2d370c27a9ea541",
+        "events-web.php": "b140cb50c88c8560f2d370c27a9ea541",
+        "events-console.php": "b140cb50c88c8560f2d370c27a9ea541",
+        "web.php": "7b30a1ef334d708d7df893d10badf134"
+    },
+    "yiisoft/yii-filesystem": {
+        "version": "dev-master 5ae1b79",
+        "common.php": "79313c43d01e9b02cffdeadb14bdc25e",
+        "providers.php": "a9096f5fbb53a068d4125a7801e7e42b"
+    },
+    "yiisoft/yii-queue": {
+        "version": "dev-master c9f34aa",
+        "common.php": "13f0d804a733f5d97dbdb7d548528a6c",
+        "params.php": "8256c857e805c4ea5fb4e86b1d3195e9"
+    },
+    "yiisoft/yii-view": {
+        "version": "1.0.0",
+        "params.php": "7f0dfffdbc1c1ddb026ce038c43caf72",
+        "web.php": "8d3eda4ddba4e34ac79735e3ec9a56a7"
+    }
+}

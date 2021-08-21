@@ -10,8 +10,4 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Mailery\Provider\RouteCollectorServiceProvider;
-
-return [
-    RouteCollectorServiceProvider::class => RouteCollectorServiceProvider::class,
-];
+return [];

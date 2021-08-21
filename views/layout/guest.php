@@ -14,8 +14,10 @@ $assetManager->register([
     AppAssetBundle::class,
 ]);
 
-$this->setCssFiles($assetManager->getCssFiles());
-$this->setJsFiles($assetManager->getJsFiles());
+$this->addCssFiles($assetManager->getCssFiles());
+$this->addJsFiles($assetManager->getJsFiles());
+$this->addJsStrings($assetManager->getJsStrings());
+$this->addJsVars($assetManager->getJsVars());
 
 $this->beginPage();
 
