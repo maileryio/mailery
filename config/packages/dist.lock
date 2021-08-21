@@ -31,13 +31,13 @@
     "maileryio/mailery-channel": {
         "version": "dev-master 8a3f6e2",
         "params.php": "74a6a64723ffe1f9a1b6bdf2893d4ac6",
-        "common.php": "23b9fd316833dd862eb8e11e2c75150e",
+        "common.php": "5d64f9c76f1b5bbf86a68e215529f96b",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "providers-web.php": "3c14b100bd40c600b05a475f2bd3790e"
     },
     "maileryio/mailery-channel-email": {
         "version": "dev-master 01ec31d",
-        "params.php": "c8c54837628bdd52192c2084ebf151bf",
+        "params.php": "adc7a7b8486b2addadff606669aa7a1f",
         "common.php": "ee0ab0862f04420474146575888b9188",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "providers-web.php": "e479c70af2ad8e0b1f574db973bba468"
@@ -51,7 +51,7 @@
     },
     "maileryio/mailery-common": {
         "version": "dev-master 28475de",
-        "params.php": "a508d8b731a285716e173b89481b3db9",
+        "params.php": "cebda88359b8854343881b710a754898",
         "common.php": "f1029d09872884b192a82b0d0fa5fb95"
     },
     "maileryio/mailery-dashboard": {
@@ -85,7 +85,7 @@
     },
     "maileryio/mailery-rbac": {
         "version": "dev-master e03fe5e",
-        "common.php": "ed71232daff39b65a69c0a50e7168dbf",
+        "common.php": "b8b4b91fd78b4349f438294dd008e11a",
         "params.php": "4b22ba37b29e1e3b5e22155e01d3a4cf",
         "providers-web.php": "5cbcf5a4624b98d9abbd64aeeca045df",
         "rbac/assignments.php": "ee0ab0862f04420474146575888b9188",
@@ -101,14 +101,14 @@
     },
     "maileryio/mailery-sender-domain": {
         "version": "dev-master 24269fa",
-        "params.php": "281b15d717140d04fa1f89c92bfa59e0",
-        "common.php": "e65e905beb13c2a404e473e2b3d4170a",
+        "params.php": "642f5ae6bcde1088b694c4582018241a",
+        "common.php": "3954ea085eb922e70c5c1084fae4ca14",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "providers-web.php": "7d37cd083f04f49275079bb46aea5798"
     },
     "maileryio/mailery-sender-email": {
         "version": "dev-master 414a2c2",
-        "params.php": "ba3030ad9676dcf869a63bca3a8e437a",
+        "params.php": "38217f69d4d92a919a4a2829332ce741",
         "common.php": "4af234f3aa0b1026bf5c265a4cd2618b",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "providers-web.php": "98c46e7ae3092dbdc733bfec01d5ce88"
@@ -116,7 +116,7 @@
     "maileryio/mailery-setting": {
         "version": "dev-master 285692f",
         "params.php": "e8ae5694eb8407a9a19f8940941b48de",
-        "common.php": "725d7177ae37dae2ce340582bf5e9963",
+        "common.php": "442167dca06b96eaef01cda997fed873",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "providers-web.php": "31b32c5755928a0273bb560ddcba73d9"
     },
@@ -129,8 +129,8 @@
     },
     "maileryio/mailery-subscriber": {
         "version": "dev-master d882e24",
-        "params.php": "a90e192fcb1e38cc52d8988324b99c0d",
-        "common.php": "19e7586638cd50869a52e3194552a3e8",
+        "params.php": "e6717e854efd9c227d2346a710215d8a",
+        "common.php": "66cca0ba538394208935c3268b7a7f30",
         "providers-web.php": "dd06091c0961207d6b4e4f1a3bc4106f"
     },
     "maileryio/mailery-template": {
@@ -141,13 +141,13 @@
     },
     "maileryio/mailery-template-email": {
         "version": "dev-master 7e6c424",
-        "params.php": "879f2cfcaa0a0fc377dddfb447053022",
+        "params.php": "c80cfad400e703ce8d4f0bd49227b285",
         "common.php": "c79028cdeb93f796326564b722aee1fe",
         "providers-web.php": "42ab98001a718969627ce7694d27f4ad"
     },
     "maileryio/mailery-template-email-ckeditor": {
         "version": "dev-master 53a384d",
-        "params.php": "79ba51c1fb34311f4ec1a14c7c434af4"
+        "params.php": "4dbc06d1409e02ab0882977b210e5ec6"
     },
     "maileryio/mailery-user": {
         "version": "dev-master 2604163",

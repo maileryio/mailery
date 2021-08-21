@@ -341,60 +341,60 @@ return [
                 '$providers',
                 'config/providers-web.php',
             ],
-//            'maileryio/mailery-campaign' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-campaign-standard' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-channel-email-amazon-ses' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-dashboard' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-rbac' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-sender' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-sender-domain' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-sender-email' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-setting' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-subscriber' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-template-email' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-channel' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-channel-email' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-storage' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-template' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-user' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-activity-log' => [
-//                'providers-web.php',
-//            ],
-//            'maileryio/mailery-brand' => [
-//                'providers-web.php',
-//            ],
+            'maileryio/mailery-campaign' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-campaign-standard' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-channel-email-amazon-ses' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-dashboard' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-rbac' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-sender' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-sender-domain' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-sender-email' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-setting' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-subscriber' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-template-email' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-channel' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-channel-email' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-storage' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-template' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-user' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-activity-log' => [
+                'providers-web.php',
+            ],
+            'maileryio/mailery-brand' => [
+                'providers-web.php',
+            ],
             'yiisoft/yii-cycle' => [
                 'providers-web.php',
             ],
@@ -435,9 +435,6 @@ return [
         'routes' => [
             '/' => [
                 'config/routes.php',
-            ],
-            'maileryio/mailery-user' => [
-                'routes.php',
             ],
         ],
         'web' => [
