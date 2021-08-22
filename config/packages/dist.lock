@@ -1,53 +1,53 @@
 {
     "maileryio/mailery-activity-log": {
-        "version": "dev-master 317a8cb",
+        "version": "dev-master ab1bfc7",
         "params.php": "c202d98debf9d86924588c820e374819",
         "common.php": "a3623d2b2d3a38f9eb0fed8022314e23",
         "web.php": "4753983e8ac5733eb90bdd16b50cdb2b",
-        "providers-web.php": "e8fb40631bbe502d59eddacc87323bb2"
+        "routes.php": "a6ac6c46890dee2e8e1372e85f71e801"
     },
     "maileryio/mailery-brand": {
-        "version": "dev-master 733558f",
+        "version": "dev-master f1e16d1",
         "params.php": "4959e8e6ac9f7374b94061398152d88a",
         "common.php": "2bbd9bb5a49dce38fd446b3573aaffe4",
         "web.php": "a9cd8da651888f248d5df0ba73a3dd59",
-        "providers-web.php": "02d6628678fcb77b642671fcbcd02b71",
+        "routes.php": "8f7eda17fe0473d9acf5c6f3785a2724",
         "rbac/assignments.php": "ee0ab0862f04420474146575888b9188",
         "rbac/items.php": "d14e027a8e0d351d892555b3d5d01661",
         "rbac/rules.php": "ee0ab0862f04420474146575888b9188"
     },
     "maileryio/mailery-campaign": {
-        "version": "dev-master ad27c0e",
+        "version": "dev-master 5b341c0",
         "params.php": "c33581e6128e5160c02e1b5cfccb4fb5",
         "common.php": "6fb5804534310a35f1a2c83b8452e73f",
-        "providers-web.php": "68c6e76b9335c415bc1d1013bd8e5e30"
+        "routes.php": "3f72318a6e7e3b8433afc2e7321bf18f"
     },
     "maileryio/mailery-campaign-standard": {
-        "version": "dev-master c549e8b",
+        "version": "dev-master 7aca639",
         "params.php": "c310236bec72b97779a57ae6a1c8387e",
         "common.php": "ee0ab0862f04420474146575888b9188",
-        "providers-web.php": "56c9cac18977efe0832c229980aee20e"
+        "routes.php": "a5e588ba56c49278d1e1f45f233bf678"
     },
     "maileryio/mailery-channel": {
-        "version": "dev-master 8a3f6e2",
+        "version": "dev-master 84c64a7",
         "params.php": "74a6a64723ffe1f9a1b6bdf2893d4ac6",
         "common.php": "5d64f9c76f1b5bbf86a68e215529f96b",
         "web.php": "ee0ab0862f04420474146575888b9188",
-        "providers-web.php": "3c14b100bd40c600b05a475f2bd3790e"
+        "routes.php": "82d43d7818c85fc0900cf2c157adb05b"
     },
     "maileryio/mailery-channel-email": {
-        "version": "dev-master 01ec31d",
+        "version": "dev-master d228f06",
         "params.php": "adc7a7b8486b2addadff606669aa7a1f",
         "common.php": "ee0ab0862f04420474146575888b9188",
         "web.php": "ee0ab0862f04420474146575888b9188",
-        "providers-web.php": "e479c70af2ad8e0b1f574db973bba468"
+        "routes.php": "3f72318a6e7e3b8433afc2e7321bf18f"
     },
     "maileryio/mailery-channel-email-amazon-ses": {
-        "version": "dev-master e4ccedc",
+        "version": "dev-master a9208fd",
         "params.php": "964cafc6e9c19be86c762f2a190eaf70",
         "common.php": "864c36d7c8d0cd8f603539e02a9e7813",
         "web.php": "ee0ab0862f04420474146575888b9188",
-        "providers-web.php": "67f58b774ecefd019f757f8f36019553"
+        "routes.php": "7b67eb033d94947d8aaf019210be44d2"
     },
     "maileryio/mailery-common": {
         "version": "dev-master 28475de",
@@ -55,10 +55,10 @@
         "common.php": "f1029d09872884b192a82b0d0fa5fb95"
     },
     "maileryio/mailery-dashboard": {
-        "version": "dev-master ad7d2dd",
+        "version": "dev-master 4ff12bf",
         "params.php": "e97a54e9687e216e95f38cc2e1c4b97e",
         "web.php": "a3f9c5fdec2357f4624175c085f2308c",
-        "providers-web.php": "2c9a94c665de8d3aa611aa3b35ee0b35"
+        "routes.php": "cbcb42e9e7c478388171a133f8e687df"
     },
     "maileryio/mailery-icon-material": {
         "version": "dev-master 1ec3a5d",
@@ -84,77 +84,77 @@
         "common.php": "c029037c17d706460c172e70c3d8cc35"
     },
     "maileryio/mailery-rbac": {
-        "version": "dev-master e03fe5e",
+        "version": "dev-master 08cacc5",
         "common.php": "b8b4b91fd78b4349f438294dd008e11a",
         "params.php": "4b22ba37b29e1e3b5e22155e01d3a4cf",
-        "providers-web.php": "5cbcf5a4624b98d9abbd64aeeca045df",
+        "routes.php": "fe5e6eb40ff5806ee8faf5b0d2372713",
         "rbac/assignments.php": "ee0ab0862f04420474146575888b9188",
         "rbac/items.php": "ee0ab0862f04420474146575888b9188",
         "rbac/rules.php": "ee0ab0862f04420474146575888b9188"
     },
     "maileryio/mailery-sender": {
-        "version": "dev-master 77ee3c6",
+        "version": "dev-master 6d536a2",
         "params.php": "773c138e85673d58c6fc1f548a40c75a",
         "common.php": "9896b825637abdb1d3757ff656e4d956",
         "web.php": "ee0ab0862f04420474146575888b9188",
-        "providers-web.php": "c940a995738635f904f927dc59bddce9"
+        "routes.php": "3280dcfe2e4ca5847ca38c1bdffc36c1"
     },
     "maileryio/mailery-sender-domain": {
-        "version": "dev-master 24269fa",
+        "version": "dev-master 383e69b",
         "params.php": "642f5ae6bcde1088b694c4582018241a",
         "common.php": "3954ea085eb922e70c5c1084fae4ca14",
         "web.php": "ee0ab0862f04420474146575888b9188",
-        "providers-web.php": "7d37cd083f04f49275079bb46aea5798"
+        "routes.php": "d5f7da19e068306a2bd8e46921d42089"
     },
     "maileryio/mailery-sender-email": {
-        "version": "dev-master 414a2c2",
+        "version": "dev-master 76f0d86",
         "params.php": "38217f69d4d92a919a4a2829332ce741",
         "common.php": "4af234f3aa0b1026bf5c265a4cd2618b",
         "web.php": "ee0ab0862f04420474146575888b9188",
-        "providers-web.php": "98c46e7ae3092dbdc733bfec01d5ce88"
+        "routes.php": "fc0f65299dc100509cc119e08ebfca5e"
     },
     "maileryio/mailery-setting": {
-        "version": "dev-master 285692f",
+        "version": "dev-master b35ab09",
         "params.php": "e8ae5694eb8407a9a19f8940941b48de",
         "common.php": "442167dca06b96eaef01cda997fed873",
         "web.php": "ee0ab0862f04420474146575888b9188",
-        "providers-web.php": "31b32c5755928a0273bb560ddcba73d9"
+        "routes.php": "bc0642974e0fa2fcc75e93e849edfcf7"
     },
     "maileryio/mailery-storage": {
-        "version": "dev-master 85b950c",
+        "version": "dev-master 6ceb37b",
         "common.php": "ff248bf04f6109856682e5589bdeddcd",
         "params.php": "0a2fbb074846eeedf60242e9e8f30216",
         "providers.php": "2feb4bd2e56cc16253ffbdecede34309",
-        "providers-web.php": "cd9a25caabfb6e391120ae66f2ec8d2c"
+        "routes.php": "a0a9214c5f2b7227e511d4a6f8b1cad0"
     },
     "maileryio/mailery-subscriber": {
-        "version": "dev-master d882e24",
+        "version": "dev-master ddf4a83",
         "params.php": "e6717e854efd9c227d2346a710215d8a",
         "common.php": "66cca0ba538394208935c3268b7a7f30",
-        "providers-web.php": "dd06091c0961207d6b4e4f1a3bc4106f"
+        "routes.php": "4a5e65e78c514c21cfff60384c1a27ab"
     },
     "maileryio/mailery-template": {
-        "version": "dev-master 74617ce",
+        "version": "dev-master 0f3572f",
         "params.php": "502195dab8c853156e111c13dbb8e869",
         "common.php": "d6ebcc0d9cc976777ff584aa9e80e0be",
-        "providers-web.php": "e3f03a47de2f4f58fd22de562753c9af"
+        "routes.php": "70c373d88dd239044f74df63c394822b"
     },
     "maileryio/mailery-template-email": {
-        "version": "dev-master 7e6c424",
+        "version": "dev-master 576b173",
         "params.php": "c80cfad400e703ce8d4f0bd49227b285",
         "common.php": "c79028cdeb93f796326564b722aee1fe",
-        "providers-web.php": "42ab98001a718969627ce7694d27f4ad"
+        "routes.php": "ce88e8b2ae985e55ea31e8d2c0ba230d"
     },
     "maileryio/mailery-template-email-ckeditor": {
         "version": "dev-master 53a384d",
         "params.php": "4dbc06d1409e02ab0882977b210e5ec6"
     },
     "maileryio/mailery-user": {
-        "version": "dev-master 2604163",
+        "version": "dev-master 38d2a80",
         "params.php": "55df365d5fd22742258d83004b3dffbf",
         "common.php": "a3e33d17cc8986a9a24c180a62ecc40b",
         "web.php": "ff95cfe40426a99040c52178fffbf15c",
-        "providers-web.php": "ca3e6d4474a7b548ee0f4f104de010b0",
+        "routes.php": "60d990f2978e8c28958a2eaa199191e3",
         "rbac/assignments.php": "ee0ab0862f04420474146575888b9188",
         "rbac/items.php": "f05beec384a0de965fcd5868880af8c6",
         "rbac/rules.php": "ee0ab0862f04420474146575888b9188"

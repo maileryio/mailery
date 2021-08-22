@@ -6,14 +6,6 @@ use Yiisoft\Router\Group;
 use Yiisoft\Router\Route;
 use Mailery\Campaign\Standard\Controller\DefaultController;
 
-/**
- * Basic Mailery project template
- * @link      https://github.com/maileryio/mailery
- * @package   Mailery
- * @license   BSD-3-Clause
- * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
- */
-
 return [
     Group::create('/brand/{brandId:\d+}')
         ->routes(

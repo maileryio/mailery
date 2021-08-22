@@ -10,8 +10,6 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Cycle\ORM\Promise\ProxyFactory;
-use Cycle\Schema\Generator;
 use Mailery\ViewInjection\ContentViewInjection;
 use Mailery\ViewInjection\LayoutViewInjection;
 use Mailery\ViewInjection\LinkTagsViewInjection;
@@ -21,15 +19,12 @@ use Mailery\Menu\Sidebar\SidebarMenu;
 use Mailery\Brand\BrandLocatorInterface;
 use Mailery\Command\Git;
 use Mailery\Command\Router\ListCommand;
-use Spiral\Database\Driver\Postgres\PostgresDriver;
 use Yiisoft\Assets\AssetManager;
 use Yiisoft\Factory\Definition\Reference;
 use Yiisoft\Router\UrlGeneratorInterface;
-use Yiisoft\Router\UrlMatcherInterface;
 use Yiisoft\Translator\TranslatorInterface;
-use Yiisoft\Yii\Cycle\Schema\Provider\SimpleCacheSchemaProvider;
-use Yiisoft\Yii\Cycle\Schema\Provider\FromConveyorSchemaProvider;
 use Yiisoft\Yii\View\CsrfViewInjection;
+use Yiisoft\Router\CurrentRoute;
 
 return [
     'yiisoft/yii-debug' => [
@@ -42,6 +37,7 @@ return [
             '@vendor' => '@root/vendor',
             '@public' => '@root/web',
             '@views' => '@root/views',
+            '@layout' => '@root/views/layout',
             '@resources' => '@root/resources',
             '@runtime' => '@root/runtime',
             '@npm' => '@root/node_modules',
@@ -59,7 +55,7 @@ return [
         'commonParameters' => [
             'assetManager' => Reference::to(AssetManager::class),
             'urlGenerator' => Reference::to(UrlGeneratorInterface::class),
-            'urlMatcher' => Reference::to(UrlMatcherInterface::class),
+            'currentRoute' => Reference::to(CurrentRoute::class),
             'navbarMenu' => Reference::to(NavbarMenu::class),
             'sidebarMenu' => Reference::to(SidebarMenu::class),
             'brandLocator' => Reference::to(BrandLocatorInterface::class),

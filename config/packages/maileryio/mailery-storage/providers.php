@@ -10,4 +10,8 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-return [];
+use Mailery\Storage\Provider\FileStorageServiceProvider;
+
+return [
+//    'yiisoft/yii-filesystem/file-storage' => FileStorageServiceProvider::class,
+];
