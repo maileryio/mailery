@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7852a01bc286a36ae237db2b1c5d658f",
+    "content-hash": "38538bb17605cb6f459de809feadf6b6",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -54,16 +54,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.191.1",
+            "version": "3.191.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "221eb3790a2f5cc73067ec1c13d4c788a0296351"
+                "reference": "6176504bc51ae5ac3a5276e05da0fa6abf71540b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/221eb3790a2f5cc73067ec1c13d4c788a0296351",
-                "reference": "221eb3790a2f5cc73067ec1c13d4c788a0296351",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6176504bc51ae5ac3a5276e05da0fa6abf71540b",
+                "reference": "6176504bc51ae5ac3a5276e05da0fa6abf71540b",
                 "shasum": ""
             },
             "require": {
@@ -138,9 +138,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.191.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.191.3"
             },
-            "time": "2021-08-20T18:43:14+00:00"
+            "time": "2021-08-24T18:18:22+00:00"
         },
         {
             "name": "brick/math",
@@ -2113,12 +2113,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/cycle-mapper.git",
-                "reference": "121e42363a721831ada21f185d5f5391a3c91e5d"
+                "reference": "af3fa0a80a87a4e95634165ea0bd5a2d02070890"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/cycle-mapper/zipball/121e42363a721831ada21f185d5f5391a3c91e5d",
-                "reference": "121e42363a721831ada21f185d5f5391a3c91e5d",
+                "url": "https://api.github.com/repos/maileryio/cycle-mapper/zipball/af3fa0a80a87a4e95634165ea0bd5a2d02070890",
+                "reference": "af3fa0a80a87a4e95634165ea0bd5a2d02070890",
                 "shasum": ""
             },
             "require": {
@@ -2159,7 +2159,7 @@
                 "source": "https://github.com/maileryio/cycle-mapper",
                 "wiki": "https://github.com/maileryio/cycle-mapper/wiki"
             },
-            "time": "2021-03-24T16:00:51+00:00"
+            "time": "2021-08-22T21:58:54+00:00"
         },
         {
             "name": "maileryio/mailery-activity-log",
@@ -2239,12 +2239,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-brand.git",
-                "reference": "f1e16d1e7206cac2a11a148d68681d16a6c078ed"
+                "reference": "fb53410dfea3ac0142fea5584383d9e6d44a8b66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-brand/zipball/f1e16d1e7206cac2a11a148d68681d16a6c078ed",
-                "reference": "f1e16d1e7206cac2a11a148d68681d16a6c078ed",
+                "url": "https://api.github.com/repos/maileryio/mailery-brand/zipball/fb53410dfea3ac0142fea5584383d9e6d44a8b66",
+                "reference": "fb53410dfea3ac0142fea5584383d9e6d44a8b66",
                 "shasum": ""
             },
             "require": {
@@ -2262,7 +2262,7 @@
                 "php": "^7.4",
                 "yiisoft/form": "^1.0@dev",
                 "yiisoft/router": "^3.0@dev",
-                "yiisoft/view": "^1.0",
+                "yiisoft/view": "^2.0",
                 "yiisoft/yii-bootstrap5": "^3.0@dev",
                 "yiisoft/yii-cycle": "^3.0@dev",
                 "yiisoft/yii-widgets": "^3.0@dev"
@@ -2312,7 +2312,7 @@
                 "source": "https://github.com/maileryio/mailery-brand",
                 "wiki": "https://github.com/maileryio/mailery-brand/wiki"
             },
-            "time": "2021-08-22T20:33:11+00:00"
+            "time": "2021-08-24T22:23:55+00:00"
         },
         {
             "name": "maileryio/mailery-campaign",
@@ -2635,12 +2635,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-common.git",
-                "reference": "28475de04b5f1b3f7c47772ddcdf928872343e27"
+                "reference": "aba2581c76ed37ab7fb3e17a4a8343754c326724"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-common/zipball/28475de04b5f1b3f7c47772ddcdf928872343e27",
-                "reference": "28475de04b5f1b3f7c47772ddcdf928872343e27",
+                "url": "https://api.github.com/repos/maileryio/mailery-common/zipball/aba2581c76ed37ab7fb3e17a4a8343754c326724",
+                "reference": "aba2581c76ed37ab7fb3e17a4a8343754c326724",
                 "shasum": ""
             },
             "require": {
@@ -2687,7 +2687,7 @@
                 "source": "https://github.com/maileryio/mailery-common",
                 "wiki": "https://github.com/maileryio/mailery-common/wiki"
             },
-            "time": "2021-05-05T11:50:15+00:00"
+            "time": "2021-08-22T21:59:41+00:00"
         },
         {
             "name": "maileryio/mailery-dashboard",
@@ -2758,12 +2758,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-icon.git",
-                "reference": "00a821303fb4a33387b0a0f43fa001e81894cc36"
+                "reference": "56cd0a7f06c3898a6b8323e161234e390ab39272"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-icon/zipball/00a821303fb4a33387b0a0f43fa001e81894cc36",
-                "reference": "00a821303fb4a33387b0a0f43fa001e81894cc36",
+                "url": "https://api.github.com/repos/maileryio/mailery-icon/zipball/56cd0a7f06c3898a6b8323e161234e390ab39272",
+                "reference": "56cd0a7f06c3898a6b8323e161234e390ab39272",
                 "shasum": ""
             },
             "require": {
@@ -2805,7 +2805,7 @@
                 "source": "https://github.com/maileryio/mailery-icon",
                 "wiki": "https://github.com/maileryio/mailery-icon/wiki"
             },
-            "time": "2021-02-11T10:19:56+00:00"
+            "time": "2021-08-22T21:59:54+00:00"
         },
         {
             "name": "maileryio/mailery-icon-material",
@@ -2813,12 +2813,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-icon-material.git",
-                "reference": "1ec3a5d2ea5c2edb6541159ab19a536da31e9c20"
+                "reference": "b25234eae3e5117e28936e8a621c5150c21a17a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-icon-material/zipball/1ec3a5d2ea5c2edb6541159ab19a536da31e9c20",
-                "reference": "1ec3a5d2ea5c2edb6541159ab19a536da31e9c20",
+                "url": "https://api.github.com/repos/maileryio/mailery-icon-material/zipball/b25234eae3e5117e28936e8a621c5150c21a17a8",
+                "reference": "b25234eae3e5117e28936e8a621c5150c21a17a8",
                 "shasum": ""
             },
             "require": {
@@ -2826,8 +2826,8 @@
                 "maileryio/mailery-icon": "dev-master",
                 "php": "^7.4",
                 "yiisoft/arrays": "^1.0",
-                "yiisoft/assets": "^1.0@dev",
-                "yiisoft/html": "^1.0"
+                "yiisoft/assets": "^1.0",
+                "yiisoft/html": "^2.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.16",
@@ -2869,7 +2869,7 @@
                 "source": "https://github.com/maileryio/mailery-icon-material",
                 "wiki": "https://github.com/maileryio/mailery-icon-material/wiki"
             },
-            "time": "2021-03-24T16:02:43+00:00"
+            "time": "2021-08-24T22:01:55+00:00"
         },
         {
             "name": "maileryio/mailery-menu",
@@ -2877,19 +2877,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-menu.git",
-                "reference": "115358d3299c7a5297d02de4c8305ef8b7b6f72d"
+                "reference": "4ba41d47120e98de1191825542155eafb2564271"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-menu/zipball/115358d3299c7a5297d02de4c8305ef8b7b6f72d",
-                "reference": "115358d3299c7a5297d02de4c8305ef8b7b6f72d",
+                "url": "https://api.github.com/repos/maileryio/mailery-menu/zipball/4ba41d47120e98de1191825542155eafb2564271",
+                "reference": "4ba41d47120e98de1191825542155eafb2564271",
                 "shasum": ""
             },
             "require": {
                 "foxy/foxy": "^1.0",
                 "opis/closure": "^3.5",
                 "php": "^7.4",
-                "yiisoft/html": "^1.0",
+                "yiisoft/html": "^2.0",
                 "yiisoft/injector": "^1.0",
                 "yiisoft/router": "^3.0@dev",
                 "yiisoft/widget": "^3.0@dev"
@@ -2934,7 +2934,7 @@
                 "source": "https://github.com/maileryio/mailery-menu",
                 "wiki": "https://github.com/maileryio/mailery-menu/wiki"
             },
-            "time": "2021-05-03T20:10:51+00:00"
+            "time": "2021-08-24T22:02:01+00:00"
         },
         {
             "name": "maileryio/mailery-menu-navbar",
@@ -2942,12 +2942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-menu-navbar.git",
-                "reference": "8e0370dcfa5a47a6e411b4dfa6605aea11268fb0"
+                "reference": "6469840dcae0d77148bfdbab4a76ade70550518e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-menu-navbar/zipball/8e0370dcfa5a47a6e411b4dfa6605aea11268fb0",
-                "reference": "8e0370dcfa5a47a6e411b4dfa6605aea11268fb0",
+                "url": "https://api.github.com/repos/maileryio/mailery-menu-navbar/zipball/6469840dcae0d77148bfdbab4a76ade70550518e",
+                "reference": "6469840dcae0d77148bfdbab4a76ade70550518e",
                 "shasum": ""
             },
             "require": {
@@ -2996,7 +2996,7 @@
                 "source": "https://github.com/maileryio/mailery-menu-navbar",
                 "wiki": "https://github.com/maileryio/mailery-menu-navbar/wiki"
             },
-            "time": "2021-03-24T16:03:27+00:00"
+            "time": "2021-08-22T22:00:12+00:00"
         },
         {
             "name": "maileryio/mailery-menu-sidebar",
@@ -3004,12 +3004,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-menu-sidebar.git",
-                "reference": "2e21e6712f26c215cc38348451dd6ec9477bffd9"
+                "reference": "d46d9a8c4ccab55f1eb07ae5072848f4b145a425"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-menu-sidebar/zipball/2e21e6712f26c215cc38348451dd6ec9477bffd9",
-                "reference": "2e21e6712f26c215cc38348451dd6ec9477bffd9",
+                "url": "https://api.github.com/repos/maileryio/mailery-menu-sidebar/zipball/d46d9a8c4ccab55f1eb07ae5072848f4b145a425",
+                "reference": "d46d9a8c4ccab55f1eb07ae5072848f4b145a425",
                 "shasum": ""
             },
             "require": {
@@ -3060,7 +3060,7 @@
                 "source": "https://github.com/maileryio/mailery-menu-sidebar",
                 "wiki": "https://github.com/maileryio/mailery-menu-sidebar/wiki"
             },
-            "time": "2021-03-24T16:03:59+00:00"
+            "time": "2021-08-22T22:00:18+00:00"
         },
         {
             "name": "maileryio/mailery-queue",
@@ -3068,12 +3068,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-queue.git",
-                "reference": "4d423b9bdee807827e11164f8ce7e6ff774e2994"
+                "reference": "21d8616fcaac79f63d04f3e632333c759c93a289"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-queue/zipball/4d423b9bdee807827e11164f8ce7e6ff774e2994",
-                "reference": "4d423b9bdee807827e11164f8ce7e6ff774e2994",
+                "url": "https://api.github.com/repos/maileryio/mailery-queue/zipball/21d8616fcaac79f63d04f3e632333c759c93a289",
+                "reference": "21d8616fcaac79f63d04f3e632333c759c93a289",
                 "shasum": ""
             },
             "require": {
@@ -3121,7 +3121,7 @@
                 "source": "https://github.com/maileryio/mailery-queue",
                 "wiki": "https://github.com/maileryio/mailery-queue/wiki"
             },
-            "time": "2021-03-24T16:04:07+00:00"
+            "time": "2021-08-22T22:00:24+00:00"
         },
         {
             "name": "maileryio/mailery-rbac",
@@ -3330,19 +3330,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-sender-email.git",
-                "reference": "76f0d8673bc300a84cd07304bd2ae9a2b62f3c0b"
+                "reference": "a9ed862d2999c911b126f03c27ab3b8e7a681023"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-sender-email/zipball/76f0d8673bc300a84cd07304bd2ae9a2b62f3c0b",
-                "reference": "76f0d8673bc300a84cd07304bd2ae9a2b62f3c0b",
+                "url": "https://api.github.com/repos/maileryio/mailery-sender-email/zipball/a9ed862d2999c911b126f03c27ab3b8e7a681023",
+                "reference": "a9ed862d2999c911b126f03c27ab3b8e7a681023",
                 "shasum": ""
             },
             "require": {
                 "foxy/foxy": "^1.0",
                 "php": "^7.4",
-                "yiisoft/mailer": "^1.0",
-                "yiisoft/mailer-swiftmailer": "^1.0"
+                "yiisoft/mailer": "^2.0",
+                "yiisoft/mailer-swiftmailer": "^2.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.16",
@@ -3386,7 +3386,7 @@
                 "source": "https://github.com/maileryio/mailery-sender-email",
                 "wiki": "https://github.com/maileryio/mailery-sender-email/wiki"
             },
-            "time": "2021-08-22T20:34:48+00:00"
+            "time": "2021-08-24T22:15:36+00:00"
         },
         {
             "name": "maileryio/mailery-setting",
@@ -3732,12 +3732,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-template-email-ckeditor.git",
-                "reference": "53a384dbabaaab943c70b9cf8907ff6d993e04b5"
+                "reference": "e9a2bcd497122eeb7879ebee0f9ca26eb69465e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-template-email-ckeditor/zipball/53a384dbabaaab943c70b9cf8907ff6d993e04b5",
-                "reference": "53a384dbabaaab943c70b9cf8907ff6d993e04b5",
+                "url": "https://api.github.com/repos/maileryio/mailery-template-email-ckeditor/zipball/e9a2bcd497122eeb7879ebee0f9ca26eb69465e4",
+                "reference": "e9a2bcd497122eeb7879ebee0f9ca26eb69465e4",
                 "shasum": ""
             },
             "require": {
@@ -3785,7 +3785,7 @@
                 "source": "https://github.com/maileryio/mailery-template-email-ckeditor",
                 "wiki": "https://github.com/maileryio/mailery-template-email-ckeditor/wiki"
             },
-            "time": "2021-05-30T18:28:38+00:00"
+            "time": "2021-08-22T22:02:07+00:00"
         },
         {
             "name": "maileryio/mailery-user",
@@ -3872,12 +3872,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-web.git",
-                "reference": "1adfdb10695a39aba45489c361929aa6e924ae18"
+                "reference": "5a165dcf4cba428775f324fedb4398b3193f8f8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-web/zipball/1adfdb10695a39aba45489c361929aa6e924ae18",
-                "reference": "1adfdb10695a39aba45489c361929aa6e924ae18",
+                "url": "https://api.github.com/repos/maileryio/mailery-web/zipball/5a165dcf4cba428775f324fedb4398b3193f8f8d",
+                "reference": "5a165dcf4cba428775f324fedb4398b3193f8f8d",
                 "shasum": ""
             },
             "require": {
@@ -3897,10 +3897,10 @@
                 "yiisoft/router": "^3.0@dev",
                 "yiisoft/router-fastroute": "^3.0@dev",
                 "yiisoft/session": "^1.0",
-                "yiisoft/view": "^1.0",
+                "yiisoft/view": "^2.0",
                 "yiisoft/widget": "^3.0@dev",
                 "yiisoft/yii-bootstrap5": "^3.0@dev",
-                "yiisoft/yii-view": "^1.0",
+                "yiisoft/yii-view": "^2.0",
                 "yiisoft/yii-web": "^3.0@dev"
             },
             "require-dev": {
@@ -3943,7 +3943,7 @@
                 "source": "https://github.com/maileryio/mailery-web",
                 "wiki": "https://github.com/maileryio/mailery-web/wiki"
             },
-            "time": "2021-08-21T16:43:36+00:00"
+            "time": "2021-08-24T22:25:00+00:00"
         },
         {
             "name": "maileryio/widget-dataview",
@@ -3951,12 +3951,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/widget-dataview.git",
-                "reference": "0f22a024677b0f9a2808930c57ae917544fe8cd3"
+                "reference": "d530016d29761b7410ae1e981d9bc69fe6549ab4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/widget-dataview/zipball/0f22a024677b0f9a2808930c57ae917544fe8cd3",
-                "reference": "0f22a024677b0f9a2808930c57ae917544fe8cd3",
+                "url": "https://api.github.com/repos/maileryio/widget-dataview/zipball/d530016d29761b7410ae1e981d9bc69fe6549ab4",
+                "reference": "d530016d29761b7410ae1e981d9bc69fe6549ab4",
                 "shasum": ""
             },
             "require": {
@@ -3998,7 +3998,7 @@
                 "source": "https://github.com/maileryio/widget-dataview",
                 "wiki": "https://github.com/maileryio/widget-dataview/wiki"
             },
-            "time": "2021-03-24T16:24:07+00:00"
+            "time": "2021-08-22T22:02:30+00:00"
         },
         {
             "name": "maileryio/widget-form",
@@ -4006,12 +4006,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/widget-form.git",
-                "reference": "d4468ca966adc10e5b84a686fa468637d4879b03"
+                "reference": "7cee9990b3ad45d0b78bc078c46857920c45cb65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/widget-form/zipball/d4468ca966adc10e5b84a686fa468637d4879b03",
-                "reference": "d4468ca966adc10e5b84a686fa468637d4879b03",
+                "url": "https://api.github.com/repos/maileryio/widget-form/zipball/7cee9990b3ad45d0b78bc078c46857920c45cb65",
+                "reference": "7cee9990b3ad45d0b78bc078c46857920c45cb65",
                 "shasum": ""
             },
             "require": {
@@ -4053,7 +4053,7 @@
                 "source": "https://github.com/maileryio/widget-form",
                 "wiki": "https://github.com/maileryio/widget-form/wiki"
             },
-            "time": "2020-06-21T10:38:54+00:00"
+            "time": "2021-08-22T22:02:38+00:00"
         },
         {
             "name": "maileryio/widget-link",
@@ -4061,19 +4061,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/widget-link.git",
-                "reference": "3bb7ef67bf7f8702d799a6f11caf6cd97c7f8740"
+                "reference": "f0231f526703a118b77fb2e94d69f7358c9e2003"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/widget-link/zipball/3bb7ef67bf7f8702d799a6f11caf6cd97c7f8740",
-                "reference": "3bb7ef67bf7f8702d799a6f11caf6cd97c7f8740",
+                "url": "https://api.github.com/repos/maileryio/widget-link/zipball/f0231f526703a118b77fb2e94d69f7358c9e2003",
+                "reference": "f0231f526703a118b77fb2e94d69f7358c9e2003",
                 "shasum": ""
             },
             "require": {
                 "foxy/foxy": "^1.0",
                 "php": "^7.4",
-                "yiisoft/assets": "^1.0@dev",
-                "yiisoft/html": "^1.0",
+                "yiisoft/assets": "^1.0",
+                "yiisoft/html": "^2.0",
                 "yiisoft/widget": "^3.0@dev"
             },
             "require-dev": {
@@ -4109,7 +4109,7 @@
                 "source": "https://github.com/maileryio/widget-link",
                 "wiki": "https://github.com/maileryio/widget-link/wiki"
             },
-            "time": "2021-03-18T09:57:06+00:00"
+            "time": "2021-08-24T22:03:44+00:00"
         },
         {
             "name": "maileryio/widget-search",
@@ -4117,12 +4117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/widget-search.git",
-                "reference": "5e95d6a9f262a65057e55eaf31c56c9b1d9d9baf"
+                "reference": "2e43aeb782c888823568fcf995fdffb55e01bf7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/widget-search/zipball/5e95d6a9f262a65057e55eaf31c56c9b1d9d9baf",
-                "reference": "5e95d6a9f262a65057e55eaf31c56c9b1d9d9baf",
+                "url": "https://api.github.com/repos/maileryio/widget-search/zipball/2e43aeb782c888823568fcf995fdffb55e01bf7b",
+                "reference": "2e43aeb782c888823568fcf995fdffb55e01bf7b",
                 "shasum": ""
             },
             "require": {
@@ -4131,9 +4131,9 @@
                 "foxy/foxy": "^1.0",
                 "maileryio/mailery-web": "dev-master",
                 "php": "^7.4",
-                "yiisoft/assets": "^1.0@dev",
+                "yiisoft/assets": "^1.0",
                 "yiisoft/data": "^3.0@dev",
-                "yiisoft/html": "^1.0",
+                "yiisoft/html": "^2.0",
                 "yiisoft/widget": "^3.0@dev",
                 "yiisoft/yii-cycle": "^3.0@dev"
             },
@@ -4174,7 +4174,7 @@
                 "source": "https://github.com/maileryio/widget-search",
                 "wiki": "https://github.com/maileryio/widget-search/wiki"
             },
-            "time": "2021-03-24T16:06:40+00:00"
+            "time": "2021-08-24T22:03:51+00:00"
         },
         {
             "name": "mesour/dns-checker",
@@ -8477,12 +8477,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/config.git",
-                "reference": "af264182fba50fbdfa2f230af1e9964a560966d3"
+                "reference": "2637393a0a28339f973a60cf2f9f80df4e48fcd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/config/zipball/af264182fba50fbdfa2f230af1e9964a560966d3",
-                "reference": "af264182fba50fbdfa2f230af1e9964a560966d3",
+                "url": "https://api.github.com/repos/yiisoft/config/zipball/2637393a0a28339f973a60cf2f9f80df4e48fcd7",
+                "reference": "2637393a0a28339f973a60cf2f9f80df4e48fcd7",
                 "shasum": ""
             },
             "require": {
@@ -8541,7 +8541,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2021-08-18T13:24:52+00:00"
+            "time": "2021-08-23T17:40:21+00:00"
         },
         {
             "name": "yiisoft/cookies",
@@ -8838,12 +8838,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/di.git",
-                "reference": "bab3ce196f67296ed28070778c891f076db54db4"
+                "reference": "18168f328d4c6d9cf2297f6eb8a0db32b8b3b2ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/di/zipball/bab3ce196f67296ed28070778c891f076db54db4",
-                "reference": "bab3ce196f67296ed28070778c891f076db54db4",
+                "url": "https://api.github.com/repos/yiisoft/di/zipball/18168f328d4c6d9cf2297f6eb8a0db32b8b3b2ff",
+                "reference": "18168f328d4c6d9cf2297f6eb8a0db32b8b3b2ff",
                 "shasum": ""
             },
             "require": {
@@ -8912,7 +8912,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-08-19T06:35:37+00:00"
+            "time": "2021-08-23T09:22:12+00:00"
         },
         {
             "name": "yiisoft/error-handler",
@@ -9194,17 +9194,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/form.git",
-                "reference": "d81932e97ca43aebe47aacb187784f4c1ba4d647"
+                "reference": "7b031781a9ee10091e6d45f6e7d5534e76385278"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/form/zipball/d81932e97ca43aebe47aacb187784f4c1ba4d647",
-                "reference": "d81932e97ca43aebe47aacb187784f4c1ba4d647",
+                "url": "https://api.github.com/repos/yiisoft/form/zipball/7b031781a9ee10091e6d45f6e7d5534e76385278",
+                "reference": "7b031781a9ee10091e6d45f6e7d5534e76385278",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
-                "yiisoft/html": "^1.0",
+                "yiisoft/html": "^2.0",
                 "yiisoft/http": "^1.0",
                 "yiisoft/strings": "^2.0",
                 "yiisoft/validator": "^3.0@dev",
@@ -9256,7 +9256,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-05-12T11:21:17+00:00"
+            "time": "2021-08-24T07:04:17+00:00"
         },
         {
             "name": "yiisoft/friendly-exception",
@@ -9314,16 +9314,16 @@
         },
         {
             "name": "yiisoft/html",
-            "version": "1.2.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/html.git",
-                "reference": "0942a3e792c85f007300530d171bb5fcc9de1e95"
+                "reference": "b26f0d65c730cdf12b2a59cdb370cda7b8b07ad0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/html/zipball/0942a3e792c85f007300530d171bb5fcc9de1e95",
-                "reference": "0942a3e792c85f007300530d171bb5fcc9de1e95",
+                "url": "https://api.github.com/repos/yiisoft/html/zipball/b26f0d65c730cdf12b2a59cdb370cda7b8b07ad0",
+                "reference": "b26f0d65c730cdf12b2a59cdb370cda7b8b07ad0",
                 "shasum": ""
             },
             "require": {
@@ -9332,11 +9332,11 @@
                 "yiisoft/json": "^1.0"
             },
             "require-dev": {
-                "maglnet/composer-require-checker": "^3.2",
+                "maglnet/composer-require-checker": "^3.3",
                 "phpunit/phpunit": "^9.5",
-                "roave/infection-static-analysis-plugin": "^1.7",
+                "roave/infection-static-analysis-plugin": "^1.9",
                 "spatie/phpunit-watcher": "^1.23",
-                "vimeo/psalm": "^4.7"
+                "vimeo/psalm": "^4.9"
             },
             "type": "library",
             "autoload": {
@@ -9362,15 +9362,15 @@
             },
             "funding": [
                 {
-                    "url": "https://github.com/yiisoft",
+                    "url": "https://github.com/sponsors/yiisoft",
                     "type": "github"
                 },
                 {
                     "url": "https://opencollective.com/yiisoft",
-                    "type": "open_collective"
+                    "type": "opencollective"
                 }
             ],
-            "time": "2021-05-04T16:29:03+00:00"
+            "time": "2021-08-24T06:34:01+00:00"
         },
         {
             "name": "yiisoft/http",
@@ -9774,22 +9774,22 @@
         },
         {
             "name": "yiisoft/mailer",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/mailer.git",
-                "reference": "6bf939bafe8ebab145fc1272ea0fe0683a684af5"
+                "reference": "e83a9cc6a76a2f507cbf5a1c8ee38a4246e2e3fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/mailer/zipball/6bf939bafe8ebab145fc1272ea0fe0683a684af5",
-                "reference": "6bf939bafe8ebab145fc1272ea0fe0683a684af5",
+                "url": "https://api.github.com/repos/yiisoft/mailer/zipball/e83a9cc6a76a2f507cbf5a1c8ee38a4246e2e3fe",
+                "reference": "e83a9cc6a76a2f507cbf5a1c8ee38a4246e2e3fe",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
                 "psr/event-dispatcher": "^1.0",
-                "yiisoft/view": "^1.0"
+                "yiisoft/view": "^2.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.5",
@@ -9837,26 +9837,26 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-07-05T22:31:44+00:00"
+            "time": "2021-08-24T07:40:50+00:00"
         },
         {
             "name": "yiisoft/mailer-swiftmailer",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/mailer-swiftmailer.git",
-                "reference": "b01478500b62e4416dbc69b83d179d564f6c9ef8"
+                "reference": "35b7d6f31945371fe386ee69736d4655f77ccc8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/mailer-swiftmailer/zipball/b01478500b62e4416dbc69b83d179d564f6c9ef8",
-                "reference": "b01478500b62e4416dbc69b83d179d564f6c9ef8",
+                "url": "https://api.github.com/repos/yiisoft/mailer-swiftmailer/zipball/35b7d6f31945371fe386ee69736d4655f77ccc8a",
+                "reference": "35b7d6f31945371fe386ee69736d4655f77ccc8a",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
                 "swiftmailer/swiftmailer": "^6.2",
-                "yiisoft/mailer": "^1.0"
+                "yiisoft/mailer": "^2.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.5",
@@ -9912,7 +9912,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-07-05T22:34:47+00:00"
+            "time": "2021-08-24T07:43:07+00:00"
         },
         {
             "name": "yiisoft/middleware-dispatcher",
@@ -10779,12 +10779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/user.git",
-                "reference": "5d267eab944fe6ffa77b8e22afeea73f778b3386"
+                "reference": "fa2fcc24a491a1e8a17a3413f471f5aa2c844433"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/user/zipball/5d267eab944fe6ffa77b8e22afeea73f778b3386",
-                "reference": "5d267eab944fe6ffa77b8e22afeea73f778b3386",
+                "url": "https://api.github.com/repos/yiisoft/user/zipball/fa2fcc24a491a1e8a17a3413f471f5aa2c844433",
+                "reference": "fa2fcc24a491a1e8a17a3413f471f5aa2c844433",
                 "shasum": ""
             },
             "require": {
@@ -10851,7 +10851,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-05-12T11:20:06+00:00"
+            "time": "2021-08-23T06:53:11+00:00"
         },
         {
             "name": "yiisoft/validator",
@@ -11004,16 +11004,16 @@
         },
         {
             "name": "yiisoft/view",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/view.git",
-                "reference": "77c8bb891b4abfa290b4e4214a696c98711934d9"
+                "reference": "9b73e6e7369f846ed32f4e1c02ab485f28eb2a1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/view/zipball/77c8bb891b4abfa290b4e4214a696c98711934d9",
-                "reference": "77c8bb891b4abfa290b4e4214a696c98711934d9",
+                "url": "https://api.github.com/repos/yiisoft/view/zipball/9b73e6e7369f846ed32f4e1c02ab485f28eb2a1a",
+                "reference": "9b73e6e7369f846ed32f4e1c02ab485f28eb2a1a",
                 "shasum": ""
             },
             "require": {
@@ -11023,7 +11023,7 @@
                 "yiisoft/arrays": "^1.0",
                 "yiisoft/cache": "^1.0",
                 "yiisoft/files": "^1.0",
-                "yiisoft/html": "^1.2",
+                "yiisoft/html": "^2.0",
                 "yiisoft/json": "^1.0"
             },
             "require-dev": {
@@ -11079,7 +11079,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2021-08-20T10:05:04+00:00"
+            "time": "2021-08-24T07:14:17+00:00"
         },
         {
             "name": "yiisoft/widget",
@@ -11087,12 +11087,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/widget.git",
-                "reference": "c5c6e6d69007a2f93415ea9362bb4b3a9a8f5a30"
+                "reference": "91496368172365c573ad724e0478e92fcf811573"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/widget/zipball/c5c6e6d69007a2f93415ea9362bb4b3a9a8f5a30",
-                "reference": "c5c6e6d69007a2f93415ea9362bb4b3a9a8f5a30",
+                "url": "https://api.github.com/repos/yiisoft/widget/zipball/91496368172365c573ad724e0478e92fcf811573",
+                "reference": "91496368172365c573ad724e0478e92fcf811573",
                 "shasum": ""
             },
             "require": {
@@ -11100,7 +11100,7 @@
                 "psr/container": "^1.0",
                 "yiisoft/factory": "^3.0@dev",
                 "yiisoft/friendly-exception": "^1.0",
-                "yiisoft/html": "^1.2"
+                "yiisoft/html": "^2.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.5",
@@ -11155,7 +11155,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2021-08-18T13:20:23+00:00"
+            "time": "2021-08-24T07:03:24+00:00"
         },
         {
             "name": "yiisoft/yii-bootstrap5",
@@ -11163,12 +11163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-bootstrap5.git",
-                "reference": "6db735259a655f2ad1ef863241d0dc0f3d33a61c"
+                "reference": "6faa5a4b489dbd409a099a84caa6467cd0ca5d51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-bootstrap5/zipball/6db735259a655f2ad1ef863241d0dc0f3d33a61c",
-                "reference": "6db735259a655f2ad1ef863241d0dc0f3d33a61c",
+                "url": "https://api.github.com/repos/yiisoft/yii-bootstrap5/zipball/6faa5a4b489dbd409a099a84caa6467cd0ca5d51",
+                "reference": "6faa5a4b489dbd409a099a84caa6467cd0ca5d51",
                 "shasum": ""
             },
             "require": {
@@ -11177,7 +11177,7 @@
                 "php": "^7.4|^8.0",
                 "yiisoft/arrays": "^1.0",
                 "yiisoft/assets": "^1.0",
-                "yiisoft/html": "^1.0",
+                "yiisoft/html": "^2.0",
                 "yiisoft/json": "^1.0",
                 "yiisoft/widget": "^3.0@dev"
             },
@@ -11237,7 +11237,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-05-17T11:46:57+00:00"
+            "time": "2021-08-24T07:03:14+00:00"
         },
         {
             "name": "yiisoft/yii-console",
@@ -11651,16 +11651,16 @@
         },
         {
             "name": "yiisoft/yii-view",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-view.git",
-                "reference": "fe66f340023b85ea3b617f8e595470161d9b226e"
+                "reference": "cdf1c6fd1adf49836f4e2faf76e00a87e9fc775e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-view/zipball/fe66f340023b85ea3b617f8e595470161d9b226e",
-                "reference": "fe66f340023b85ea3b617f8e595470161d9b226e",
+                "url": "https://api.github.com/repos/yiisoft/yii-view/zipball/cdf1c6fd1adf49836f4e2faf76e00a87e9fc775e",
+                "reference": "cdf1c6fd1adf49836f4e2faf76e00a87e9fc775e",
                 "shasum": ""
             },
             "require": {
@@ -11669,9 +11669,9 @@
                 "yiisoft/csrf": "^1.0",
                 "yiisoft/data-response": "^1.0",
                 "yiisoft/friendly-exception": "^1.0",
-                "yiisoft/html": "^1.2",
+                "yiisoft/html": "^2.0",
                 "yiisoft/strings": "^2.0",
-                "yiisoft/view": "^1.0"
+                "yiisoft/view": "^2.0"
             },
             "require-dev": {
                 "httpsoft/http-message": "^1.0",
@@ -11724,7 +11724,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2021-07-05T22:24:59+00:00"
+            "time": "2021-08-24T07:19:46+00:00"
         },
         {
             "name": "yiisoft/yii-web",
@@ -11820,19 +11820,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-widgets.git",
-                "reference": "6466e368b94e4846cef31673b8c0a46e7f29f779"
+                "reference": "4e13ccf8e6691c6108fcab901152f7796527878c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-widgets/zipball/6466e368b94e4846cef31673b8c0a46e7f29f779",
-                "reference": "6466e368b94e4846cef31673b8c0a46e7f29f779",
+                "url": "https://api.github.com/repos/yiisoft/yii-widgets/zipball/4e13ccf8e6691c6108fcab901152f7796527878c",
+                "reference": "4e13ccf8e6691c6108fcab901152f7796527878c",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.4|^8.0",
                 "yiisoft/aliases": "^1.1|^2.0",
                 "yiisoft/cache": "^1.0",
-                "yiisoft/view": "^1.0",
+                "yiisoft/view": "^2.0",
                 "yiisoft/widget": "^3.0@dev"
             },
             "require-dev": {
@@ -11883,7 +11883,7 @@
                     "type": "opencollective"
                 }
             ],
-            "time": "2021-08-18T13:20:26+00:00"
+            "time": "2021-08-24T07:23:05+00:00"
         }
     ],
     "packages-dev": [

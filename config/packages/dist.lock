@@ -50,8 +50,8 @@
         "routes.php": "7b67eb033d94947d8aaf019210be44d2"
     },
     "maileryio/mailery-common": {
-        "version": "dev-master 28475de",
-        "params.php": "cebda88359b8854343881b710a754898",
+        "version": "dev-master aba2581",
+        "params.php": "a508d8b731a285716e173b89481b3db9",
         "common.php": "f1029d09872884b192a82b0d0fa5fb95"
     },
     "maileryio/mailery-dashboard": {
@@ -146,8 +146,8 @@
         "routes.php": "ce88e8b2ae985e55ea31e8d2c0ba230d"
     },
     "maileryio/mailery-template-email-ckeditor": {
-        "version": "dev-master 53a384d",
-        "params.php": "4dbc06d1409e02ab0882977b210e5ec6"
+        "version": "dev-master e9a2bcd",
+        "params.php": "79ba51c1fb34311f4ec1a14c7c434af4"
     },
     "maileryio/mailery-user": {
         "version": "dev-master 38d2a80",
@@ -244,9 +244,9 @@
         "common.php": "1b59c8569d5fad195a8e3e3c2aebed45"
     },
     "yiisoft/user": {
-        "version": "dev-master 5d267ea",
+        "version": "dev-master fa2fcc2",
         "params.php": "27eea805ad7297566be80d505b7e10e0",
-        "web.php": "b67dcfcf9a690d301dedfa7ee19935a0"
+        "web.php": "b9083c516a05ad6e1af478d5e5d4b568"
     },
     "yiisoft/validator": {
         "version": "dev-master a20a6f4",
