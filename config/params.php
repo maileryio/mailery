@@ -17,7 +17,6 @@ use Mailery\ViewInjection\MetaTagsViewInjection;
 use Mailery\Menu\Navbar\NavbarMenu;
 use Mailery\Menu\Sidebar\SidebarMenu;
 use Mailery\Brand\BrandLocatorInterface;
-use Mailery\Command\Git;
 use Mailery\Command\Router\ListCommand;
 use Yiisoft\Assets\AssetManager;
 use Yiisoft\Factory\Definition\Reference;
@@ -66,7 +65,6 @@ return [
     'yiisoft/yii-console' => [
         'commands' => [
             'router/list' => ListCommand::class,
-            'git/commit' => Git\CommitCommand::class,
         ],
     ],
 

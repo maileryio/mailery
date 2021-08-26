@@ -29,15 +29,15 @@
         "routes.php": "a5e588ba56c49278d1e1f45f233bf678"
     },
     "maileryio/mailery-channel": {
-        "version": "dev-master 84c64a7",
+        "version": "dev-master c05bdb1",
         "params.php": "74a6a64723ffe1f9a1b6bdf2893d4ac6",
-        "common.php": "5d64f9c76f1b5bbf86a68e215529f96b",
+        "common.php": "23b9fd316833dd862eb8e11e2c75150e",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "routes.php": "82d43d7818c85fc0900cf2c157adb05b"
     },
     "maileryio/mailery-channel-email": {
-        "version": "dev-master d228f06",
-        "params.php": "adc7a7b8486b2addadff606669aa7a1f",
+        "version": "dev-master 939951f",
+        "params.php": "c8c54837628bdd52192c2084ebf151bf",
         "common.php": "ee0ab0862f04420474146575888b9188",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "routes.php": "3f72318a6e7e3b8433afc2e7321bf18f"
@@ -50,8 +50,8 @@
         "routes.php": "7b67eb033d94947d8aaf019210be44d2"
     },
     "maileryio/mailery-common": {
-        "version": "dev-master aba2581",
-        "params.php": "a508d8b731a285716e173b89481b3db9",
+        "version": "dev-master a443a83",
+        "params.php": "51ac09b2eaf69ea8c14147d379402bcc",
         "common.php": "f1029d09872884b192a82b0d0fa5fb95"
     },
     "maileryio/mailery-dashboard": {
@@ -84,8 +84,8 @@
         "common.php": "c029037c17d706460c172e70c3d8cc35"
     },
     "maileryio/mailery-rbac": {
-        "version": "dev-master 08cacc5",
-        "common.php": "b8b4b91fd78b4349f438294dd008e11a",
+        "version": "dev-master eb3f28d",
+        "common.php": "b4afd058bd194370a8f9a610201d1a71",
         "params.php": "4b22ba37b29e1e3b5e22155e01d3a4cf",
         "routes.php": "fe5e6eb40ff5806ee8faf5b0d2372713",
         "rbac/assignments.php": "ee0ab0862f04420474146575888b9188",
@@ -100,23 +100,23 @@
         "routes.php": "3280dcfe2e4ca5847ca38c1bdffc36c1"
     },
     "maileryio/mailery-sender-domain": {
-        "version": "dev-master 383e69b",
-        "params.php": "642f5ae6bcde1088b694c4582018241a",
+        "version": "dev-master 859039a",
+        "params.php": "281b15d717140d04fa1f89c92bfa59e0",
         "common.php": "3954ea085eb922e70c5c1084fae4ca14",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "routes.php": "d5f7da19e068306a2bd8e46921d42089"
     },
     "maileryio/mailery-sender-email": {
-        "version": "dev-master 76f0d86",
-        "params.php": "38217f69d4d92a919a4a2829332ce741",
+        "version": "dev-master 95912ef",
+        "params.php": "ba3030ad9676dcf869a63bca3a8e437a",
         "common.php": "4af234f3aa0b1026bf5c265a4cd2618b",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "routes.php": "fc0f65299dc100509cc119e08ebfca5e"
     },
     "maileryio/mailery-setting": {
-        "version": "dev-master b35ab09",
+        "version": "dev-master 6b04f9b",
         "params.php": "e8ae5694eb8407a9a19f8940941b48de",
-        "common.php": "442167dca06b96eaef01cda997fed873",
+        "common.php": "725d7177ae37dae2ce340582bf5e9963",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "routes.php": "bc0642974e0fa2fcc75e93e849edfcf7"
     },
@@ -128,8 +128,8 @@
         "routes.php": "a0a9214c5f2b7227e511d4a6f8b1cad0"
     },
     "maileryio/mailery-subscriber": {
-        "version": "dev-master ddf4a83",
-        "params.php": "e6717e854efd9c227d2346a710215d8a",
+        "version": "dev-master 175e3dc",
+        "params.php": "a90e192fcb1e38cc52d8988324b99c0d",
         "common.php": "66cca0ba538394208935c3268b7a7f30",
         "routes.php": "4a5e65e78c514c21cfff60384c1a27ab"
     },
@@ -140,8 +140,8 @@
         "routes.php": "70c373d88dd239044f74df63c394822b"
     },
     "maileryio/mailery-template-email": {
-        "version": "dev-master 576b173",
-        "params.php": "c80cfad400e703ce8d4f0bd49227b285",
+        "version": "dev-master edc8bb4",
+        "params.php": "879f2cfcaa0a0fc377dddfb447053022",
         "common.php": "c79028cdeb93f796326564b722aee1fe",
         "routes.php": "ce88e8b2ae985e55ea31e8d2c0ba230d"
     },
