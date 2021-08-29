@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Yiisoft\Csrf\CsrfMiddleware;
 use Yiisoft\ErrorHandler\Middleware\ErrorCatcher;
 use Yiisoft\Factory\Definition\Reference;
 use Yiisoft\Factory\Definition\DynamicReference;
@@ -23,7 +22,6 @@ return [
                 $middlewares = array_merge(
                     [
                         Router::class,
-                        CsrfMiddleware::class,
                         CurrentUserMiddleware::class,
                         static function (UrlGeneratorInterface $urlGenerator, Injector $injector) {
                             return $injector->make(Authentication::class)

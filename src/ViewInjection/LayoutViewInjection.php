@@ -7,6 +7,7 @@ namespace Mailery\ViewInjection;
 use Yiisoft\Yii\View\LayoutParametersInjectionInterface;
 use Yiisoft\User\CurrentUser;
 use Yiisoft\Router\CurrentRoute;
+use Mailery\Assets\AssetBundleRegistry;
 
 class LayoutViewInjection implements LayoutParametersInjectionInterface
 {
@@ -21,15 +22,22 @@ class LayoutViewInjection implements LayoutParametersInjectionInterface
     private CurrentRoute $currentRoute;
 
     /**
+     * @var AssetBundleRegistry
+     */
+    private AssetBundleRegistry $assetBundleRegistry;
+
+    /**
      * @param CurrentUser $currentUser
      * @param CurrentRoute $currentRoute
      */
     public function __construct(
         CurrentUser $currentUser,
-        CurrentRoute $currentRoute
+        CurrentRoute $currentRoute,
+        AssetBundleRegistry $assetBundleRegistry
     ) {
         $this->currentUser = $currentUser;
         $this->currentRoute = $currentRoute;
+        $this->assetBundleRegistry = $assetBundleRegistry;
     }
 
     /**
@@ -43,6 +51,7 @@ class LayoutViewInjection implements LayoutParametersInjectionInterface
             'brandLabel' => 'Mailery Platform',
             'user' => $this->currentUser->getIdentity(),
             'currentUrl' => $this->currentRoute->getUri()->getPath(),
+            'assetBundleRegistry' => $this->assetBundleRegistry,
         ];
     }
 }

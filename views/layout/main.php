@@ -8,6 +8,7 @@ use Yiisoft\Html\Html;
 /** @var \Yiisoft\View\WebView $this */
 /** @var \Yiisoft\Assets\AssetManager $assetManager */
 /** @var \Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
+/** @var \Mailery\Assets\AssetBundleRegistry $assetBundleRegistry */
 /** @var $content string */
 $headerContent = $this->render('_header', compact('brandLabel'));
 $footerContent = $this->render('_footer');
@@ -19,9 +20,9 @@ if ($brandLocator->hasBrand()) {
     $content = $this->render('container/_main', compact('content', 'headerContent', 'footerContent'));
 }
 
-$assetManager->register([
-    AppAssetBundle::class,
-]);
+$assetBundleRegistry->add(AppAssetBundle::class);
+
+$assetManager->register($assetBundleRegistry->getAll());
 
 $this->addCssFiles($assetManager->getCssFiles());
 $this->addJsFiles($assetManager->getJsFiles());

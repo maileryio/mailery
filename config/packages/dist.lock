@@ -93,11 +93,11 @@
         "rbac/rules.php": "ee0ab0862f04420474146575888b9188"
     },
     "maileryio/mailery-sender": {
-        "version": "dev-master 6d536a2",
+        "version": "dev-master 6df7873",
         "params.php": "773c138e85673d58c6fc1f548a40c75a",
         "common.php": "9896b825637abdb1d3757ff656e4d956",
         "web.php": "ee0ab0862f04420474146575888b9188",
-        "routes.php": "3280dcfe2e4ca5847ca38c1bdffc36c1"
+        "routes.php": "70d2dfed848ef4b74dca71f80afb9efa"
     },
     "maileryio/mailery-sender-domain": {
         "version": "dev-master 859039a",
@@ -107,9 +107,9 @@
         "routes.php": "d5f7da19e068306a2bd8e46921d42089"
     },
     "maileryio/mailery-sender-email": {
-        "version": "dev-master 95912ef",
+        "version": "dev-master 9516de6",
         "params.php": "ba3030ad9676dcf869a63bca3a8e437a",
-        "common.php": "4af234f3aa0b1026bf5c265a4cd2618b",
+        "common.php": "9a67c1b6195fc6c7da4fac9953166a83",
         "web.php": "ee0ab0862f04420474146575888b9188",
         "routes.php": "fc0f65299dc100509cc119e08ebfca5e"
     },
@@ -202,8 +202,8 @@
         "events-web.php": "550b5ab87519380102e93143cee95913"
     },
     "yiisoft/log-target-file": {
-        "version": "1.0.3",
-        "common.php": "a0a485940ce6f720b44264901a71d0c6",
+        "version": "1.0.4",
+        "common.php": "fbf6e77468feae493f3ed6afd83942cc",
         "params.php": "16e4ea41a7d8964fff91d711bc5bb173"
     },
     "yiisoft/mailer-swiftmailer": {

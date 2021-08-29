@@ -3,10 +3,9 @@
 declare(strict_types=1);
 
 use Cycle\Schema\Generator;
-use Cycle\ORM\PromiseFactoryInterface;
+use Cycle\ORM\Promise\ProxyFactory;
 use Yiisoft\Yii\Cycle\Command\Schema;
 use Yiisoft\Yii\Cycle\Command\Migration;
-use Yiisoft\Yii\Cycle\Schema\SchemaProviderInterface;
 use Spiral\Database\Driver\Postgres\PostgresDriver;
 use Yiisoft\Yii\Cycle\Schema\Provider\SimpleCacheSchemaProvider;
 use Yiisoft\Yii\Cycle\Schema\Provider\FromConveyorSchemaProvider;
@@ -58,15 +57,15 @@ return [
 
         /**
          * Config for {@see \Yiisoft\Yii\Cycle\Factory\OrmFactory}
-         * Null, classname or {@see PromiseFactoryInterface} object.
+         * Null, classname or {@see \Cycle\ORM\PromiseFactoryInterface} object.
          *
          * @link https://github.com/cycle/docs/blob/master/advanced/promise.md
          */
-        'orm-promise-factory' => null,
+        'orm-promise-factory' => ProxyFactory::class,
 
         /**
          * SchemaProvider list for {@see \Yiisoft\Yii\Cycle\Schema\Provider\Support\SchemaProviderPipeline}
-         * Array of classname and {@see SchemaProviderInterface} object.
+         * Array of classname and {@see \Yiisoft\Yii\Cycle\Schema\SchemaProviderInterface} object.
          * You can configure providers if you pass classname as key and parameters as array:
          * [
          *     SimpleCacheSchemaProvider::class => [

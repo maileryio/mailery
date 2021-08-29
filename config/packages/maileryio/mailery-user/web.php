@@ -10,9 +10,13 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Mailery\User\Repository\UserRepository;
+use Mailery\User\Entity\User;
+use Psr\Container\ContainerInterface;
+use Cycle\ORM\ORMInterface;
 use Yiisoft\Auth\IdentityRepositoryInterface;
 
 return [
-    IdentityRepositoryInterface::class => UserRepository::class,
+    IdentityRepositoryInterface::class => static function (ContainerInterface $container) {
+        return $container->get(ORMInterface::class)->getRepository(User::class);
+    },
 ];

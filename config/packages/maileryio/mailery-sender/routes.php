@@ -15,5 +15,5 @@ return [
             Route::delete('/sender/default/delete/{id:\d+}')
                 ->name('/sender/default/delete')
                 ->action([DefaultController::class, 'delete'])
-        ),
+        )
 ];
