@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
+use Yiisoft\Factory\Definition\Reference;
 use Mailery\Campaign\Standard\Model\StandardCampaignType;
 
 return [
     'maileryio/mailery-campaign' => [
         'types' => [
-            StandardCampaignType::class => StandardCampaignType::class,
+            Reference::to(StandardCampaignType::class),
         ],
     ],
 

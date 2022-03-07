@@ -163,6 +163,17 @@ return [
             ],
             'profile' => [
                 'order' => 3,
+                'items' => [
+                    'profile' => [
+                        'order' => 1,
+                    ],
+                    'settings' => [
+                        'order' => 2,
+                    ],
+                    'logout' => [
+                        'order' => 3,
+                    ],
+                ],
             ],
         ],
     ],

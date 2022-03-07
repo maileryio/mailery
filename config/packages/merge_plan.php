@@ -320,9 +320,6 @@ return [
             '/' => [
                 'config/providers.php',
             ],
-            'maileryio/mailery-storage' => [
-                'providers.php',
-            ],
             'yiisoft/yii-filesystem' => [
                 'providers.php',
             ],
