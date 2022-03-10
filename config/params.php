@@ -10,7 +10,7 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
-use Mailery\ViewInjection\ContentViewInjection;
+use Mailery\ViewInjection\CommonViewInjection;
 use Mailery\ViewInjection\LayoutViewInjection;
 use Mailery\ViewInjection\LinkTagsViewInjection;
 use Mailery\ViewInjection\MetaTagsViewInjection;
@@ -19,15 +19,39 @@ use Mailery\Menu\Sidebar\SidebarMenu;
 use Mailery\Brand\BrandLocatorInterface;
 use Mailery\Command\Router\ListCommand;
 use Yiisoft\Assets\AssetManager;
-use Yiisoft\Factory\Definition\Reference;
+use Yiisoft\Definitions\Reference;
 use Yiisoft\Router\UrlGeneratorInterface;
 use Yiisoft\Translator\TranslatorInterface;
 use Yiisoft\Yii\View\CsrfViewInjection;
 use Yiisoft\Router\CurrentRoute;
+use Yiisoft\Yii\Cycle\Schema\Provider\FromConveyorSchemaProvider;
+use Cycle\Schema\Generator\SyncTables;
+use Cycle\Database\Config\PostgresDriverConfig;
+use Cycle\Database\Config\Postgres\DsnConnectionConfig;
+use Yiisoft\Yii\Cycle\Schema\Conveyor\AttributedSchemaConveyor;
+use Mailery\User\Middleware\UserMiddleware;
+use Mailery\Brand\Middleware\BrandMiddleware;
+use Yiisoft\Cookies\CookieMiddleware;
+use Yiisoft\User\Login\Cookie\CookieLoginMiddleware;
+use Yiisoft\Auth\Middleware\Authentication;
+use Yiisoft\Router\Middleware\Router;
+use Yiisoft\Session\SessionMiddleware;
+use Yiisoft\ErrorHandler\Middleware\ErrorCatcher;
 
 return [
-    'yiisoft/yii-debug' => [
-        'enabled' => $_ENV['ENV'] === 'dev',
+    'middlewares' => [
+        ErrorCatcher::class,
+        SessionMiddleware::class,
+        CookieMiddleware::class,
+        CookieLoginMiddleware::class,
+        BrandMiddleware::class,
+        UserMiddleware::class,
+        Authentication::class,
+        Router::class,
+    ],
+
+    'yiisoft/user' => [
+        'authUrl' => '/user/login',
     ],
 
     'yiisoft/aliases' => [
@@ -44,6 +68,12 @@ return [
         ],
     ],
 
+    'yiisoft/forms' => [
+        'form' => [
+            'attributes' => [['enctype' => 'multipart/form-data']],
+        ],
+    ],
+
     'yiisoft/session' => [
         'options' => [
             'cookie_secure' => 0,
@@ -51,7 +81,7 @@ return [
     ],
 
     'yiisoft/view' => [
-        'commonParameters' => [
+        'parameters' => [
             'assetManager' => Reference::to(AssetManager::class),
             'urlGenerator' => Reference::to(UrlGeneratorInterface::class),
             'currentRoute' => Reference::to(CurrentRoute::class),
@@ -70,12 +100,53 @@ return [
 
     'yiisoft/yii-view' => [
         'injections' => [
-            Reference::to(ContentViewInjection::class),
+            Reference::to(CommonViewInjection::class),
             Reference::to(CsrfViewInjection::class),
             Reference::to(LayoutViewInjection::class),
             Reference::to(LinkTagsViewInjection::class),
             Reference::to(MetaTagsViewInjection::class),
         ],
+    ],
+
+    'yiisoft/cookies' => [
+        'secretKey' => $_ENV['COOKIES_SECRET'],
+    ],
+
+    'yiisoft/yii-cycle' => [
+        'dbal' => [
+            'query-logger' => null,
+            'default' => 'default',
+            'aliases' => [],
+            'databases' => [
+                'default' => [
+                    'connection' => 'postgres',
+                ],
+            ],
+            'connections' => [
+                'postgres' => new PostgresDriverConfig(
+                    connection: new DsnConnectionConfig(
+                        dsn: 'pgsql:host=' . $_ENV['DB_HOST'] . ';port=' . $_ENV['DB_PORT'] . ';dbname=' . $_ENV['DB_NAME'],
+                        user: $_ENV['DB_USER'],
+                        password: $_ENV['DB_PASSWORD'],
+                    ),
+                ),
+            ],
+        ],
+        'migrations' => [
+            'directory' => '@root/migrations',
+            'namespace' => 'Mailery\\Migration',
+            'table' => 'migration',
+            'safe' => false,
+        ],
+        'schema-providers' => [
+            FromConveyorSchemaProvider::class => [
+                'generators' => [
+                    SyncTables::class,
+                ],
+            ],
+        ],
+        'entity-paths' => [],
+        'conveyor' => AttributedSchemaConveyor::class,
     ],
 
     // redis parameters config

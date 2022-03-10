@@ -10,9 +10,7 @@ use Yiisoft\Html\Html;
 /** @var \Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
 /** @var $content string */
 
-$assetManager->register([
-    AppAssetBundle::class,
-]);
+$assetManager->register(AppAssetBundle::class);
 
 $this->addCssFiles($assetManager->getCssFiles());
 $this->addJsFiles($assetManager->getJsFiles());

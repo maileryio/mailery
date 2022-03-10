@@ -11,7 +11,7 @@ declare(strict_types=1);
  */
 
 use Mailery\Timer;
-use Yiisoft\Yii\Web\Event\ApplicationStartup;
+use Yiisoft\Yii\Http\Event\ApplicationStartup;
 
 return [
     ApplicationStartup::class => [

@@ -29,6 +29,13 @@ final class Installer
         self::chmodRecursive('runtime', 0777);
     }
 
+    public static function copyEnvFile(): void
+    {
+        if (!file_exists('.env')) {
+            copy('.env.dist', '.env');
+        }
+    }
+
     /**
      * @param string $path
      * @param int $mode

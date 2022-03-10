@@ -18,7 +18,8 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.4",
-        "cycle/proxy-factory": "^1.2",
+        "cycle/entity-behavior": "^1.1",
+        "cycle/orm": "^2.0",
         "foxy/foxy": "^1.0",
         "httpsoft/http-message": "^1.0.5",
         "maileryio/mailery-activity-log": "dev-master",
@@ -50,7 +51,7 @@
         "vlucas/phpdotenv": "^5.3",
         "yiisoft/access": "^1.0",
         "yiisoft/aliases": "^2.0",
-        "yiisoft/arrays": "^1.0",
+        "yiisoft/arrays": "^2.0",
         "yiisoft/assets": "^2.0",
         "yiisoft/auth": "^3.0",
         "yiisoft/cache": "^1.0",
@@ -65,13 +66,12 @@
         "yiisoft/error-handler": "^2.0",
         "yiisoft/form": "^1.0@dev",
         "yiisoft/html": "^2.0",
-        "yiisoft/injector": "^1.0",
         "yiisoft/i18n": "^1.0",
+        "yiisoft/injector": "^1.0",
         "yiisoft/log": "^1.0",
         "yiisoft/log-target-file": "^1.0",
         "yiisoft/mailer": "^3.0",
         "yiisoft/mailer-symfony": "^1.0",
-        "yiisoft/yii-queue": "^3.0@dev",
         "yiisoft/rbac": "^3.0@dev",
         "yiisoft/rbac-php": "^3.0@dev",
         "yiisoft/rbac-rules-container": "dev-master",
@@ -90,8 +90,15 @@
         "yiisoft/yii-bootstrap5": "^3.0@dev",
         "yiisoft/yii-console": "^1.0",
         "yiisoft/yii-cycle": "2.0.x-dev",
+        "yiisoft/yii-debug": "3.0.x-dev",
+        "yiisoft/yii-debug-api": "3.0.x-dev",
         "yiisoft/yii-event": "^1.0",
         "yiisoft/yii-filesystem": "^3.0@dev",
+        "yiisoft/yii-http": "^1.0",
+        "yiisoft/yii-middleware": "dev-master",
+        "yiisoft/yii-queue": "^3.0@dev",
+        "yiisoft/yii-runner-console": "^1.0",
+        "yiisoft/yii-runner-http": "^1.0",
         "yiisoft/yii-view": "^4.0"
     },
     "require-dev": {
@@ -116,7 +123,11 @@
         "test": "phpunit --testdox --no-interaction",
         "test-watch": "phpunit-watcher watch",
         "post-update-cmd": [
-            "Mailery\\Installer::postUpdate"
+            "Mailery\\Installer::postUpdate",
+            "Mailery\\Installer::copyEnvFile"
+        ],
+        "post-create-project-cmd": [
+            "Mailery\\Installer::copyEnvFile"
         ]
     },
     "extra": {
@@ -124,8 +135,7 @@
             "dev-master": "1.0.x-dev"
         },
         "config-plugin-options": {
-            "source-directory": "config",
-            "output-directory": "config/packages"
+            "source-directory": "config"
         },
         "config-plugin": {
             "common": "common/*.php",
@@ -168,7 +178,17 @@
             "bootstrap-console": [
                 "$bootstrap",
                 "bootstrap-console.php"
-            ]
+            ],
+            "widgets": "widgets.php"
+        },
+        "config-plugin-environments": {
+            "dev": {
+                "params": "dev/params.php"
+            },
+            "stage": {},
+            "prod": {
+                "params": "dev/params.php"
+            }
         }
     },
     "config": {

@@ -22,7 +22,9 @@ if ($brandLocator->hasBrand()) {
 
 $assetBundleRegistry->add(AppAssetBundle::class);
 
-$assetManager->register($assetBundleRegistry->getAll());
+foreach ($assetBundleRegistry->getAll() as $assetBundle) {
+    $assetManager->register($assetBundle);
+}
 
 $this->addCssFiles($assetManager->getCssFiles());
 $this->addJsFiles($assetManager->getJsFiles());
