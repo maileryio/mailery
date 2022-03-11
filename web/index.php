@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Dotenv\Dotenv;
 use Yiisoft\Yii\Runner\Http\HttpApplicationRunner;
 
 /**
@@ -23,14 +22,9 @@ if (PHP_SAPI === 'cli-server') {
 }
 
 $rootPath = dirname(__DIR__);
-$eventGroups = [
-    'events',
-    'events-web',
-    'events-console',
-];
 
 chdir($rootPath);
-require_once $rootPath . '/vendor/autoload.php';
+require_once $rootPath . '/autoload.php';
 
 if (getenv('YII_ENV') === 'test') {
     $c3 = 'c3.php';
@@ -39,9 +33,6 @@ if (getenv('YII_ENV') === 'test') {
     }
 }
 
-$dotenv = Dotenv::createImmutable($rootPath);
-$dotenv->load();
-
 // Run HTTP application runner
-$runner = new HttpApplicationRunner($rootPath, (bool) $_ENV['DEBUG'], $_ENV['ENV']);
+$runner = new HttpApplicationRunner($rootPath, (bool) $_ENV['YII_DEBUG'], $_ENV['YII_ENV']);
 $runner->run();

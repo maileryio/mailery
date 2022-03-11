@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93bcbbec36704c1e8a13cf652ead82e0",
+    "content-hash": "5ff5b3afb4b7da49b95d08db8efa5310",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -12876,6 +12876,83 @@
             "time": "2020-04-16T18:48:43+00:00"
         },
         {
+            "name": "nyholm/psr7",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nyholm/psr7.git",
+                "reference": "1461e07a0f2a975a52082ca3b769ca912b816226"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nyholm/psr7/zipball/1461e07a0f2a975a52082ca3b769ca912b816226",
+                "reference": "1461e07a0f2a975a52082ca3b769ca912b816226",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "php-http/message-factory": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "http-interop/http-factory-tests": "^0.9",
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5 || 8.5 || 9.4",
+                "symfony/error-handler": "^4.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nyholm\\Psr7\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com"
+                },
+                {
+                    "name": "Martijn van der Ven",
+                    "email": "martijn@vanderven.se"
+                }
+            ],
+            "description": "A fast PHP7 implementation of PSR-7",
+            "homepage": "https://tnyholm.se",
+            "keywords": [
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "issues": "https://github.com/Nyholm/psr7/issues",
+                "source": "https://github.com/Nyholm/psr7/tree/1.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Zegnat",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nyholm",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-02T18:37:57+00:00"
+        },
+        {
             "name": "phan/phan",
             "version": "2.7.3",
             "source": {
@@ -13118,6 +13195,60 @@
                 "source": "https://github.com/PHP-CS-Fixer/diff/tree/v1.3.1"
             },
             "time": "2020-10-14T08:39:05+00:00"
+        },
+        {
+            "name": "php-http/message-factory",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-http/message-factory.git",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-http/message-factory/zipball/a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "reference": "a478cb11f66a6ac48d8954216cfed9aa06a501a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com"
+                }
+            ],
+            "description": "Factory interfaces for PSR-7 HTTP Message",
+            "homepage": "http://php-http.org",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "support": {
+                "issues": "https://github.com/php-http/message-factory/issues",
+                "source": "https://github.com/php-http/message-factory/tree/master"
+            },
+            "time": "2015-12-19T14:08:53+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -15229,6 +15360,153 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.10.0"
             },
             "time": "2021-03-09T10:59:23+00:00"
+        },
+        {
+            "name": "yiisoft/yii-debug-viewer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii-debug-viewer.git",
+                "reference": "4c2ca54832608d1cc150b73c6b8f30b7bcffd02b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii-debug-viewer/zipball/4c2ca54832608d1cc150b73c6b8f30b7bcffd02b",
+                "reference": "4c2ca54832608d1cc150b73c6b8f30b7bcffd02b",
+                "shasum": ""
+            },
+            "require": {
+                "jetbrains/phpstorm-attributes": "^1.0",
+                "nyholm/psr7": "^1.3",
+                "php": "^8.0",
+                "tuupola/cors-middleware": "^1.2.1",
+                "yiisoft/assets": "^2.0",
+                "yiisoft/data-response": "^1.0",
+                "yiisoft/http": "^1.1",
+                "yiisoft/view": "^4.0"
+            },
+            "require-dev": {
+                "httpsoft/http-message": "^1.0.5",
+                "phpunit/phpunit": "^9.5",
+                "psr/container": "^1.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0",
+                "psr/log": "^1.1",
+                "roave/infection-static-analysis-plugin": "^1.16",
+                "spatie/phpunit-watcher": "^1.23",
+                "vimeo/psalm": "^4.18",
+                "yiisoft/aliases": "^2.0",
+                "yiisoft/config": "^1.0",
+                "yiisoft/di": "^1.0",
+                "yiisoft/error-handler": "^2.0",
+                "yiisoft/factory": "^1.0",
+                "yiisoft/files": "^1.0",
+                "yiisoft/injector": "^1.0",
+                "yiisoft/log": "^1.0",
+                "yiisoft/log-target-file": "^1.0",
+                "yiisoft/router": "^1.0",
+                "yiisoft/router-fastroute": "^1.0",
+                "yiisoft/yii-console": "^1.0",
+                "yiisoft/yii-event": "^1.0",
+                "yiisoft/yii-http": "^1.0",
+                "yiisoft/yii-runner-console": "^1.0",
+                "yiisoft/yii-runner-http": "^1.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                },
+                "config-plugin-options": {
+                    "source-directory": "config"
+                },
+                "config-plugin-environments": {
+                    "yii-debug-viewer-app": {
+                        "common": "app/common.php",
+                        "params": [
+                            "app/params.php"
+                        ],
+                        "console": [
+                            "$common",
+                            "app/console.php"
+                        ],
+                        "web": [
+                            "$common",
+                            "app/web.php"
+                        ],
+                        "events": "app/events.php",
+                        "events-web": [
+                            "$events",
+                            "app/events-web.php"
+                        ],
+                        "events-console": [
+                            "$events",
+                            "app/events-console.php"
+                        ],
+                        "providers": "app/providers.php",
+                        "providers-web": [
+                            "$providers",
+                            "app/providers-web.php"
+                        ],
+                        "providers-console": [
+                            "$providers",
+                            "app/providers-console.php"
+                        ],
+                        "routes": "app/routes.php",
+                        "bootstrap": "app/bootstrap.php",
+                        "bootstrap-web": [
+                            "$bootstrap",
+                            "app/bootstrap-web.php"
+                        ],
+                        "bootstrap-console": [
+                            "$bootstrap",
+                            "app/bootstrap-console.php"
+                        ]
+                    }
+                },
+                "config-plugin": {
+                    "web": "web.php",
+                    "params": "params.php",
+                    "routes": "routes.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Yiisoft\\Yii\\Debug\\Viewer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Yii Debug Viewer",
+            "homepage": "https://www.yiiframework.com/",
+            "keywords": [
+                "debug",
+                "yii"
+            ],
+            "support": {
+                "chat": "https://t.me/yii3en",
+                "forum": "https://www.yiiframework.com/forum/",
+                "irc": "irc://irc.freenode.net/yii",
+                "issues": "https://github.com/yiisoft/yii-debug-viewer/issues?state=open",
+                "source": "https://github.com/yiisoft/yii-debug-viewer",
+                "wiki": "https://www.yiiframework.com/wiki/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-02-23T09:06:45+00:00"
         }
     ],
     "aliases": [],
@@ -15270,7 +15548,8 @@
         "yiisoft/yii-debug-api": 20,
         "yiisoft/yii-filesystem": 20,
         "yiisoft/yii-middleware": 20,
-        "yiisoft/yii-queue": 20
+        "yiisoft/yii-queue": 20,
+        "yiisoft/yii-debug-viewer": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

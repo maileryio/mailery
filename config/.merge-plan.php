@@ -69,6 +69,9 @@ return [
             'yiisoft/yii-view' => [
                 'config/params.php',
             ],
+            'yiisoft/yii-debug-viewer' => [
+                'config/params.php',
+            ],
             'maileryio/mailery-channel' => [
                 'config/params.php',
             ],
@@ -305,6 +308,9 @@ return [
             'yiisoft/yii-debug-api' => [
                 'config/routes.php',
             ],
+            'yiisoft/yii-debug-viewer' => [
+                'config/routes.php',
+            ],
             'maileryio/mailery-channel' => [
                 'config/routes.php',
             ],
@@ -365,6 +371,9 @@ return [
                 'config/web.php',
             ],
             'yiisoft/yii-view' => [
+                'config/web.php',
+            ],
+            'yiisoft/yii-debug-viewer' => [
                 'config/web.php',
             ],
             'maileryio/mailery-channel' => [

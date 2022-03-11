@@ -57,14 +57,18 @@ return [
     'yiisoft/aliases' => [
         'aliases' => [
             '@root' => $_ENV['ROOT_PATH'],
-            '@vendor' => '@root/vendor',
+            '@assets' => '@root/web/assets',
+            '@assetsUrl' => '@baseUrl/assets',
+            '@baseUrl' => '/',
+            '@messages' => '@resources/messages',
+            '@npm' => '@root/node_modules',
             '@public' => '@root/web',
-            '@views' => '@root/views',
-            '@layout' => '@root/views/layout',
             '@resources' => '@root/resources',
             '@runtime' => '@root/runtime',
-            '@npm' => '@root/node_modules',
-            '@web' => '/assets',
+            '@src' => '@root/src',
+            '@vendor' => '@root/vendor',
+            '@layout' => '@root/views/layout',
+            '@views' => '@root/views',
         ],
     ],
 
