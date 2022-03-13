@@ -9,6 +9,10 @@ return [
         'enabled' => false,
     ],
 
+    'yiisoft/yii-debug-api' => [
+        'enabled' => false,
+    ],
+
     'yiisoft/yii-cycle' => [
         'schema-providers' => [
             SimpleCacheSchemaProvider::class => [

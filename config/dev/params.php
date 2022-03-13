@@ -6,4 +6,9 @@ return [
     'yiisoft/yii-debug' => [
         'enabled' => true,
     ],
+
+    'yiisoft/yii-debug-api' => [
+        'enabled' => true,
+        'allowedIPs' => ['*'],
+    ],
 ];
