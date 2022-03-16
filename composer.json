@@ -19,7 +19,7 @@
     "require": {
         "php": "^7.4",
         "cycle/entity-behavior": "^1.1",
-        "cycle/orm": "^2.0",
+        "cycle/orm": "^2.1",
         "foxy/foxy": "^1.0",
         "httpsoft/http-message": "^1.0.5",
         "maileryio/mailery-activity-log": "dev-master",
@@ -72,9 +72,8 @@
         "yiisoft/log-target-file": "^1.0",
         "yiisoft/mailer": "^3.0",
         "yiisoft/mailer-symfony": "^1.0",
-        "yiisoft/rbac": "^3.0@dev",
-        "yiisoft/rbac-php": "^3.0@dev",
-        "yiisoft/rbac-rules-container": "dev-master",
+        "yiisoft/rbac": "dev-master#084460ab82387719ab0312605c442cadf647764e",
+        "yiisoft/rbac-php": "dev-master#862d7f8076bcdd609e964c9f4d9e410e58a48b44",
         "yiisoft/router": "^1.0",
         "yiisoft/router-fastroute": "^1.0",
         "yiisoft/security": "^1.0",
@@ -99,7 +98,8 @@
         "yiisoft/yii-queue": "^3.0@dev",
         "yiisoft/yii-runner-console": "^1.0",
         "yiisoft/yii-runner-http": "^1.0",
-        "yiisoft/yii-view": "^4.0"
+        "yiisoft/yii-view": "^4.0",
+        "yiisoft/yii-widgets": "3.0.x-dev"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",

@@ -45,9 +45,6 @@ return [
             'yiisoft/mailer-symfony' => [
                 'config/params.php',
             ],
-            'yiisoft/rbac-rules-container' => [
-                'config/params.php',
-            ],
             'yiisoft/router-fastroute' => [
                 'config/params.php',
             ],
@@ -187,9 +184,6 @@ return [
                 'config/common.php',
             ],
             'yiisoft/mailer-symfony' => [
-                'config/common.php',
-            ],
-            'yiisoft/rbac-rules-container' => [
                 'config/common.php',
             ],
             'yiisoft/router-fastroute' => [

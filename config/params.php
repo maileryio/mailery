@@ -37,6 +37,7 @@ use Yiisoft\Auth\Middleware\Authentication;
 use Yiisoft\Router\Middleware\Router;
 use Yiisoft\Session\SessionMiddleware;
 use Yiisoft\ErrorHandler\Middleware\ErrorCatcher;
+use Yiisoft\Yii\Cycle\Schema\Provider\PhpFileSchemaProvider;
 
 return [
     'middlewares' => [
@@ -143,6 +144,10 @@ return [
             'safe' => false,
         ],
         'schema-providers' => [
+            PhpFileSchemaProvider::class => [
+                'mode' => PhpFileSchemaProvider::MODE_WRITE_ONLY,
+                'file' => 'runtime/schema.php',
+            ],
             FromConveyorSchemaProvider::class => [
                 'generators' => [
                     SyncTables::class,
