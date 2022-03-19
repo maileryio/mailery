@@ -27,6 +27,7 @@ final class Installer
     {
         self::chmodRecursive('rbac', 0777);
         self::chmodRecursive('runtime', 0777);
+        self::chmodRecursive('storage', 0777);
     }
 
     public static function copyEnvFile(): void

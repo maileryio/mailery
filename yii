@@ -3,59 +3,10 @@
 
 declare(strict_types=1);
 
-use Dotenv\Dotenv;
-use Psr\Container\ContainerInterface;
-use Yiisoft\Config\Config;
-use Yiisoft\Di\Container;
-use Yiisoft\Yii\Console\Application;
-use Yiisoft\Yii\Console\Output\ConsoleBufferedOutput;
+use Yiisoft\Yii\Runner\Console\ConsoleApplicationRunner;
 
-require_once 'vendor/autoload.php';
+require_once __DIR__ . '/autoload.php';
 
-$dotenv = Dotenv::createImmutable(__DIR__);
-$dotenv->load();
-
-define('YII_ENV', $_ENV['ENV'] ?: 'production');
-
-$config = new Config(
-    __DIR__,
-    '/config/packages',
-    null,
-    [
-        'params',
-        'events',
-        'events-web',
-        'events-console',
-    ]
-);
-
-$container = new Container(
-    $config->get('console'),
-    $config->get('providers-console')
-);
-
-/** @var ContainerInterface $container */
-$container = $container->get(ContainerInterface::class);
-
-$bootstrapList = $config->get('bootstrap-console');
-foreach ($bootstrapList as $callback) {
-    if (!(is_callable($callback))) {
-        $type = is_object($callback) ? get_class($callback) : gettype($callback);
-
-        throw new \RuntimeException("Bootstrap callback must be callable, $type given.");
-    }
-    $callback($container);
-}
-
-$application = $container->get(Application::class);
-$exitCode = 1;
-
-try {
-    $application->start();
-    $exitCode = $application->run(null, new ConsoleBufferedOutput());
-} catch (\Error $error) {
-    $application->renderThrowable($error, new ConsoleBufferedOutput());
-} finally {
-    $application->shutdown($exitCode);
-    exit($exitCode);
-}
+// Run console application runner
+$runner = new ConsoleApplicationRunner(__DIR__, $_ENV['YII_DEBUG'], $_ENV['YII_ENV']);
+$runner->run();
