@@ -74,6 +74,7 @@
         "yiisoft/mailer-symfony": "^1.0",
         "yiisoft/rbac": "dev-master#084460ab82387719ab0312605c442cadf647764e",
         "yiisoft/rbac-php": "dev-master#862d7f8076bcdd609e964c9f4d9e410e58a48b44",
+        "yiisoft/request-body-parser": "^1.0",
         "yiisoft/router": "^1.0",
         "yiisoft/router-fastroute": "^1.0",
         "yiisoft/security": "^1.0",

@@ -38,6 +38,7 @@ use Yiisoft\Router\Middleware\Router;
 use Yiisoft\Session\SessionMiddleware;
 use Yiisoft\ErrorHandler\Middleware\ErrorCatcher;
 use Yiisoft\Yii\Cycle\Schema\Provider\PhpFileSchemaProvider;
+use Yiisoft\Request\Body\RequestBodyParser;
 
 return [
     'middlewares' => [
@@ -45,6 +46,7 @@ return [
         SessionMiddleware::class,
         CookieMiddleware::class,
         CookieLoginMiddleware::class,
+        RequestBodyParser::class,
         BrandMiddleware::class,
         UserMiddleware::class,
         Authentication::class,

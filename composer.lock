@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "235789e4c84a486eecb1105ec51ea655",
+    "content-hash": "665ee2065863d46e24f5b0d054c6bb09",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -4864,22 +4864,27 @@
         },
         {
             "name": "psr/container",
-            "version": "1.1.2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
-                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
+                "reference": "b7ce3b176482dbbc1245ebf52b181af44c2cf55f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4.0"
+                "php": ">=5.3.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Psr\\Container\\": "src/"
@@ -4892,7 +4897,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
+                    "homepage": "http://www.php-fig.org/"
                 }
             ],
             "description": "Common Container Interface (PHP FIG PSR-11)",
@@ -4906,9 +4911,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/1.1.2"
+                "source": "https://github.com/php-fig/container/tree/master"
             },
-            "time": "2021-11-05T16:50:12+00:00"
+            "time": "2017-02-14T16:28:37+00:00"
         },
         {
             "name": "psr/event-dispatcher",
@@ -5619,30 +5624,30 @@
         },
         {
             "name": "spiral/core",
-            "version": "2.10.1",
+            "version": "v2.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/core.git",
-                "reference": "97b3ebbfb52a40afe4d64f942728c49598e45020"
+                "reference": "68b379fe93006c69d146c64ce8a89af25081c32a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/core/zipball/97b3ebbfb52a40afe4d64f942728c49598e45020",
-                "reference": "97b3ebbfb52a40afe4d64f942728c49598e45020",
+                "url": "https://api.github.com/repos/spiral/core/zipball/68b379fe93006c69d146c64ce8a89af25081c32a",
+                "reference": "68b379fe93006c69d146c64ce8a89af25081c32a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4",
-                "psr/container": "^1.1|^2.0"
+                "php": ">=7.2",
+                "psr/container": "^1.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.3",
-                "phpunit/phpunit": "^8.5|^9.5"
+                "phpunit/phpunit": "^8.5|^9.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.8.x-dev"
                 }
             },
             "autoload": {
@@ -5666,7 +5671,7 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/core"
             },
-            "time": "2022-03-03T20:55:44+00:00"
+            "time": "2021-02-19T16:45:36+00:00"
         },
         {
             "name": "spiral/files",
@@ -5720,31 +5725,31 @@
         },
         {
             "name": "spiral/logger",
-            "version": "2.10.1",
+            "version": "v2.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/logger.git",
-                "reference": "cedb174182b4c49709ac927aa8285a50ab56940a"
+                "reference": "b3d8eaaac5754447eac5e908e2c0b98937dc9719"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/logger/zipball/cedb174182b4c49709ac927aa8285a50ab56940a",
-                "reference": "cedb174182b4c49709ac927aa8285a50ab56940a",
+                "url": "https://api.github.com/repos/spiral/logger/zipball/b3d8eaaac5754447eac5e908e2c0b98937dc9719",
+                "reference": "b3d8eaaac5754447eac5e908e2c0b98937dc9719",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4",
+                "php": ">=7.2",
                 "psr/log": "^1.0",
-                "spiral/core": "^2.10.1"
+                "spiral/core": "^2.8"
             },
             "require-dev": {
                 "mockery/mockery": "^1.3",
-                "phpunit/phpunit": "^8.5|^9.5"
+                "phpunit/phpunit": "^8.5|^9.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.8.x-dev"
                 }
             },
             "autoload": {
@@ -5768,7 +5773,7 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/logger"
             },
-            "time": "2022-03-04T13:16:58+00:00"
+            "time": "2021-02-19T16:45:36+00:00"
         },
         {
             "name": "spiral/pagination",
@@ -5874,31 +5879,31 @@
         },
         {
             "name": "spiral/tokenizer",
-            "version": "2.10.1",
+            "version": "v2.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/tokenizer.git",
-                "reference": "1a1311f74150c46522059249fb772bdb2bc96597"
+                "reference": "006907b16ca39bd81b829664ef475748662145e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/tokenizer/zipball/1a1311f74150c46522059249fb772bdb2bc96597",
-                "reference": "1a1311f74150c46522059249fb772bdb2bc96597",
+                "url": "https://api.github.com/repos/spiral/tokenizer/zipball/006907b16ca39bd81b829664ef475748662145e4",
+                "reference": "006907b16ca39bd81b829664ef475748662145e4",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4",
-                "spiral/core": "^2.10.1",
-                "spiral/logger": "^2.10.1",
-                "symfony/finder": "^5.1|^6.0"
+                "php": ">=7.2",
+                "spiral/core": "^2.8",
+                "spiral/logger": "^2.8",
+                "symfony/finder": "^5.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5|^9.5"
+                "phpunit/phpunit": "^8.5|^9.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.8.x-dev"
                 }
             },
             "autoload": {
@@ -5922,7 +5927,7 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/tokenizer"
             },
-            "time": "2022-03-04T13:17:35+00:00"
+            "time": "2021-02-19T16:45:36+00:00"
         },
         {
             "name": "symfony/console",
@@ -7285,24 +7290,21 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v2.4.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "d664541b99d6fb0247ec5ff32e87238582236204"
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d664541b99d6fb0247ec5ff32e87238582236204",
-                "reference": "d664541b99d6fb0247ec5ff32e87238582236204",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1",
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-                "psr/container": "^1.1"
-            },
-            "conflict": {
-                "ext-psr": "<1.1|>=2"
+                "psr/container": "^1.0"
             },
             "suggest": {
                 "symfony/service-implementation": ""
@@ -7310,7 +7312,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.4-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -7347,7 +7349,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/v2.4.1"
+                "source": "https://github.com/symfony/service-contracts/tree/master"
             },
             "funding": [
                 {
@@ -7363,7 +7365,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-11-04T16:37:19+00:00"
+            "time": "2020-09-07T11:33:47+00:00"
         },
         {
             "name": "symfony/string",
@@ -10191,6 +10193,75 @@
                 }
             ],
             "time": "2022-02-12T17:22:11+00:00"
+        },
+        {
+            "name": "yiisoft/request-body-parser",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/request-body-parser.git",
+                "reference": "067621733ee0f7805e7d00d3caa7d3e620df75eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/request-body-parser/zipball/067621733ee0f7805e7d00d3caa7d3e620df75eb",
+                "reference": "067621733ee0f7805e7d00d3caa7d3e620df75eb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4|^8.0",
+                "psr/container": "1.0.0",
+                "psr/http-message": "^1.0",
+                "psr/http-message-implementation": "1.0",
+                "psr/http-server-handler": "^1.0",
+                "psr/http-server-middleware": "^1.0",
+                "yiisoft/http": "^1.0"
+            },
+            "require-dev": {
+                "nyholm/psr7": "^1.0",
+                "phpunit/phpunit": "^9.4",
+                "roave/infection-static-analysis-plugin": "^1.5",
+                "spatie/phpunit-watcher": "^1.23",
+                "vimeo/psalm": "^4.2",
+                "yiisoft/test-support": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yiisoft\\Request\\Body\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Middleware for parsing various data formats",
+            "homepage": "https://www.yiiframework.com/",
+            "keywords": [
+                "body",
+                "middleware",
+                "parser",
+                "yii3"
+            ],
+            "support": {
+                "forum": "https://www.yiiframework.com/forum/",
+                "irc": "irc://irc.freenode.net/yii",
+                "issues": "https://github.com/yiisoft/request-body-parser/issues?state=open",
+                "source": "https://github.com/yiisoft/request-body-parser",
+                "wiki": "https://www.yiiframework.com/wiki/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2021-02-02T20:52:10+00:00"
         },
         {
             "name": "yiisoft/router",
