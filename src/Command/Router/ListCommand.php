@@ -14,11 +14,6 @@ use Yiisoft\Yii\Console\ExitCode;
 class ListCommand extends Command
 {
     /**
-     * @var RouteCollectionInterface
-     */
-    private RouteCollectionInterface $routeCollection;
-
-    /**
      * @var string
      */
     protected static $defaultName = 'router/list';
@@ -26,9 +21,9 @@ class ListCommand extends Command
     /**
      * @param RouteCollectionInterface $routeCollection
      */
-    public function __construct(RouteCollectionInterface $routeCollection)
-    {
-        $this->routeCollection = $routeCollection;
+    public function __construct(
+        private RouteCollectionInterface $routeCollection
+    ) {
         parent::__construct();
     }
 

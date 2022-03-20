@@ -117,7 +117,7 @@
 
 "@maileryio/mailery-rbac-assets@git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#6ead05ffb09e6073718fc4486f7df9acc7c702db"
+  resolved "git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#6e3bf4c14c0e42710065b7faa146472de721b56e"
   dependencies:
     liquor-tree "^0.2.70"
     vue-typeahead "^2.3.2"
@@ -138,7 +138,7 @@
 
 "@maileryio/widget-link-assets@git+ssh://git@github.com/maileryio/widget-link-assets.git#master":
   version "1.0.6"
-  resolved "git+ssh://git@github.com/maileryio/widget-link-assets.git#115fda67f984c4a12163951e184b45d2b67832b2"
+  resolved "git+ssh://git@github.com/maileryio/widget-link-assets.git#474858e8d7f28ce6ef1bfd5a3890fefd62f64c60"
   dependencies:
     vue "^2.6.11"
 

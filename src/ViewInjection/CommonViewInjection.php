@@ -10,18 +10,11 @@ use Yiisoft\Yii\View\CommonParametersInjectionInterface;
 class CommonViewInjection implements CommonParametersInjectionInterface
 {
     /**
-     * @var Field
-     */
-    private Field $field;
-
-    /**
      * @param Field $field
      */
     public function __construct(
-        Field $field
-    ) {
-        $this->field = $field;
-    }
+        private Field $field
+    ) {}
 
     /**
      * @return array

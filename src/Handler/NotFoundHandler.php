@@ -12,16 +12,12 @@ use Yiisoft\Yii\View\ViewRenderer;
 
 class NotFoundHandler implements RequestHandlerInterface
 {
-    /*
-     * @var ViewRenderer
-     */
-    private ViewRenderer $viewRenderer;
-
     /**
      * @param ViewRenderer $viewRenderer
      */
-    public function __construct(ViewRenderer $viewRenderer)
-    {
+    public function __construct(
+        private ViewRenderer $viewRenderer
+    ) {
         $this->viewRenderer = $viewRenderer
             ->withControllerName('default')
             ->withLayout('@views/layout/guest');

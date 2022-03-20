@@ -12,33 +12,14 @@ use Mailery\Assets\AssetBundleRegistry;
 class LayoutViewInjection implements LayoutParametersInjectionInterface
 {
     /**
-     * @var CurrentUser
-     */
-    private CurrentUser $currentUser;
-
-    /**
-     * @var CurrentRoute
-     */
-    private CurrentRoute $currentRoute;
-
-    /**
-     * @var AssetBundleRegistry
-     */
-    private AssetBundleRegistry $assetBundleRegistry;
-
-    /**
      * @param CurrentUser $currentUser
      * @param CurrentRoute $currentRoute
      */
     public function __construct(
-        CurrentUser $currentUser,
-        CurrentRoute $currentRoute,
-        AssetBundleRegistry $assetBundleRegistry
-    ) {
-        $this->currentUser = $currentUser;
-        $this->currentRoute = $currentRoute;
-        $this->assetBundleRegistry = $assetBundleRegistry;
-    }
+        private CurrentUser $currentUser,
+        private CurrentRoute $currentRoute,
+        private AssetBundleRegistry $assetBundleRegistry
+    ) {}
 
     /**
      * @return array

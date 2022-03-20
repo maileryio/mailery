@@ -13,21 +13,26 @@ use Mailery\I18n\Event\MissingTranslationEvent;
 
 class Translator implements TranslatorInterface
 {
-    private EventDispatcherInterface $eventDispatcher;
-    private MessageReaderInterface $messageReader;
-    private ?MessageFormatterInterface $messageFormatter;
+    /**
+     * @var string|null
+     */
     private ?string $locale = null;
+
+    /**
+     * @var string|null
+     */
     private ?string $defaultLocale = null;
 
+    /**
+     * @param EventDispatcherInterface $eventDispatcher
+     * @param MessageReaderInterface $messageReader
+     * @param MessageFormatterInterface $messageFormatter
+     */
     public function __construct(
-        EventDispatcherInterface $eventDispatcher,
-        MessageReaderInterface $messageReader,
-        MessageFormatterInterface $messageFormatter = null
-    ) {
-        $this->messageReader = $messageReader;
-        $this->eventDispatcher = $eventDispatcher;
-        $this->messageFormatter = $messageFormatter;
-    }
+        private EventDispatcherInterface $eventDispatcher,
+        private MessageReaderInterface $messageReader,
+        private MessageFormatterInterface $messageFormatter = null
+    ) {}
 
     /**
      * Sets the current locale.

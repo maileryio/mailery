@@ -6,16 +6,11 @@ namespace Mailery\I18n\Event;
 
 class MissingTranslationEvent
 {
-    private string $category;
-    private string $language;
-    private string $message;
-
-    public function __construct(string $category, string $language, string $message)
-    {
-        $this->category = $category;
-        $this->language = $language;
-        $this->message = $message;
-    }
+    public function __construct(
+        private string $category,
+        private string $language,
+        private string $message
+    ) {}
 
     public function getCategory(): string
     {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "665ee2065863d46e24f5b0d054c6bb09",
+    "content-hash": "f1634bdaca0a76943a48be8ff2def394",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -104,16 +104,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.214.0",
+            "version": "3.215.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a2eacf8c1b55de4733f4cfc315da38f1d4c66501"
+                "reference": "79c4ffdf93cdcc7be9196ae2e22f0d0323cb2557"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a2eacf8c1b55de4733f4cfc315da38f1d4c66501",
-                "reference": "a2eacf8c1b55de4733f4cfc315da38f1d4c66501",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/79c4ffdf93cdcc7be9196ae2e22f0d0323cb2557",
+                "reference": "79c4ffdf93cdcc7be9196ae2e22f0d0323cb2557",
                 "shasum": ""
             },
             "require": {
@@ -189,9 +189,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.214.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.215.0"
             },
-            "time": "2022-03-16T19:00:00+00:00"
+            "time": "2022-03-18T18:16:01+00:00"
         },
         {
             "name": "brick/math",
@@ -255,16 +255,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v2.0.1",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8"
+                "reference": "75e5ef05436c90ac565a48176cc7465991908352"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
-                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
+                "url": "https://api.github.com/repos/composer/installers/zipball/75e5ef05436c90ac565a48176cc7465991908352",
+                "reference": "75e5ef05436c90ac565a48176cc7465991908352",
                 "shasum": ""
             },
             "require": {
@@ -284,7 +284,8 @@
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-main": "2.x-dev"
-                }
+                },
+                "plugin-modifies-install-path": true
             },
             "autoload": {
                 "psr-4": {
@@ -378,7 +379,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v2.0.1"
+                "source": "https://github.com/composer/installers/tree/v2.1.0"
             },
             "funding": [
                 {
@@ -394,7 +395,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-13T08:21:20+00:00"
+            "time": "2022-03-18T12:27:54+00:00"
         },
         {
             "name": "cycle/annotated",
@@ -2098,12 +2099,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-activity-log.git",
-                "reference": "a4bd5c909d09eab564ac65973747682aba50c384"
+                "reference": "4f04685d2899a2be40bc6c16eb46ea4d071bed02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-activity-log/zipball/a4bd5c909d09eab564ac65973747682aba50c384",
-                "reference": "a4bd5c909d09eab564ac65973747682aba50c384",
+                "url": "https://api.github.com/repos/maileryio/mailery-activity-log/zipball/4f04685d2899a2be40bc6c16eb46ea4d071bed02",
+                "reference": "4f04685d2899a2be40bc6c16eb46ea4d071bed02",
                 "shasum": ""
             },
             "require": {
@@ -2159,7 +2160,7 @@
                 "source": "https://github.com/maileryio/mailery-activity-log",
                 "wiki": "https://github.com/maileryio/mailery-activity-log/wiki"
             },
-            "time": "2022-03-13T20:13:00+00:00"
+            "time": "2022-03-19T22:16:05+00:00"
         },
         {
             "name": "maileryio/mailery-brand",
@@ -2167,12 +2168,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-brand.git",
-                "reference": "fd205a2a318644c428806b34dafe1ed3cb027462"
+                "reference": "0182fe9365e57fe354ffac3146b7a4b9f88682bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-brand/zipball/fd205a2a318644c428806b34dafe1ed3cb027462",
-                "reference": "fd205a2a318644c428806b34dafe1ed3cb027462",
+                "url": "https://api.github.com/repos/maileryio/mailery-brand/zipball/0182fe9365e57fe354ffac3146b7a4b9f88682bf",
+                "reference": "0182fe9365e57fe354ffac3146b7a4b9f88682bf",
                 "shasum": ""
             },
             "require": {
@@ -2202,10 +2203,10 @@
                     "params": "params.php",
                     "common": "common.php",
                     "web": "web.php",
-                    "routes": "routes.php",
                     "rbac-assignments": "rbac/assignments.php",
                     "rbac-items": "rbac/items.php",
-                    "rbac-rules": "rbac/rules.php"
+                    "rbac-rules": "rbac/rules.php",
+                    "routes": "routes.php"
                 },
                 "config-plugin-options": {
                     "source-directory": "config"
@@ -2232,7 +2233,7 @@
                 "source": "https://github.com/maileryio/mailery-brand",
                 "wiki": "https://github.com/maileryio/mailery-brand/wiki"
             },
-            "time": "2022-03-16T23:03:32+00:00"
+            "time": "2022-03-20T09:50:12+00:00"
         },
         {
             "name": "maileryio/mailery-campaign",
@@ -2240,12 +2241,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-campaign.git",
-                "reference": "2980a3a315c1df86a83b50401b52158335469a26"
+                "reference": "feac6c54ac343aeeb6ecea03ed289ecd49376c81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-campaign/zipball/2980a3a315c1df86a83b50401b52158335469a26",
-                "reference": "2980a3a315c1df86a83b50401b52158335469a26",
+                "url": "https://api.github.com/repos/maileryio/mailery-campaign/zipball/feac6c54ac343aeeb6ecea03ed289ecd49376c81",
+                "reference": "feac6c54ac343aeeb6ecea03ed289ecd49376c81",
                 "shasum": ""
             },
             "require": {
@@ -2293,7 +2294,7 @@
                 "source": "https://github.com/maileryio/mailery-campaign",
                 "wiki": "https://github.com/maileryio/mailery-campaign/wiki"
             },
-            "time": "2022-03-13T20:13:25+00:00"
+            "time": "2022-03-19T22:16:22+00:00"
         },
         {
             "name": "maileryio/mailery-campaign-standard",
@@ -2301,12 +2302,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-campaign-standard.git",
-                "reference": "7ca840ff6d3998ff9522fa2ee06542a6f77a1672"
+                "reference": "65f72703e6e5d058f7d3f4d677f9de96dda00985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-campaign-standard/zipball/7ca840ff6d3998ff9522fa2ee06542a6f77a1672",
-                "reference": "7ca840ff6d3998ff9522fa2ee06542a6f77a1672",
+                "url": "https://api.github.com/repos/maileryio/mailery-campaign-standard/zipball/65f72703e6e5d058f7d3f4d677f9de96dda00985",
+                "reference": "65f72703e6e5d058f7d3f4d677f9de96dda00985",
                 "shasum": ""
             },
             "require": {
@@ -2355,7 +2356,7 @@
                 "source": "https://github.com/maileryio/mailery-campaign-standard",
                 "wiki": "https://github.com/maileryio/mailery-campaign-standard/wiki"
             },
-            "time": "2022-03-16T23:03:21+00:00"
+            "time": "2022-03-19T22:15:58+00:00"
         },
         {
             "name": "maileryio/mailery-channel",
@@ -2363,12 +2364,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-channel.git",
-                "reference": "720b47f3d9c473461d5b8fd9fac40d3174ca046c"
+                "reference": "128a608e0df3e22833c53f67248285b28d851980"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-channel/zipball/720b47f3d9c473461d5b8fd9fac40d3174ca046c",
-                "reference": "720b47f3d9c473461d5b8fd9fac40d3174ca046c",
+                "url": "https://api.github.com/repos/maileryio/mailery-channel/zipball/128a608e0df3e22833c53f67248285b28d851980",
+                "reference": "128a608e0df3e22833c53f67248285b28d851980",
                 "shasum": ""
             },
             "require": {
@@ -2417,7 +2418,7 @@
                 "source": "https://github.com/maileryio/mailery-channel",
                 "wiki": "https://github.com/maileryio/mailery-channel/wiki"
             },
-            "time": "2022-03-16T23:03:30+00:00"
+            "time": "2022-03-17T23:42:22+00:00"
         },
         {
             "name": "maileryio/mailery-channel-email",
@@ -2425,12 +2426,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-channel-email.git",
-                "reference": "f46610f6d954034464881018b9411bf8c9aa8ea6"
+                "reference": "d062c65f8de622db828a4cbd159fea0eb6e60f23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-channel-email/zipball/f46610f6d954034464881018b9411bf8c9aa8ea6",
-                "reference": "f46610f6d954034464881018b9411bf8c9aa8ea6",
+                "url": "https://api.github.com/repos/maileryio/mailery-channel-email/zipball/d062c65f8de622db828a4cbd159fea0eb6e60f23",
+                "reference": "d062c65f8de622db828a4cbd159fea0eb6e60f23",
                 "shasum": ""
             },
             "require": {
@@ -2480,7 +2481,7 @@
                 "source": "https://github.com/maileryio/mailery-channel-email",
                 "wiki": "https://github.com/maileryio/mailery-channel-email/wiki"
             },
-            "time": "2022-03-16T23:03:34+00:00"
+            "time": "2022-03-19T22:16:09+00:00"
         },
         {
             "name": "maileryio/mailery-channel-email-amazon-ses",
@@ -2488,12 +2489,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-channel-email-amazon-ses.git",
-                "reference": "2d82fde1da9e4810a6b59b53e7aadc5f33fcc6a8"
+                "reference": "edb2d2e97d76124f0c543b0d31b1613e139e16e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-channel-email-amazon-ses/zipball/2d82fde1da9e4810a6b59b53e7aadc5f33fcc6a8",
-                "reference": "2d82fde1da9e4810a6b59b53e7aadc5f33fcc6a8",
+                "url": "https://api.github.com/repos/maileryio/mailery-channel-email-amazon-ses/zipball/edb2d2e97d76124f0c543b0d31b1613e139e16e6",
+                "reference": "edb2d2e97d76124f0c543b0d31b1613e139e16e6",
                 "shasum": ""
             },
             "require": {
@@ -2546,7 +2547,7 @@
                 "source": "https://github.com/maileryio/mailery-channel-email-amazon-ses",
                 "wiki": "https://github.com/maileryio/mailery-channel-email-amazon-ses/wiki"
             },
-            "time": "2022-03-16T23:03:47+00:00"
+            "time": "2022-03-19T22:16:24+00:00"
         },
         {
             "name": "maileryio/mailery-common",
@@ -3037,12 +3038,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-rbac.git",
-                "reference": "fc3a88063ade260b22ea9d8ab2b012ecb4a35c4c"
+                "reference": "faf142ba887e14c30b4c6a0515fc6c062f107240"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-rbac/zipball/fc3a88063ade260b22ea9d8ab2b012ecb4a35c4c",
-                "reference": "fc3a88063ade260b22ea9d8ab2b012ecb4a35c4c",
+                "url": "https://api.github.com/repos/maileryio/mailery-rbac/zipball/faf142ba887e14c30b4c6a0515fc6c062f107240",
+                "reference": "faf142ba887e14c30b4c6a0515fc6c062f107240",
                 "shasum": ""
             },
             "require": {
@@ -3068,10 +3069,10 @@
                 "config-plugin": {
                     "common": "common.php",
                     "params": "params.php",
-                    "routes": "routes.php",
                     "rbac-assignments": "rbac/assignments.php",
                     "rbac-items": "rbac/items.php",
-                    "rbac-rules": "rbac/rules.php"
+                    "rbac-rules": "rbac/rules.php",
+                    "routes": "routes.php"
                 },
                 "config-plugin-options": {
                     "source-directory": "config"
@@ -3098,7 +3099,7 @@
                 "source": "https://github.com/maileryio/mailery-rbac",
                 "wiki": "https://github.com/maileryio/mailery-rbac/wiki"
             },
-            "time": "2022-03-16T23:03:24+00:00"
+            "time": "2022-03-20T09:50:10+00:00"
         },
         {
             "name": "maileryio/mailery-sender",
@@ -3106,12 +3107,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-sender.git",
-                "reference": "902f6f1add2a236586b8fb882b96d489a43d8587"
+                "reference": "eb4b1f83b5aeb46401e23c5cd291d6388f08fd5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-sender/zipball/902f6f1add2a236586b8fb882b96d489a43d8587",
-                "reference": "902f6f1add2a236586b8fb882b96d489a43d8587",
+                "url": "https://api.github.com/repos/maileryio/mailery-sender/zipball/eb4b1f83b5aeb46401e23c5cd291d6388f08fd5e",
+                "reference": "eb4b1f83b5aeb46401e23c5cd291d6388f08fd5e",
                 "shasum": ""
             },
             "require": {
@@ -3160,7 +3161,7 @@
                 "source": "https://github.com/maileryio/mailery-sender",
                 "wiki": "https://github.com/maileryio/mailery-sender/wiki"
             },
-            "time": "2022-03-16T23:03:37+00:00"
+            "time": "2022-03-19T22:16:11+00:00"
         },
         {
             "name": "maileryio/mailery-sender-domain",
@@ -3168,12 +3169,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-sender-domain.git",
-                "reference": "a0ed54c1529fa28b86c2dedaf1a27155dd3d92b8"
+                "reference": "f0e7544dfa071d905c7c03d40926a9baee6a0894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-sender-domain/zipball/a0ed54c1529fa28b86c2dedaf1a27155dd3d92b8",
-                "reference": "a0ed54c1529fa28b86c2dedaf1a27155dd3d92b8",
+                "url": "https://api.github.com/repos/maileryio/mailery-sender-domain/zipball/f0e7544dfa071d905c7c03d40926a9baee6a0894",
+                "reference": "f0e7544dfa071d905c7c03d40926a9baee6a0894",
                 "shasum": ""
             },
             "require": {
@@ -3224,7 +3225,7 @@
                 "source": "https://github.com/maileryio/mailery-sender-domain",
                 "wiki": "https://github.com/maileryio/mailery-sender-domain/wiki"
             },
-            "time": "2022-03-16T23:03:39+00:00"
+            "time": "2022-03-19T22:16:13+00:00"
         },
         {
             "name": "maileryio/mailery-sender-email",
@@ -3232,12 +3233,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-sender-email.git",
-                "reference": "7febe351873fcbbbf6c4175f98121db94ac39b5d"
+                "reference": "4a650bfc978534ddf31436d8ac10f4ef7d6ca348"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-sender-email/zipball/7febe351873fcbbbf6c4175f98121db94ac39b5d",
-                "reference": "7febe351873fcbbbf6c4175f98121db94ac39b5d",
+                "url": "https://api.github.com/repos/maileryio/mailery-sender-email/zipball/4a650bfc978534ddf31436d8ac10f4ef7d6ca348",
+                "reference": "4a650bfc978534ddf31436d8ac10f4ef7d6ca348",
                 "shasum": ""
             },
             "require": {
@@ -3286,7 +3287,7 @@
                 "source": "https://github.com/maileryio/mailery-sender-email",
                 "wiki": "https://github.com/maileryio/mailery-sender-email/wiki"
             },
-            "time": "2022-03-16T23:03:41+00:00"
+            "time": "2022-03-19T22:16:16+00:00"
         },
         {
             "name": "maileryio/mailery-setting",
@@ -3356,12 +3357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-storage.git",
-                "reference": "dd6f13701ff81c40181af3a7657fafcf4bb63f15"
+                "reference": "5deb7d5a2f8c1ec95f97faf0de253360ade9ffcf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-storage/zipball/dd6f13701ff81c40181af3a7657fafcf4bb63f15",
-                "reference": "dd6f13701ff81c40181af3a7657fafcf4bb63f15",
+                "url": "https://api.github.com/repos/maileryio/mailery-storage/zipball/5deb7d5a2f8c1ec95f97faf0de253360ade9ffcf",
+                "reference": "5deb7d5a2f8c1ec95f97faf0de253360ade9ffcf",
                 "shasum": ""
             },
             "require": {
@@ -3413,7 +3414,7 @@
                 "source": "https://github.com/maileryio/mailery-storage",
                 "wiki": "https://github.com/maileryio/mailery-storage/wiki"
             },
-            "time": "2022-03-13T20:13:04+00:00"
+            "time": "2022-03-18T23:17:45+00:00"
         },
         {
             "name": "maileryio/mailery-subscriber",
@@ -3421,12 +3422,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-subscriber.git",
-                "reference": "6af5fc7db8360c377de9bb4368d2e553bee36295"
+                "reference": "1d8df15e209979c6bc0248d857837af216166a35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-subscriber/zipball/6af5fc7db8360c377de9bb4368d2e553bee36295",
-                "reference": "6af5fc7db8360c377de9bb4368d2e553bee36295",
+                "url": "https://api.github.com/repos/maileryio/mailery-subscriber/zipball/1d8df15e209979c6bc0248d857837af216166a35",
+                "reference": "1d8df15e209979c6bc0248d857837af216166a35",
                 "shasum": ""
             },
             "require": {
@@ -3489,7 +3490,7 @@
                 "source": "https://github.com/maileryio/mailery-subscriber",
                 "wiki": "https://github.com/maileryio/mailery-subscriber/wiki"
             },
-            "time": "2022-03-16T23:03:43+00:00"
+            "time": "2022-03-19T22:16:18+00:00"
         },
         {
             "name": "maileryio/mailery-template",
@@ -3497,12 +3498,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-template.git",
-                "reference": "38132b247bf440d3c837e18ef47ef983074051aa"
+                "reference": "13883848d8dfdc61557a24f179d46cc025b96837"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-template/zipball/38132b247bf440d3c837e18ef47ef983074051aa",
-                "reference": "38132b247bf440d3c837e18ef47ef983074051aa",
+                "url": "https://api.github.com/repos/maileryio/mailery-template/zipball/13883848d8dfdc61557a24f179d46cc025b96837",
+                "reference": "13883848d8dfdc61557a24f179d46cc025b96837",
                 "shasum": ""
             },
             "require": {
@@ -3550,7 +3551,7 @@
                 "source": "https://github.com/maileryio/mailery-template",
                 "wiki": "https://github.com/maileryio/mailery-template/wiki"
             },
-            "time": "2022-03-16T23:03:49+00:00"
+            "time": "2022-03-17T23:36:34+00:00"
         },
         {
             "name": "maileryio/mailery-template-email",
@@ -3558,12 +3559,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-template-email.git",
-                "reference": "68bfb2bcb5d79f62e9927811beaa00666c72b7a6"
+                "reference": "b61a547aeb7fb324e0acb619e46005f28d5b6abb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-template-email/zipball/68bfb2bcb5d79f62e9927811beaa00666c72b7a6",
-                "reference": "68bfb2bcb5d79f62e9927811beaa00666c72b7a6",
+                "url": "https://api.github.com/repos/maileryio/mailery-template-email/zipball/b61a547aeb7fb324e0acb619e46005f28d5b6abb",
+                "reference": "b61a547aeb7fb324e0acb619e46005f28d5b6abb",
                 "shasum": ""
             },
             "require": {
@@ -3614,7 +3615,7 @@
                 "source": "https://github.com/maileryio/mailery-template-email",
                 "wiki": "https://github.com/maileryio/mailery-template-email/wiki"
             },
-            "time": "2022-03-16T23:03:28+00:00"
+            "time": "2022-03-19T22:16:02+00:00"
         },
         {
             "name": "maileryio/mailery-template-email-ckeditor",
@@ -3622,12 +3623,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-template-email-ckeditor.git",
-                "reference": "1873eab0344e3d277a4aa5d12fc73fd899eec079"
+                "reference": "2aa8c1caf99da8e315620c976ff841b067ab4710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-template-email-ckeditor/zipball/1873eab0344e3d277a4aa5d12fc73fd899eec079",
-                "reference": "1873eab0344e3d277a4aa5d12fc73fd899eec079",
+                "url": "https://api.github.com/repos/maileryio/mailery-template-email-ckeditor/zipball/2aa8c1caf99da8e315620c976ff841b067ab4710",
+                "reference": "2aa8c1caf99da8e315620c976ff841b067ab4710",
                 "shasum": ""
             },
             "require": {
@@ -3675,7 +3676,7 @@
                 "source": "https://github.com/maileryio/mailery-template-email-ckeditor",
                 "wiki": "https://github.com/maileryio/mailery-template-email-ckeditor/wiki"
             },
-            "time": "2022-03-13T11:54:06+00:00"
+            "time": "2022-03-18T23:17:47+00:00"
         },
         {
             "name": "maileryio/mailery-user",
@@ -3683,12 +3684,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-user.git",
-                "reference": "cbde700060ddd886dcf93603928a94fcdb5c549d"
+                "reference": "f498c3579557ad31d66f007f72da69bc36e31f63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-user/zipball/cbde700060ddd886dcf93603928a94fcdb5c549d",
-                "reference": "cbde700060ddd886dcf93603928a94fcdb5c549d",
+                "url": "https://api.github.com/repos/maileryio/mailery-user/zipball/f498c3579557ad31d66f007f72da69bc36e31f63",
+                "reference": "f498c3579557ad31d66f007f72da69bc36e31f63",
                 "shasum": ""
             },
             "require": {
@@ -3716,10 +3717,10 @@
                     "params": "params.php",
                     "common": "common.php",
                     "web": "web.php",
-                    "routes": "routes.php",
                     "rbac-assignments": "rbac/assignments.php",
                     "rbac-items": "rbac/items.php",
-                    "rbac-rules": "rbac/rules.php"
+                    "rbac-rules": "rbac/rules.php",
+                    "routes": "routes.php"
                 },
                 "config-plugin-options": {
                     "source-directory": "config"
@@ -3746,7 +3747,7 @@
                 "source": "https://github.com/maileryio/mailery-user",
                 "wiki": "https://github.com/maileryio/mailery-user/wiki"
             },
-            "time": "2022-03-16T23:03:45+00:00"
+            "time": "2022-03-20T09:50:14+00:00"
         },
         {
             "name": "maileryio/mailery-web",
@@ -3872,12 +3873,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/widget-link.git",
-                "reference": "de6cb310283451a6b255fe21de36de8f2577a406"
+                "reference": "022f5b1c54b62179d26e3592f2fb58cb50f1c72c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/widget-link/zipball/de6cb310283451a6b255fe21de36de8f2577a406",
-                "reference": "de6cb310283451a6b255fe21de36de8f2577a406",
+                "url": "https://api.github.com/repos/maileryio/widget-link/zipball/022f5b1c54b62179d26e3592f2fb58cb50f1c72c",
+                "reference": "022f5b1c54b62179d26e3592f2fb58cb50f1c72c",
                 "shasum": ""
             },
             "require": {
@@ -3917,7 +3918,7 @@
                 "source": "https://github.com/maileryio/widget-link",
                 "wiki": "https://github.com/maileryio/widget-link/wiki"
             },
-            "time": "2022-03-11T06:29:41+00:00"
+            "time": "2022-03-17T23:36:38+00:00"
         },
         {
             "name": "maileryio/widget-search",
@@ -5563,16 +5564,16 @@
         },
         {
             "name": "spiral/attributes",
-            "version": "2.10.1",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/attributes.git",
-                "reference": "79ff6d607837052c11bc58665cd55757a861ba18"
+                "reference": "f73aab248d09943d1f6e6925a7f5aa0607617c78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/attributes/zipball/79ff6d607837052c11bc58665cd55757a861ba18",
-                "reference": "79ff6d607837052c11bc58665cd55757a861ba18",
+                "url": "https://api.github.com/repos/spiral/attributes/zipball/f73aab248d09943d1f6e6925a7f5aa0607617c78",
+                "reference": "f73aab248d09943d1f6e6925a7f5aa0607617c78",
                 "shasum": ""
             },
             "require": {
@@ -5593,7 +5594,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.11.x-dev"
                 }
             },
             "autoload": {
@@ -5620,7 +5621,7 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/attributes"
             },
-            "time": "2022-03-03T21:01:23+00:00"
+            "time": "2022-03-18T19:53:11+00:00"
         },
         {
             "name": "spiral/core",
@@ -5675,16 +5676,16 @@
         },
         {
             "name": "spiral/files",
-            "version": "2.10.1",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/files.git",
-                "reference": "16c601ee510605c89cd9048bb30be3a721aab050"
+                "reference": "dc4693559a554e5126ea59284a54d19cfee48cef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/files/zipball/16c601ee510605c89cd9048bb30be3a721aab050",
-                "reference": "16c601ee510605c89cd9048bb30be3a721aab050",
+                "url": "https://api.github.com/repos/spiral/files/zipball/dc4693559a554e5126ea59284a54d19cfee48cef",
+                "reference": "dc4693559a554e5126ea59284a54d19cfee48cef",
                 "shasum": ""
             },
             "require": {
@@ -5697,7 +5698,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.11.x-dev"
                 }
             },
             "autoload": {
@@ -5721,7 +5722,7 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/files"
             },
-            "time": "2022-03-03T20:55:44+00:00"
+            "time": "2022-03-18T19:54:03+00:00"
         },
         {
             "name": "spiral/logger",
@@ -5777,16 +5778,16 @@
         },
         {
             "name": "spiral/pagination",
-            "version": "2.10.1",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/pagination.git",
-                "reference": "836e1e935a3026ec586ac885b7e3e6b64b3d963a"
+                "reference": "72f6fcae935d2194ac2d7dbb70d571c3aac77278"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/pagination/zipball/836e1e935a3026ec586ac885b7e3e6b64b3d963a",
-                "reference": "836e1e935a3026ec586ac885b7e3e6b64b3d963a",
+                "url": "https://api.github.com/repos/spiral/pagination/zipball/72f6fcae935d2194ac2d7dbb70d571c3aac77278",
+                "reference": "72f6fcae935d2194ac2d7dbb70d571c3aac77278",
                 "shasum": ""
             },
             "require": {
@@ -5799,7 +5800,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.11.x-dev"
                 }
             },
             "autoload": {
@@ -5823,20 +5824,20 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/pagination"
             },
-            "time": "2022-03-03T20:56:27+00:00"
+            "time": "2022-03-18T19:54:21+00:00"
         },
         {
             "name": "spiral/reactor",
-            "version": "2.10.1",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/reactor.git",
-                "reference": "e1b2eb87a3fa95a2462fcf115b744e29fa3f356a"
+                "reference": "b844a7edabe0faf42bd5b4edefa8671402723713"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/reactor/zipball/e1b2eb87a3fa95a2462fcf115b744e29fa3f356a",
-                "reference": "e1b2eb87a3fa95a2462fcf115b744e29fa3f356a",
+                "url": "https://api.github.com/repos/spiral/reactor/zipball/b844a7edabe0faf42bd5b4edefa8671402723713",
+                "reference": "b844a7edabe0faf42bd5b4edefa8671402723713",
                 "shasum": ""
             },
             "require": {
@@ -5851,7 +5852,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev"
+                    "dev-master": "2.11.x-dev"
                 }
             },
             "autoload": {
@@ -5875,7 +5876,7 @@
                 "issues": "https://github.com/spiral/framework/issues",
                 "source": "https://github.com/spiral/reactor"
             },
-            "time": "2022-03-03T20:56:18+00:00"
+            "time": "2022-03-18T19:54:21+00:00"
         },
         {
             "name": "spiral/tokenizer",
@@ -11473,12 +11474,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii-debug.git",
-                "reference": "615af56006aea37d4b606602d9898a70a85cc59f"
+                "reference": "10c99926cdedb5e5f79cdbfd70ae55727693b223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii-debug/zipball/615af56006aea37d4b606602d9898a70a85cc59f",
-                "reference": "615af56006aea37d4b606602d9898a70a85cc59f",
+                "url": "https://api.github.com/repos/yiisoft/yii-debug/zipball/10c99926cdedb5e5f79cdbfd70ae55727693b223",
+                "reference": "10c99926cdedb5e5f79cdbfd70ae55727693b223",
                 "shasum": ""
             },
             "require": {
@@ -11563,7 +11564,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-02-22T17:12:25+00:00"
+            "time": "2022-03-18T08:45:06+00:00"
         },
         {
             "name": "yiisoft/yii-debug-api",
@@ -12417,16 +12418,16 @@
         },
         {
             "name": "zircote/swagger-php",
-            "version": "4.2.11",
+            "version": "4.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "1c7a04e381b07e14aae080a61e02f2fe9cdea424"
+                "reference": "4ad0dc2245b6b603d732630fbea251ac92c630f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/1c7a04e381b07e14aae080a61e02f2fe9cdea424",
-                "reference": "1c7a04e381b07e14aae080a61e02f2fe9cdea424",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/4ad0dc2245b6b603d732630fbea251ac92c630f2",
+                "reference": "4ad0dc2245b6b603d732630fbea251ac92c630f2",
                 "shasum": ""
             },
             "require": {
@@ -12486,9 +12487,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zircote/swagger-php/issues",
-                "source": "https://github.com/zircote/swagger-php/tree/4.2.11"
+                "source": "https://github.com/zircote/swagger-php/tree/4.2.12"
             },
-            "time": "2022-03-06T19:16:21+00:00"
+            "time": "2022-03-15T20:43:30+00:00"
         }
     ],
     "packages-dev": [

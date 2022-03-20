@@ -19,17 +19,11 @@ use Yiisoft\Router\UrlGeneratorInterface as UrlGenerator;
 class DefaultController
 {
     /**
-     * @var ResponseFactory
-     */
-    private ResponseFactory $responseFactory;
-
-    /**
      * @param ResponseFactory $responseFactory
      */
-    public function __construct(ResponseFactory $responseFactory)
-    {
-        $this->responseFactory = $responseFactory;
-    }
+    public function __construct(
+        private ResponseFactory $responseFactory
+    ) {}
 
     /**
      * @param UrlGenerator $urlGenerator

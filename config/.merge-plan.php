@@ -439,6 +439,9 @@ return [
             'maileryio/mailery-brand' => [
                 'config/rbac/assignments.php',
             ],
+            '/' => [
+                'rbac/assignments.php',
+            ],
         ],
         'rbac-items' => [
             'maileryio/mailery-rbac' => [
@@ -450,6 +453,9 @@ return [
             'maileryio/mailery-brand' => [
                 'config/rbac/items.php',
             ],
+            '/' => [
+                'rbac/items.php',
+            ],
         ],
         'rbac-rules' => [
             'maileryio/mailery-rbac' => [
@@ -460,6 +466,9 @@ return [
             ],
             'maileryio/mailery-brand' => [
                 'config/rbac/rules.php',
+            ],
+            '/' => [
+                'rbac/rules.php',
             ],
         ],
         'console' => [

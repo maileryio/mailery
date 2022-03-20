@@ -30,6 +30,9 @@ final class Installer
         self::chmodRecursive('storage', 0777);
     }
 
+    /**
+     * @return void
+     */
     public static function copyEnvFile(): void
     {
         if (!file_exists('.env')) {

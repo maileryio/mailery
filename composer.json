@@ -171,6 +171,9 @@
                 "$providers",
                 "providers-console.php"
             ],
+            "rbac-assignments": "rbac/assignments.php",
+            "rbac-items": "rbac/items.php",
+            "rbac-rules": "rbac/rules.php",
             "routes": "routes.php",
             "bootstrap": "bootstrap.php",
             "bootstrap-web": [
