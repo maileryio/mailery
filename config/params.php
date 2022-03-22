@@ -39,6 +39,11 @@ use Yiisoft\Session\SessionMiddleware;
 use Yiisoft\ErrorHandler\Middleware\ErrorCatcher;
 use Yiisoft\Yii\Cycle\Schema\Provider\PhpFileSchemaProvider;
 use Yiisoft\Request\Body\RequestBodyParser;
+use Yiisoft\Definitions\DynamicReference;
+use Yiisoft\Aliases\Aliases;
+use Yiisoft\Translator\MessageFormatterInterface;
+use Yiisoft\Translator\CategorySource;
+use Yiisoft\Translator\Message\Php\MessageSource;
 
 return [
     'middlewares' => [
@@ -87,10 +92,25 @@ return [
         ],
     ],
 
+    'yiisoft/translator' => [
+        'locale' => 'en',
+        'fallbackLocale' => 'en',
+        'defaultCategory' => 'app',
+        'categorySources' => [
+            'app' => DynamicReference::to(static function (Aliases $aliases, MessageFormatterInterface $messageFormatter) {
+                return new CategorySource(
+                    'app',
+                    new MessageSource($aliases->get('@messages')),
+                    $messageFormatter,
+                );
+            }),
+        ],
+    ],
+
     'yiisoft/view' => [
         'parameters' => [
             'assetManager' => Reference::to(AssetManager::class),
-            'urlGenerator' => Reference::to(UrlGeneratorInterface::class),
+            'url' => Reference::to(UrlGeneratorInterface::class),
             'currentRoute' => Reference::to(CurrentRoute::class),
             'navbarMenu' => Reference::to(NavbarMenu::class),
             'sidebarMenu' => Reference::to(SidebarMenu::class),

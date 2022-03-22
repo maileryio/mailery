@@ -189,12 +189,6 @@ return [
             'yiisoft/router-fastroute' => [
                 'config/common.php',
             ],
-            'yiisoft/translator-formatter-intl' => [
-                'config/common.php',
-            ],
-            'yiisoft/translator-message-php' => [
-                'config/common.php',
-            ],
             'yiisoft/yii-cycle' => [
                 'config/common.php',
             ],
@@ -223,6 +217,12 @@ return [
                 'config/common.php',
             ],
             'yiisoft/translator' => [
+                'config/common.php',
+            ],
+            'yiisoft/translator-formatter-intl' => [
+                'config/common.php',
+            ],
+            'yiisoft/translator-message-php' => [
                 'config/common.php',
             ],
             'yiisoft/yii-debug' => [
