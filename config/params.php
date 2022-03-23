@@ -25,6 +25,7 @@ use Yiisoft\Translator\TranslatorInterface;
 use Yiisoft\Yii\View\CsrfViewInjection;
 use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Yii\Cycle\Schema\Provider\FromConveyorSchemaProvider;
+use Cycle\Annotated\TableInheritance;
 use Cycle\Schema\Generator\SyncTables;
 use Cycle\Database\Config\PostgresDriverConfig;
 use Cycle\Database\Config\Postgres\DsnConnectionConfig;
@@ -172,6 +173,7 @@ return [
             ],
             FromConveyorSchemaProvider::class => [
                 'generators' => [
+                    TableInheritance::class,
                     SyncTables::class,
                 ],
             ],
