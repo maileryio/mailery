@@ -16,7 +16,7 @@
 "@composer-asset/maileryio--mailery-campaign@file:./vendor/foxy/composer-asset/maileryio/mailery-campaign":
   version "1.0.0"
 
-"@composer-asset/maileryio--mailery-channel-email-amazon-ses@file:./vendor/foxy/composer-asset/maileryio/mailery-channel-email-amazon-ses":
+"@composer-asset/maileryio--mailery-channel-amazon-ses@file:./vendor/foxy/composer-asset/maileryio/mailery-channel-amazon-ses":
   version "1.0.0"
 
 "@composer-asset/maileryio--mailery-channel-email@file:./vendor/foxy/composer-asset/maileryio/mailery-channel-email":

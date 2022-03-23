@@ -97,7 +97,7 @@ return [
         'fallbackLocale' => 'en',
         'defaultCategory' => 'app',
         'categorySources' => [
-            'app' => DynamicReference::to(static function (Aliases $aliases, MessageFormatterInterface $messageFormatter) {
+            DynamicReference::to(static function (Aliases $aliases, MessageFormatterInterface $messageFormatter) {
                 return new CategorySource(
                     'app',
                     new MessageSource($aliases->get('@messages')),
