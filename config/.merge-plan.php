@@ -12,10 +12,10 @@ return [
             'maileryio/mailery-campaign-standard' => [
                 'config/params.php',
             ],
-            'maileryio/mailery-channel-email' => [
+            'maileryio/mailery-channel-amazon-ses' => [
                 'config/params.php',
             ],
-            'maileryio/mailery-channel-amazon-ses' => [
+            'maileryio/mailery-channel-email' => [
                 'config/params.php',
             ],
             'maileryio/mailery-dashboard' => [
@@ -156,10 +156,10 @@ return [
             'maileryio/mailery-campaign-standard' => [
                 'config/common.php',
             ],
-            'maileryio/mailery-channel-email' => [
+            'maileryio/mailery-channel-amazon-ses' => [
                 'config/common.php',
             ],
-            'maileryio/mailery-channel-amazon-ses' => [
+            'maileryio/mailery-channel-email' => [
                 'config/common.php',
             ],
             'maileryio/mailery-rbac' => [
@@ -272,10 +272,10 @@ return [
             'maileryio/mailery-campaign-standard' => [
                 'config/routes.php',
             ],
-            'maileryio/mailery-channel-email' => [
+            'maileryio/mailery-channel-amazon-ses' => [
                 'config/routes.php',
             ],
-            'maileryio/mailery-channel-amazon-ses' => [
+            'maileryio/mailery-channel-email' => [
                 'config/routes.php',
             ],
             'maileryio/mailery-dashboard' => [
@@ -331,10 +331,10 @@ return [
             ],
         ],
         'web' => [
-            'maileryio/mailery-channel-email' => [
+            'maileryio/mailery-channel-amazon-ses' => [
                 'config/web.php',
             ],
-            'maileryio/mailery-channel-amazon-ses' => [
+            'maileryio/mailery-channel-email' => [
                 'config/web.php',
             ],
             'maileryio/mailery-dashboard' => [

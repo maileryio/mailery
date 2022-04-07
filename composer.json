@@ -20,6 +20,7 @@
         "php": "^7.4",
         "cycle/entity-behavior": "^1.1",
         "cycle/orm": "^2.1",
+        "doctrine/collections": "^1.6",
         "foxy/foxy": "^1.0",
         "httpsoft/http-message": "^1.0.5",
         "maileryio/mailery-activity-log": "dev-master",
