@@ -19,7 +19,7 @@
 "@composer-asset/maileryio--mailery-channel-amazon-ses@file:./vendor/foxy/composer-asset/maileryio/mailery-channel-amazon-ses":
   version "1.0.0"
 
-"@composer-asset/maileryio--mailery-channel-email@file:./vendor/foxy/composer-asset/maileryio/mailery-channel-email":
+"@composer-asset/maileryio--mailery-channel-smtp@file:./vendor/foxy/composer-asset/maileryio/mailery-channel-smtp":
   version "1.0.0"
 
 "@composer-asset/maileryio--mailery-channel@file:./vendor/foxy/composer-asset/maileryio/mailery-channel":
@@ -103,9 +103,14 @@
   dependencies:
     "@maileryio/widget-search-assets" "git+ssh://git@github.com/maileryio/widget-search-assets.git#master"
 
+"@composer-asset/maileryio--widget-select@file:./vendor/foxy/composer-asset/maileryio/widget-select":
+  version "1.0.0"
+  dependencies:
+    "@maileryio/widget-select-assets" "git+ssh://git@github.com/maileryio/widget-select-assets.git#master"
+
 "@maileryio/mailery-assets@git+ssh://git@github.com/maileryio/mailery-assets.git#master":
   version "1.0.2"
-  resolved "git+ssh://git@github.com/maileryio/mailery-assets.git#1453d9c97014ca3c870f99fa54058d0908d1eaf6"
+  resolved "git+ssh://git@github.com/maileryio/mailery-assets.git#0c797c2f5e7bed184fdcd241465a015ca4f23c42"
   dependencies:
     bootstrap-vue "^2.21.2"
     vue "^2.6.11"
@@ -124,7 +129,7 @@
 
 "@maileryio/mailery-subscriber-assets@git+ssh://git@github.com/maileryio/mailery-subscriber-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/mailery-subscriber-assets.git#774155d59bca58a6b1ddf3ae90bfe470b57b87de"
+  resolved "git+ssh://git@github.com/maileryio/mailery-subscriber-assets.git#ecfeaaafe11c9300916efd61b3d721cbcb39ae79"
   dependencies:
     lodash "^4.17.15"
     mime-types "^2.1.27"
@@ -145,6 +150,12 @@
 "@maileryio/widget-search-assets@git+ssh://git@github.com/maileryio/widget-search-assets.git#master":
   version "1.0.0"
   resolved "git+ssh://git@github.com/maileryio/widget-search-assets.git#ef776403c5f574613d1acd7f8467e8c17241e853"
+
+"@maileryio/widget-select-assets@git+ssh://git@github.com/maileryio/widget-select-assets.git#master":
+  version "1.0.0"
+  resolved "git+ssh://git@github.com/maileryio/widget-select-assets.git#e154dc96bcf8e4e8b1def454259305875cdf21c8"
+  dependencies:
+    vue-select "^3.18.3"
 
 "@nuxt/opencollective@^0.3.2":
   version "0.3.2"
@@ -298,6 +309,11 @@ vue-functional-data-merge@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/vue-functional-data-merge/-/vue-functional-data-merge-3.1.0.tgz#08a7797583b7f35680587f8a1d51d729aa1dc657"
   integrity sha512-leT4kdJVQyeZNY1kmnS1xiUlQ9z1B/kdBFCILIjYYQDqZgLqCLa0UhjSSeRX6c3mUe6U5qYeM8LrEqkHJ1B4LA==
+
+vue-select@^3.18.3:
+  version "3.18.3"
+  resolved "https://registry.yarnpkg.com/vue-select/-/vue-select-3.18.3.tgz#31f188d7181a4a86d07b937303c457efe863c4bc"
+  integrity sha512-nKmwxEDO4RRoZ6lWkkVE2bpgne7IJSRzSh1pIawLI7dJLZbtJuSgA0xGaLrT0pUp+JYHBDul242PwOBDHi28vg==
 
 vue-typeahead@^2.3.2:
   version "2.3.2"

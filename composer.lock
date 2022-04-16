@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0aa31b7027cbec066f48de10bc17c1a",
+    "content-hash": "d72c8bff8b666aef701f78291c453e4f",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -2434,17 +2434,17 @@
             "time": "2022-03-23T22:40:29+00:00"
         },
         {
-            "name": "maileryio/mailery-channel-email",
+            "name": "maileryio/mailery-channel-smtp",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/maileryio/mailery-channel-email.git",
-                "reference": "c84d90a47c05502d3d1fa0923d5cfee99f653f63"
+                "url": "https://github.com/maileryio/mailery-channel-smtp.git",
+                "reference": "e899b08cc7b0d3aba60b241d5e8823d937ecccfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-channel-email/zipball/c84d90a47c05502d3d1fa0923d5cfee99f653f63",
-                "reference": "c84d90a47c05502d3d1fa0923d5cfee99f653f63",
+                "url": "https://api.github.com/repos/maileryio/mailery-channel-smtp/zipball/e899b08cc7b0d3aba60b241d5e8823d937ecccfe",
+                "reference": "e899b08cc7b0d3aba60b241d5e8823d937ecccfe",
                 "shasum": ""
             },
             "require": {
@@ -2475,26 +2475,26 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Mailery\\Channel\\Email\\": "src"
+                    "Mailery\\Channel\\Smtp\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "Email channel module for Mailery Platform",
-            "homepage": "https://github.com/maileryio/mailery-channel-email",
+            "description": "SMTP channel module for Mailery Platform",
+            "homepage": "https://github.com/maileryio/mailery-channel-smtp",
             "keywords": [
                 "mail",
                 "mailer",
                 "mailinig"
             ],
             "support": {
-                "issues": "https://github.com/maileryio/mailery-channel-email/issues",
-                "source": "https://github.com/maileryio/mailery-channel-email",
-                "wiki": "https://github.com/maileryio/mailery-channel-email/wiki"
+                "issues": "https://github.com/maileryio/mailery-channel-smtp/issues",
+                "source": "https://github.com/maileryio/mailery-channel-smtp",
+                "wiki": "https://github.com/maileryio/mailery-channel-smtp/wiki"
             },
-            "time": "2022-03-23T22:40:21+00:00"
+            "time": "2022-04-13T22:00:06+00:00"
         },
         {
             "name": "maileryio/mailery-common",
@@ -3919,6 +3919,59 @@
                 "wiki": "https://github.com/maileryio/widget-search/wiki"
             },
             "time": "2022-03-11T06:29:38+00:00"
+        },
+        {
+            "name": "maileryio/widget-select",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maileryio/widget-select.git",
+                "reference": "06094b7490d1f7aa2a2235e3a8dc15aacdb4d05a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maileryio/widget-select/zipball/06094b7490d1f7aa2a2235e3a8dc15aacdb4d05a",
+                "reference": "06094b7490d1f7aa2a2235e3a8dc15aacdb4d05a",
+                "shasum": ""
+            },
+            "require": {
+                "foxy/foxy": "^1.0",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phan/phan": "^2.4",
+                "phpunit/phpunit": "^9.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mailery\\Widget\\Select\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Select Widget for Mailery Platform",
+            "homepage": "https://github.com/maileryio/widget-select",
+            "keywords": [
+                "select",
+                "widget",
+                "yii"
+            ],
+            "support": {
+                "issues": "https://github.com/maileryio/widget-select/issues",
+                "source": "https://github.com/maileryio/widget-select",
+                "wiki": "https://github.com/maileryio/widget-select/wiki"
+            },
+            "time": "2022-04-16T19:37:19+00:00"
         },
         {
             "name": "mesour/dns-checker",
@@ -10869,17 +10922,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/validator.git",
-                "reference": "1ce067ebb08120b9c7540fc23cbfbb5000145726"
+                "reference": "e94fe51063a7f2073cac28a9acfaf5220d4e3646"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/validator/zipball/1ce067ebb08120b9c7540fc23cbfbb5000145726",
-                "reference": "1ce067ebb08120b9c7540fc23cbfbb5000145726",
+                "url": "https://api.github.com/repos/yiisoft/validator/zipball/e94fe51063a7f2073cac28a9acfaf5220d4e3646",
+                "reference": "e94fe51063a7f2073cac28a9acfaf5220d4e3646",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
+                "jetbrains/phpstorm-attributes": "^1.0",
                 "php": "^8.0",
                 "yiisoft/arrays": "^2.0",
                 "yiisoft/friendly-exception": "^1.0",
@@ -10941,7 +10995,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-03-30T17:48:30+00:00"
+            "time": "2022-04-13T12:51:49+00:00"
         },
         {
             "name": "yiisoft/var-dumper",
@@ -15618,7 +15672,7 @@
         "maileryio/mailery-campaign-standard": 20,
         "maileryio/mailery-channel": 20,
         "maileryio/mailery-channel-amazon-ses": 20,
-        "maileryio/mailery-channel-email": 20,
+        "maileryio/mailery-channel-smtp": 20,
         "maileryio/mailery-dashboard": 20,
         "maileryio/mailery-icon-material": 20,
         "maileryio/mailery-menu-navbar": 20,
@@ -15636,6 +15690,7 @@
         "maileryio/mailery-web": 20,
         "maileryio/widget-link": 20,
         "maileryio/widget-search": 20,
+        "maileryio/widget-select": 20,
         "yiisoft/data": 20,
         "yiisoft/form": 20,
         "yiisoft/rbac": 20,

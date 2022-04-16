@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 return [
     'yiisoft/yii-debug' => [
-        'enabled' => false,//true
+        'enabled' => true,
     ],
 
     'yiisoft/yii-debug-api' => [
-        'enabled' => false,//true
+        'enabled' => true,
         'allowedIPs' => ['*'],
     ],
 ];

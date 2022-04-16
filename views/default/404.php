@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * @var \Yiisoft\Router\UrlGeneratorInterface $urlGenerator
+ * @var \Yiisoft\Router\UrlGeneratorInterface $url
  */
 
 use Yiisoft\Html\Html;
@@ -24,7 +24,7 @@ use Yiisoft\Html\Html;
         <p>
             <?php echo Html::a(
                 'Go Back Home',
-                $urlGenerator->generate('/default/index'),
+                $url->generate('/default/index'),
                 ['class' => 'btn btn-outline-primary mt-5']
             );
             ?>

@@ -7,7 +7,7 @@
         "@composer-asset/maileryio--mailery-campaign-standard": "file:./vendor/foxy/composer-asset/maileryio/mailery-campaign-standard",
         "@composer-asset/maileryio--mailery-channel": "file:./vendor/foxy/composer-asset/maileryio/mailery-channel",
         "@composer-asset/maileryio--mailery-channel-amazon-ses": "file:./vendor/foxy/composer-asset/maileryio/mailery-channel-amazon-ses",
-        "@composer-asset/maileryio--mailery-channel-email": "file:./vendor/foxy/composer-asset/maileryio/mailery-channel-email",
+        "@composer-asset/maileryio--mailery-channel-smtp": "file:./vendor/foxy/composer-asset/maileryio/mailery-channel-smtp",
         "@composer-asset/maileryio--mailery-dashboard": "file:./vendor/foxy/composer-asset/maileryio/mailery-dashboard",
         "@composer-asset/maileryio--mailery-icon": "file:./vendor/foxy/composer-asset/maileryio/mailery-icon",
         "@composer-asset/maileryio--mailery-icon-material": "file:./vendor/foxy/composer-asset/maileryio/mailery-icon-material",
@@ -29,6 +29,7 @@
         "@composer-asset/maileryio--mailery-web": "file:./vendor/foxy/composer-asset/maileryio/mailery-web",
         "@composer-asset/maileryio--widget-dataview": "file:./vendor/foxy/composer-asset/maileryio/widget-dataview",
         "@composer-asset/maileryio--widget-link": "file:./vendor/foxy/composer-asset/maileryio/widget-link",
-        "@composer-asset/maileryio--widget-search": "file:./vendor/foxy/composer-asset/maileryio/widget-search"
+        "@composer-asset/maileryio--widget-search": "file:./vendor/foxy/composer-asset/maileryio/widget-search",
+        "@composer-asset/maileryio--widget-select": "file:./vendor/foxy/composer-asset/maileryio/widget-select"
     }
 }
