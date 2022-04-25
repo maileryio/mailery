@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d72c8bff8b666aef701f78291c453e4f",
+    "content-hash": "61dcfbc9a3a264868fd5dbd2cd215bf0",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -2373,12 +2373,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-channel-amazon-ses.git",
-                "reference": "e934bd491f210746fe6e1eba2af0e971b5d827e6"
+                "reference": "9cf49f35cc7346cc69b277921a701ee5b000ce37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-channel-amazon-ses/zipball/e934bd491f210746fe6e1eba2af0e971b5d827e6",
-                "reference": "e934bd491f210746fe6e1eba2af0e971b5d827e6",
+                "url": "https://api.github.com/repos/maileryio/mailery-channel-amazon-ses/zipball/9cf49f35cc7346cc69b277921a701ee5b000ce37",
+                "reference": "9cf49f35cc7346cc69b277921a701ee5b000ce37",
                 "shasum": ""
             },
             "require": {
@@ -2410,7 +2410,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Mailery\\Channel\\Amazon\\SES\\": "src"
+                    "Mailery\\Channel\\Amazon\\Ses\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2431,7 +2431,7 @@
                 "source": "https://github.com/maileryio/mailery-channel-amazon-ses",
                 "wiki": "https://github.com/maileryio/mailery-channel-amazon-ses/wiki"
             },
-            "time": "2022-03-23T22:40:29+00:00"
+            "time": "2022-04-13T22:00:09+00:00"
         },
         {
             "name": "maileryio/mailery-channel-smtp",
@@ -3972,6 +3972,59 @@
                 "wiki": "https://github.com/maileryio/widget-select/wiki"
             },
             "time": "2022-04-16T19:37:19+00:00"
+        },
+        {
+            "name": "maileryio/widget-typeahead",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maileryio/widget-typeahead.git",
+                "reference": "63be3a8f92567f0aebcdda210df781caebecc44e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maileryio/widget-typeahead/zipball/63be3a8f92567f0aebcdda210df781caebecc44e",
+                "reference": "63be3a8f92567f0aebcdda210df781caebecc44e",
+                "shasum": ""
+            },
+            "require": {
+                "foxy/foxy": "^1.0",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phan/phan": "^2.4",
+                "phpunit/phpunit": "^9.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mailery\\Widget\\Typeahead\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Typeahead Widget for Mailery Platform",
+            "homepage": "https://github.com/maileryio/widget-typeahead",
+            "keywords": [
+                "typeahead",
+                "widget",
+                "yii"
+            ],
+            "support": {
+                "issues": "https://github.com/maileryio/widget-typeahead/issues",
+                "source": "https://github.com/maileryio/widget-typeahead",
+                "wiki": "https://github.com/maileryio/widget-typeahead/wiki"
+            },
+            "time": "2022-04-23T22:08:02+00:00"
         },
         {
             "name": "mesour/dns-checker",
@@ -15691,6 +15744,7 @@
         "maileryio/widget-link": 20,
         "maileryio/widget-search": 20,
         "maileryio/widget-select": 20,
+        "maileryio/widget-typeahead": 20,
         "yiisoft/data": 20,
         "yiisoft/form": 20,
         "yiisoft/rbac": 20,

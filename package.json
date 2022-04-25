@@ -30,6 +30,7 @@
         "@composer-asset/maileryio--widget-dataview": "file:./vendor/foxy/composer-asset/maileryio/widget-dataview",
         "@composer-asset/maileryio--widget-link": "file:./vendor/foxy/composer-asset/maileryio/widget-link",
         "@composer-asset/maileryio--widget-search": "file:./vendor/foxy/composer-asset/maileryio/widget-search",
-        "@composer-asset/maileryio--widget-select": "file:./vendor/foxy/composer-asset/maileryio/widget-select"
+        "@composer-asset/maileryio--widget-select": "file:./vendor/foxy/composer-asset/maileryio/widget-select",
+        "@composer-asset/maileryio--widget-typeahead": "file:./vendor/foxy/composer-asset/maileryio/widget-typeahead"
     }
 }

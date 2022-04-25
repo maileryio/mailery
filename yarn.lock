@@ -108,6 +108,11 @@
   dependencies:
     "@maileryio/widget-select-assets" "git+ssh://git@github.com/maileryio/widget-select-assets.git#master"
 
+"@composer-asset/maileryio--widget-typeahead@file:./vendor/foxy/composer-asset/maileryio/widget-typeahead":
+  version "1.0.0"
+  dependencies:
+    "@maileryio/widget-typeahead-assets" "git+ssh://git@github.com/maileryio/widget-typeahead-assets.git#master"
+
 "@maileryio/mailery-assets@git+ssh://git@github.com/maileryio/mailery-assets.git#master":
   version "1.0.2"
   resolved "git+ssh://git@github.com/maileryio/mailery-assets.git#0c797c2f5e7bed184fdcd241465a015ca4f23c42"
@@ -122,7 +127,7 @@
 
 "@maileryio/mailery-rbac-assets@git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#6e3bf4c14c0e42710065b7faa146472de721b56e"
+  resolved "git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#294fca18cc0e7e47a13a86997b71e4e2c7f5e20a"
   dependencies:
     liquor-tree "^0.2.70"
     vue-typeahead "^2.3.2"
@@ -153,9 +158,14 @@
 
 "@maileryio/widget-select-assets@git+ssh://git@github.com/maileryio/widget-select-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/widget-select-assets.git#e154dc96bcf8e4e8b1def454259305875cdf21c8"
+  resolved "git+ssh://git@github.com/maileryio/widget-select-assets.git#ba4f754e295a5750cebfe6217a3d3f7b30d02ba7"
   dependencies:
+    lodash "^4.17.15"
     vue-select "^3.18.3"
+
+"@maileryio/widget-typeahead-assets@git+ssh://git@github.com/maileryio/widget-typeahead-assets.git#master":
+  version "1.0.0"
+  resolved "git+ssh://git@github.com/maileryio/widget-typeahead-assets.git#8b2191a84e3433562c06c72b89cef4b875c8b2aa"
 
 "@nuxt/opencollective@^0.3.2":
   version "0.3.2"
@@ -182,17 +192,17 @@ babel-runtime@^6.0.0:
     regenerator-runtime "^0.11.0"
 
 bootstrap-vue@^2.21.2:
-  version "2.21.2"
-  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.21.2.tgz#ec38f66c3a2205becccddb6158a991d96509ed0b"
-  integrity sha512-0Exe+4MZysqhZNXIKf4TzkvXaupxh9EHsoCRez0o5Dc0J7rlafayOEwql63qXv74CgZO8E4U8ugRNJko1vMvNw==
+  version "2.22.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-vue/-/bootstrap-vue-2.22.0.tgz#2b3d7926d24af0bd289ddce7ba76b07000aab3e5"
+  integrity sha512-denjR/ae0K7Jrcqud3TrZWw0p/crtyigeGUNunWQ4t+KFi+7rzJ6j6lx1W5/gpUtSSUgNbWrXcHH4lIWXzXOOQ==
   dependencies:
     "@nuxt/opencollective" "^0.3.2"
-    bootstrap ">=4.5.3 <5.0.0"
+    bootstrap "^4.6.1"
     popper.js "^1.16.1"
     portal-vue "^2.1.7"
     vue-functional-data-merge "^3.1.0"
 
-"bootstrap@>=4.5.3 <5.0.0":
+bootstrap@^4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.6.1.tgz#bc25380c2c14192374e8dec07cf01b2742d222a2"
   integrity sha512-0dj+VgI9Ecom+rvvpNZ4MUZJz8dcX7WCX+eTID9+/8HgOkv3dsRzi8BGeZJCQU6flWQVYxwTQnEZFrmJSEO7og==
