@@ -45,6 +45,7 @@ use Yiisoft\Aliases\Aliases;
 use Yiisoft\Translator\MessageFormatterInterface;
 use Yiisoft\Translator\CategorySource;
 use Yiisoft\Translator\Message\Php\MessageSource;
+use Yiisoft\Yii\Cycle\Logger\StdoutQueryLogger;
 
 return [
     'middlewares' => [
@@ -142,7 +143,7 @@ return [
 
     'yiisoft/yii-cycle' => [
         'dbal' => [
-            'query-logger' => null,
+            'query-logger' => StdoutQueryLogger::class,
             'default' => 'default',
             'aliases' => [],
             'databases' => [
