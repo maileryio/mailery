@@ -2,9 +2,9 @@
 
 use Mailery\Menu\Widget\Menu;
 
-/** @var \Yiisoft\View\WebView $this */
+/** @var Yiisoft\View\WebView $this */
 /** @var \Psr\Http\Message\ServerRequestInterface $request */
-/** @var \Mailery\Menu\Sidebar\SidebarMenu $sidebarMenu */
+/** @var Mailery\Menu\Sidebar\SidebarMenu $sidebarMenu */
 ?><ui-sidebar>
     <nav class="col-lg-2 col-md-3 d-none d-md-block sidebar">
         <div class="sidebar-sticky">

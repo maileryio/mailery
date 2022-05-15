@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 /** @var Mailery\Web\View\WebView $this */
-/** @var \Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
+/** @var Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
 $cssClass = 'ml-sm-auto col-lg-12 pb-3 px-4 footer-sticky';
 if ($brandLocator->hasBrand()) {
     $cssClass = 'col-md-9 ml-sm-auto col-lg-10 pb-3 px-4 footer-sticky';

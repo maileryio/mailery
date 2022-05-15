@@ -15,6 +15,8 @@
 
 "@composer-asset/maileryio--mailery-campaign@file:./vendor/foxy/composer-asset/maileryio/mailery-campaign":
   version "1.0.0"
+  dependencies:
+    "@maileryio/mailery-campaign-assets" "git+ssh://git@github.com/maileryio/mailery-campaign-assets.git#master"
 
 "@composer-asset/maileryio--mailery-channel-amazon-ses@file:./vendor/foxy/composer-asset/maileryio/mailery-channel-amazon-ses":
   version "1.0.0"
@@ -125,6 +127,10 @@
   version "1.0.0"
   resolved "git+ssh://git@github.com/maileryio/mailery-brand-assets.git#6af1b920de133adb32c652468f3dbf0139337a46"
 
+"@maileryio/mailery-campaign-assets@git+ssh://git@github.com/maileryio/mailery-campaign-assets.git#master":
+  version "1.0.0"
+  resolved "git+ssh://git@github.com/maileryio/mailery-campaign-assets.git#745a49f0992c5d76d16b8b58d81a32ac867884b5"
+
 "@maileryio/mailery-rbac-assets@git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#master":
   version "1.0.0"
   resolved "git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#294fca18cc0e7e47a13a86997b71e4e2c7f5e20a"
@@ -158,14 +164,14 @@
 
 "@maileryio/widget-select-assets@git+ssh://git@github.com/maileryio/widget-select-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/widget-select-assets.git#ba4f754e295a5750cebfe6217a3d3f7b30d02ba7"
+  resolved "git+ssh://git@github.com/maileryio/widget-select-assets.git#eb658d0bb65234608ac29753021b2c98a333aed0"
   dependencies:
     lodash "^4.17.15"
     vue-select "^3.18.3"
 
 "@maileryio/widget-typeahead-assets@git+ssh://git@github.com/maileryio/widget-typeahead-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/widget-typeahead-assets.git#8b2191a84e3433562c06c72b89cef4b875c8b2aa"
+  resolved "git+ssh://git@github.com/maileryio/widget-typeahead-assets.git#c48ca11572df6b043e3049abad2a250d7123eb24"
 
 "@nuxt/opencollective@^0.3.2":
   version "0.3.2"

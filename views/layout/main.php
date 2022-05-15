@@ -5,10 +5,10 @@ declare(strict_types=1);
 use Mailery\Web\Assets\AppAssetBundle;
 use Yiisoft\Html\Html;
 
-/** @var \Yiisoft\View\WebView $this */
-/** @var \Yiisoft\Assets\AssetManager $assetManager */
-/** @var \Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
-/** @var \Mailery\Assets\AssetBundleRegistry $assetBundleRegistry */
+/** @var Yiisoft\View\WebView $this */
+/** @var Yiisoft\Assets\AssetManager $assetManager */
+/** @var Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
+/** @var Mailery\Assets\AssetBundleRegistry $assetBundleRegistry */
 /** @var $content string */
 $headerContent = $this->render('_header', compact('brandLabel'));
 $footerContent = $this->render('_footer');
@@ -22,9 +22,7 @@ if ($brandLocator->hasBrand()) {
 
 $assetBundleRegistry->add(AppAssetBundle::class);
 
-foreach ($assetBundleRegistry->getAll() as $assetBundle) {
-    $assetManager->register($assetBundle);
-}
+$assetManager->registerMany($assetBundleRegistry->getAll());
 
 $this->addCssFiles($assetManager->getCssFiles());
 $this->addJsFiles($assetManager->getJsFiles());

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * @var \Yiisoft\Router\UrlGeneratorInterface $url
+ * @var Yiisoft\Router\UrlGeneratorInterface $url
  */
 
 use Yiisoft\Html\Html;

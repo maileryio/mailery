@@ -5,9 +5,9 @@ declare(strict_types=1);
 use Mailery\Web\Assets\AppAssetBundle;
 use Yiisoft\Html\Html;
 
-/** @var \Yiisoft\View\WebView $this */
-/** @var \Yiisoft\Assets\AssetManager $assetManager */
-/** @var \Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
+/** @var Yiisoft\View\WebView $this */
+/** @var Yiisoft\Assets\AssetManager $assetManager */
+/** @var Mailery\Brand\Service\BrandLocatorInterface $brandLocator */
 /** @var $content string */
 
 $assetManager->register(AppAssetBundle::class);

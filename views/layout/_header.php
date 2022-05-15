@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-/** @var \Yiisoft\View\WebView $this */
-/** @var \Mailery\Menu\Navbar\NavbarMenu $navbarMenu */
+/** @var Yiisoft\View\WebView $this */
+/** @var Mailery\Menu\Navbar\NavbarMenu $navbarMenu */
 
 use Mailery\Icon\Icon;
 use Mailery\Menu\MenuItem;

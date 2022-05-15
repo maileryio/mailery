@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-/** @var \Yiisoft\View\WebView $this */
+/** @var Yiisoft\View\WebView $this */
 /** @var $content string */
 /** @var $headerContent string */
 /** @var $footerContent string */

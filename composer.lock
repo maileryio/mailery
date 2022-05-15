@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61dcfbc9a3a264868fd5dbd2cd215bf0",
+    "content-hash": "1129d850bbfd8df96393d06f48640b1d",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -2249,16 +2249,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-campaign-standard.git",
-                "reference": "430899c371fec770c2eea6ee8882195856836210"
+                "reference": "96753582547a3475cff89695597c61077ed9fd12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-campaign-standard/zipball/430899c371fec770c2eea6ee8882195856836210",
-                "reference": "430899c371fec770c2eea6ee8882195856836210",
+                "url": "https://api.github.com/repos/maileryio/mailery-campaign-standard/zipball/96753582547a3475cff89695597c61077ed9fd12",
+                "reference": "96753582547a3475cff89695597c61077ed9fd12",
                 "shasum": ""
             },
             "require": {
                 "foxy/foxy": "^1.0",
+                "maileryio/widget-select": "dev-master",
                 "php": "^7.4"
             },
             "require-dev": {
@@ -2303,7 +2304,7 @@
                 "source": "https://github.com/maileryio/mailery-campaign-standard",
                 "wiki": "https://github.com/maileryio/mailery-campaign-standard/wiki"
             },
-            "time": "2022-03-23T22:40:11+00:00"
+            "time": "2022-05-15T11:48:09+00:00"
         },
         {
             "name": "maileryio/mailery-channel",
@@ -2984,12 +2985,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-rbac.git",
-                "reference": "bbf1ef091b02ab6a0fae69d6bde68eb818ec5d5a"
+                "reference": "83ee7c07fb2b746fb1e5bca16348b853bca518ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-rbac/zipball/bbf1ef091b02ab6a0fae69d6bde68eb818ec5d5a",
-                "reference": "bbf1ef091b02ab6a0fae69d6bde68eb818ec5d5a",
+                "url": "https://api.github.com/repos/maileryio/mailery-rbac/zipball/83ee7c07fb2b746fb1e5bca16348b853bca518ea",
+                "reference": "83ee7c07fb2b746fb1e5bca16348b853bca518ea",
                 "shasum": ""
             },
             "require": {
@@ -2998,6 +2999,7 @@
                 "maileryio/mailery-web": "dev-master",
                 "maileryio/widget-dataview": "dev-master",
                 "maileryio/widget-link": "dev-master",
+                "maileryio/widget-typeahead": "dev-master",
                 "php": "^7.4",
                 "symfony/mime": "^5.1"
             },
@@ -3045,7 +3047,7 @@
                 "source": "https://github.com/maileryio/mailery-rbac",
                 "wiki": "https://github.com/maileryio/mailery-rbac/wiki"
             },
-            "time": "2022-03-22T12:48:54+00:00"
+            "time": "2022-05-15T11:48:11+00:00"
         },
         {
             "name": "maileryio/mailery-sender",
@@ -3979,12 +3981,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/widget-typeahead.git",
-                "reference": "63be3a8f92567f0aebcdda210df781caebecc44e"
+                "reference": "245c68fa113df9964c2f03e85d71bfb1caffe49e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/widget-typeahead/zipball/63be3a8f92567f0aebcdda210df781caebecc44e",
-                "reference": "63be3a8f92567f0aebcdda210df781caebecc44e",
+                "url": "https://api.github.com/repos/maileryio/widget-typeahead/zipball/245c68fa113df9964c2f03e85d71bfb1caffe49e",
+                "reference": "245c68fa113df9964c2f03e85d71bfb1caffe49e",
                 "shasum": ""
             },
             "require": {
@@ -4024,7 +4026,7 @@
                 "source": "https://github.com/maileryio/widget-typeahead",
                 "wiki": "https://github.com/maileryio/widget-typeahead/wiki"
             },
-            "time": "2022-04-23T22:08:02+00:00"
+            "time": "2022-04-25T10:08:13+00:00"
         },
         {
             "name": "mesour/dns-checker",
@@ -15741,10 +15743,6 @@
         "maileryio/mailery-template-email": 20,
         "maileryio/mailery-user": 20,
         "maileryio/mailery-web": 20,
-        "maileryio/widget-link": 20,
-        "maileryio/widget-search": 20,
-        "maileryio/widget-select": 20,
-        "maileryio/widget-typeahead": 20,
         "yiisoft/data": 20,
         "yiisoft/form": 20,
         "yiisoft/rbac": 20,
