@@ -10,6 +10,7 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2020, Mailery (https://mailery.io/)
  */
 
+use Mailery\Middleware\NotFoundCatcher;
 use Mailery\ViewInjection\CommonViewInjection;
 use Mailery\ViewInjection\LayoutViewInjection;
 use Mailery\ViewInjection\LinkTagsViewInjection;
@@ -50,6 +51,7 @@ use Yiisoft\Yii\Cycle\Logger\StdoutQueryLogger;
 return [
     'middlewares' => [
         ErrorCatcher::class,
+        NotFoundCatcher::class,
         SessionMiddleware::class,
         CookieMiddleware::class,
         CookieLoginMiddleware::class,
