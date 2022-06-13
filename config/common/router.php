@@ -12,9 +12,10 @@ use Yiisoft\Router\RouteCollectorInterface;
 use Yiisoft\Yii\Debug\Viewer\Middleware\ToolbarMiddleware;
 
 /** @var Config $config */
+/** @var array $params */
 
 return [
-    RouteCollectionInterface::class => static function (RouteCollectorInterface $collector) use ($config) {
+    RouteCollectionInterface::class => static function (RouteCollectorInterface $collector) use ($config, $params) {
         $collector
             ->middleware(CsrfMiddleware::class)
             ->middleware(FormatDataResponse::class)
@@ -23,7 +24,7 @@ return [
                     ->routes(...$config->get('routes'))
             );
 
-        if (!str_starts_with($_ENV['YII_ENV'] ?: '', 'prod')) {
+        if ($params['yiisoft/yii-debug']['enabled'] ?? false) {
             $collector->middleware(ToolbarMiddleware::class);
         }
 
