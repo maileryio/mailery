@@ -327,4 +327,15 @@ return [
             ],
         ],
     ],
+
+    'maileryio/mailery-setting' => [
+        'groups' => [
+            'general' => [
+                'order' => 1,
+            ],
+            'user' => [
+                'order' => 2,
+            ],
+        ],
+    ],
 ];

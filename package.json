@@ -28,6 +28,7 @@
         "@composer-asset/maileryio--mailery-user": "file:./vendor/foxy/composer-asset/maileryio/mailery-user",
         "@composer-asset/maileryio--mailery-web": "file:./vendor/foxy/composer-asset/maileryio/mailery-web",
         "@composer-asset/maileryio--widget-dataview": "file:./vendor/foxy/composer-asset/maileryio/widget-dataview",
+        "@composer-asset/maileryio--widget-datepicker": "file:./vendor/foxy/composer-asset/maileryio/widget-datepicker",
         "@composer-asset/maileryio--widget-link": "file:./vendor/foxy/composer-asset/maileryio/widget-link",
         "@composer-asset/maileryio--widget-search": "file:./vendor/foxy/composer-asset/maileryio/widget-search",
         "@composer-asset/maileryio--widget-select": "file:./vendor/foxy/composer-asset/maileryio/widget-select",
