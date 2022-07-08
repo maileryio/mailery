@@ -113,12 +113,8 @@ return [
 
     'yiisoft/view' => [
         'parameters' => [
-            'assetManager' => Reference::to(AssetManager::class),
             'url' => Reference::to(UrlGeneratorInterface::class),
             'currentRoute' => Reference::to(CurrentRoute::class),
-            'navbarMenu' => Reference::to(NavbarMenu::class),
-            'sidebarMenu' => Reference::to(SidebarMenu::class),
-            'brandLocator' => Reference::to(BrandLocatorInterface::class),
             'translator' => Reference::to(TranslatorInterface::class),
         ],
     ],
@@ -145,7 +141,7 @@ return [
 
     'yiisoft/yii-cycle' => [
         'dbal' => [
-            'query-logger' => StdoutQueryLogger::class,
+            'query-logger' => PHP_SAPI === 'cli' ? null : StdoutQueryLogger::class,
             'default' => 'default',
             'aliases' => [],
             'databases' => [

@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@babel/parser@^7.18.4":
+  version "7.18.6"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.6.tgz#845338edecad65ebffef058d3be851f1d28a63bc"
+  integrity sha512-uQVSa9jJUe/G/304lXspfWVpKpK4euFLgGiMQFOCpM/bgcAdeoHwi/OQz23O9GK2osz26ZiXRRV9aV+Yl1O8tw==
+
 "@composer-asset/maileryio--mailery-activity-log@file:./vendor/foxy/composer-asset/maileryio/mailery-activity-log":
   version "1.0.0"
 
@@ -122,7 +127,7 @@
 
 "@maileryio/mailery-assets@git+ssh://git@github.com/maileryio/mailery-assets.git#master":
   version "1.0.2"
-  resolved "git+ssh://git@github.com/maileryio/mailery-assets.git#03e6161cdd8e69441e3b5fc2cad20f76b1b678bf"
+  resolved "git+ssh://git@github.com/maileryio/mailery-assets.git#7a8f69f5670f220b03baa098bcee5c0fb5b0cc03"
   dependencies:
     bootstrap-vue "^2.21.2"
     vue "^2.6.11"
@@ -134,9 +139,9 @@
 
 "@maileryio/mailery-campaign-assets@git+ssh://git@github.com/maileryio/mailery-campaign-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/mailery-campaign-assets.git#44b3864830b0d1e519571147affae3a1e48477a7"
+  resolved "git+ssh://git@github.com/maileryio/mailery-campaign-assets.git#1b89440bc39f5394204e18d8c37be15cf9421ff0"
   dependencies:
-    moment "^2.29.3"
+    moment-timezone "^0.5.34"
 
 "@maileryio/mailery-rbac-assets@git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#master":
   version "1.0.0"
@@ -161,13 +166,13 @@
 
 "@maileryio/widget-datepicker-assets@git+ssh://git@github.com/maileryio/widget-datepicker-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/widget-datepicker-assets.git#bc0a73a7672b76dd2a735b4a8d7e858ee4f43142"
+  resolved "git+ssh://git@github.com/maileryio/widget-datepicker-assets.git#aa54fcfc779fc1138151a0be728cc988a97046dd"
   dependencies:
     vue2-datepicker "^3.11.0"
 
 "@maileryio/widget-link-assets@git+ssh://git@github.com/maileryio/widget-link-assets.git#master":
   version "1.0.6"
-  resolved "git+ssh://git@github.com/maileryio/widget-link-assets.git#474858e8d7f28ce6ef1bfd5a3890fefd62f64c60"
+  resolved "git+ssh://git@github.com/maileryio/widget-link-assets.git#050ad999341d29458824f7683f10fa90ea1647ec"
   dependencies:
     vue "^2.6.11"
 
@@ -194,6 +199,15 @@
     chalk "^4.1.0"
     consola "^2.15.0"
     node-fetch "^2.6.7"
+
+"@vue/compiler-sfc@2.7.3":
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-2.7.3.tgz#6179ed9787e10c270563e0c1b440955bf9dd8342"
+  integrity sha512-/9SO6KeR1ljo+j4Tdkl9zsFG2yY4NQ9p3GKdPVCU99bmkNkTW8g9Tq8SMEvhOfo+RhBC0PdDAOmibl+N37f5YA==
+  dependencies:
+    "@babel/parser" "^7.18.4"
+    postcss "^8.4.14"
+    source-map "^0.6.1"
 
 ansi-styles@^4.1.0:
   version "4.3.0"
@@ -268,6 +282,11 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
+csstype@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
+  integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
+
 date-format-parse@^0.2.7:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/date-format-parse/-/date-format-parse-0.2.7.tgz#a2f78bca857a821785b48abedd4426c65aa7b918"
@@ -300,10 +319,22 @@ mime-types@^2.1.27:
   dependencies:
     mime-db "1.52.0"
 
-moment@^2.29.3:
-  version "2.29.3"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
-  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
+moment-timezone@^0.5.34:
+  version "0.5.34"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.34.tgz#a75938f7476b88f155d3504a9343f7519d9a405c"
+  integrity sha512-3zAEHh2hKUs3EXLESx/wsgw6IQdusOT8Bxm3D9UrHPQR7zlMmzwybC8zHEM1tQ4LJwP7fcxrWr8tuBg05fFCbg==
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0":
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
+
+nanoid@^3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
+  integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
 
 node-fetch@^2.6.7:
   version "2.6.7"
@@ -317,6 +348,11 @@ papaparse@^5.2.0:
   resolved "https://registry.yarnpkg.com/papaparse/-/papaparse-5.3.2.tgz#d1abed498a0ee299f103130a6109720404fbd467"
   integrity sha512-6dNZu0Ki+gyV0eBsFKJhYr+MdQYAzFUGlBMNj3GNrmHxmz1lfRa24CjFObPXtjcetlOv5Ad299MhIK0znp3afw==
 
+picocolors@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.0.tgz#cb5bdc74ff3f51892236eaf79d68bc44564ab81c"
+  integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
+
 popper.js@^1.16.1:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
@@ -327,10 +363,29 @@ portal-vue@^2.1.7:
   resolved "https://registry.yarnpkg.com/portal-vue/-/portal-vue-2.1.7.tgz#ea08069b25b640ca08a5b86f67c612f15f4e4ad4"
   integrity sha512-+yCno2oB3xA7irTt0EU5Ezw22L2J51uKAacE/6hMPMoO/mx3h4rXFkkBkT4GFsMDv/vEe8TNKC3ujJJ0PTwb6g==
 
+postcss@^8.4.14:
+  version "8.4.14"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.14.tgz#ee9274d5622b4858c1007a74d76e42e56fd21caf"
+  integrity sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==
+  dependencies:
+    nanoid "^3.3.4"
+    picocolors "^1.0.0"
+    source-map-js "^1.0.2"
+
 regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
+
+source-map-js@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
+  integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+source-map@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+  integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
 supports-color@^7.1.0:
   version "7.2.0"
@@ -369,9 +424,12 @@ vue2-datepicker@^3.11.0:
     date-format-parse "^0.2.7"
 
 vue@^2.6.11:
-  version "2.6.14"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
-  integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.7.3.tgz#33015b7df481a515d625a2ea20fe01d981085cb7"
+  integrity sha512-7MTirXG7LYJi3r2jeYy7EiXIhEE85uP3kBwSxqwDsvIfy/l7+qR4U6ajw8ji1KoP+wYYg7ZY28TBTf3P3Fa4Nw==
+  dependencies:
+    "@vue/compiler-sfc" "2.7.3"
+    csstype "^3.1.0"
 
 vuex@^3.1.2:
   version "3.6.2"
