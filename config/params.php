@@ -104,12 +104,6 @@ return [
         ],
     ],
 
-    'yiisoft/forms' => [
-        'form' => [
-            'attributes' => [['enctype' => 'multipart/form-data']],
-        ],
-    ],
-
     'yiisoft/session' => [
         'options' => [
             'cookie_secure' => 0,

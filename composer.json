@@ -45,7 +45,7 @@
         "maileryio/mailery-template-email": "dev-master",
         "maileryio/mailery-user": "dev-master",
         "maileryio/mailery-web": "dev-master",
-        "predis/predis": "^1.1",
+        "predis/predis": "^2.0",
         "psr/log": "^2.0|^3.0",
         "vlucas/phpdotenv": "^5.3",
         "yiisoft/access": "^1.0",
@@ -212,6 +212,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/maileryio/portphp"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/maileryio/csv"
         }
     ]
 }

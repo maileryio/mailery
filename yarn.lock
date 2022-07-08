@@ -3,9 +3,9 @@
 
 
 "@babel/parser@^7.18.4":
-  version "7.18.6"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.6.tgz#845338edecad65ebffef058d3be851f1d28a63bc"
-  integrity sha512-uQVSa9jJUe/G/304lXspfWVpKpK4euFLgGiMQFOCpM/bgcAdeoHwi/OQz23O9GK2osz26ZiXRRV9aV+Yl1O8tw==
+  version "7.18.8"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.18.8.tgz#822146080ac9c62dac0823bb3489622e0bc1cbdf"
+  integrity sha512-RSKRfYX20dyH+elbJK2uqAkVyucL+xXzhqlMD5/ZXx+dAAwpyB7HsvnHe/ZUGOF+xLr5Wx9/JoXVTj6BQE2/oA==
 
 "@composer-asset/maileryio--mailery-activity-log@file:./vendor/foxy/composer-asset/maileryio/mailery-activity-log":
   version "1.0.0"
@@ -182,7 +182,7 @@
 
 "@maileryio/widget-select-assets@git+ssh://git@github.com/maileryio/widget-select-assets.git#master":
   version "1.0.0"
-  resolved "git+ssh://git@github.com/maileryio/widget-select-assets.git#fcab83223ea6b16f0f988b1979cba78d64f0ec37"
+  resolved "git+ssh://git@github.com/maileryio/widget-select-assets.git#842e187ecda5fcc5979e152486b101318fbb625c"
   dependencies:
     lodash "^4.17.15"
     vue-select "^3.18.3"
