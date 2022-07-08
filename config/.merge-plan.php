@@ -45,7 +45,13 @@ return [
             'yiisoft/cache-file' => [
                 'config/params.php',
             ],
+            'yiisoft/form' => [
+                'config/params.php',
+            ],
             'yiisoft/mailer-symfony' => [
+                'config/params.php',
+            ],
+            'yiisoft/rbac-rules-container' => [
                 'config/params.php',
             ],
             'yiisoft/router-fastroute' => [
@@ -187,6 +193,9 @@ return [
                 'config/common.php',
             ],
             'yiisoft/mailer-symfony' => [
+                'config/common.php',
+            ],
+            'yiisoft/rbac-rules-container' => [
                 'config/common.php',
             ],
             'yiisoft/router-fastroute' => [
@@ -361,9 +370,6 @@ return [
             'yiisoft/user' => [
                 'config/web.php',
             ],
-            'yiisoft/yii-bootstrap5' => [
-                'config/web/field.php',
-            ],
             'yiisoft/yii-debug-api' => [
                 'config/web.php',
             ],
@@ -471,6 +477,17 @@ return [
                 'rbac/rules.php',
             ],
         ],
+        'bootstrap' => [
+            'yiisoft/form' => [
+                'config/bootstrap.php',
+            ],
+            'yiisoft/widget' => [
+                'config/bootstrap.php',
+            ],
+            '/' => [
+                'bootstrap.php',
+            ],
+        ],
         'console' => [
             'yiisoft/yii-cycle' => [
                 'config/console.php',
@@ -523,14 +540,6 @@ return [
             '/' => [
                 '$providers',
                 'providers-web.php',
-            ],
-        ],
-        'bootstrap' => [
-            'yiisoft/widget' => [
-                'config/bootstrap.php',
-            ],
-            '/' => [
-                'bootstrap.php',
             ],
         ],
         'widgets' => [

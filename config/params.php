@@ -15,11 +15,7 @@ use Mailery\ViewInjection\CommonViewInjection;
 use Mailery\ViewInjection\LayoutViewInjection;
 use Mailery\ViewInjection\LinkTagsViewInjection;
 use Mailery\ViewInjection\MetaTagsViewInjection;
-use Mailery\Menu\Navbar\NavbarMenu;
-use Mailery\Menu\Sidebar\SidebarMenu;
-use Mailery\Brand\BrandLocatorInterface;
 use Mailery\Command\Router\ListCommand;
-use Yiisoft\Assets\AssetManager;
 use Yiisoft\Definitions\Reference;
 use Yiisoft\Router\UrlGeneratorInterface;
 use Yiisoft\Translator\TranslatorInterface;
@@ -47,6 +43,7 @@ use Yiisoft\Translator\MessageFormatterInterface;
 use Yiisoft\Translator\CategorySource;
 use Yiisoft\Translator\Message\Php\MessageSource;
 use Yiisoft\Yii\Cycle\Logger\StdoutQueryLogger;
+use Yiisoft\Form\Field\SubmitButton;
 
 return [
     'middlewares' => [
@@ -81,6 +78,29 @@ return [
             '@vendor' => '@root/vendor',
             '@layout' => '@root/views/layout',
             '@views' => '@root/views',
+        ],
+    ],
+
+    'yiisoft/form' => [
+        'configs' => [
+            'default' => [
+                'enrichmentFromRules' => true,
+                'containerClass' => 'mb-3',
+                'validClass' => 'is-valid',
+                'invalidClass' => 'is-invalid',
+                'inputValidClass' => 'is-valid',
+                'inputInvalidClass' => 'is-invalid',
+                'errorClass' => 'text-danger fst-italic',
+                'hintClass' => 'form-text',
+                'inputClass' => 'form-control',
+                'labelClass' => 'form-label',
+
+                'fieldConfigs' => [
+                    SubmitButton::class => [
+                        'buttonClass()' => ['btn btn-primary float-right mt-2'],
+                    ],
+                ],
+            ],
         ],
     ],
 
