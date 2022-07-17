@@ -50,6 +50,9 @@
 "@composer-asset/maileryio--mailery-menu@file:./vendor/foxy/composer-asset/maileryio/mailery-menu":
   version "1.0.0"
 
+"@composer-asset/maileryio--mailery-messenger@file:./vendor/foxy/composer-asset/maileryio/mailery-messenger":
+  version "1.0.0"
+
 "@composer-asset/maileryio--mailery-queue@file:./vendor/foxy/composer-asset/maileryio/mailery-queue":
   version "1.0.0"
 
@@ -104,6 +107,11 @@
   version "1.0.0"
   dependencies:
     "@maileryio/widget-datepicker-assets" "git+ssh://git@github.com/maileryio/widget-datepicker-assets.git#master"
+
+"@composer-asset/maileryio--widget-highcharts@file:./vendor/foxy/composer-asset/maileryio/widget-highcharts":
+  version "1.0.0"
+  dependencies:
+    "@maileryio/widget-highcharts-assets" "git+ssh://git@github.com/maileryio/widget-highcharts-assets.git#master"
 
 "@composer-asset/maileryio--widget-link@file:./vendor/foxy/composer-asset/maileryio/widget-link":
   version "1.0.0"
@@ -169,6 +177,10 @@
   resolved "git+ssh://git@github.com/maileryio/widget-datepicker-assets.git#aa54fcfc779fc1138151a0be728cc988a97046dd"
   dependencies:
     vue2-datepicker "^3.11.0"
+
+"@maileryio/widget-highcharts-assets@git+ssh://git@github.com/maileryio/widget-highcharts-assets.git#master":
+  version "1.0.0"
+  resolved "git+ssh://git@github.com/maileryio/widget-highcharts-assets.git#15db5eb63cf3b2e1e989060c7d7042e8577739db"
 
 "@maileryio/widget-link-assets@git+ssh://git@github.com/maileryio/widget-link-assets.git#master":
   version "1.0.6"
