@@ -15,9 +15,6 @@ return [
             'maileryio/mailery-channel-amazon-ses' => [
                 'config/params.php',
             ],
-            'maileryio/mailery-channel-smtp' => [
-                'config/params.php',
-            ],
             'maileryio/mailery-dashboard' => [
                 'config/params.php',
             ],
@@ -78,7 +75,7 @@ return [
             'yiisoft/yii-debug-viewer' => [
                 'config/params.php',
             ],
-            'maileryio/mailery-channel' => [
+            'maileryio/mailery-channel-smtp' => [
                 'config/params.php',
             ],
             'maileryio/mailery-queue' => [
@@ -129,6 +126,12 @@ return [
             'maileryio/mailery-user' => [
                 'config/params.php',
             ],
+            'maileryio/mailery-channel' => [
+                'config/params.php',
+            ],
+            'maileryio/mailery-messenger' => [
+                'config/params.php',
+            ],
             'yiisoft/aliases' => [
                 'config/params.php',
             ],
@@ -163,9 +166,6 @@ return [
                 'config/common.php',
             ],
             'maileryio/mailery-channel-amazon-ses' => [
-                'config/common.php',
-            ],
-            'maileryio/mailery-channel-smtp' => [
                 'config/common.php',
             ],
             'maileryio/mailery-rbac' => [
@@ -207,7 +207,7 @@ return [
             'yiisoft/yii-queue' => [
                 'config/common.php',
             ],
-            'maileryio/mailery-channel' => [
+            'maileryio/mailery-channel-smtp' => [
                 'config/common.php',
             ],
             'maileryio/mailery-queue' => [
@@ -244,6 +244,12 @@ return [
                 'config/common.php',
             ],
             'maileryio/mailery-user' => [
+                'config/common.php',
+            ],
+            'maileryio/mailery-channel' => [
+                'config/common.php',
+            ],
+            'maileryio/mailery-messenger' => [
                 'config/common.php',
             ],
             'yiisoft/aliases' => [
@@ -284,9 +290,6 @@ return [
             'maileryio/mailery-channel-amazon-ses' => [
                 'config/routes.php',
             ],
-            'maileryio/mailery-channel-smtp' => [
-                'config/routes.php',
-            ],
             'maileryio/mailery-dashboard' => [
                 'config/routes.php',
             ],
@@ -317,7 +320,7 @@ return [
             'yiisoft/yii-debug-viewer' => [
                 'config/routes.php',
             ],
-            'maileryio/mailery-channel' => [
+            'maileryio/mailery-channel-smtp' => [
                 'config/routes.php',
             ],
             'maileryio/mailery-storage' => [
@@ -327,6 +330,9 @@ return [
                 'config/routes.php',
             ],
             'maileryio/mailery-user' => [
+                'config/routes.php',
+            ],
+            'maileryio/mailery-channel' => [
                 'config/routes.php',
             ],
             'maileryio/mailery-activity-log' => [
@@ -341,9 +347,6 @@ return [
         ],
         'web' => [
             'maileryio/mailery-channel-amazon-ses' => [
-                'config/web.php',
-            ],
-            'maileryio/mailery-channel-smtp' => [
                 'config/web.php',
             ],
             'maileryio/mailery-dashboard' => [
@@ -379,7 +382,7 @@ return [
             'yiisoft/yii-debug-viewer' => [
                 'config/web.php',
             ],
-            'maileryio/mailery-channel' => [
+            'maileryio/mailery-channel-smtp' => [
                 'config/web.php',
             ],
             'yiisoft/assets' => [
@@ -404,6 +407,9 @@ return [
                 'config/web.php',
             ],
             'maileryio/mailery-user' => [
+                'config/web.php',
+            ],
+            'maileryio/mailery-channel' => [
                 'config/web.php',
             ],
             'yiisoft/middleware-dispatcher' => [

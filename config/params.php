@@ -199,7 +199,7 @@ return [
     'redis.parameters' => [
         'scheme' => 'tcp',
         'host' => $_ENV['REDIS_HOST'],
-        'port' => $_ENV['REDIS_PORT'],
+        'port' => (int) $_ENV['REDIS_PORT'],
     ],
 
     // redis options config
@@ -209,6 +209,17 @@ return [
             'password' => $_ENV['REDIS_PASSWORD'],
             'database' => $_ENV['REDIS_DATABASE'],
         ],
+    ],
+
+    // beanstalkd options config
+    'beanstalkd' => [
+        'host' => $_ENV['BEANSTALKD_HOST'],
+        'port' => (int) $_ENV['BEANSTALKD_PORT'],
+        'timeout' => (int) $_ENV['BEANSTALKD_TIMEOUT'],
+    ],
+
+    'beanstalkd.console' => [
+        'port' => (int) $_ENV['BEANSTALKD_CONSOLE_PORT'],
     ],
 
     'maileryio/mailery-menu-sidebar' => [
@@ -272,6 +283,15 @@ return [
                     ],
                     'settings' => [
                         'order' => 5,
+                    ],
+                    'beanstalkd' => [
+                        'label' => static function () {
+                            return 'Beanstalkd console';
+                        },
+                        'url' => static function (UrlGeneratorInterface $urlGenerator) {
+                            return strtok($urlGenerator->generate('/beanstalkd/console'), '?');
+                        },
+                        'order' => 6,
                     ],
                 ],
             ],
