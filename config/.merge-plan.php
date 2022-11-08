@@ -66,13 +66,10 @@ return [
             'yiisoft/yii-debug-api' => [
                 'config/params.php',
             ],
-            'yiisoft/yii-queue' => [
+            'yiisoft/yii-debug-viewer' => [
                 'config/params.php',
             ],
             'yiisoft/yii-view' => [
-                'config/params.php',
-            ],
-            'yiisoft/yii-debug-viewer' => [
                 'config/params.php',
             ],
             'maileryio/mailery-channel-smtp' => [
@@ -96,31 +93,19 @@ return [
             'yiisoft/csrf' => [
                 'config/params.php',
             ],
-            'yiisoft/session' => [
-                'config/params.php',
-            ],
             'yiisoft/data-response' => [
                 'config/params.php',
             ],
-            'yiisoft/widget' => [
-                'config/params.php',
-            ],
             'yiisoft/log-target-file' => [
-                'config/params.php',
-            ],
-            'yiisoft/view' => [
-                'config/params.php',
-            ],
-            'yiisoft/translator' => [
-                'config/params.php',
-            ],
-            'yiisoft/yii-console' => [
                 'config/params.php',
             ],
             'yiisoft/yii-debug' => [
                 'config/params.php',
             ],
             'yiisoft/profiler' => [
+                'config/params.php',
+            ],
+            'yiisoft/yii-queue' => [
                 'config/params.php',
             ],
             'maileryio/mailery-user' => [
@@ -133,6 +118,21 @@ return [
                 'config/params.php',
             ],
             'yiisoft/aliases' => [
+                'config/params.php',
+            ],
+            'yiisoft/session' => [
+                'config/params.php',
+            ],
+            'yiisoft/translator' => [
+                'config/params.php',
+            ],
+            'yiisoft/widget' => [
+                'config/params.php',
+            ],
+            'yiisoft/view' => [
+                'config/params.php',
+            ],
+            'yiisoft/yii-console' => [
                 'config/params.php',
             ],
             'maileryio/mailery-activity-log' => [
@@ -204,9 +204,6 @@ return [
             'yiisoft/yii-cycle' => [
                 'config/common.php',
             ],
-            'yiisoft/yii-queue' => [
-                'config/common.php',
-            ],
             'maileryio/mailery-channel-smtp' => [
                 'config/common.php',
             ],
@@ -222,16 +219,7 @@ return [
             'yiisoft/log-target-file' => [
                 'config/common.php',
             ],
-            'yiisoft/view' => [
-                'config/common.php',
-            ],
-            'yiisoft/translator' => [
-                'config/common.php',
-            ],
             'yiisoft/translator-formatter-intl' => [
-                'config/common.php',
-            ],
-            'yiisoft/translator-message-php' => [
                 'config/common.php',
             ],
             'yiisoft/yii-debug' => [
@@ -241,6 +229,9 @@ return [
                 'config/common.php',
             ],
             'yiisoft/yii-filesystem' => [
+                'config/common.php',
+            ],
+            'yiisoft/yii-queue' => [
                 'config/common.php',
             ],
             'maileryio/mailery-user' => [
@@ -259,6 +250,12 @@ return [
                 'config/common.php',
             ],
             'yiisoft/validator' => [
+                'config/common.php',
+            ],
+            'yiisoft/translator' => [
+                'config/common.php',
+            ],
+            'yiisoft/view' => [
                 'config/common.php',
             ],
             'yiisoft/router' => [
@@ -376,10 +373,10 @@ return [
             'yiisoft/yii-debug-api' => [
                 'config/web.php',
             ],
-            'yiisoft/yii-view' => [
+            'yiisoft/yii-debug-viewer' => [
                 'config/web.php',
             ],
-            'yiisoft/yii-debug-viewer' => [
+            'yiisoft/yii-view' => [
                 'config/web.php',
             ],
             'maileryio/mailery-channel-smtp' => [
@@ -391,16 +388,10 @@ return [
             'yiisoft/csrf' => [
                 'config/web.php',
             ],
-            'yiisoft/session' => [
-                'config/web.php',
-            ],
             'yiisoft/data-response' => [
                 'config/web.php',
             ],
             'yiisoft/error-handler' => [
-                'config/web.php',
-            ],
-            'yiisoft/view' => [
                 'config/web.php',
             ],
             'yiisoft/yii-debug' => [
@@ -410,6 +401,12 @@ return [
                 'config/web.php',
             ],
             'maileryio/mailery-channel' => [
+                'config/web.php',
+            ],
+            'yiisoft/session' => [
+                'config/web.php',
+            ],
+            'yiisoft/view' => [
                 'config/web.php',
             ],
             'yiisoft/middleware-dispatcher' => [
@@ -498,10 +495,10 @@ return [
             'yiisoft/yii-cycle' => [
                 'config/console.php',
             ],
-            'yiisoft/yii-console' => [
+            'yiisoft/yii-debug' => [
                 'config/console.php',
             ],
-            'yiisoft/yii-debug' => [
+            'yiisoft/yii-console' => [
                 'config/console.php',
             ],
             'yiisoft/yii-event' => [
@@ -519,10 +516,10 @@ return [
             'yiisoft/log' => [
                 'config/events-console.php',
             ],
-            'yiisoft/yii-console' => [
+            'yiisoft/yii-debug' => [
                 'config/events-console.php',
             ],
-            'yiisoft/yii-debug' => [
+            'yiisoft/yii-console' => [
                 'config/events-console.php',
             ],
             'yiisoft/yii-event' => [
@@ -539,6 +536,15 @@ return [
                 'config/delegates.php',
             ],
         ],
+        'bootstrap-web' => [
+            'yiisoft/yii-debug-api' => [
+                'config/bootstrap-web.php',
+            ],
+            '/' => [
+                '$bootstrap',
+                'bootstrap-web.php',
+            ],
+        ],
         'providers-web' => [
             'yiisoft/yii-debug-api' => [
                 'config/providers-web.php',
@@ -546,14 +552,6 @@ return [
             '/' => [
                 '$providers',
                 'providers-web.php',
-            ],
-        ],
-        'widgets' => [
-            'yiisoft/widget' => [
-                'config/widgets.php',
-            ],
-            '/' => [
-                'widgets.php',
             ],
         ],
         'events-web' => [
@@ -575,6 +573,22 @@ return [
                 'events-web.php',
             ],
         ],
+        'providers' => [
+            'yiisoft/yii-debug' => [
+                'config/providers.php',
+            ],
+            '/' => [
+                'providers.php',
+            ],
+        ],
+        'widgets' => [
+            'yiisoft/widget' => [
+                'config/widgets.php',
+            ],
+            '/' => [
+                'widgets.php',
+            ],
+        ],
         'providers-console' => [
             'yiisoft/yii-console' => [
                 'config/providers-console.php',
@@ -584,26 +598,12 @@ return [
                 'providers-console.php',
             ],
         ],
-        'providers' => [
-            'yiisoft/yii-debug' => [
-                'config/providers.php',
-            ],
-            '/' => [
-                'providers.php',
-            ],
-        ],
         'events' => [
             'yiisoft/yii-event' => [
                 'config/events.php',
             ],
             '/' => [
                 'events.php',
-            ],
-        ],
-        'bootstrap-web' => [
-            '/' => [
-                '$bootstrap',
-                'bootstrap-web.php',
             ],
         ],
         'bootstrap-console' => [

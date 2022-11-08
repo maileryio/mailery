@@ -40,12 +40,23 @@ use Yiisoft\Request\Body\RequestBodyParser;
 use Yiisoft\Definitions\DynamicReference;
 use Yiisoft\Aliases\Aliases;
 use Yiisoft\Translator\MessageFormatterInterface;
+use Yiisoft\Translator\MessageReaderInterface;
 use Yiisoft\Translator\CategorySource;
-use Yiisoft\Translator\Message\Php\MessageSource;
+use Yiisoft\Yii\Middleware\Locale;
 use Yiisoft\Yii\Cycle\Logger\StdoutQueryLogger;
 use Yiisoft\Form\Field\SubmitButton;
 
 return [
+    'locale' => [
+        'locales' => [
+            'en' => 'en-US',
+            'ru' => 'ru-RU',
+        ],
+        'ignoredRequests' => [
+            '/debug**',
+        ],
+    ],
+
     'middlewares' => [
         ErrorCatcher::class,
         NotFoundCatcher::class,
@@ -56,6 +67,7 @@ return [
         BrandMiddleware::class,
         UserMiddleware::class,
         Authentication::class,
+        Locale::class,
         Router::class,
     ],
 
@@ -115,13 +127,14 @@ return [
         'fallbackLocale' => 'en',
         'defaultCategory' => 'app',
         'categorySources' => [
-            DynamicReference::to(static function (Aliases $aliases, MessageFormatterInterface $messageFormatter) {
-                return new CategorySource(
+            DynamicReference::to([
+                'class' => CategorySource::class,
+                '__construct()' => [
                     'app',
-                    new MessageSource($aliases->get('@messages')),
-                    $messageFormatter,
-                );
-            }),
+                    Reference::to(MessageReaderInterface::class),
+                    Reference::to(MessageFormatterInterface::class),
+                ],
+            ]),
         ],
     ],
 
