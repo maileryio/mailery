@@ -228,16 +228,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.241.0",
+            "version": "3.241.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9a08ac83249a2e6d07c624802cbf961f7269a691"
+                "reference": "124ec1258f667e99f2fc3288f3e59fd4903a22d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9a08ac83249a2e6d07c624802cbf961f7269a691",
-                "reference": "9a08ac83249a2e6d07c624802cbf961f7269a691",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/124ec1258f667e99f2fc3288f3e59fd4903a22d3",
+                "reference": "124ec1258f667e99f2fc3288f3e59fd4903a22d3",
                 "shasum": ""
             },
             "require": {
@@ -316,9 +316,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.241.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.241.1"
             },
-            "time": "2022-11-08T19:16:53+00:00"
+            "time": "2022-11-09T19:31:43+00:00"
         },
         {
             "name": "brick/math",
@@ -3099,12 +3099,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-messenger.git",
-                "reference": "df3fcbff41e1312e62322b312aedeafdb1df8106"
+                "reference": "a0f76ab14cda77be8b4bf7d945429b398b68a303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-messenger/zipball/df3fcbff41e1312e62322b312aedeafdb1df8106",
-                "reference": "df3fcbff41e1312e62322b312aedeafdb1df8106",
+                "url": "https://api.github.com/repos/maileryio/mailery-messenger/zipball/a0f76ab14cda77be8b4bf7d945429b398b68a303",
+                "reference": "a0f76ab14cda77be8b4bf7d945429b398b68a303",
                 "shasum": ""
             },
             "require": {
@@ -3124,7 +3124,8 @@
                 },
                 "config-plugin": {
                     "params": "params.php",
-                    "common": "common.php"
+                    "common": "common.php",
+                    "events-console": "events-console.php"
                 },
                 "config-plugin-options": {
                     "source-directory": "config"
@@ -3152,7 +3153,7 @@
                 "source": "https://github.com/maileryio/mailery-messenger",
                 "wiki": "https://github.com/maileryio/mailery-messenger/wiki"
             },
-            "time": "2022-11-08T22:14:00+00:00"
+            "time": "2022-11-09T22:36:36+00:00"
         },
         {
             "name": "maileryio/mailery-queue",
@@ -14012,16 +14013,16 @@
         },
         {
             "name": "zircote/swagger-php",
-            "version": "4.5.0",
+            "version": "4.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "6bd53355eb6505e1a1825f163dced55c240a3102"
+                "reference": "eb84fb4d65a327e604812fbddc6c27f69b9ed6e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/6bd53355eb6505e1a1825f163dced55c240a3102",
-                "reference": "6bd53355eb6505e1a1825f163dced55c240a3102",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/eb84fb4d65a327e604812fbddc6c27f69b9ed6e2",
+                "reference": "eb84fb4d65a327e604812fbddc6c27f69b9ed6e2",
                 "shasum": ""
             },
             "require": {
@@ -14084,9 +14085,9 @@
             ],
             "support": {
                 "issues": "https://github.com/zircote/swagger-php/issues",
-                "source": "https://github.com/zircote/swagger-php/tree/4.5.0"
+                "source": "https://github.com/zircote/swagger-php/tree/4.5.1"
             },
-            "time": "2022-11-03T19:42:57+00:00"
+            "time": "2022-11-09T00:17:13+00:00"
         }
     ],
     "packages-dev": [

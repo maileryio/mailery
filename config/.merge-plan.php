@@ -519,6 +519,9 @@ return [
             'yiisoft/yii-debug' => [
                 'config/events-console.php',
             ],
+            'maileryio/mailery-messenger' => [
+                'config/events-console.php',
+            ],
             'yiisoft/yii-console' => [
                 'config/events-console.php',
             ],
