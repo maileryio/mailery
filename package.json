@@ -15,7 +15,6 @@
         "@composer-asset/maileryio--mailery-menu-navbar": "file:./vendor/foxy/composer-asset/maileryio/mailery-menu-navbar",
         "@composer-asset/maileryio--mailery-menu-sidebar": "file:./vendor/foxy/composer-asset/maileryio/mailery-menu-sidebar",
         "@composer-asset/maileryio--mailery-messenger": "file:./vendor/foxy/composer-asset/maileryio/mailery-messenger",
-        "@composer-asset/maileryio--mailery-queue": "file:./vendor/foxy/composer-asset/maileryio/mailery-queue",
         "@composer-asset/maileryio--mailery-rbac": "file:./vendor/foxy/composer-asset/maileryio/mailery-rbac",
         "@composer-asset/maileryio--mailery-sender": "file:./vendor/foxy/composer-asset/maileryio/mailery-sender",
         "@composer-asset/maileryio--mailery-sender-domain": "file:./vendor/foxy/composer-asset/maileryio/mailery-sender-domain",

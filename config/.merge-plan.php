@@ -75,9 +75,6 @@ return [
             'maileryio/mailery-channel-smtp' => [
                 'config/params.php',
             ],
-            'maileryio/mailery-queue' => [
-                'config/params.php',
-            ],
             'maileryio/mailery-storage' => [
                 'config/params.php',
             ],
@@ -205,9 +202,6 @@ return [
                 'config/common.php',
             ],
             'maileryio/mailery-channel-smtp' => [
-                'config/common.php',
-            ],
-            'maileryio/mailery-queue' => [
                 'config/common.php',
             ],
             'maileryio/mailery-storage' => [

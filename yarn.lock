@@ -53,9 +53,6 @@
 "@composer-asset/maileryio--mailery-messenger@file:./vendor/foxy/composer-asset/maileryio/mailery-messenger":
   version "1.0.0"
 
-"@composer-asset/maileryio--mailery-queue@file:./vendor/foxy/composer-asset/maileryio/mailery-queue":
-  version "1.0.0"
-
 "@composer-asset/maileryio--mailery-rbac@file:./vendor/foxy/composer-asset/maileryio/mailery-rbac":
   version "1.0.0"
   dependencies:

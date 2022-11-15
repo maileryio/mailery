@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b446e08f704f4fd65a4b6ce17bf44c5",
+    "content-hash": "5173b551dc029a128a0881094280406e",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -3156,66 +3156,6 @@
             "time": "2022-11-09T22:36:36+00:00"
         },
         {
-            "name": "maileryio/mailery-queue",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maileryio/mailery-queue.git",
-                "reference": "b361f15a7b57f958ce5a631ec5fc9e592ca2a876"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-queue/zipball/b361f15a7b57f958ce5a631ec5fc9e592ca2a876",
-                "reference": "b361f15a7b57f958ce5a631ec5fc9e592ca2a876",
-                "shasum": ""
-            },
-            "require": {
-                "foxy/foxy": "^1.0",
-                "php": "^7.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.16",
-                "phan/phan": "^2.4",
-                "phpunit/phpunit": "^9.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                },
-                "config-plugin": {
-                    "params": "params.php",
-                    "common": "common.php"
-                },
-                "config-plugin-options": {
-                    "source-directory": "config"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Mailery\\Queue\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Queue module for Mailery Platform",
-            "homepage": "https://github.com/maileryio/mailery-queue",
-            "keywords": [
-                "mail",
-                "mailer",
-                "queue"
-            ],
-            "support": {
-                "issues": "https://github.com/maileryio/mailery-queue/issues",
-                "source": "https://github.com/maileryio/mailery-queue",
-                "wiki": "https://github.com/maileryio/mailery-queue/wiki"
-            },
-            "time": "2022-03-05T18:32:31+00:00"
-        },
-        {
             "name": "maileryio/mailery-rbac",
             "version": "dev-master",
             "source": {
@@ -3607,12 +3547,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-subscriber.git",
-                "reference": "c74505b63c35a03a2aa3fc4a4b301d9220d5f8f2"
+                "reference": "f6763e458e78f8ffa08a69d93fc78d21e65ca528"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-subscriber/zipball/c74505b63c35a03a2aa3fc4a4b301d9220d5f8f2",
-                "reference": "c74505b63c35a03a2aa3fc4a4b301d9220d5f8f2",
+                "url": "https://api.github.com/repos/maileryio/mailery-subscriber/zipball/f6763e458e78f8ffa08a69d93fc78d21e65ca528",
+                "reference": "f6763e458e78f8ffa08a69d93fc78d21e65ca528",
                 "shasum": ""
             },
             "require": {
@@ -3623,7 +3563,7 @@
                 "maileryio/mailery-brand": "dev-master",
                 "maileryio/mailery-common": "dev-master",
                 "maileryio/mailery-menu": "dev-master",
-                "maileryio/mailery-queue": "^1.0@dev",
+                "maileryio/mailery-messenger": "dev-master",
                 "maileryio/mailery-storage": "dev-master",
                 "maileryio/mailery-web": "dev-master",
                 "maileryio/widget-dataview": "dev-master",
@@ -3677,7 +3617,7 @@
                 "source": "https://github.com/maileryio/mailery-subscriber",
                 "wiki": "https://github.com/maileryio/mailery-subscriber/wiki"
             },
-            "time": "2022-07-17T06:41:04+00:00"
+            "time": "2022-11-10T21:31:03+00:00"
         },
         {
             "name": "maileryio/mailery-template",
@@ -16990,7 +16930,6 @@
         "maileryio/mailery-menu-navbar": 20,
         "maileryio/mailery-menu-sidebar": 20,
         "maileryio/mailery-messenger": 20,
-        "maileryio/mailery-queue": 20,
         "maileryio/mailery-rbac": 20,
         "maileryio/mailery-sender": 20,
         "maileryio/mailery-sender-domain": 20,
