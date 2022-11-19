@@ -1,6 +1,7 @@
 <?php declare(strict_types=1);
 
 use Mailery\Menu\Widget\Menu;
+use Mailery\Web\Vue\Directive;
 
 /** @var Yiisoft\View\WebView $this */
 /** @var \Psr\Http\Message\ServerRequestInterface $request */
@@ -13,7 +14,7 @@ use Mailery\Menu\Widget\Menu;
                 ])->itemOptions([
                     'class' => 'nav-item',
                 ])->linkTemplate(
-                    '<a class="nav-link" href="{url}">{label}</a>'
+                    '<a class="nav-link" href="{url}">' . Directive::pre('{label}') . '</a>'
                 )->currentPath(
                     $currentRoute->getUri()->getPath()
                 )->activateParents(

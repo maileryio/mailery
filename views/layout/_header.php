@@ -5,29 +5,31 @@
 
 use Mailery\Icon\Icon;
 use Mailery\Menu\MenuItem;
+use Mailery\Web\Vue\Directive;
 
 $fnMenuItemChildsRenderer = function (MenuItem $menuItem) {
     $lines = [];
+    $label = Directive::pre($menuItem->getLabel());
     $childItems = $menuItem->getItems();
 
     if (empty($childItems)) {
         if (($method = $menuItem->getMethod()) !== null) {
             $lines[] = '<li role="presentation" class="text-nowrap">';
-            $lines[] = '<ui-widget-link method="' . $method . '" href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="dropdown-item">' . $menuItem->getLabel() . '</ui-widget-link>';
+            $lines[] = '<ui-widget-link method="' . $method . '" href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="dropdown-item">' . $label . '</ui-widget-link>';
             $lines[] = '</li>';
         } else {
-            $lines[] = '<b-dropdown-item href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="text-nowrap">' . $menuItem->getLabel() . '</b-dropdown-item>';
+            $lines[] = '<b-dropdown-item href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="text-nowrap">' . $label . '</b-dropdown-item>';
         }
     } else {
         $lines[] = '<li role="presentation" class="dropdown-submenu text-nowrap">';
         $lines[] = '<a role="menuitem" href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="dropdown-item dropdown-toggle dropdown-toggle-no-caret" data-toggle="dropdown">'
-                . $menuItem->getLabel() . ' '
+                . $label . ' '
                 . Icon::widget()->options(['class' => 'menu-caret'])->name('chevron-right')
                 . '</a>';
         $lines[] = '<ul class="dropdown-menu">';
 
         foreach ($childItems as $childItem) {
-            $lines[] = '<li><a href="' . ($childItem->getUrl() ?? 'javascript:void(0);') . '" class="dropdown-item">' . $childItem->getLabel() . '</a></li>';
+            $lines[] = '<li><a href="' . ($childItem->getUrl() ?? 'javascript:void(0);') . '" class="dropdown-item">' . Directive::pre($childItem->getLabel()) . '</a></li>';
         }
 
         $lines[] = '</ul>';
@@ -39,13 +41,14 @@ $fnMenuItemChildsRenderer = function (MenuItem $menuItem) {
 
 $fnMenuItemRenderer = function (MenuItem $menuItem) use ($fnMenuItemChildsRenderer): string {
     $lines = [];
+    $label = Directive::pre($menuItem->getLabel());
     $childItems = $menuItem->getItems();
 
     if (empty($childItems)) {
-        $lines[] = '<b-nav-item href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="text-nowrap">' . $menuItem->getLabel() . '</b-nav-item>';
+        $lines[] = '<b-nav-item href="' . ($menuItem->getUrl() ?? 'javascript:void(0);') . '" class="text-nowrap">' . $label . '</b-nav-item>';
     } else {
         $lines[] = '<b-nav-item-dropdown right no-caret>';
-        $lines[] = '<template v-slot:button-content>' . $menuItem->getLabel() . ' ' . Icon::widget()->options(['class' => 'menu-arrow'])->name('chevron-down') . '</template>';
+        $lines[] = '<template v-slot:button-content>' . $label . ' ' . Icon::widget()->options(['class' => 'menu-arrow'])->name('chevron-down') . '</template>';
 
         foreach ($childItems as $childItem) {
             $lines[] = $fnMenuItemChildsRenderer($childItem);

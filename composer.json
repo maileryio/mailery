@@ -203,7 +203,13 @@
             "enabled": true,
             "manager": "yarn"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "foxy/foxy": true,
+            "oomphinc/composer-installers-extender": true,
+            "yiisoft/config": true
+        }
     },
     "repositories": [
         {

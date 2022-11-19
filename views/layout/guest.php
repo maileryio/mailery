@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use Mailery\Web\Assets\AppAssetBundle;
-use Yiisoft\Html\Html;
+use Mailery\Web\Vue\Directive;
 
 /** @var Yiisoft\View\WebView $this */
 /** @var Yiisoft\Assets\AssetManager $assetManager */
@@ -27,7 +27,7 @@ $this->beginPage();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
-    <title><?= Html::encode($this->getTitle()); ?></title>
+    <title><?= Directive::pre($this->getTitle()); ?></title>
     <?php $this->head(); ?>
 </head>
 <body>
