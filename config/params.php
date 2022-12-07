@@ -38,7 +38,6 @@ use Yiisoft\ErrorHandler\Middleware\ErrorCatcher;
 use Yiisoft\Yii\Cycle\Schema\Provider\PhpFileSchemaProvider;
 use Yiisoft\Request\Body\RequestBodyParser;
 use Yiisoft\Definitions\DynamicReference;
-use Yiisoft\Aliases\Aliases;
 use Yiisoft\Translator\MessageFormatterInterface;
 use Yiisoft\Translator\MessageReaderInterface;
 use Yiisoft\Translator\CategorySource;
@@ -369,6 +368,10 @@ return [
 //                ],
             ],
         ],
+    ],
+
+    'maileryio/mailery-security' => [
+        'secretKey' => $_ENV['SECURITY_SECRET'],
     ],
 
     'maileryio/mailery-setting' => [

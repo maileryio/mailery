@@ -36,6 +36,7 @@
         "maileryio/mailery-menu-sidebar": "dev-master",
         "maileryio/mailery-messenger": "1.0.x-dev",
         "maileryio/mailery-rbac": "dev-master",
+        "maileryio/mailery-security": "dev-master",
         "maileryio/mailery-sender": "dev-master",
         "maileryio/mailery-sender-domain": "dev-master",
         "maileryio/mailery-sender-email": "dev-master",
