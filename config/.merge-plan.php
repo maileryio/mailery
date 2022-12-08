@@ -21,6 +21,9 @@ return [
             'maileryio/mailery-rbac' => [
                 'config/params.php',
             ],
+            'maileryio/mailery-security' => [
+                'config/params.php',
+            ],
             'maileryio/mailery-sender' => [
                 'config/params.php',
             ],
@@ -166,6 +169,9 @@ return [
                 'config/common.php',
             ],
             'maileryio/mailery-rbac' => [
+                'config/common.php',
+            ],
+            'maileryio/mailery-security' => [
                 'config/common.php',
             ],
             'maileryio/mailery-sender' => [

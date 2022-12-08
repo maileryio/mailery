@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cec838eee16e06bfe12d39a577a5dc5d",
+    "content-hash": "53d22fae4aeea2b0f29b327e2fe7489d",
     "packages": [
         {
             "name": "alexkart/curl-builder",
@@ -3226,6 +3226,68 @@
             "time": "2022-08-19T19:15:33+00:00"
         },
         {
+            "name": "maileryio/mailery-security",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maileryio/mailery-security.git",
+                "reference": "dff800362372c6a18c26edbd6942e13412ea963d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maileryio/mailery-security/zipball/dff800362372c6a18c26edbd6942e13412ea963d",
+                "reference": "dff800362372c6a18c26edbd6942e13412ea963d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.1",
+                "yiisoft/security": "^1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.13",
+                "phpunit/phpunit": "^9.5",
+                "rector/rector": "^0.15.0",
+                "vimeo/psalm": "^5.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                },
+                "config-plugin": {
+                    "params": "params.php",
+                    "common": "common.php"
+                },
+                "config-plugin-options": {
+                    "source-directory": "config"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mailery\\Security\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Security module for Mailery Platform",
+            "homepage": "https://github.com/maileryio/mailery-security",
+            "keywords": [
+                "email",
+                "mail",
+                "mailer",
+                "security"
+            ],
+            "support": {
+                "issues": "https://github.com/maileryio/mailery-security/issues",
+                "source": "https://github.com/maileryio/mailery-security",
+                "wiki": "https://github.com/maileryio/mailery-security/wiki"
+            },
+            "time": "2022-12-08T22:11:59+00:00"
+        },
+        {
             "name": "maileryio/mailery-sender",
             "version": "dev-master",
             "source": {
@@ -3625,22 +3687,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maileryio/mailery-template.git",
-                "reference": "336557f20a922f3dce9b94e534247b5838bc39c0"
+                "reference": "636ecaef107ed4cdfd9dd5a5b812a462c27bd9e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maileryio/mailery-template/zipball/336557f20a922f3dce9b94e534247b5838bc39c0",
-                "reference": "336557f20a922f3dce9b94e534247b5838bc39c0",
+                "url": "https://api.github.com/repos/maileryio/mailery-template/zipball/636ecaef107ed4cdfd9dd5a5b812a462c27bd9e6",
+                "reference": "636ecaef107ed4cdfd9dd5a5b812a462c27bd9e6",
                 "shasum": ""
             },
             "require": {
                 "foxy/foxy": "^1.0",
-                "php": "^7.4"
+                "php": "^7.4",
+                "twig/twig": "^3.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.16",
                 "phan/phan": "^2.4",
-                "phpunit/phpunit": "^9.0"
+                "phpunit/phpunit": "^9.5"
             },
             "default-branch": true,
             "type": "library",
@@ -3678,7 +3741,7 @@
                 "source": "https://github.com/maileryio/mailery-template",
                 "wiki": "https://github.com/maileryio/mailery-template/wiki"
             },
-            "time": "2022-07-08T19:15:51+00:00"
+            "time": "2022-12-04T22:50:59+00:00"
         },
         {
             "name": "maileryio/mailery-template-email",
@@ -17007,12 +17070,14 @@
         "maileryio/mailery-menu-sidebar": 20,
         "maileryio/mailery-messenger": 20,
         "maileryio/mailery-rbac": 20,
+        "maileryio/mailery-security": 20,
         "maileryio/mailery-sender": 20,
         "maileryio/mailery-sender-domain": 20,
         "maileryio/mailery-sender-email": 20,
         "maileryio/mailery-setting": 20,
         "maileryio/mailery-storage": 20,
         "maileryio/mailery-subscriber": 20,
+        "maileryio/mailery-template": 20,
         "maileryio/mailery-template-email": 20,
         "maileryio/mailery-user": 20,
         "maileryio/mailery-web": 20,

@@ -3,9 +3,9 @@
 
 
 "@babel/parser@^7.18.4":
-  version "7.20.3"
-  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.3.tgz#5358cf62e380cf69efcb87a7bb922ff88bfac6e2"
-  integrity sha512-OP/s5a94frIPXwjzEcv5S/tpQfc6XhxYUnmWpgdqMWGgYCuErA3SzozaRAMQgSZWKeTJxht9aWAkUY+0UzvOFg==
+  version "7.20.5"
+  resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.20.5.tgz#7f3c7335fe417665d929f34ae5dceae4c04015e8"
+  integrity sha512-r27t/cy/m9uKLXQNWWebeCUHgnAZq0CpG1OwKRxzJMP1vpSU4bSIK2hq+/cp0bQxetkXx38n09rNu8jVkcK/zA==
 
 "@composer-asset/maileryio--mailery-activity-log@file:./vendor/foxy/composer-asset/maileryio/mailery-activity-log":
   version "1.0.0"
@@ -439,9 +439,9 @@ vue-typeahead@^2.3.2:
     babel-runtime "^6.0.0"
 
 vue2-datepicker@^3.11.0:
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/vue2-datepicker/-/vue2-datepicker-3.11.0.tgz#a9436f94bbb7ed6dbc44f8246b75b364cc91d553"
-  integrity sha512-zbMkAjYwDTXZozZtkpSwqxq7nEeBt7zoHL+oQcdjEXAqzJHhmatE6sl6JSr58PMIx2WOK0c6QBXozSqT32iQAQ==
+  version "3.11.1"
+  resolved "https://registry.yarnpkg.com/vue2-datepicker/-/vue2-datepicker-3.11.1.tgz#b2124e15f694d0fd43a92558f6929ec29338d241"
+  integrity sha512-6PU/+pnp2mgZAfnSXmbdwj9516XsEvTiw61Q5SNrvvdy8W/FCxk1GAe9UZn/m9YfS5A47yK6XkcjMHbp7aFApA==
   dependencies:
     date-format-parse "^0.2.7"
 
