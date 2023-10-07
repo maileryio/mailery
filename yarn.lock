@@ -132,6 +132,7 @@
 
 "@maileryio/mailery-assets@git+ssh://git@github.com/maileryio/mailery-assets.git#master":
   version "1.0.2"
+  uid "7a8f69f5670f220b03baa098bcee5c0fb5b0cc03"
   resolved "git+ssh://git@github.com/maileryio/mailery-assets.git#7a8f69f5670f220b03baa098bcee5c0fb5b0cc03"
   dependencies:
     bootstrap-vue "^2.21.2"
@@ -140,16 +141,19 @@
 
 "@maileryio/mailery-brand-assets@git+ssh://git@github.com/maileryio/mailery-brand-assets.git#master":
   version "1.0.0"
+  uid "0b4e35d694be2869f6f5e675fae3f405e717fd14"
   resolved "git+ssh://git@github.com/maileryio/mailery-brand-assets.git#0b4e35d694be2869f6f5e675fae3f405e717fd14"
 
 "@maileryio/mailery-campaign-assets@git+ssh://git@github.com/maileryio/mailery-campaign-assets.git#master":
   version "1.0.0"
+  uid "1b89440bc39f5394204e18d8c37be15cf9421ff0"
   resolved "git+ssh://git@github.com/maileryio/mailery-campaign-assets.git#1b89440bc39f5394204e18d8c37be15cf9421ff0"
   dependencies:
     moment-timezone "^0.5.34"
 
 "@maileryio/mailery-rbac-assets@git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#master":
   version "1.0.0"
+  uid "294fca18cc0e7e47a13a86997b71e4e2c7f5e20a"
   resolved "git+ssh://git@github.com/maileryio/mailery-rbac-assets.git#294fca18cc0e7e47a13a86997b71e4e2c7f5e20a"
   dependencies:
     liquor-tree "^0.2.70"
@@ -157,6 +161,7 @@
 
 "@maileryio/mailery-subscriber-assets@git+ssh://git@github.com/maileryio/mailery-subscriber-assets.git#master":
   version "1.0.0"
+  uid ecfeaaafe11c9300916efd61b3d721cbcb39ae79
   resolved "git+ssh://git@github.com/maileryio/mailery-subscriber-assets.git#ecfeaaafe11c9300916efd61b3d721cbcb39ae79"
   dependencies:
     lodash "^4.17.15"
@@ -165,18 +170,21 @@
 
 "@maileryio/mailery-template-email-ckeditor-assets@git+ssh://git@github.com/maileryio/mailery-template-email-ckeditor-assets.git#master":
   version "1.0.0"
+  uid "8354d9f5a6c79c7149f7518e3007ff76faecddea"
   resolved "git+ssh://git@github.com/maileryio/mailery-template-email-ckeditor-assets.git#8354d9f5a6c79c7149f7518e3007ff76faecddea"
   dependencies:
     ckeditor4-vue "^1.1.0"
 
 "@maileryio/widget-datepicker-assets@git+ssh://git@github.com/maileryio/widget-datepicker-assets.git#master":
   version "1.0.0"
+  uid aa54fcfc779fc1138151a0be728cc988a97046dd
   resolved "git+ssh://git@github.com/maileryio/widget-datepicker-assets.git#aa54fcfc779fc1138151a0be728cc988a97046dd"
   dependencies:
     vue2-datepicker "^3.11.0"
 
 "@maileryio/widget-highcharts-assets@git+ssh://git@github.com/maileryio/widget-highcharts-assets.git#master":
   version "1.0.0"
+  uid ae63dbf8194ff980f4c2ea1958f5d70f62562180
   resolved "git+ssh://git@github.com/maileryio/widget-highcharts-assets.git#ae63dbf8194ff980f4c2ea1958f5d70f62562180"
   dependencies:
     highcharts "8.1.0"
@@ -184,16 +192,19 @@
 
 "@maileryio/widget-link-assets@git+ssh://git@github.com/maileryio/widget-link-assets.git#master":
   version "1.0.6"
+  uid "050ad999341d29458824f7683f10fa90ea1647ec"
   resolved "git+ssh://git@github.com/maileryio/widget-link-assets.git#050ad999341d29458824f7683f10fa90ea1647ec"
   dependencies:
     vue "^2.6.11"
 
 "@maileryio/widget-search-assets@git+ssh://git@github.com/maileryio/widget-search-assets.git#master":
   version "1.0.0"
+  uid ef776403c5f574613d1acd7f8467e8c17241e853
   resolved "git+ssh://git@github.com/maileryio/widget-search-assets.git#ef776403c5f574613d1acd7f8467e8c17241e853"
 
 "@maileryio/widget-select-assets@git+ssh://git@github.com/maileryio/widget-select-assets.git#master":
   version "1.0.0"
+  uid "842e187ecda5fcc5979e152486b101318fbb625c"
   resolved "git+ssh://git@github.com/maileryio/widget-select-assets.git#842e187ecda5fcc5979e152486b101318fbb625c"
   dependencies:
     lodash "^4.17.15"
@@ -201,6 +212,7 @@
 
 "@maileryio/widget-typeahead-assets@git+ssh://git@github.com/maileryio/widget-typeahead-assets.git#master":
   version "1.0.0"
+  uid c48ca11572df6b043e3049abad2a250d7123eb24
   resolved "git+ssh://git@github.com/maileryio/widget-typeahead-assets.git#c48ca11572df6b043e3049abad2a250d7123eb24"
 
 "@nuxt/opencollective@^0.3.2":
@@ -353,10 +365,10 @@ moment-timezone@^0.5.34:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
   integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
-nanoid@^3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.4.tgz#730b67e3cd09e2deacf03c027c81c9d9dbc5e8ab"
-  integrity sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==
+nanoid@^3.3.6:
+  version "3.3.6"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
+  integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
 
 node-fetch@^2.6.7:
   version "2.6.7"
@@ -386,11 +398,11 @@ portal-vue@^2.1.7:
   integrity sha512-+yCno2oB3xA7irTt0EU5Ezw22L2J51uKAacE/6hMPMoO/mx3h4rXFkkBkT4GFsMDv/vEe8TNKC3ujJJ0PTwb6g==
 
 postcss@^8.4.14:
-  version "8.4.19"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.19.tgz#61178e2add236b17351897c8bcc0b4c8ecab56fc"
-  integrity sha512-h+pbPsyhlYj6N2ozBmHhHrs9DzGmbaarbLvWipMRO7RLS+v4onj26MPFXA5OBYFxyqYhUJK456SwDcY9H2/zsA==
+  version "8.4.31"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.31.tgz#92b451050a9f914da6755af352bdc0192508656d"
+  integrity sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==
   dependencies:
-    nanoid "^3.3.4"
+    nanoid "^3.3.6"
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
